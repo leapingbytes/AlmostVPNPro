@@ -1,0 +1,195 @@
+package com.leapingbytes.almostvpn.server;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.logging.Handler;
+import java.util.logging.LogRecord;
+import java.util.logging.Logger;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import com.leapingbytes.almostvpn.model.AVPNConfiguration;
+import com.leapingbytes.almostvpn.server.profile.Profile;
+import com.leapingbytes.jcocoa.NSDictionary;
+
+public class MonitorLogHandler extends Handler implements Profile.StateListener {
+	private static final Log log = LogFactory.getLog( MonitorLogHandler.class );
+	
+	public static final String[] STATUS_ATTRIBUTES = new String[] {
+		"uuid",
+		"name",
+		"state",
+		"state-comment"
+	};
+	
+	private static final List			_allMonitorLogHandlers = Collections.synchronizedList( new ArrayList());
+	private static final ThreadLocal	_allMonitorLogHandlersIterator = new ThreadLocal();
+
+	OutputStream 	_outputStream;
+	Timer			_idleTimer;
+	
+	public static void timeToExit() {
+		Iterator i = _allMonitorLogHandlers.iterator();
+		_allMonitorLogHandlersIterator.set( i );
+		while( i.hasNext() ) {
+			MonitorLogHandler mh = ((MonitorLogHandler)i.next());
+			try {
+				mh._outputStream.close();
+			} catch (IOException e) {
+				// DO NOTHING
+			}
+			mh._outputStream = null;
+			mh._idleTimer.cancel();
+			synchronized( mh ) {
+				mh.notifyAll();
+			}
+		}
+	}
+	
+	static boolean	_reportServerVersion = true;
+	
+	public MonitorLogHandler(OutputStream os) {
+		_outputStream = os;
+
+		NSDictionary[] allProfiles = AVPNConfiguration.allProfiles();
+		for( int i = 0; i < allProfiles.length; i++ ) {
+			String name = (String) allProfiles[ i ].objectForKey( "name" );
+			Profile profile = Profile.getProfile( name, false );
+			if( profile != null ) {
+				event( profile.status() );
+			}
+		}
+		//
+		// event() above could fail and it will reset _outputStream to null.
+		// if it ever happen, we can not do anything. Better just quit.
+		if( _outputStream != null ) {
+			Profile.addListener( this );
+			_idleTimer = new Timer();
+			_idleTimer.schedule( new IdleEventSender( this ), 5000, 5000 );		
+			Logger.getLogger("").addHandler( this );
+			_allMonitorLogHandlers.add( this );
+			if( _reportServerVersion ) {
+				_reportServerVersion = false;
+				log.info( "AlmostVPNServer version : " + ToolServer.version());
+			}
+		}
+	}
+
+	public void close() throws SecurityException {
+		// DO NOTHING
+	}
+
+	public void flush() {
+		// DO NOTHING
+	}
+	/*
+	STATE:<timestamp>|<profile uuid>|<profile state>|<profile state comment>
+	LOG:<timestamp>|<source>|<level>|<message>
+	UTIL:<timestamp>|<location uuid>|<in bytes>|<out bytes>
+	*/
+	public void publish(LogRecord record) {
+		StringBuffer buffer = new StringBuffer( "LOG:" );
+		buffer.append( "" + record.getMillis());
+		buffer.append( "|" );
+		buffer.append( record.getSourceClassName());
+		buffer.append( "|" );
+		buffer.append( record.getLevel().intValue());
+		buffer.append( "|" );
+		buffer.append( record.getMessage());
+		emmit( buffer.toString() );
+	}
+
+	public void event( NSDictionary status ) {
+		StringBuffer buffer = new StringBuffer( "STATE:" );
+		buffer.append( System.currentTimeMillis());
+		buffer.append( "|" );
+		buffer.append( status.objectForKey( "uuid"));
+		buffer.append( "|" );
+		buffer.append( status.objectForKey( "state"));
+		buffer.append( "|" );
+		buffer.append( status.objectForKey( "state-comment"));
+		emmit( buffer.toString() );
+	}
+	
+	static public void utilization( String uuid, long inBytes, long outBytes ) {
+		synchronized( _allMonitorLogHandlers ) {
+			Iterator i = _allMonitorLogHandlers.iterator();
+			_allMonitorLogHandlersIterator.set( i );
+			while( i.hasNext() ) {
+				((MonitorLogHandler)i.next())._utilization( uuid, inBytes, outBytes);
+			}
+			_allMonitorLogHandlersIterator.set( null );
+		}
+	}
+	
+	public void _utilization( String uuid, long inBytes, long outBytes ) {
+		StringBuffer buffer = new StringBuffer( "UTIL:" );
+		buffer.append( System.currentTimeMillis());
+		buffer.append( "|" );
+		buffer.append( uuid);
+		buffer.append( "|" );
+		buffer.append( inBytes );
+		buffer.append( "|" );
+		buffer.append( outBytes );
+		emmit( buffer.toString() );
+	}
+	
+	public void join() {
+		while( true ) {
+			synchronized ( this ) {
+				if( _outputStream == null ) {
+					return;
+				}
+				try {
+					this.wait( 1000 );
+				} catch (InterruptedException e) {
+					// DO NOTHING
+				}
+			}
+		}
+	}
+	
+	void emmit( String line ) {
+		if( _outputStream == null ) {
+			return;
+		}
+		try {
+			_outputStream.write( line.getBytes() );
+			_outputStream.write("\n".getBytes() );
+			_outputStream.flush();
+		} catch (Throwable t) {
+			if(_allMonitorLogHandlersIterator.get() != null ) {
+				((Iterator)_allMonitorLogHandlersIterator.get()).remove();
+			} else {
+				_allMonitorLogHandlers.remove( this );
+			}
+			Logger.getLogger("").removeHandler( this );
+			Profile.removeListener( this );
+			_outputStream = null;
+			if( _idleTimer != null ) {
+				_idleTimer.cancel();
+			}
+			synchronized ( this ) {
+				this.notify();
+			}
+		}
+	}
+}
+
+class IdleEventSender extends TimerTask {
+
+	MonitorLogHandler	_handler;
+	public IdleEventSender( MonitorLogHandler handler ) {
+		_handler = handler;
+	}
+	public void run() {
+		_handler.emmit( "PING:" + System.currentTimeMillis());
+	}	
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/management/src/main/resources/org/mortbay/jetty/servlet/management"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="Holder-mbean.properties"
+   text-time="2006-09-01T03:01:09.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f4508c12c12f28aea61c56b00ec333b9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:09.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletHandler-mbean.properties"
+   text-time="2006-09-01T03:01:09.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8e34f6eb4f54dee950f63aad393acb2e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:09.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletHolder-mbean.properties"
+   text-time="2006-09-01T03:01:09.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a64765923b0d592bc59629ad51f1f8dc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:09.000000Z"/>
+</wc-entries>

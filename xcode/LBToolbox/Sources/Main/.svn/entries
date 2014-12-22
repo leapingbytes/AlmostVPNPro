@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/LBToolbox/Sources/Main"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="LBKeychainAdapter.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5358fefb63bfb58fd807a50959186dcc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SCHelper.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a4f090dcc8a6d62fb0688d0d53137043"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBUtils.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cb2439c62edb0c4b9891f51739363ac1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Info.plist"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="30682c706248046915b2e08e409edd5e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBKeyChainAdapter.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="34501dce449255ab6cbce4f2f8a9be4e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AuthorizationHelper.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="896fdbdbcf32e6c1496f545484e31867"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBArrayController.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9b5efbe9698e74a686214fc9964a775e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBUtils.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="489112353cb839fa345f0b4165ea7b8e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBToolbox.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="128490d875c1e8d5d8e2a435979f8e7d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AuthorizationHelper.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a3c628a5254fea3435870d09e77690ba"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBArrayController.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d55f60a6df5df25c5fb3e21cde1f37f2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SCHelper.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="11cf0c5053b2c217ec65e00d08bb5838"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+</wc-entries>

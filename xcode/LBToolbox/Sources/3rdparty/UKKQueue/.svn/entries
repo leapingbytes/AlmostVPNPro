@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/LBToolbox/Sources/3rdparty/UKKQueue"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="UKFileWatcher.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="19b00bb59501aab8ccf1a604b208c558"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="UKMainThreadProxy.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fee24f67245f5c2a79faa61c41ca5972"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="UKKQueue.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bc74d7790e816d7eda9fce1e88fb2a22"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="UKFNSubscribeFileWatcher.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1b7967e2c85191a2fd88bd66d6d374a4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="UKMainThreadProxy.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f26fef80388f2e94aa946c1b716eb2bd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="UKKQueue.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7f3630c65e234df663098e4c42d31075"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="UKKQueue Readme.txt"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="825a280539489b01c71429f068c32fb0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="UKFNSubscribeFileWatcher.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d3f7b06635b26f92b16a0c35981913df"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+</wc-entries>

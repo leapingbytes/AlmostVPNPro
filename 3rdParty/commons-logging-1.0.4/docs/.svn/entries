@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/commons-logging-1.0.4/docs"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="mail-lists.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7dc90dc06992719404e2709701bc9fb8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   name="xref-test"
+   kind="dir"/>
+<entry
+   name="apidocs"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="jdepend-report.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a2f1f11341bb82878f444df64535ab35"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="license.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="55a96f817e3becaa89b77c1fd7f00efd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="dependencies.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a7005e8244752f35bf15bd21ba88837f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="issue-tracking.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="59901c7cdefc237e3b9020410e670d1c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="downloads.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e72507ead84b03d37d53fce95d9d0173"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="cvs-usage.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="db3daace08a722d6abc4ca26f0e9240a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="guide.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3d70347474d21e8176f953759624d3ed"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   name="style"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="project-info.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="210bd132239c026382a7763091c9f69b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="proposal.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="60a1d33260d76e5fe2b62cfdde73c4af"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="team-list.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="343dcebe8f682341512bd3dcbb036dac"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   name="xref"
+   kind="dir"/>
+<entry
+   name="images"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="maven-reports.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2373743795edf9bee70ea5d89f5696bd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="junit-report.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ca06e0e359b6c8c3b3819e5005a3d9a5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   name="api"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="javadoc.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f05b09835925a34855500c5d50fb9cee"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+<entry
+   committed-rev="106"
+   name="index.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0f299e04b950adfe1cbdf9182758dd73"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+<entry
+   committed-rev="106"
+   name="task-list.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="36509ff53760ea516028c691cd551eb9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+</wc-entries>

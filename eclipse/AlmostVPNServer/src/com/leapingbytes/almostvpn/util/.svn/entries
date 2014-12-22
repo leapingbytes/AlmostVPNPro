@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/AlmostVPNServer/src/com/leapingbytes/almostvpn/util"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   revision="110"/>
+<entry
+   name="file"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Console.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ecbda0eb01fcf3d7c1550ed95e68f222"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   name="GUI"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="MeasuredSocketFactory.java"
+   text-time="2006-09-01T02:52:48.795870Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7b18adeba48177e1ac86051ca1019ca3"
+   last-author="atchijov"
+   kind="file"
+   revision="129"/>
+<entry
+   committed-rev="157"
+   name="ChannelHelper.java"
+   text-time="2006-10-31T22:04:18.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="5703ceab646e333b7c1e505c85792c0e"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+<entry
+   name="macosx"
+   kind="dir"/>
+<entry
+   committed-rev="157"
+   name="DataCopier.java"
+   text-time="2006-11-07T16:46:25.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="33e9d6516616df98ffe4a6fb702c526f"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+<entry
+   name="ssh"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Bonjour.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a83ecef295e335f95ea4173644b89632"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   name="otp"
+   kind="dir"/>
+<entry
+   committed-rev="157"
+   name="ProxyConfigurationProvider.java"
+   text-time="2006-11-13T15:25:38.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="e0adb0b52be53e513341bd3328158c21"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+<entry
+   committed-rev="106"
+   name="DataConsumer.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8e9fe76e0f7be96e266cc6310428390a"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   name="images"
+   kind="dir"/>
+<entry
+   committed-rev="146"
+   name="SecureStorageProvider.java"
+   text-time="2006-10-19T19:14:47.000000Z"
+   committed-date="2006-10-19T19:22:32.504000Z"
+   checksum="3a3470486558a98dec4fedebee46fd3a"
+   last-author="atchijov"
+   kind="file"
+   revision="146"/>
+<entry
+   committed-rev="157"
+   name="ResourceAllocator.java"
+   text-time="2006-11-05T18:50:09.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="da5d712a7d378fba914fa0dfc5482179"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+<entry
+   committed-rev="106"
+   name="Env.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8b9c8ab0cc7aedf4cb6a5148ec225f1f"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="106"
+   name="MasterPasswordProvider.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b4b56e0edb5c3114c114f60f5a152433"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   name="JschSession.java"
+   kind="file"
+   deleted="true"
+   revision="157"/>
+<entry
+   committed-rev="106"
+   name="BonjourItem.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="eee5976880c083fc0b93b61c7b407fa5"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="106"
+   name="ScriptRunner.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="73c62247ad16904bf6c8c2f3fb851ebf"
+   last-author="atchijov"
+   kind="file"/>
+</wc-entries>

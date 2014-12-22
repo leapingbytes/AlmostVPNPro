@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Sources/SM2DGraphView"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="SMPieChartView.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1052b6c07f177ca3f863324c2bb31a42"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SMPieChartView.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="31a73303457ae28a942ee28c4b565a64"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NSImage_SMExtensions.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fac614a5d44077315e7f5ad68c63ea11"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SM2DGraphView.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="31ff06e421950e8e3e3e234526f92b3c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NSImage_SMExtensions.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b2217fb78e37971cd3cb61d55ad32822"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SM2DGraphView.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="09a44ca55373a189b99fea25c0aec734"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+</wc-entries>

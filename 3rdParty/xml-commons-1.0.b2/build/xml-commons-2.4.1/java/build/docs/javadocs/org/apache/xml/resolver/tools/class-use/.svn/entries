@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-2.4.1/java/build/docs/javadocs/org/apache/xml/resolver/tools/class-use"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="CatalogResolver.html"
+   text-time="2006-09-01T03:01:22.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3ac0c0e8d73c0c716c70c0e492c302d3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:22.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ResolvingXMLReader.html"
+   text-time="2006-09-01T03:01:22.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="40c95ac5fd16334810c8e75174e63eea"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:22.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ResolvingXMLFilter.html"
+   text-time="2006-09-01T03:01:22.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="35f26f81bdd7d2bbeeb40aa42e06d501"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:22.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ResolvingParser.html"
+   text-time="2006-09-01T03:01:22.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0a80e81d700458dff17d745ae1492707"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:22.000000Z"/>
+</wc-entries>

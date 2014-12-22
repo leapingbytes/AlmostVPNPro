@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = 501D79C909E15FCD006D1B5D /* AlmostVPNServer */;
+		activeTarget = 8DD76FA90486AB0100D96B5E /* AlmostVPNServer */;
+		addToTargets = (
+			8DD76FA90486AB0100D96B5E /* AlmostVPNServer */,
+		);
+		breakpoints = (
+			501495D10A86B17800EF55B4 /* main.m:1 */,
+			501495D80A86B1B200EF55B4 /* main.m:1 */,
+			501495DC0A86B1D400EF55B4 /* main.m:1 */,
+		);
+		breakpointsGroup = 501D7BC009E1759B006D1B5D /* XCBreakpointsBucket */;
+		codeSenseManager = 501D79D609E15FD8006D1B5D /* Code sense */;
+		executables = (
+			501D79C909E15FCD006D1B5D /* AlmostVPNServer */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					655.5835,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					768,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.XCSCMDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					744,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_SCM_ColumnID,
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					200,
+					588,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 182975809;
+			PBXWorkspaceStateSaveDate = 182975809;
+		};
+		perUserProjectItems = {
+			50630D460ADDE55900658DE9 /* PBXTextBookmark */ = 50630D460ADDE55900658DE9 /* PBXTextBookmark */;
+			508E98030AB43B3C00A6F27D /* PBXTextBookmark */ = 508E98030AB43B3C00A6F27D /* PBXTextBookmark */;
+			508E98060AB43B3C00A6F27D /* PBXTextBookmark */ = 508E98060AB43B3C00A6F27D /* PBXTextBookmark */;
+			50963ACF0AA7F11D00E3D1D4 /* PBXTextBookmark */ = 50963ACF0AA7F11D00E3D1D4 /* PBXTextBookmark */;
+			50DC850A0AE967BB005F3387 /* PBXTextBookmark */ = 50DC850A0AE967BB005F3387 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 501D79D509E15FD8006D1B5D /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	08FB7796FE84155DC02AAC07 /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1021, 4275}}";
+			sepNavSelRange = "{4594, 102}";
+			sepNavVisRect = "{{0, 1305}, {960, 739}}";
+		};
+	};
+	501495D10A86B17800EF55B4 /* main.m:1 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = 08FB7796FE84155DC02AAC07 /* main.m */;
+		functionName = "main()";
+		hitCount = 1;
+		lineNumber = 1;
+		modificationTime = 181716079.312407;
+		state = 1;
+	};
+	501495D80A86B1B200EF55B4 /* main.m:1 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = 08FB7796FE84155DC02AAC07 /* main.m */;
+		functionName = "checkAlmostVPNJarMd5()";
+		hitCount = 1;
+		lineNumber = 1;
+		modificationTime = 181716079.473735;
+		state = 1;
+	};
+	501495DC0A86B1D400EF55B4 /* main.m:1 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = 08FB7796FE84155DC02AAC07 /* main.m */;
+		functionName = "checkAlmostVPNJarMd5()";
+		hitCount = 1;
+		lineNumber = 1;
+		modificationTime = 181716079.291197;
+		state = 1;
+	};
+	501496190A86DACD00EF55B4 /* almostvpn_jar_md5.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {960, 739}}";
+			sepNavSelRange = "{119, 0}";
+			sepNavVisRect = "{{0, 0}, {960, 739}}";
+		};
+	};
+	501D79C909E15FCD006D1B5D /* AlmostVPNServer */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 0;
+		activeArgIndices = (
+			YES,
+		);
+		argumentStrings = (
+			"--startJVM",
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+			"PBXLSLaunchAction-0" = {
+				PBXLSLaunchAction = 0;
+				PBXLSLaunchStartAction = 1;
+				PBXLSLaunchStdioStyle = 2;
+				PBXLSLaunchStyle = 0;
+				class = PBXLSRunLaunchConfig;
+				displayName = "Executable Runner";
+				identifier = com.apple.Xcode.launch.runConfig;
+				remoteHostInfo = "";
+				startActionInfo = "";
+			};
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = AlmostVPNServer;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+		startupPath = /Users/atchijov/Work/LeapingBytes/workspace/AlmostVPNServer;
+		variableFormatDictionary = {
+			"theByte-int-checkAlmostVPNJarMd5" = 1;
+		};
+	};
+	501D79D509E15FD8006D1B5D /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 1;
+		scmConfiguration = {
+		};
+		scmType = scm.subversion;
+	};
+	501D79D609E15FD8006D1B5D /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	501D7BC009E1759B006D1B5D /* XCBreakpointsBucket */ = {
+		isa = XCBreakpointsBucket;
+		name = AlmostVPNServer.starter;
+		objects = (
+			501495D10A86B17800EF55B4 /* main.m:1 */,
+			501495D80A86B1B200EF55B4 /* main.m:1 */,
+			501495DC0A86B1D400EF55B4 /* main.m:1 */,
+		);
+	};
+	50630D460ADDE55900658DE9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.m */;
+		name = "char* buildCommand( const char* prefix, const char** argv, const int argcStart, const int argcEnd ) {";
+		rLen = 102;
+		rLoc = 4594;
+		rType = 0;
+		vrLen = 1317;
+		vrLoc = 5051;
+	};
+	508E98030AB43B3C00A6F27D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 501496190A86DACD00EF55B4 /* almostvpn_jar_md5.h */;
+		name = "almostvpn_jar_md5.h: CLEANUP_SH_MD5";
+		rLen = 0;
+		rLoc = 119;
+		rType = 0;
+		vrLen = 177;
+		vrLoc = 0;
+	};
+	508E98060AB43B3C00A6F27D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 501496190A86DACD00EF55B4 /* almostvpn_jar_md5.h */;
+		name = "almostvpn_jar_md5.h: CLEANUP_SH_MD5";
+		rLen = 0;
+		rLoc = 119;
+		rType = 0;
+		vrLen = 177;
+		vrLoc = 0;
+	};
+	50963ACF0AA7F11D00E3D1D4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.m */;
+		name = "main.c: 3";
+		rLen = 0;
+		rLoc = 64;
+		rType = 0;
+		vrLen = 1153;
+		vrLoc = 0;
+	};
+	50DC850A0AE967BB005F3387 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.m */;
+		name = "char* buildCommand( const char* prefix, const char** argv, const int argcStart, const int argcEnd ) {";
+		rLen = 102;
+		rLoc = 4594;
+		rType = 0;
+		vrLen = 1827;
+		vrLoc = 2006;
+	};
+	8DD76FA90486AB0100D96B5E /* AlmostVPNServer */ = {
+		activeExec = 0;
+		executables = (
+			501D79C909E15FCD006D1B5D /* AlmostVPNServer */,
+		);
+	};
+}

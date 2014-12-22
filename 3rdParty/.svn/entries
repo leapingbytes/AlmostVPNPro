@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="106"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty"
+   last-author="atchijov"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name=""
+   kind="dir"
+   committed-rev="106"/>
+<entry
+   checksum="640de72758dbbee24103bd4d79fe929c"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:00.000000Z"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name=".project"
+   kind="file"
+   committed-rev="106"/>
+<entry
+   name="commons-logging-1.0.4"
+   kind="dir"/>
+<entry
+   schedule="add"
+   name="ganymed-ssh2-build210"
+   kind="dir"/>
+<entry
+   schedule="add"
+   kind="dir"
+   name="ganymed-ssh2-build211beta2"/>
+<entry
+   name="jetty-6.0.0rc2"
+   kind="dir"/>
+<entry
+   name="jmdns-1.0"
+   kind="dir"/>
+<entry
+   name="jsch-0.1.29"
+   kind="dir"/>
+<entry
+   name="rhino1_6R3"
+   kind="dir"/>
+<entry
+   name="slf4j-1.0.2"
+   kind="dir"/>
+<entry
+   name="xml-commons-1.0.b2"
+   kind="dir"/>
+</wc-entries>

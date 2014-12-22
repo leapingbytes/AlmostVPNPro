@@ -1,0 +1,235 @@
+//
+//  Agent.m
+//  AlmostVPNPRO_prefPane
+//
+//  Created by andrei tchijov on 5/14/06.
+//  Copyright 2006 Leaping Bytes, LLC. All rights reserved.
+//
+
+#import <signal.h>
+
+#import "Agent.h"
+#import "ServerHelper.h"
+#import "PathLocator.h"
+
+static int _debugMode = 1;
+
+#define MyNSLog if( _debugMode ) NSLog
+
+#define _MAX_RETRY_COUNT_		20
+#define _TIMER_RETRY_			@"Timer"
+#define _SC_RETRY_				@"SCNetworkReachability"
+
+static Agent*	_agent;
+
+void reachabilityCallback ( SCNetworkReachabilityRef target, SCNetworkConnectionFlags flags, void *dummy ) {
+	[ _agent reachabilityChanged: _SC_RETRY_ ];
+}
+
+@implementation Agent
+
+- (BOOL) isReachable {
+	NSHost* localHost = [ NSHost currentHost ];
+	NSArray* addresses = [ localHost addresses ];
+	
+	BOOL result = NO;
+	NSString* address = @"n/a";
+	for( int i = 0; i < [ addresses count ]; i++ ) {
+		address = [[ addresses objectAtIndex: i ] uppercaseString ];
+		if( 
+			! ( 
+			[ address rangeOfString: @"127." ].location == 0 ||	// addres starts with "127."
+			[ address rangeOfString: @"169.254." ].location == 0 ||	// addres starts with "169.254."
+			[ address rangeOfString: @"FE80:" ].location == 0		// addres starts with "FE80:"
+			)
+		) { 
+			result = YES;
+			break;
+		}
+	}
+	if( result ) {
+		SCNetworkConnectionFlags flags;
+		if( SCNetworkReachabilityGetFlags( _reachabilityTester, &flags )) {
+			result =  flags & kSCNetworkFlagsReachable;
+		}
+	}
+	
+	MyNSLog( @"AVPN.Agent :: isReachable : local address = %@ : %@\n", address, result ? @"YES" : @"NO" );
+	
+	return result;
+}
+
+- (void) postEvent: (NSString*) event {
+	@synchronized( self ) {
+		MyNSLog( @"AVPN.Agent :: postEvent : %@\n", event );
+
+		_event = event;
+		
+		if( _repeatCount == 0 ) { // 
+			[ _agent reachabilityChanged: _SC_RETRY_ ];
+		}
+	}
+}
+
+- (NSString*) clearEvent {
+	@synchronized( self ) {
+		NSString* event = _event;
+		_event = nil;
+		_repeatCount = 0;
+		return event;
+	}
+	return nil; // To make compiler happy
+}
+
+- (void) reachabilityChanged: (NSString*) source {
+	@synchronized ( self ) {
+		BOOL isReachable = [ self isReachable ];
+		
+		if( _event == nil ) {
+			return;
+		}
+		
+		if( [ source isEqual: _SC_RETRY_ ] ) {
+			_repeatCount = _MAX_RETRY_COUNT_;
+			_waitUntil = [[ NSDate dateWithTimeIntervalSinceNow: 5.0 ] retain ];
+			[ self performSelector: @selector( reachabilityChanged: ) withObject: _TIMER_RETRY_ afterDelay: 5.0 ];		
+			return;
+		}
+		
+		if( [ _waitUntil compare: [ NSDate date ]] != NSOrderedAscending ) {
+			[ self performSelector: @selector( reachabilityChanged: ) withObject: _TIMER_RETRY_ afterDelay: 1.0 ];		
+			return;
+		}
+		
+		if( isReachable ) {
+			NSString* event;
+			[ ServerHelper sendSynchroEvent: event = [ self clearEvent ]];
+			MyNSLog( @"AVPN.Agent :: Delayed event : isReachable : %@\n", event );
+		} else if( _repeatCount > 0 ) {
+			_repeatCount --;
+			if( _repeatCount > 0 ) {
+				[ self performSelector: @selector( reachabilityChanged: ) withObject: _TIMER_RETRY_ afterDelay: 1.0 ];		
+			}
+		}	
+	}
+}
+
+- (id) init {
+	[ PathLocator guessInstall ];
+	
+	[ NSHost setHostCacheEnabled: NO ];
+	
+	_agent = self;
+		
+	_reachabilityTester = SCNetworkReachabilityCreateWithName( nil, "13.13.13.13" );
+	SCNetworkReachabilitySetCallback( _reachabilityTester, reachabilityCallback, nil );	
+	SCNetworkReachabilityScheduleWithRunLoop( _reachabilityTester, [[ NSRunLoop currentRunLoop ] getCFRunLoop ], kCFRunLoopDefaultMode );
+	
+	NSNotificationCenter *notCenter = [[ NSWorkspace sharedWorkspace ] notificationCenter ];
+
+	[ notCenter addObserver: self selector: @selector( didWake: ) name: NSWorkspaceDidWakeNotification object: nil ];
+	[ notCenter addObserver: self selector: @selector( willSleep: ) name:NSWorkspaceWillSleepNotification object: nil ];
+
+	[ notCenter addObserver: self selector: @selector( switchIn: ) name: NSWorkspaceSessionDidBecomeActiveNotification object: nil ];
+	[ notCenter addObserver: self selector: @selector( switchOut: ) name: NSWorkspaceSessionDidResignActiveNotification object: nil ];
+
+	[ notCenter addObserver: self selector: @selector( powerOff: ) name:NSWorkspaceWillPowerOffNotification object: nil ];
+
+	return self;
+}
+
+- (void) didStart {
+	NSString* event = @"_DID_LOGIN_";
+//	if( [ self isReachable ] ) {
+//		MyNSLog( @"AVPN.Agent :: Did start : isReachable\n" );
+//		[ ServerHelper sendSynchroEvent: event ];
+//	} else {
+//		MyNSLog( @"AVPN.Agent :: Did start : isNotReachable\n" );
+		[ self postEvent: event ];
+//	}
+}
+
+- (void) willExit {
+	MyNSLog( @"AVPN.Agent :: Will exit\n" );
+	[ ServerHelper sendSynchroEvent: @"_WILL_LOGOUT_" ];
+}
+
+- (void) didWake: (id) notification {
+	NSString* event = @"_DID_WAKEUP_";
+//	if( [ self isReachable ] ) {
+//		MyNSLog( @"AVPN.Agent :: Did wake : isReachable\n" );
+//		[ ServerHelper sendSynchroEvent: event ];
+//	} else {	
+//		MyNSLog( @"AVPN.Agent :: Did wake : isNotReachable\n" );
+		[ self postEvent: event ];
+//	}
+}
+
+- (void) willSleep: (id) notification {
+	MyNSLog( @"AVPN.Agent :: Will sleep\n" );
+	[ ServerHelper sendSynchroEvent: @"_WILL_SLEEP_" ];
+}
+
+- (void) switchIn: (id) notification {
+	NSString* event = @"_DID_SWITCH_IN_";
+	if( [ self isReachable ] ) {
+		MyNSLog( @"AVPN.Agent :: Switch in : isReachable\n" );
+		[ ServerHelper sendSynchroEvent: event ];
+	} else {	
+		MyNSLog( @"AVPN.Agent :: Switch in : isNotReachable\n" );
+		[ self postEvent: event ];
+	}
+}
+
+- (void) switchOut: (id) notification {
+	MyNSLog( @"AVPN.Agent :: Switch out\n" );
+	[ ServerHelper sendSynchroEvent: @"_WILL_SWITCH_OUT_" ];	
+}
+
+- (void) powerOff: (id) notification {
+	MyNSLog( @"AVPN.Agent :: Power off\n" );
+	[ ServerHelper sendSynchroEvent: @"_WILL_POWER_OFF_" ];	
+}
+
+@end
+
+static BOOL endRunLoop = NO;
+
+void killLoop() {
+	endRunLoop = YES;
+}
+
+int main(int argc, char *argv[]) {
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];	
+	
+    [[NSRunLoop currentRunLoop] configureAsServer];
+	
+	Agent* agent = [[ Agent alloc ] init ];	
+	
+	[ agent didStart ];
+	
+	signal( SIGHUP, killLoop );
+	signal( SIGINT, killLoop );
+	signal( SIGQUIT, killLoop );
+	signal( SIGABRT, killLoop );
+	signal( SIGTERM, killLoop );
+		
+    @try {	
+		double resolution = 1.0;
+		BOOL isRunning;
+		do {
+			NSDate* next = [NSDate dateWithTimeIntervalSinceNow:resolution]; 
+			isRunning = [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:next];
+		} while (isRunning && !endRunLoop);
+    } @catch ( NSException* e ) {
+        MyNSLog(@"%@", e);
+    }
+	
+	[ agent willExit ];
+
+    [pool release];
+ 
+    exit(0);       // insure the process exit status is 0
+    return 0;      // ...and make main fit the ANSI spec.
+
+}

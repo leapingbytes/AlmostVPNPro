@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<!--
+	This is Foundation Kit's NSCoreSuite terminology recast as an sdef.  NSCoreSuite
+	is itself AppleScript's Standard Suite recast as a plist instead of the original
+	aete.  There are several differences between the original Standard Suite and
+	Cocoa's version of it, and not all of them are correct: these places are noted
+	with "supposed to" comments.
+-->
+<dictionary title="AlmostVPN/PRO">
+	<suite name="Standard Suite" code="????" description="Common classes and commands for most applications.">
+		<cocoa name="NSCoreSuite"/>
+		<class name="item" code="cobj" description="A scriptable object.">
+			<cocoa class="AbstractObject"/>
+			<property name="class" code="pcls" description="The class of the object." type="type" access="r">
+				<cocoa key="classCode"/>
+			</property>
+			<property name="properties" code="pALL" description="All of the object&apos;s properties." type="record">
+				<cocoa key="scriptingProperties"/>
+			</property>
+			<!--
+						The blank method declarations are needed to emulate the existing
+						NSCoreSuite.scriptSuite.framework.  Ordinarily, you wouldn't do this.
+					-->
+			<responds-to name="count">
+				<cocoa method=""/>
+			</responds-to>
+			<responds-to name="delete">
+				<cocoa method=""/>
+			</responds-to>
+			<responds-to name="duplicate">
+				<cocoa method=""/>
+			</responds-to>
+			<responds-to name="exists">
+				<cocoa method=""/>
+			</responds-to>
+			<responds-to name="get">
+				<cocoa method=""/>
+			</responds-to>
+			<responds-to name="move">
+				<cocoa method=""/>
+			</responds-to>
+			<responds-to name="set">
+				<cocoa method=""/>
+			</responds-to>
+		</class>
+		<class name="application" code="capp" description="An application&apos;s top level scripting object.">
+			<cocoa class="NSApplication"/>
+			<element type="document" access="r">
+				<cocoa key="orderedDocuments"/>
+			</element>
+			<element type="window" access="r">
+				<cocoa key="orderedWindows"/>
+			</element>
+			<property name="name" code="pnam" description="The name of the application." type="text" access="r"/>
+			<property name="frontmost" code="pisf" description="Is this the frontmost (active) application?" type="boolean" access="r">
+				<cocoa key="isActive"/>
+			</property>
+			<property name="version" code="vers" description="The version of the application." type="text" access="r"/>
+			<responds-to name="open">
+				<cocoa method="handleOpenScriptCommand:"/>
+			</responds-to>
+			<responds-to name="print">
+				<cocoa method="handlePrintScriptCommand:"/>
+			</responds-to>
+			<responds-to name="quit">
+				<cocoa method="handleQuitScriptCommand:"/>
+			</responds-to>
+		</class>
+		<command name="count" code="corecnte" description="Return the number of elements of a particular class within an object.">
+			<cocoa class="NSCountCommand"/>
+			<direct-parameter description="the object whose elements are to be counted" type="specifier"/>
+			<parameter name="each" code="kocl" description="The class of objects to be counted." type="type" optional="yes">
+				<cocoa key="ObjectClass"/>
+			</parameter>
+			<result description="the number of elements" type="integer"/>
+		</command>
+		<command name="delete" code="coredelo" description="Delete an object.">
+			<cocoa class="NSDeleteCommand"/>
+			<direct-parameter description="the object to delete" type="specifier"/>
+		</command>
+		<command name="duplicate" code="coreclon" description="Copy object(s) and put the copies at a new location.">
+			<cocoa name="Copy" class="NSCloneCommand"/>
+			<direct-parameter description="the object(s) to duplicate" type="specifier"/>
+			<!-- "duplicate" is supposed to return the new objects.
+				<result type="object" description="to the duplicated object(s)"/>
+				-->
+			<!-- "to" is supposed to be optional. -->
+			<parameter name="to" code="insh" description="The location for the new object(s)." type="location specifier">
+				<cocoa key="ToLocation"/>
+			</parameter>
+			<parameter name="with properties" code="prdt" description="Properties to be set in the new duplicated object(s)." type="record" optional="yes">
+				<cocoa key="WithProperties"/>
+			</parameter>
+		</command>
+		<command name="exists" code="coredoex" description="Verify if an object exists.">
+			<cocoa class="NSExistsCommand"/>
+			<direct-parameter description="the object in question" type="specifier"/>
+			<result description="true if it exists, false if not" type="boolean"/>
+		</command>
+		<command name="make" code="corecrel" description="Make a new object.">
+			<cocoa name="Create" class="NSCreateCommand"/>
+			<parameter name="new" code="kocl" description="The class of the new object." type="type">
+				<cocoa key="ObjectClass"/>
+			</parameter>
+			<parameter name="at" code="insh" description="The location at which to insert the object." type="location specifier" optional="yes">
+				<cocoa key="Location"/>
+			</parameter>
+			<parameter name="with data" code="data" description="The initial data for the object." type="any" optional="yes">
+				<cocoa key="ObjectData"/>
+			</parameter>
+			<parameter name="with properties" code="prdt" description="The initial values for properties of the object." type="record" optional="yes">
+				<cocoa key="KeyDictionary"/>
+			</parameter>
+			<result description="to the new object" type="specifier"/>
+		</command>
+	</suite>
+	<suite name="AlmostVPN Suite" code="aVPN" description="AlmostVPN Scripting Suite">
+		<class name="application" code="capp">
+			<cocoa class="NSApplication"/>
+			<element description="Profiles" type="profile" access="r">
+				<cocoa key="profiles"/>
+			</element>
+			<responds-to name="start">
+				<cocoa method="startThisProfile:"/>
+			</responds-to>
+			<responds-to name="stop">
+				<cocoa method="stopThisProfile:"/>
+			</responds-to>
+		</class>
+		<class name="profile" code="aPRF" plural="profiles">
+			<cocoa class="AlmostVPNProfile"/>
+			<property name="name" code="pnam" description="profle name" type="text" access="r">
+				<cocoa key="name"/>
+			</property>
+			<property name="state" code="aPst" description="profile state" type="text" access="r">
+				<cocoa key="state"/>
+			</property>
+			<property name="stateComment" code="aPsc" description="profile state comment" type="text" access="r">
+				<cocoa key="stateComment"/>
+			</property>
+			<responds-to name="start">
+				<cocoa method="startThisProfile:"/>
+			</responds-to>
+			<responds-to name="stop">
+				<cocoa method="stopThisProfile:"/>
+			</responds-to>
+		</class>
+		<command name="start" code="aPsraPsr" description="start profile">
+			<cocoa name="startThisProfile:"/>
+			<direct-parameter description="profile to start" type="profile"/>
+		</command>
+		<command name="stop" code="aPspaPsp" description="stop profile">
+			<cocoa name="stopThisProfile:"/>
+			<direct-parameter description="profileToStop" type="profile"/>
+		</command>
+	</suite>
+</dictionary>

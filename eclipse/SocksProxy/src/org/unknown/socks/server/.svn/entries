@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="106"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/SocksProxy/src/org/unknown/socks/server"
+   last-author="atchijov"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="dir"
+   name=""
+   committed-rev="106"/>
+<entry
+   checksum="0b38e80494e54bc60b6b8db220a31c12"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="Ident.java"
+   committed-rev="106"/>
+<entry
+   checksum="be2b375b8258fea79fcd7d246c16b986"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="IdentAuthenticator.java"
+   committed-rev="106"/>
+<entry
+   revision="127"
+   checksum="96d8b7eddd9d36a68f8393560b84afdf"
+   last-author="atchijov"
+   text-time="2006-09-11T22:45:21.000000Z"
+   committed-date="2006-09-13T04:05:59.656000Z"
+   kind="file"
+   name="ServerAuthenticator.java"
+   committed-rev="127"/>
+<entry
+   checksum="a3aa88bcb7ed257dfcde66f837804e46"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="ServerAuthenticatorNone.java"
+   committed-rev="106"/>
+<entry
+   checksum="8300a4da1f1597f05ab009c4d0cda062"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="UserPasswordAuthenticator.java"
+   committed-rev="106"/>
+<entry
+   checksum="21590c3f81f44b5e63dd654ccf62f08d"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="UserValidation.java"
+   committed-rev="106"/>
+</wc-entries>

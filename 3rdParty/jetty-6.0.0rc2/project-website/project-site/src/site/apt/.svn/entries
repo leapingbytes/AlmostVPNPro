@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/project-website/project-site/src/site/apt"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="irc.apt"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5f5d1c1bfdf9704d9b9fb40d96c8d12c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   committed-rev="106"
+   name="source-repository.apt"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cb38c86112d67b60e83506be29e04d20"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   name="maven-plugin"
+   kind="dir"/>
+</wc-entries>

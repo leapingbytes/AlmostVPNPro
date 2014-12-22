@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/lib/jsp-2.0"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="jasper-compiler-jdt-5.5.15.jar"
+   text-time="2006-09-01T03:01:03.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4bd813a9c43d6a601850f8c0a47b3940"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:02.000000Z"/>
+<entry
+   committed-rev="106"
+   name="slf4j-simple-1.0.1.jar"
+   text-time="2006-09-01T03:01:03.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="43e3cb776230011397f1b480e30fbbca"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:02.000000Z"/>
+<entry
+   committed-rev="106"
+   name="commons-el-1.0.jar"
+   text-time="2006-09-01T03:01:03.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7c98594df7c126f33688fa6d93169639"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:02.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jasper-compiler-5.5.15.jar"
+   text-time="2006-09-01T03:01:03.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="923ff5284cdb7dea4a01ecc79bbdb435"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:02.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ant-1.6.4.jar"
+   text-time="2006-09-01T03:01:03.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a33f32b9667f97064b8bcbcae8edc5c6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:02.000000Z"/>
+<entry
+   committed-rev="106"
+   name="xmlParserAPIs-2.6.2.jar"
+   text-time="2006-09-01T03:01:03.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2651f9f7c39e3524f3e2c394625ac63a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:02.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jasper-runtime-5.5.15.jar"
+   text-time="2006-09-01T03:01:03.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="091b47a05bc8529250ba4da072f78313"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:02.000000Z"/>
+<entry
+   committed-rev="106"
+   name="xercesImpl-2.6.2.jar"
+   text-time="2006-09-01T03:01:03.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c4c5a77f9e61f33d80780176451d71c2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:03.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jsp-api-2.0.jar"
+   text-time="2006-09-01T03:01:03.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="23999ad2739cc536dacba5ce5484c9df"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:03.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jcl104-over-slf4j-1.0.1.jar"
+   text-time="2006-09-01T03:01:03.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="20dd61643462d69b9577330fdd3f4d1b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:03.000000Z"/>
+</wc-entries>

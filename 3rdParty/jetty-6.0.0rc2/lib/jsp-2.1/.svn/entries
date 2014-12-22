@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/lib/jsp-2.1"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="core-3.1.0.jar"
+   text-time="2006-09-01T03:01:05.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="619f7c72cfbf31bdf0d145cee0ba5b0c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:04.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ant-1.6.4.jar"
+   text-time="2006-09-01T03:01:05.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a33f32b9667f97064b8bcbcae8edc5c6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:04.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jsp-2.1.jar"
+   text-time="2006-09-01T03:01:05.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="039c03c0701c07e62b1d169b8ce1ef15"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:05.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jsp-api-2.1.jar"
+   text-time="2006-09-01T03:01:05.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="317b0f8e96dd6e41acb35cc8331086b2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:05.000000Z"/>
+</wc-entries>

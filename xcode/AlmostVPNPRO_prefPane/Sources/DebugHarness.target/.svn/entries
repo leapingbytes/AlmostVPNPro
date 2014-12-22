@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Sources/DebugHarness.target"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   name="DebugHarness~.nib"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="LBAlmostVPNController.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="60fe4b3e17152dac70adab9814f0ba4c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBDebugHarnes.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ceb969384eed254c7d1d02b54982b11a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   name="DebugHarness.nib"
+   kind="dir"/>
+<entry
+   committed-rev="133"
+   name="DebugHarnes.m"
+   text-time="2006-09-08T17:40:46.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="1b3451a1f5b928da806e4cd6abdc9068"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="LBAlmostVPNController.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fdbc662bedbca6da9693f1120e08850c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBDebugHarnes.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fda1016c7ab31cb808da1cf97e0b8bb2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DebugHarnes.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3e84a74be390998540fe4825ba330425"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DebugHarness-Info.plist"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cb553e4bf3ad482e9e8e250f94daffff"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+</wc-entries>

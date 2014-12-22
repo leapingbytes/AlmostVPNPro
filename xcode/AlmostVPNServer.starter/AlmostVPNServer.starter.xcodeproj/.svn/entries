@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://lbsvn@svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNServer.starter/AlmostVPNServer.starter.xcodeproj"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="156"
+   name="atchijov.perspective"
+   text-time="2006-10-20T20:23:23.000000Z"
+   committed-date="2006-11-21T02:25:39.697309Z"
+   checksum="786e47016959956f3e6536cb9d24de2b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:53.000000Z"
+   revision="156"/>
+<entry
+   committed-rev="136"
+   name="project.pbxproj"
+   text-time="2006-10-12T02:52:10.000000Z"
+   committed-date="2006-10-13T14:14:13.697201Z"
+   checksum="cb6e55d5408977a644b31d6196f1d3fa"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:53.000000Z"
+   revision="136"/>
+<entry
+   committed-rev="156"
+   name="atchijov.pbxuser"
+   text-time="2006-10-20T20:23:25.000000Z"
+   committed-date="2006-11-21T02:25:39.697309Z"
+   checksum="c984959707f83eafdc788d437cad250d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:53.000000Z"
+   revision="156"/>
+</wc-entries>

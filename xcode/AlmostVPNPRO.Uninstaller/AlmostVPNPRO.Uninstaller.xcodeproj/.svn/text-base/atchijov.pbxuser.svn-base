@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	089C165DFE840E0CC02AAC07 /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {882, 783}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {882, 783}}";
+		};
+	};
+	257572C2072881A4000BE9CA /* AlmostVPNPRO.Uninstaller */ = {
+		activeExec = 0;
+		executables = (
+			25D9445407B1533600FF306F /* AlmostVPNPRO.Uninstaller */,
+		);
+	};
+	257572D5072881A4000BE9CA /* Info.plist */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {882, 783}}";
+			sepNavSelRange = "{295, 0}";
+			sepNavVisRect = "{{0, 0}, {882, 783}}";
+		};
+	};
+	25D9445407B1533600FF306F /* AlmostVPNPRO.Uninstaller */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+			"PBXLSLaunchAction-1" = {
+				PBXLSLaunchAction = 1;
+				PBXLSLaunchStartAction = 1;
+				PBXLSLaunchStdioStyle = 2;
+				PBXLSLaunchStyle = 0;
+				class = ASKDebuggerLaunchConfig;
+				displayName = "AppleScript Debugger";
+				identifier = com.apple.AppleScriptStudio.ASKDebugLaunchConfig;
+				remoteHostInfo = "";
+				startActionInfo = "";
+			};
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = ASKDebugger;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+			{
+				active = NO;
+				name = AEDebug;
+				value = 1;
+			},
+			{
+				active = NO;
+				name = AEDebugSends;
+				value = 1;
+			},
+			{
+				active = NO;
+				name = AEDebugReceives;
+				value = 1;
+			},
+			{
+				active = NO;
+				name = AEDebugVerbose;
+				value = 1;
+			},
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = AlmostVPNPRO.Uninstaller;
+		sourceDirectories = (
+		);
+	};
+	25D9445A07B1533700FF306F /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 1;
+		scmConfiguration = {
+		};
+		scmType = scm.subversion;
+	};
+	25D9445B07B1533700FF306F /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 25D9445407B1533600FF306F /* AlmostVPNPRO.Uninstaller */;
+		activeTarget = 257572C2072881A4000BE9CA /* AlmostVPNPRO.Uninstaller */;
+		addToTargets = (
+			257572C2072881A4000BE9CA /* AlmostVPNPRO.Uninstaller */,
+		);
+		breakpoints = (
+		);
+		breakpointsGroup = 5098BF4A0A98AD5400CF487A /* XCBreakpointsBucket */;
+		codeSenseManager = 25D9445B07B1533700FF306F /* Code sense */;
+		executables = (
+			25D9445407B1533600FF306F /* AlmostVPNPRO.Uninstaller */,
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					210,
+					20,
+					110,
+					109,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					806,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.XCSCMDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					657,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_SCM_ColumnID,
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 180038241;
+			PBXWorkspaceStateSaveDate = 180038241;
+		};
+		perUserProjectItems = {
+			5004FBAB0ABB2A6A0094F502 /* PBXTextBookmark */ = 5004FBAB0ABB2A6A0094F502 /* PBXTextBookmark */;
+			5004FBC30ABB9F350094F502 /* PBXTextBookmark */ = 5004FBC30ABB9F350094F502 /* PBXTextBookmark */;
+			5004FBC40ABB9F350094F502 /* PBXTextBookmark */ = 5004FBC40ABB9F350094F502 /* PBXTextBookmark */;
+			50367A010A9A57150028AB96 /* PBXBookmark */ = 50367A010A9A57150028AB96 /* PBXBookmark */;
+			50367A290A9A586F0028AB96 /* PBXBookmark */ = 50367A290A9A586F0028AB96 /* PBXBookmark */;
+			50367A2B0A9A586F0028AB96 /* PBXBookmark */ = 50367A2B0A9A586F0028AB96 /* PBXBookmark */;
+			507128450AB3CB4F00C3C366 /* PBXTextBookmark */ = 507128450AB3CB4F00C3C366 /* PBXTextBookmark */;
+			5098C3FF0A9A07E500CF487A /* PBXTextBookmark */ = 5098C3FF0A9A07E500CF487A /* PBXTextBookmark */;
+			5098C4040A9A07E500CF487A /* PBXTextBookmark */ = 5098C4040A9A07E500CF487A /* PBXTextBookmark */;
+		};
+		sourceControlManager = 25D9445A07B1533700FF306F /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	5004FBAB0ABB2A6A0094F502 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DA206CF3015C4E8B03C91932 /* AlmostVPNPRO.Uninstaller.applescript */;
+		name = "AlmostVPNPRO.Uninstaller.applescript: 232";
+		rLen = 0;
+		rLoc = 8545;
+		rType = 0;
+		vrLen = 460;
+		vrLoc = 0;
+	};
+	5004FBC30ABB9F350094F502 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DA206CF3015C4E8B03C91932 /* AlmostVPNPRO.Uninstaller.applescript */;
+		name = "AlmostVPNPRO.Uninstaller.applescript: 232";
+		rLen = 0;
+		rLoc = 8545;
+		rType = 0;
+		vrLen = 2693;
+		vrLoc = 0;
+	};
+	5004FBC40ABB9F350094F502 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DA206CF3015C4E8B03C91932 /* AlmostVPNPRO.Uninstaller.applescript */;
+		name = "AlmostVPNPRO.Uninstaller.applescript: 232";
+		rLen = 0;
+		rLoc = 8545;
+		rType = 0;
+		vrLen = 460;
+		vrLoc = 0;
+	};
+	50367A010A9A57150028AB96 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 65359356078DD41800E8BB2F /* AppleScriptKit.sdef */;
+	};
+	50367A290A9A586F0028AB96 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 65359356078DD41800E8BB2F /* AppleScriptKit.sdef */;
+	};
+	50367A2B0A9A586F0028AB96 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 65359356078DD41800E8BB2F /* AppleScriptKit.sdef */;
+	};
+	507128450AB3CB4F00C3C366 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DA206CF3015C4E8B03C91932 /* AlmostVPNPRO.Uninstaller.applescript */;
+		name = "AlmostVPNPRO.Uninstaller.applescript: 232";
+		rLen = 0;
+		rLoc = 8545;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	5098BF4A0A98AD5400CF487A /* XCBreakpointsBucket */ = {
+		isa = XCBreakpointsBucket;
+		name = AlmostVPNPRO.Uninstaller;
+		objects = (
+		);
+	};
+	5098C0A80A98C69700CF487A /* Panel.applescript */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {927, 694}}";
+			sepNavSelRange = "{242, 0}";
+			sepNavVisRect = "{{0, 0}, {927, 694}}";
+		};
+	};
+	5098C15A0A9945E600CF487A /* Log Controller.applescript */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {6274, 765}}";
+			sepNavSelRange = "{116, 11}";
+			sepNavVisRect = "{{0, 0}, {882, 585}}";
+		};
+	};
+	5098C3FF0A9A07E500CF487A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5098C15A0A9945E600CF487A /* Log Controller.applescript */;
+		name = "initialize(";
+		rLen = 11;
+		rLoc = 116;
+		rType = 0;
+		vrLen = 1111;
+		vrLoc = 0;
+	};
+	5098C4040A9A07E500CF487A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5098C15A0A9945E600CF487A /* Log Controller.applescript */;
+		name = "initialize(";
+		rLen = 11;
+		rLoc = 116;
+		rType = 0;
+		vrLen = 1111;
+		vrLoc = 0;
+	};
+	DA206CF3015C4E8B03C91932 /* AlmostVPNPRO.Uninstaller.applescript */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1818, 3479}}";
+			sepNavSelRange = "{8545, 0}";
+			sepNavVisRect = "{{0, 0}, {998, 761}}";
+			sepNavWindowFrame = "{{1, 0}, {1275, 1002}}";
+		};
+	};
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO.Uninstaller"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   name="AlmostVPNPRO.Uninstaller.xcodeproj"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="main.m"
+   text-time="2006-09-01T03:19:00.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f18cbae30d40c86a9e1233f9c8c4768e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:00.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Panel.applescript"
+   text-time="2006-09-01T03:19:00.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9af97943cc25a0944a84d0bbbcc03e4b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:00.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Info.plist"
+   text-time="2006-09-01T03:19:00.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6103aa3e809164680b6c0d7f4360f6e6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:00.000000Z"/>
+<entry
+   committed-rev="135"
+   name="AlmostVPNPRO.Uninstaller.applescript"
+   text-time="2006-09-15T23:19:29.000000Z"
+   committed-date="2006-10-13T14:13:53.587093Z"
+   checksum="2a117fb14276a8f7e95b7ab232d9a761"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:00.000000Z"
+   revision="135"/>
+<entry
+   committed-rev="106"
+   name="Log Controller.applescript"
+   text-time="2006-09-01T03:19:00.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a95e507f3a4aaf9e3669e37c9e129fd5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:00.000000Z"/>
+<entry
+   name="Icons"
+   kind="dir"/>
+<entry
+   name="English.lproj"
+   kind="dir"/>
+</wc-entries>

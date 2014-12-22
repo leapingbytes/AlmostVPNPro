@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/html/src/main/java/org/mortbay/html"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="Heading.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c7adda2051ba860a504acae37bf25fc1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Input.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="be619b5868469036a0376ab5d06117e7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Style.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f44bc59f8e053ec91505f6f5fc36f8a5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Comment.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0cee8af2aa90d527a7e35714a5ea694c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Composite.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="07ca1a1b769d86bc7552135668bde820"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Form.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7e52a52ab7a9d2b7088209a19cf27848"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Script.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e0ed4ccdc39ceb7d5ca68bfd728f9fc9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Font.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e53a335f8dad0198c8c99a1dcb5f36ad"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FrameSet.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="22320666bc4b77f0fc3a7417b2a923f3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Tag.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ea68201dd4d6c631e11a5d0b54b12421"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TableForm.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e984727378cb4d0c0e6941141c55c837"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="List.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b85bf6eac94ae382ce012b7bdf057800"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Page.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="82b0d840407e23d18cc0c807d35f4a5b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TextArea.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="04e4d8fe60ba87ffc91ee70395cefa53"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="StyleLink.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="22308bff23cd3af3a10e96e47bf7bf34"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Select.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="775ebf5626594f74148f5f13beaab6fb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Image.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d32b4aa0da089e76c44009a46c18b181"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Include.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e6fb673ed08281e2a4bc202cf562d1b2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Break.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="af5a95bd0a70a2dc74c9ddddaa2caf14"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Text.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5a4e21ef200e9703d347a836e1920632"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Applet.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="55ab5b80c14ccff92f0ba3b657474625"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Target.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="766c3d4cf830eae5eb45c589219cd525"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Table.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="86d4bea6563a262d55185d65055d9fd8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Element.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="17e6d08e6d8c6e419939bc54ecccb38b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Frame.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f6b6df433d754165bce89e335f867e28"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DefList.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="badb0bfb254d957e7f3ad6c3c9fd0860"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CompositeFactory.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bf175cc58b1e9de77130893eed2286f4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Block.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="03edaf547576c22755dce03c79243e8b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Link.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="184a2f0dc963d6eb06bd53539d9d621a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+</wc-entries>

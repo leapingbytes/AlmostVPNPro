@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-2.4.1/java/external/build/docs/dom/xml/style"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="dom-spec.xml"
+   text-time="2006-09-01T03:01:24.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9400ee7f64d89eed18ac1afb36ae2c9e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:24.000000Z"/>
+<entry
+   committed-rev="106"
+   name="css.xml"
+   text-time="2006-09-01T03:01:24.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="53c3c28d23bd0228b7ee8e3beec0e170"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:24.000000Z"/>
+<entry
+   name="definitions"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="stylesheets.xml"
+   text-time="2006-09-01T03:01:24.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bb49a10e049f93284583a2df44358295"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:24.000000Z"/>
+</wc-entries>

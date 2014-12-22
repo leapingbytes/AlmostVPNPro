@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/naming/src/main/java/org/mortbay/naming"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   name="java"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="InitialContextFactory.java"
+   text-time="2006-09-01T03:01:09.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fa604669509afbef01452479f8156fd5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:09.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NamingUtil.java"
+   text-time="2006-09-01T03:01:09.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5c60d6c3d99cfce19972ea68c9d4852d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:09.000000Z"/>
+<entry
+   name="local"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="ContextFactory.java"
+   text-time="2006-09-01T03:01:09.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b58fe92e86431252b9e467684c9ca64f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:09.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NamingContext.java"
+   text-time="2006-09-01T03:01:09.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8694b45b333c959888831e91d73699ee"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:09.000000Z"/>
+</wc-entries>

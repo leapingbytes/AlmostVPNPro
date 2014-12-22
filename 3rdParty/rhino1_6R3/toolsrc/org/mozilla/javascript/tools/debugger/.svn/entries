@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/rhino1_6R3/toolsrc/org/mozilla/javascript/tools/debugger"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="GuiCallback.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="01664003598f9a632276eb2a01c1ff12"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Main.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1d432b0da4b3300316681856835a98ef"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ScopeProvider.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9076becb355dfacd3c34269c76da83e1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Dim.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6f295979b07e77ffe6050fd3c4e9f32b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SwingGui.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="17dc3c8d30e538567c898d3f8dc1e392"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="build.xml"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="63c6b0fecc3c3c70fac275a297b63fc4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+</wc-entries>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-1.0.b2/java/external/build/docs/javadoc/org/w3c/dom/css"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="CSSRuleList.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="473a6f445b8e11e2c9e5cda623245b39"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSPageRule.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ef17c3ce3370aff57735dd9f21e9a776"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSPrimitiveValue.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4c3069ef5d935d4ca171e3e4b0d66fc2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSStyleDeclaration.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="88fed3e6be2a315f2bf5b4b55164d768"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Counter.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="212e2cbdf1c0765eb607677b5b3c3510"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSMediaRule.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="87a0605c2eadad54673d3be62a7353c4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSRule.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3ee221f0144dd8c35d71a42f197afeaa"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSValueList.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a950b419a606115141d90e2faf4c8744"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ElementCSSInlineStyle.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3bec634b087a92c191d2633af2363dcb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="811543b01eab8d56102f985acce40676"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ViewCSS.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="34fe629302fe55c17e1853e695080a11"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSValue.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a0916dabe29ba8f154d04e4358f2ea71"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4ed54dcc4ee47d7d311b2aae11aa5d21"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSFontFaceRule.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="46fe4c60d7709af45211d217b88b8224"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSS2Properties.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="097cc8743d7f3c70301687db8001931b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DocumentCSS.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2991cc84cba83b79697dca3da3f27dea"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-tree.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="72f4dfffd48cd30c97b6e8111a80651b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSCharsetRule.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="69f8ab38f0d310687851bf53142cb92d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Rect.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7c2d8d151225216c37774402a94f4d64"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DOMImplementationCSS.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="43f8e7a032531bb791f6aed30e1dac7d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSUnknownRule.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="64fd48cb89b558fe838b8e8836690995"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSStyleRule.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5667bb369c1503e687e949ecc4afb83d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSStyleSheet.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="61c285c9ceb973739d74210cc2ba5da0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RGBColor.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0980cb18c1468cc688ac1d6f1f711641"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSImportRule.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0bd2c9fc554a36c2134d8fb176c8304e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+</wc-entries>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/commons-logging-1.0.4/docs/xref"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="stylesheet.css"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="636b080ffa946fdcc42a630cc57c6f32"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="allclasses-frame.html"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="15493a58bcff3be8c7e264d104ba66bd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="overview-frame.html"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="36ba3e83a281446a45e201b6d9dde415"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="overview-summary.html"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f05fe73f940ae9f83918eb4dbcde6836"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   name="org"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="index.html"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9c7dbca6f3d86e2d6ada38e2e7fa303e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+</wc-entries>

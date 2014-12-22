@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/webapps/test/WEB-INF/classes/com/acme"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="Date2Tag.class"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="498ae77064b93781996828b0383e7775"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HelloWorld.class"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d4fe99050cebd171c43705709aec777c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CometServlet.class"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0f7832f2e9c0a398b33f50205631f587"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ChatFilter$Message.class"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1021f8d76b5a1492bb9fc13d399610bb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Counter.class"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b869782d5bc97abdd04d0a8f57bd0900"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ChatFilter$Member.class"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9f3f2e1a6aa290b3002cae5576019d8c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DispatchServlet.class"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="66dead30f841b627c7f748eac78f4ca1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ChatFilter.class"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5189c749fe4ce6ae96f9098ff1120449"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Dump.class"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5682e08275628e25feabf2874fe79a4a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TestFilter.class"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ed175dbb1c12ce58dc095fc8888115fb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TestListener.class"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b3fc0df1331c53034aee13aac2c6b156"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DateTag.class"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="16bee75ecb8a373404058a54d88f6e73"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SessionDump.class"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b2802e93776f8ddd27a660b1530a7c47"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+</wc-entries>

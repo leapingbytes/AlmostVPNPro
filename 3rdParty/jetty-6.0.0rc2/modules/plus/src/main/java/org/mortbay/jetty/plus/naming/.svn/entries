@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/plus/src/main/java/org/mortbay/jetty/plus/naming"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   name="mail"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Transaction.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f7d899ee969f4422540ec78864134349"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Resource.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1a35a933409689804950d0140db76421"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="EnvEntry.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c895878300302e5960e6c38db939d3d9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NamingEntry.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="be9d375d3301dd8c49272e9a399b2c91"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+</wc-entries>

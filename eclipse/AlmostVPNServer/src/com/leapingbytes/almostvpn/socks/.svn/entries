@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/AlmostVPNServer/src/com/leapingbytes/almostvpn/socks"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   revision="110"/>
+<entry
+   committed-rev="157"
+   name="DynamicProxy.java"
+   text-time="2006-11-13T18:38:23.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="f2b11079e8373863d30a904f769b21b6"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+</wc-entries>

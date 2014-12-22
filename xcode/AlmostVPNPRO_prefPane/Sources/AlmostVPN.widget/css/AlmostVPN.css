@@ -1,0 +1,134 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+div#back {
+	display: none;
+}
+
+img#faceplate {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	
+	z-index: 100;
+}
+
+img#avpnIcon {
+	z-index: 600;
+	position: absolute;
+	left: 225px;
+	top: 65px;
+	
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+img#statusIcon {
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	height: 90;
+	width: 45;
+}
+
+img#startButton {
+	z-index: 200;
+	position: absolute;
+	left: 250px;
+	top: 17px;
+	cursor: pointer;
+}
+
+img#pauseButton {
+	z-index: 200;
+	position: absolute;
+	left: 228px;
+	top: 39px;
+	cursor: pointer;
+}
+
+img#stopButton {
+	z-index: 200;
+	position: absolute;
+	left: 250px;
+	top: 61px;
+	cursor: pointer;
+}
+
+img#restartButton {
+	z-index: 200;
+	position: absolute;
+	left: 272px;
+	top: 39px;
+	cursor: pointer;
+}
+
+div#profilesBackDrop {
+	background-color: #ffffff;
+	position: absolute;
+	left: 50px;
+	top: 10px;
+	width: 176px;
+	height: 69px;
+}
+
+#profilesScrollbar {
+	z-index: 600;
+    position: absolute;
+    top: 13px;
+    bottom: 20px;
+    right: 87px;
+    width: 5px;
+}
+
+div#profiles {
+	z-index: 500;
+
+	position: absolute;
+	left: 59px;
+	top: 17px;
+	width: 150px;
+	height: 60px;
+	
+	overflow: auto;
+	
+	font-size: 12px;
+	line-height: 12px;
+	
+	background-color: #ffffff;	
+}
+
+div#profiles div.profile {
+	cursor: pointer;
+	border-left: 1px solid #ffffff;
+	border-top: 1px solid #ffffff;
+	border-right: 1px solid #909090;
+	border-bottom: 1px solid #909090;
+}
+
+div#profiles div.even {
+	background-color: #e0e0ff;
+}
+
+div#profiles div.odd {
+	background-color: #c0c0ee;	
+}
+
+div#profiles div.profile.empty {
+	background-color: #e9e9ff;	
+	color: #e9e9ff;	
+}
+
+div#profiles div.profile.selected {
+	border: 1px dotted #0000ff;
+	font-weight: bold;
+}
+
+div#profiles img {
+	vertical-align: middle;
+	height : 10px;
+	margin-right: 3px;
+}

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="110"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/AlmostVPNServer/src/com/leapingbytes/almostvpn/server/profile/item/impl"
+   last-author="atchijov"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="dir"
+   name=""
+   committed-rev="106"/>
+<entry
+   revision="139"
+   checksum="237a9129cef44b5795909de8cef6f075"
+   last-author="atchijov"
+   text-time="2006-09-16T02:51:14.000000Z"
+   committed-date="2006-10-13T14:18:18.166311Z"
+   kind="file"
+   name="AliasAddress.java"
+   committed-rev="139"/>
+<entry
+   revision="139"
+   checksum="55341ec46b071b09b3b726d3775f4864"
+   last-author="atchijov"
+   text-time="2006-09-16T03:38:53.000000Z"
+   committed-date="2006-10-13T14:18:18.166311Z"
+   kind="file"
+   name="AliasHostName.java"
+   committed-rev="139"/>
+<entry
+   revision="139"
+   checksum="e7948dc831e64dfe98a7dca5d5868a5a"
+   last-author="atchijov"
+   text-time="2006-09-16T02:51:26.000000Z"
+   committed-date="2006-10-13T14:18:18.166311Z"
+   kind="file"
+   name="BonjourAd.java"
+   committed-rev="139"/>
+<entry
+   checksum="3aa3eb15021f09627118be9514080fc3"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="CompoundMarker.java"
+   committed-rev="106"/>
+<entry
+   revision="139"
+   checksum="92b7c23b28675462b168089472f9e450"
+   last-author="atchijov"
+   text-time="2006-09-16T02:51:33.000000Z"
+   committed-date="2006-10-13T14:18:18.166311Z"
+   kind="file"
+   name="CupsAd.java"
+   committed-rev="139"/>
+<entry
+   revision="139"
+   checksum="352c9ccc70bd64b50e55ce28bc60fc58"
+   last-author="atchijov"
+   text-time="2006-09-16T02:52:17.000000Z"
+   committed-date="2006-10-13T14:18:18.166311Z"
+   kind="file"
+   name="Marker.java"
+   committed-rev="139"/>
+<entry
+   checksum="2963651e44e7bdf0f86ac0b926b79c5d"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="PostfixMarker.java"
+   committed-rev="106"/>
+<entry
+   checksum="b943c7fbc975ab8af8830635d7e14854"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="PrefixMarker.java"
+   committed-rev="106"/>
+<entry
+   revision="157"
+   checksum="dd98071c2c450c34645f52f6347df9f8"
+   last-author="atchijov"
+   text-time="2006-10-30T19:50:35.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   kind="file"
+   name="SSHCommand.java"
+   committed-rev="157"/>
+<entry
+   revision="157"
+   checksum="25db9461a2363344f64033fca39a6825"
+   last-author="atchijov"
+   text-time="2006-10-31T22:04:27.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   kind="file"
+   name="SSHCommandPipe.java"
+   committed-rev="157"/>
+<entry
+   revision="157"
+   checksum="596e149a9b73dfbb55ac6a06d4674877"
+   last-author="atchijov"
+   text-time="2006-10-31T22:04:24.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   kind="file"
+   name="SSHFileCopy.java"
+   committed-rev="157"/>
+<entry
+   revision="159"
+   checksum="7cd45a0637c9b03e6b36d09da06418c1"
+   last-author="atchijov"
+   text-time="2006-11-22T01:49:12.000000Z"
+   committed-date="2006-11-22T03:26:00.824000Z"
+   kind="file"
+   name="SSHPortForward.java"
+   committed-rev="159"/>
+<entry
+   revision="157"
+   checksum="7a207e90b3fa82c949c50cb5d56582e1"
+   last-author="atchijov"
+   text-time="2006-11-20T18:01:51.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   kind="file"
+   name="SSHSession.java"
+   committed-rev="157"/>
+<entry
+   revision="157"
+   checksum="d727701ecb702cb76af56d22fddd3a2a"
+   last-author="atchijov"
+   text-time="2006-10-26T15:54:31.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   kind="file"
+   name="SSHUdpPortForward.java"
+   committed-rev="157"/>
+<entry
+   revision="139"
+   checksum="c5ff5f5e7e71f055d9b01d640d878fd3"
+   last-author="atchijov"
+   text-time="2006-09-16T02:52:28.000000Z"
+   committed-date="2006-10-13T14:18:18.166311Z"
+   kind="file"
+   name="Script.java"
+   committed-rev="139"/>
+</wc-entries>

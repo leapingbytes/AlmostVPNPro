@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Resources/Sounds"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="CashRegister.aif"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0585696f9aa0157f5f4a4b0c24052857"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CashRegister.mov"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4902ee745953a42994432c33bebf3576"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CashRegister.aiff"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9a67d0b372f548f522d31fa835f6b398"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+</wc-entries>

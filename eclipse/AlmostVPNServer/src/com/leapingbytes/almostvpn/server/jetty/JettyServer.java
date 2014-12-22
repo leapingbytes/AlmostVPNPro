@@ -1,0 +1,108 @@
+package com.leapingbytes.almostvpn.server.jetty;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.mortbay.jetty.Connector;
+import org.mortbay.jetty.Handler;
+import org.mortbay.jetty.Server;
+import org.mortbay.jetty.handler.ContextHandler;
+import org.mortbay.jetty.nio.SelectChannelConnector;
+import org.mortbay.jetty.servlet.ServletHandler;
+import org.mortbay.jetty.servlet.ServletHolder;
+import org.mortbay.jetty.servlet.ServletMapping;
+import org.mortbay.thread.BoundedThreadPool;
+
+import com.leapingbytes.almostvpn.server.ToolServer;
+
+public class JettyServer {
+	private static final Log log = LogFactory.getLog( JettyServer.class );
+	
+	static Server 		_server = null;	
+	static ToolServer 	_toolServer = null;
+	
+	public static Server server() {
+		return _server;		
+	}
+	
+	static ToolServer toolServer() {
+		return _toolServer;
+	}
+	/*
+	 * Container friendlies
+	 */
+	public JettyServer( ToolServer toolServer ) {
+		_toolServer = toolServer;
+		initialize();
+	}
+	
+	public void start() throws Exception {
+		_server.start();
+	}
+	
+	public void stop() throws Exception {
+		_server.stop();
+	}	
+	
+	public static void addContext( String name, String path, String base, String className ) throws Exception {
+		initialize();
+		
+		log.info( "new context : " + name + " " + path + " -> " + base + " (" + className + ")" );
+		
+		ContextHandler contextHandler = new ContextHandler();	
+			contextHandler.setServer( _server );
+			contextHandler.setContextPath( path );
+			contextHandler.setResourceBase( base );
+			ServletHandler servletHandler = new ServletHandler();
+				ServletHolder holder = new ServletHolder();
+					holder.setName( name );
+					holder.setClassName( className );
+					holder.start();
+				servletHandler.setServlets( new ServletHolder[] { holder } );		
+				
+				ServletMapping mapping = new ServletMapping();
+					mapping.setPathSpec( "/" );
+					mapping.setServletName( name );
+				servletHandler.setServletMappings( new ServletMapping[] { mapping } );
+			contextHandler.setHandler(servletHandler);
+			
+		Handler[] handlers = _server.getHandlers();
+		if( handlers == null ) {
+			handlers = new Handler[] { contextHandler }; 
+		} else {
+			Handler[] newHandlers = new Handler[ handlers.length + 1 ];
+			System.arraycopy( handlers, 0, newHandlers, 1, handlers.length );
+			newHandlers[ 0 ] = contextHandler;
+			handlers = newHandlers;
+		}
+		_server.setHandlers( handlers );
+	}
+	
+	private static void initialize() {
+		synchronized( log ) {
+			if( _server == null ) {
+				_server = new Server();
+				
+				BoundedThreadPool threadPool = new BoundedThreadPool();
+					threadPool.setMinThreads( 3 );
+					threadPool.setMaxThreads( 100 );
+				_server.setThreadPool( threadPool );
+				
+				SelectChannelConnector connector = new SelectChannelConnector();
+					connector.setHost( "127.0.0.1" );
+					connector.setPort( 1313 );
+					connector.setMaxIdleTime( 50000 );
+					connector.setAcceptors( 1 );
+				_server.setConnectors( new Connector[] { connector } );
+				
+				String contextName = null;
+				try {
+					addContext( contextName = "default", "/almostvpn", "web-context", "org.mortbay.jetty.servlet.DefaultServlet" );
+					addContext( contextName = "control", "/almostvpn/control", "/", "com.leapingbytes.almostvpn.server.jetty.ControlServlet" );		
+				} catch (Exception e) {
+					log.error( "Fail to initialize : "+  contextName, e );
+				}	
+		
+				_server.setStopAtShutdown( true );
+		}	}
+	}	
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Sources/Agent.target"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="AVPN.Agent-Info.plist"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8a865825f2804d0303104c8c6fa4680e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="154"
+   name="Agent.h"
+   text-time="2006-11-17T20:03:14.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="24629b472e7af176606231aa347c092e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="154"/>
+<entry
+   committed-rev="154"
+   name="Agent.m"
+   text-time="2006-11-17T20:39:39.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="d93e1ac627e7e25b13f125c075cb1798"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="154"/>
+</wc-entries>

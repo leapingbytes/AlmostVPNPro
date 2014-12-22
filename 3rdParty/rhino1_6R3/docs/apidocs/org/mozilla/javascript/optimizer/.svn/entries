@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/rhino1_6R3/docs/apidocs/org/mozilla/javascript/optimizer"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="ClassCompiler.html"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="16a90212162185ffae4f8966a78400f1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="aaecef25d22529cc711100cbcd978ed7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="58096baf3c5a6f9b86fb2ec3796ab23f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-tree.html"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b3ee88d6a13713b4628125d48f354f8f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+</wc-entries>

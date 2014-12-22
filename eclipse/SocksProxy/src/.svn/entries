@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   revision="106"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/SocksProxy/src"
+   last-author="atchijov"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name=""
+   kind="dir"
+   committed-rev="106"/>
+<entry
+   kind="dir"
+   name="org"/>
+<entry
+   checksum="97c345e8fa09191d7cb2aaad2645305a"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name="socks.properties"
+   kind="file"
+   committed-rev="106"/>
+<entry
+   name="test"
+   kind="dir"/>
+</wc-entries>

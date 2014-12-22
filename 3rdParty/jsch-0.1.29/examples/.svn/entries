@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jsch-0.1.29/examples"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="Compression.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3b11f650948ae2b02b07d398f79efc9a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Daemon.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4543d5f300dedfcc49ea5521b3c9a4ca"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ScpToNoneCipher.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3a4c55901db0c6114861b066d5126666"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ViaSOCKS5.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f94a40c070dfd5a1738b0b3f38c29ff1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Shell.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2c36b7e9f91086ace803652cfc34fbe3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AES.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="984f64fc7bfee38711920d7f25e342d9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ScpFrom.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4e28f8741af5d10c8174900ba7ea1707"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Sftp.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1716a8debd8a29320649f666f62c6dd0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="KnownHosts.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="67e10a9872759cc3bb87f506b1034376"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="README"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b265318a69b25ea01f3b8dd77536bb83"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="StreamForwarding.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="81d45b1ba9f7215a2393a1f92184fe86"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ViaHTTP.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3b9cc464db34da7e1ad5183ac1474eb1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ChangePassphrase.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="53a0c6f2d27a48fbde66dc4090a5421d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="UserAuthPubKey.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="791b40c7461ea49c9ac741c8375d30a3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="KeyGen.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="648cbab3dc91aa569e8c8d376302d1b5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="PortForwardingL.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e4312fc636dc722e2c5ec86478b9dbd4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Exec.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8befbe4f40fea64b63d4857afa5a9d31"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="UserAuthKI.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a09f3f74e40d51464ebdfea783fe2f7b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ScpTo.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f982c559c3f1de714f3d4a50cae87773"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="PortForwardingR.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0d5b403cdb9c80aa9a77cb8f98b2a353"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="X11Forwarding.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b1729ccdc366256c27d82771e6e469f4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Subsystem.java"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5b44286b644f94fd27ebc40e34697767"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+</wc-entries>

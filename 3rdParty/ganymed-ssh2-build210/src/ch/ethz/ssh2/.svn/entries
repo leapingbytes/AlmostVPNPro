@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   schedule="add"
+   revision="0"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/ganymed-ssh2-build210/src/ch/ethz/ssh2"
+   name=""
+   kind="dir"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="ChannelCondition.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="Connection.java"/>
+<entry
+   schedule="add"
+   name="ConnectionInfo.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="ConnectionMonitor.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="DHGexParameters.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="HTTPProxyData.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="HTTPProxyException.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="InteractiveCallback.java"/>
+<entry
+   schedule="add"
+   name="KnownHosts.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="LocalPortForwarder.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="LocalStreamForwarder.java"/>
+<entry
+   schedule="add"
+   name="ProxyData.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="SCPClient.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="SFTPException.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="SFTPv3Client.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="SFTPv3DirectoryEntry.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="SFTPv3FileAttributes.java"/>
+<entry
+   schedule="add"
+   name="SFTPv3FileHandle.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="ServerHostKeyVerifier.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="Session.java"/>
+<entry
+   schedule="add"
+   name="StreamGobbler.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="auth"
+   kind="dir"/>
+<entry
+   schedule="add"
+   kind="dir"
+   name="channel"/>
+<entry
+   schedule="add"
+   name="crypto"
+   kind="dir"/>
+<entry
+   schedule="add"
+   kind="dir"
+   name="log"/>
+<entry
+   schedule="add"
+   name="packets"
+   kind="dir"/>
+<entry
+   schedule="add"
+   kind="dir"
+   name="sftp"/>
+<entry
+   schedule="add"
+   name="signature"
+   kind="dir"/>
+<entry
+   schedule="add"
+   kind="dir"
+   name="transport"/>
+<entry
+   schedule="add"
+   name="util"
+   kind="dir"/>
+</wc-entries>

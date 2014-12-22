@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/examples/test-webapp/src/main/webapp"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   name="chat"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="logon.html"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="10d22d253817443a9e24855efe590fc8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="dat.txt"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9b502f2c548fb393752790129b250ada"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="data.txt"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4a19ba98bab5f50e989cdcf987a30ad7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   name="WEB-INF"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="jetty_banner.gif"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3a429d31d7e7c49955b1f2c5e7649ae7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="snoop.jsp"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="679da26c4905530b0694dd3c2eadf828"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="logonError.html"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1169bd25e58bdf8c50bccb910fb9d944"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   name="jsp"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="favicon.ico"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ed7d5c39c69262f4ba95418d4f909b10"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="d.txt"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5614cfc2f051919a58c870b58ff8541f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="da.txt"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b98715601b973387a5f9b083808f40dd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="data.txt.gz"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="dc8063fb7f74e5a08ef179446d63d632"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="index.html"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6f71520b8821e98854112e948a73c248"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   name="js"
+   kind="dir"/>
+</wc-entries>

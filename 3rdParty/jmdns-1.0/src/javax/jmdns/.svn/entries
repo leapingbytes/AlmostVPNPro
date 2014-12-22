@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jmdns-1.0/src/javax/jmdns"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="DNSOutgoing.java"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="59258768917c67f6d68d8b3369331ffe"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServiceEvent.java"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7abd5f3e2fbf48b78e74b2701392fd68"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServiceListener.java"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9d847b5f35d9814328f838162876d883"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DNSEntry.java"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2f8bd2b13fecef7be13a08ac8d36cbe3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServiceTypeListener.java"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="34a78ddf2c7da0fa883b17935d99f6f5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DNSIncoming.java"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3f5548224f55b3e6c1f11dad6c7bbe95"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DNSCache.java"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3aeddb6e8212c1d740e18b7388dee1c8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="JmDNS.java"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7672bbd133c3bf20f06201323604e1e8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServiceInfo.java"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d0f76b99e2888c0b151c79ea5befa4eb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DNSQuestion.java"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="062aff6b99482d4c61b32cb00c440c71"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DNSConstants.java"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5f8ee6dbb870eccc557b450904ece352"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DNSRecord.java"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="756894ddc82d223b4845e04e55d89048"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DNSState.java"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e5aefaef00516ea0c758bc4906cd2015"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HostInfo.java"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8327a61e8fd3034fdcd75e2566125c0b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DNSListener.java"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c1807322531a786018864c0ad948baad"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+</wc-entries>

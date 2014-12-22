@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-1.0.b2/java/build/classes/org/apache/env"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="WhichSaxon.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bd03555e947403acc909bdf0f2141996"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="WhichConstant.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e58880085351df8cfbfc5fb67113fc1e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="WhichXerces.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e0b5b09ef2dabe3cae5e37054782868e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="WhichCrimson.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f75b7d173258c6535a385a126fda927b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="WhichJar.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1c8953236fdbcc03c81e75bf5e8f2a4a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="WhichXmlCommons.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="29ccdc0d5033f7e557e24d85afc5e184"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="WhichFactory.properties"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f3408d5b92c065896a113ac056bd3d92"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Which.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="813ccddf129902ed7b1bb159cea074e2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="WhichAnt.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8b16cb9ffcd373a7a4d4d913e6f0cfb2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="WhichJar.properties"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="881132b95c62bacdece0d3de08df7a24"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="WhichXalan.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="948b114194e83964ce21360aad3ef259"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="WhichClass.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="20538ea582e1e9449619fe2bcaeb584c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="WhichProject.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="eb00d91b4a159382e2c94eabba76b7dc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="WhichFactory.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="06fce2cf7fd02aba6ec4429b4cf12f26"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+</wc-entries>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/lib/plus"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="jetty-plus-6.0.0rc2.jar"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="12db1a4bdf900cad4f70160ea9600628"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   committed-rev="106"
+   name="activation-1.1.jar"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8ae38e87cd4f86059c0294a8fe3e0b18"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   committed-rev="106"
+   name="mail-1.4.jar"
+   text-time="2006-09-01T03:01:02.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2e64a3805d543bdb86e6e5eeca5529f8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+</wc-entries>

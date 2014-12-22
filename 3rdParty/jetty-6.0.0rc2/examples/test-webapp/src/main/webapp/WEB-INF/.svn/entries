@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/examples/test-webapp/src/main/webapp/WEB-INF"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="acme-taglib.tld"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="865b01b54987866240487acef2a44262"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="acme-taglib2.tld"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3897f281b50e74c6b6aec8c13b759f24"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jetty-web.xml"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7d9d528cfaf1aaf5b7cbe30b3b469c92"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="web.xml"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="62020c5f2296192ba8aee8bc59230edd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   name="tags"
+   kind="dir"/>
+</wc-entries>

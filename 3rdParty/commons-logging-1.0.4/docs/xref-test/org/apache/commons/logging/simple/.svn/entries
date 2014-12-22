@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/commons-logging-1.0.4/docs/xref-test/org/apache/commons/logging/simple"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="CustomConfigTestCase.html"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0da9fa5df34667706008ceef74cc32f6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LogRecord.html"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a0dd4dd2e666f9d19e21b642e5ea31fe"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4901663d42f512a91dee4d551068a1a3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DecoratedSimpleLog.html"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0af9380ce26c391685274b4cb5640ee8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DefaultConfigTestCase.html"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bbbc7b7b223fcd8dbcbe078b3e916dff"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fa5464922839296be92b180b6d752cd1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DateTimeCustomConfigTestCase.html"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8677ff50b9c754fb2f718bc55fccc1b9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+</wc-entries>

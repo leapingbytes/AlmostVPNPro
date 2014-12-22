@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-1.0.b2/java/external/build/docs/javadoc/org/w3c/dom/events"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="UIEvent.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="89e0f20779840f922361d4020cd709de"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DocumentEvent.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fb5b7613d333524a85ddc95ed95d8a3b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="EventException.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="933e8ac2b1f49da9f634ff6fc0c3f04b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Event.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f4487a38833310d58b8031c8e98f4f93"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MutationEvent.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="703ceca2a0fb9f52cfa00059db741958"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="15ef07fdb450fadb03c827abd32af462"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="00ef1a3e2b8e949781e0143448ec365b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="EventListener.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="451e78a7054c8a632e428aa35ec2ab03"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="EventTarget.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e9c0e6ff3f753d4b384a1a0317cb68b6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-tree.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="655f3d4f9f5c03c3ad79c34307fc324e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MouseEvent.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b14b9575a5d837bcfef73984ba048bc3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+</wc-entries>

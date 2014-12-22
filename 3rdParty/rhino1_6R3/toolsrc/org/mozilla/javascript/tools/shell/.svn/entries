@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/rhino1_6R3/toolsrc/org/mozilla/javascript/tools/shell"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="JSConsole.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a0218b7660a756ca76a40289429dd1d8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ConsoleTextArea.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="374102859c604be6c5d242373f5aeb22"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Global.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1952872def4a64eec7bc5030b76573a7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="QuitAction.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d8e3f86510c4e7b6203c51988d19bc4d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Environment.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4c6bf118e47b9133cea5f9537f7cbc26"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Main.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9ba2ca0db4fe79559e2ded5133a04f20"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ShellContextFactory.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="87e67f0422d807a2896830680f8f5bd3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="JavaPolicySecurity.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="76999a4f6571575b6090ea9544c23ede"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SecurityProxy.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="96d092e5a1a53ff16efa6dbe58ce6d82"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+</wc-entries>

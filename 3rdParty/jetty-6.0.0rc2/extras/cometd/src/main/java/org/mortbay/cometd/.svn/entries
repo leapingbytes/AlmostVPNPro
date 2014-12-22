@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/extras/cometd/src/main/java/org/mortbay/cometd"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="DataFilter.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="51935c1e11d34d1e5fc28bfddc1806b6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="PlainTextJSONTransport.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="01661b7e11298e2afc61219292024ea4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CometdServlet.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3ed2cd502c5fe1112c0877dec08ed4e9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="IFrameTransport.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5c41aff828dfbfae2263426a8b8a8d0c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SecurityPolicy.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d743407daaa1ab583128a3cd037c3dfa"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Channel.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1a9df5dda69d0451e01c58ac952b8b66"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="JSON.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4bb072ff8754a21539b95846b3921e7c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="JSONDataFilter.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="da30511ee03f2bb7976b54eda865b1fe"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Transport.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4ce4a1c3ed1497307254d25052ece1b7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Bayeux.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a831bfcb9e7d62a27d83978d815cd385"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Client.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="af4caa5483221b4f3eb2d04979a5814f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MultiPartTransport.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="53b7b282c11b4d8b69cbbd3898ad58ae"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+</wc-entries>

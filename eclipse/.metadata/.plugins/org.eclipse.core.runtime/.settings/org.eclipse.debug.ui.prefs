@@ -1,0 +1,11 @@
+#Tue Sep 07 09:14:23 EDT 2010
+org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<launchPerspectives/>\n
+pref_state_memento.org.eclipse.debug.ui.VariableView=<?xml version\="1.0" encoding\="UTF-8"?>\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="153" org.eclipse.debug.ui.SASH_VIEW_PART\="830"/>
+Console.highWaterMark=88000
+pref_state_memento.org.eclipse.debug.ui.ExpressionView=<?xml version\="1.0" encoding\="UTF-8"?>\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="524" org.eclipse.debug.ui.SASH_VIEW_PART\="475"/>
+preferredDetailPanes=DefaultDetailPane\:DefaultDetailPane|
+Console.limitConsoleOutput=false
+org.eclipse.debug.ui.switch_perspective_on_suspend=always
+preferredTargets=default\:default|
+eclipse.preferences.version=1
+org.eclipse.debug.ui.user_view_bindings=<?xml version\="1.0" encoding\="UTF-8"?>\n<viewBindings>\n<view id\="org.eclipse.debug.ui.ExpressionView">\n<perspective id\="org.eclipse.debug.ui.DebugPerspective" userAction\="opened"/>\n</view>\n<view id\="org.eclipse.ui.console.ConsoleView">\n<perspective id\="org.eclipse.jdt.ui.JavaPerspective" userAction\="closed"/>\n</view>\n</viewBindings>\n

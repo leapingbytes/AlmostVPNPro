@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/AlmostVPNServer/src/com/leapingbytes/almostvpn/server/jetty"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   revision="110"/>
+<entry
+   committed-rev="157"
+   name="ControlServlet.java"
+   text-time="2006-10-20T13:29:04.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="c0665315d2411194e9935a481d3d4a2e"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+<entry
+   committed-rev="106"
+   name="JettyServer.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fae227854c258d0ea8191a0ec7822b8e"
+   last-author="atchijov"
+   kind="file"/>
+</wc-entries>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/slf4j-1.0.2/src/java/org/slf4j"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="Logger.java"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2332462f7e35cff362c33e3e2004dd67"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ILoggerFactory.java"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="adbfc538d7109bbd1a1b97d2b2029571"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+<entry
+   name="impl"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Marker.java"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4a77fe1e23ef2fca809407116bdd6916"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+<entry
+   committed-rev="106"
+   name="IMarkerFactory.java"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="580bcdd2ddfa8b956c8fcfdd5aa51701"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LoggerFactory.java"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="241c7a541aa9e5ad6b3307647f987864"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MarkerFactory.java"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="513fb8576ab2dac7ab36b6bac8c3b58e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+<entry
+   name="spi"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="package.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="dc34a47ff53d4beca6e92cb5a9252afe"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+</wc-entries>

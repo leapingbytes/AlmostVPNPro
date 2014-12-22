@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   name="xml-commons-1.0.b2"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="xml-commons-1.0.b2.zip"
+   text-time="2006-09-01T03:01:34.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1a3f2c25e1980861ee0a3e425ea99f76"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:22.000000Z"/>
+<entry
+   name="xml-commons-2.4.1"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="xml-commons-2.4.1.zip"
+   text-time="2006-09-01T03:01:34.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="650a4a418827fb08945ccd1cb4278b3b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:33.000000Z"/>
+<entry
+   committed-rev="106"
+   name="xml-commons-1.0.b2.tar.gz"
+   text-time="2006-09-01T03:01:34.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="24dbbbcfe38d07b9a658bcd7ba299f4a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:33.000000Z"/>
+<entry
+   committed-rev="106"
+   name="xml-commons-2.4.1.tar.gz"
+   text-time="2006-09-01T03:01:34.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b87759e40efcd083efbfa56bd1ffdbdc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:34.000000Z"/>
+</wc-entries>

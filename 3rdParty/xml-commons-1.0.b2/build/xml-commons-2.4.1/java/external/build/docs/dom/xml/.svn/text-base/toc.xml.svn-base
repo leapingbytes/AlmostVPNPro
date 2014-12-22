@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: toc.xml,v 1.1 2001/06/01 11:14:36 dims Exp $ -->
+<div1 id="TOC">
+  <head>Expanded Table of Contents</head>
+  <?GENERATE-EXPANDED-TOC?>	
+</div1>

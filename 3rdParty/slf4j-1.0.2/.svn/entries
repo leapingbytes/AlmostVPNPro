@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/slf4j-1.0.2"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="slf4j-simple.jar"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="64385455c0e1e9845835429c7295b954"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+<entry
+   committed-rev="106"
+   name="slf4j-jcl-sources.jar"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7307379691c33518d9ff1a1d39e25385"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+<entry
+   committed-rev="106"
+   name="slf4j-nop.jar"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7e48fd8b8b6a7f9068368e927926df4a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+<entry
+   name="src"
+   kind="dir"/>
+<entry
+   name="docs"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="slf4j-jdk14-sources.jar"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0dd8f86133e3b1e39a34387f4703f14d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="build.properties"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d4bfd5639c54108e515697cff8e2b5a5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="build.xml"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="98816c36831306ec8e06a2e85b7408be"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="slf4j-log4j12-sources.jar"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c6b259ed3a7d50e9dcc13e606f279884"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="slf4j-log4j13-sources.jar"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="34c7983bb8216f1fb57f7c00ea5f0f48"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LICENSE.txt"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="21bdcb2f09c34fa8b0b559bd121aa7ea"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jcl104-over-slf4j.jar"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4eb80fd127f9b93cdc5212381ed59d59"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="slf4j-jcl.jar"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2a09335223ae66708f5a993bff7bd1e2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="slf4j-simple-sources.jar"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="22f1c9bca0076df415338eb9ff41139a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="local.properties.sample"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="80339648f181058cc5cae851b7820f2b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="slf4j-nop-sources.jar"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ed5cb07121757ce27316387ff43f7daa"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="slf4j-jdk14.jar"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d57baef84b119c62b29b068d7ad5676f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="slf4j-log4j12.jar"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b24d296259ad986e63553ca1c5ee21e5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="slf4j-log4j13.jar"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="268c45a954644914f6a40dc94f2b738b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+</wc-entries>

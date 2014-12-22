@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/examples/test-webapp/src/main/webapp/js"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="behaviour.js"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6287c9b096cf43bb5790893bcc78fc3b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="default.js"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="eedc3a68d925dcf75aeaabf437d39b41"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="prototype.js"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ec266084ece29ede795db38c9c8cbf3d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="scriptaculous.js"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c5dc4325b0b07c00b47952c629a11abd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ajax.js"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="dca235262d7fbf5b5df890a0c4d0f0e1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+</wc-entries>

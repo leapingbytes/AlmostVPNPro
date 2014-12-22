@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="133"
+   name=""
+   committed-date="2006-10-13T14:13:15.955217Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Sources/AlmostVPN.widget/js"
+   last-author="atchijov"
+   kind="dir"
+   revision="133"/>
+<entry
+   committed-rev="133"
+   name="prototype.js"
+   text-time="2006-01-20T20:08:20.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="725cd09eb6cca738be202daa99d2d328"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="152"
+   name="AlmostVPN.js"
+   text-time="2006-11-14T16:24:10.000000Z"
+   committed-date="2006-11-14T16:25:50.925007Z"
+   checksum="29685eda68ed8407eadaf5a540d4370b"
+   last-author="atchijov"
+   kind="file"
+   revision="152"/>
+</wc-entries>

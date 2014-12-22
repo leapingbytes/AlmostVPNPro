@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="106"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jsch-0.1.29/src/com/jcraft/jsch/jce"
+   last-author="atchijov"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="dir"
+   name=""
+   committed-rev="106"/>
+<entry
+   checksum="968eb179dee0ebcac5cab44eb55bf7b2"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:47.000000Z"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="AES128CBC.java"
+   committed-rev="106"/>
+<entry
+   checksum="68c677aabf3ecd5e014ffb2a86a99bfe"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:47.000000Z"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="AES192CBC.java"
+   committed-rev="106"/>
+<entry
+   checksum="88de7a91787a4d04b8a92554845a9f71"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:47.000000Z"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="AES256CBC.java"
+   committed-rev="106"/>
+<entry
+   checksum="06d16f65dbd27f4592b1b76c0b98ea4a"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:47.000000Z"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="BlowfishCBC.java"
+   committed-rev="106"/>
+<entry
+   checksum="76fa854f885d6fbb6035b651924798e8"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:47.000000Z"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="DH.java"
+   committed-rev="106"/>
+<entry
+   checksum="9ab40b97ca9aa697e60237fa7590dc7e"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:47.000000Z"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="HMACMD5.java"
+   committed-rev="106"/>
+<entry
+   checksum="c94a243a4516063582301e7a03f6a055"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:47.000000Z"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="HMACMD596.java"
+   committed-rev="106"/>
+<entry
+   checksum="5dc1d4a7cd4e3eb376306834746eebbe"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:47.000000Z"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="HMACSHA1.java"
+   committed-rev="106"/>
+<entry
+   checksum="b71426302882443f84ce29efd7fdd2c0"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:47.000000Z"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="HMACSHA196.java"
+   committed-rev="106"/>
+<entry
+   checksum="ede3614f82184ca6b4abac47b4f025b9"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:47.000000Z"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="KeyPairGenDSA.java"
+   committed-rev="106"/>
+<entry
+   checksum="92545b4872ac91b38c82de724bb64d50"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:47.000000Z"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="KeyPairGenRSA.java"
+   committed-rev="106"/>
+<entry
+   checksum="e3e6137049652f8a8208a6b2cfa77f91"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:47.000000Z"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="MD5.java"
+   committed-rev="106"/>
+<entry
+   checksum="2fb0a0eb28b01e1e4a513c4048d87f8d"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:47.000000Z"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="Random.java"
+   committed-rev="106"/>
+<entry
+   checksum="2f8a434773f6e252a7cf074d5d1dcd85"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:47.000000Z"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="SHA1.java"
+   committed-rev="106"/>
+<entry
+   checksum="1de045daed67b64b9f73421784647912"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:47.000000Z"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="SignatureDSA.java"
+   committed-rev="106"/>
+<entry
+   checksum="b1ef330885f0e0aa3e84d1ba97ad48de"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:47.000000Z"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="SignatureRSA.java"
+   committed-rev="106"/>
+<entry
+   checksum="54cdc924a12780c4ba832f58d8f2ce89"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:01:47.000000Z"
+   text-time="2006-09-01T02:52:48.795870Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="TripleDESCBC.java"
+   committed-rev="106"/>
+</wc-entries>

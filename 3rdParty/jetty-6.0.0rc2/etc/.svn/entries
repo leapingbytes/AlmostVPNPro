@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/etc"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="jetty-plus.xml"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="52b4b13d39d2ed7bf95cf8c1e272446d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="webdefault.xml"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1c2b6ecb36f6a6b45e2930ca26f0bf9b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="stresstest.xml"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ede3e18a3783625a400a9cacde99ac55"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="keystore"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="acfc7189c7ff37953e55710d5decf363"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jetty-jmx.xml"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a6dd695c9055ea87b58ed34a7b737d0d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="realm.properties"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="03baddfcaf78aba0c9bdabe850e620c5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jetty-jmx-platform.xml"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c0b6ae889f87fc2c52a9caa6a2e2f11e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jetty-ssl.xml"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7702fedcaa672dc143134a35cf5a813c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jdbcRealm.properties"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5237dfdf3cd9c42a84b5c0d302e85408"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jetty.xml"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="19d06f407e819a959efc5d2ca3334c24"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+</wc-entries>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Resources/Misc"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="BonjourDefinitions.plist"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e7b050c3c3145f89536a6f25a2ab8f3c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   name="Install"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="almostvpn.properties"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="27331b12966ad4f1e404c996c3f10c06"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+</wc-entries>

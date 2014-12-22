@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jmdns-1.0/docs/com/strangeberry/jmdns/tools"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="Responder.html"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7f47721e91acddc397aa27939407aed1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Browser.html"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b0423c65252e4fffe50af282e41aff8e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="452340e9550f61d59d239cb80bdcd6f5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Main.html"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="11afc2c75305f5da33d6e22a106fb698"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="547427a4eba95c678aaceae1b3288b58"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-tree.html"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="732dd900b47c72c5432ee114b39ded1f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+</wc-entries>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/java/external/build/docs/javadoc/org/w3c/dom/stylesheets"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="LinkStyle.html"
+   text-time="2006-09-01T03:01:38.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="aa1a4c2db591f6a95b7a7c199dd5033f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:38.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DocumentStyle.html"
+   text-time="2006-09-01T03:01:38.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f32e2d077ac573b8b3efb8df5359c6a7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:38.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:38.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="46860dbaeab994403544efd395ad9c8f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:38.000000Z"/>
+<entry
+   committed-rev="106"
+   name="StyleSheetList.html"
+   text-time="2006-09-01T03:01:38.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="78b6776cf8ac6b6d8abf12deb583e127"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:38.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:38.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f072e1478d1c144b3e963f6957bbc46d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:38.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-tree.html"
+   text-time="2006-09-01T03:01:38.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="932f8464facc2cc601c45c9f72a83f8c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:38.000000Z"/>
+<entry
+   committed-rev="106"
+   name="StyleSheet.html"
+   text-time="2006-09-01T03:01:38.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="517122ee97681de32107c4c921cd8095"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:38.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MediaList.html"
+   text-time="2006-09-01T03:01:38.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bdf10e1c833820bd9195dce07d418fe4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:38.000000Z"/>
+</wc-entries>

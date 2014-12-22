@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Distro/Collateral"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="133"
+   name="AlmostVPNPRO_bg.png"
+   text-time="2006-09-18T21:56:59.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="e98b00a11448dda72c616093cdc1049d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:49.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_Uninstall.png"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d34dadaa877af907be0a95789ee15cf6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_bg.psd"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="de262bcc4f2308163a21d6f6ca47fec1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBLogo_Link.tiff"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9acc858aa50c626c105b9558831f6251"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO.xml"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fa190f10699f6f2d6af7302afc6a3a5b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_bg.tiff"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="44137e0d35e885928e4723aff9336f8a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_Link.png"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e80545c61e292caa69f16b00da48bd5c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_diskimage.png"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e188bab2fe5ac5fce0c24df831a4f98a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBLogo_Link.icns"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cd5c51c83a6c98708d7efc5b29ca2edc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_Icon.skp"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9dbdad5b45ceaf8b1cd90401fd84468c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_Uninstall.icns"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b71737833ee3d28fae74b961033600f3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_Link.icns"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fb520fcdf033ca5c04aaa07034096568"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_diskimage.icns"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="94b8bd7e05f5a646704070fcebf6eebd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+</wc-entries>

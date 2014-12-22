@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Distro/Extras/AlmostVPNPRO.cleanup.app/Contents"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   name="MacOS"
+   kind="dir"/>
+<entry
+   name="Resources Disabled"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Info.plist"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6c0143d9e25dc336f18955d037e181bc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   name="Resources"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="PkgInfo"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="23b7d7d024abb0f558420e098800bf27"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+</wc-entries>

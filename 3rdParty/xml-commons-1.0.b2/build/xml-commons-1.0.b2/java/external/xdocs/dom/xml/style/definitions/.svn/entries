@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-1.0.b2/java/external/xdocs/dom/xml/style/definitions"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="CSSMediaRule.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="abd409b9be96f3b198d513cc14e1cadd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSRule.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="85960e040a98a4ba039856ff297e2a18"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSValueList.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f8d03c53de2c985a3008d5ea312fb1af"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ElementCSSInlineStyle.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b60a73a8166a2b8e24293cd99c17b0fe"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ViewCSS.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7d1062c014c4ad65fa85a6c38593e94e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="StyleSheetList.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2f109692753ce7175437cbbfd4bc3971"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSValue.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a0ce3c4f516d836128b90d6d2fc961dc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSFontFaceRule.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="72e5f2a6adcdb4af82bccdc1bd3b5683"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DocumentCSS.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="02993e2a5bc38647df3160fdf65fa679"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSS2Properties.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d5db9651af687901535f73de35fe77a0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="StyleSheet.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9a83cb269d55a227b4e280706444fd66"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSCharsetRule.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="71b2b6e629eba3cf310a3de85a5d85ac"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Rect.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b99cc82b50cc58c37e61a23c7c6ce824"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DOMImplementationCSS.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fc9c7cf178a91b459a117aa4442eba9b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DocumentStyle.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bfbe8ed571b03162c8250be18cde5936"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSUnknownRule.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8151afa5811dbb84596230b4eeb7e45b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSStyleRule.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c8231ab54abb16988479c89684c17d8e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSStyleSheet.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5f358fbb9a3519f3d730c65830d62faa"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RGBColor.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ff9ab4b243c9e3908b68ecd5ffa16a22"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSImportRule.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d288823ae8eb53793ffbb61f61015cbc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MediaList.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="daff2d9a2c4bf2f9f08cd3bccc3c937d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSRuleList.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2f522944cd30c3e09e3ac30ab43e64e2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSPageRule.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="83f09bc6ea0caee3cf58b9173ca590aa"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSPrimitiveValue.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="beb0e1dfcb018542db9db91337e0f1cc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LinkStyle.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0ff205526cd08f0e9d32b10f39a8b02b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Counter.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f4f04041ffea01013b1212eb9547c8b2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CSSStyleDeclaration.xml"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="aa376f7b40763415358e9fe110857915"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+</wc-entries>

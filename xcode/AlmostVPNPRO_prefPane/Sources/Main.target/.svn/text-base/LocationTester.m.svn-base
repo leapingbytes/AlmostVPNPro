@@ -1,0 +1,216 @@
+//
+//  AccountTester.m
+//  AlmostVPNPRO_prefPane
+//
+//  Created by andrei tchijov on 8/2/06.
+//  Copyright 2006 Leaping Bytes, LLC. All rights reserved.
+//
+
+#import "LocationTester.h"
+#import "AlmostVPNConfigurationController.h"
+#import "PathLocator.h"
+#import "ServerHelper.h"
+
+static NSMutableDictionary*	_testers;
+static NSArray*				_managedProperties;
+
+@implementation LocationTester
++ (void) initialize {
+	_testers = [[ NSMutableDictionary alloc ] init ];
+	_managedProperties = [[ NSArray arrayWithObjects: 
+		@"user-name",
+		@"password",
+//		@"use-password",
+//		@"ask-password",
+		@"address",
+		@"port",
+		@"identity",
+		@"proxy",
+		nil
+	] retain ];
+}
+
+- (id) initWithLocation: (AlmostVPNLocation*) location {
+	_location = location;
+	_tested = NO;
+	_good = NO;
+	return self;
+}
+
+- (void) runTest: (id) dummy {
+	NSAutoreleasePool* pool = [[ NSAutoreleasePool alloc ] init ];
+
+	_testThread = [ NSThread currentThread ];
+
+	do {
+		NSString* message;
+		[ _location setStatus: TESTING withMessage: @"testing" ];
+		NSString* hostName = [ _location name ];
+		NSString* hostAddress = [ _location address ];			
+		
+		@synchronized( self ) {
+			_testInProgress = YES;
+		}
+		
+		if( [[ _location proxy ] isEqual: @"No Proxy" ] ) {
+			//
+			// Check host name/ip address
+			//
+			if( hostAddress == nil ) {
+				message = [ NSString stringWithFormat: @"Can not resolve host name '%@' into IP address", hostName ];
+				[ _location setStatus: BAD withMessage: message ];
+				[ AlmostVPNConfigurationController logMessage: message from: hostName atLevel: @"900" ];
+				goto done;
+			}
+			if( _doItAgain ) goto done;
+			//
+			// Check port
+			//
+			int port = [[ _location port ] intValue ];
+
+			NSInputStream*				iStream = nil;
+
+			[NSStream getStreamsToHost: [ NSHost hostWithAddress: hostAddress ] port: port inputStream:&iStream outputStream: nil ];
+			BOOL canNotConnect = NO;
+			if( iStream == nil ) {
+				canNotConnect = YES;
+			} else {
+				[iStream retain];
+				[iStream open];
+
+				UInt8 buf[ 64*1024 ];
+				CFIndex lineStart = 0;
+				CFIndex bytesRead = 0;
+				CFIndex readSoFar = 0;
+				while ( bytesRead == 0 ) {
+					bytesRead = CFReadStreamRead((CFReadStreamRef)iStream, buf + readSoFar , sizeof( buf ) - readSoFar );
+					if( bytesRead < 0 ) {
+						canNotConnect = YES;
+						break;
+					}
+					if (bytesRead > 0) {			
+						readSoFar += bytesRead;
+					}
+				}
+				if( ! canNotConnect ) {
+					NSString* line = nil;
+					for( int i = lineStart; i < readSoFar; i++ ) {
+						if( buf[i] == '\n' ) { // new line
+							line = [[ NSString alloc ] initWithBytes: buf + lineStart length: i - lineStart encoding: NSUTF8StringEncoding ];
+							break;
+						}			
+					}	
+					[ _location setSshdReply: line ];										
+				}
+				[ iStream close ];
+				[ iStream release ];
+			}
+			if( canNotConnect ) {
+				message = [ NSString stringWithFormat: @"Can not connect to port %d on host '%@/%@'", port, hostName, hostAddress ];
+				[ _location setStatus: BAD withMessage: message ];
+				[ AlmostVPNConfigurationController logMessage: message from: hostName atLevel: @"900" ];
+				goto done;
+			}
+			if( [[ _location sshdReply ] rangeOfString: @"SSH-1.5" ].location != NSNotFound ) {
+				message = [ NSString stringWithFormat: @"Server %@ does not support SSH-2", hostName ];
+				[ _location setStatus: TERMINAL withMessage: message ];
+				[ AlmostVPNConfigurationController logMessage: message from: hostName atLevel: @"900" ];
+				goto done;
+			}
+			if( _doItAgain ) goto done;		
+		}
+		//
+		// Check account
+		//
+		AlmostVPNAccount* account = [ _location account ];
+		if( [[ account userName ] length ] == 0 ) {
+			message = [ NSString stringWithFormat: @"User name is not specified for server '%@/%@' ", hostName, hostAddress ];
+			[ _location setStatus: BAD withMessage: message ];
+			[ AlmostVPNConfigurationController logMessage: message from: hostName atLevel: @"900" ];
+			goto done;
+		}
+		if( [[ account usePassword ] boolValue ] && [[ account password ] length ] == 0 ) {
+			message = [ NSString stringWithFormat: @"Password is not specified for server '%@/%@' ", hostName, hostAddress ];
+			[ _location setStatus: BAD withMessage: message ];
+			[ AlmostVPNConfigurationController logMessage: message from: hostName atLevel: @"900" ];
+			goto done;
+		}
+		if( _doItAgain ) goto done;		
+		//
+		// Try to login
+		//
+		[[ AlmostVPNConfiguration sharedInstance ]  saveToFile: [ PathLocator preferencesPath ]];
+
+		NSString* loginResult = [ ServerHelper testLocation: [ _location uuid ]];
+		
+		if( ! [ @"OK" isEqual: loginResult ] ) {
+			[ _location setStatus: BAD withMessage: loginResult ];
+			[ AlmostVPNConfigurationController logMessage: loginResult from: hostName atLevel: @"900" ];
+		} else {	
+			[ _location setStatus: GOOD withMessage: [ NSString stringWithFormat: @"good as of %@", [ NSDate date ]]];
+		}
+done:	
+		@synchronized( self ) {
+			if( _doItAgain ) {
+				_doItAgain = NO;				
+			} else {
+				_testInProgress = NO;	
+				_testScheduled = NO;
+			}
+		}
+	} while ( _testInProgress );
+	_testThread = nil;
+	[ pool release ];
+}
+
+- (void) startTest {
+	if( [ _location goodToGo ] ) {
+		[ NSThread detachNewThreadSelector: @selector( runTest: ) toTarget: self withObject: nil ];
+	} else {
+		_testInProgress = NO;
+	}
+}
+
+- (void) testItNow {
+	@synchronized (self) {
+		if( _testInProgress ) {
+			_doItAgain = YES;
+		} else if( ! _testScheduled ) {
+			_testScheduled = YES;
+			[ self performSelector: @selector( startTest ) withObject: nil afterDelay: 1.0 ];		
+		}
+	}
+}
+
++ (void) watchLocation: (AlmostVPNLocation*) location {
+	[[ self testerForLocation: location ] testItNow ];
+}
+
++ (LocationTester*) testerForLocation: (AlmostVPNLocation*) location {
+	if( location == nil ) {
+		return nil;
+	}
+	LocationTester* result = [ _testers objectForKey: [ location uuid ]];
+	if( result == nil ) {
+		result = [[ LocationTester alloc ] initWithLocation: location ];
+		[ _testers setObject: result forKey: [ location uuid ]];
+	}
+	return result;
+}
+
+- (id) setValue: (id) aValue forProperty: (NSString*) aName ofObject: (AlmostVPNObject*) o {
+	int propertyIdx = [ _managedProperties indexOfObject: aName ];
+	if( propertyIdx != NSNotFound  ) {
+		[ self testItNow ];
+	} 	
+	return IGNORE_DELEGATE;
+}
+
+- (BOOL) tested {
+	return _tested;
+}
+- (BOOL) good {
+	return _good;
+}
+
+@end

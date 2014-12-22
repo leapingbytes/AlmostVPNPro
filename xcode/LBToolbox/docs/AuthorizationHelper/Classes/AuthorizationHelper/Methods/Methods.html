@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><style type="text/css"><!--a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}--></style><head>
+    <title>Methods</title>
+	 <meta name="generator" content="HeaderDoc">
+</head><body bgcolor="#ffffff">
+<h1><font face="Geneva,Arial,Helvtica">Methods</font></h1><br>
+<a name="HeaderDoc_methods"></a>
+<dl>
+<dt><tt><a href="Methods.html#//apple_ref/occ/clm/AuthorizationHelper/sharedInstance" target="doc">sharedInstance</a></tt></dt>
+<dd>returns shared instance of AuthorizationHelper
+<br><br>
+</dd>
+<dt><tt><a href="Methods.html#//apple_ref/occ/instm/AuthorizationHelper/bundle" target="doc">bundle</a></tt></dt>
+<dd>return current bundle
+</dd>
+<dt><tt><a href="Methods.html#//apple_ref/occ/instm/AuthorizationHelper/setBundle%58" target="doc">setBundle:</a></tt></dt>
+<dd>set bundle to look into for files
+<br><br>
+</dd>
+<dt><tt><a href="Methods.html#//apple_ref/occ/instm/AuthorizationHelper/registerDigest%58forFile%58" target="doc">registerDigest:forFile:</a></tt></dt>
+<dd>associate digest (MD5) with given file name
+<br><br>
+</dd>
+<dt><tt><a href="Methods.html#//apple_ref/occ/instm/AuthorizationHelper/installSetUIDTool%58ofApplication%58forAll%58" target="doc">installSetUIDTool:ofApplication:forAll:</a></tt></dt>
+<dd>install tool and make it setuid
+<br><br>
+</dd>
+<dt><tt><a href="Methods.html#//apple_ref/occ/instm/AuthorizationHelper/runTool%58withArgs%58asRoot%58" target="doc">runTool:withArgs:asRoot:</a></tt></dt>
+<dd>runs tool with given args either as root or as user
+<br><br>
+</dd>
+<dt><tt><a href="Methods.html#//apple_ref/occ/instm/AuthorizationHelper/runScript%58withArgs%58asRoot%58" target="doc">runScript:withArgs:asRoot:</a></tt></dt>
+<dd>runs shell script with given args either as root or as user
+<br><br>
+</dd>
+<dt><tt><a href="Methods.html#//apple_ref/occ/instm/AuthorizationHelper/runCommand%58asRoot%58" target="doc">runCommand:asRoot:</a></tt></dt>
+<dd>runs single shell(bash) command either as root or as user
+<br><br>
+</dd>
+</dl>
+<hr><!-- headerDoc=clm; uid=//apple_ref/occ/clm/AuthorizationHelper/sharedInstance; name=AuthorizationHelper::sharedInstance -->
+<a name="//apple_ref/occ/clm/AuthorizationHelper/sharedInstance"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h2><a name="sharedInstance">sharedInstance</a></h2>
+</td></tr></table><dl>returns shared instance of AuthorizationHelper
+<br><br>
+
+</dl><blockquote><pre>+ ( AuthorizationHelper *) sharedInstance;
+</pre></blockquote>
+<dl><dt><i>method result</i></dt><dd>shared instance 
+</dd>
+</dl>
+<hr><!-- headerDoc=instm; uid=//apple_ref/occ/instm/AuthorizationHelper/bundle; name=AuthorizationHelper::bundle -->
+<a name="//apple_ref/occ/instm/AuthorizationHelper/bundle"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h2><a name="bundle">bundle</a></h2>
+</td></tr></table><dl>return current bundle
+
+</dl><blockquote><pre>- ( NSBundle *) bundle;
+</pre></blockquote>
+<dl></dl>
+<hr><!-- headerDoc=instm; uid=//apple_ref/occ/instm/AuthorizationHelper/setBundle%58; name=AuthorizationHelper::setBundle: -->
+<a name="//apple_ref/occ/instm/AuthorizationHelper/setBundle%58"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h2><a name="setBundle%58">setBundle:</a></h2>
+</td></tr></table><dl>set bundle to look into for files
+<br><br>
+
+</dl><blockquote><pre>- ( void ) setBundle:
+        (NSBundle *) bundle;
+</pre></blockquote>
+<h5><font face="Lucida Grande,Helvetica,Arial">Parameter Descriptions</font></h5>
+<blockquote>
+<dl>
+<dt><tt><em>bundle</em></tt></dt><dd>bundle</dd>
+</dl>
+</blockquote>
+<dl></dl>
+<hr><!-- headerDoc=instm; uid=//apple_ref/occ/instm/AuthorizationHelper/registerDigest%58forFile%58; name=AuthorizationHelper::registerDigest:forFile: -->
+<a name="//apple_ref/occ/instm/AuthorizationHelper/registerDigest%58forFile%58"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h2><a name="registerDigest%58forFile%58">registerDigest:forFile:</a></h2>
+</td></tr></table><dl>associate digest (MD5) with given file name
+<br><br>
+
+</dl><blockquote><pre>- ( void ) registerDigest:
+        (NSString *) digest forFile:
+        (NSString *) fileName;
+</pre></blockquote>
+<p>installSetUIDTool:/runTool:withArgs:asRoot:/runScript:withArgs:asRoot: methods 
+will compute digest of the tools/script and compare it with registered value. 
+Only if values match, tools/script could be run as root.
+</p>
+<dl></dl>
+<hr><!-- headerDoc=instm; uid=//apple_ref/occ/instm/AuthorizationHelper/installSetUIDTool%58ofApplication%58forAll%58; name=AuthorizationHelper::installSetUIDTool:ofApplication:forAll: -->
+<a name="//apple_ref/occ/instm/AuthorizationHelper/installSetUIDTool%58ofApplication%58forAll%58"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h2><a name="installSetUIDTool%58ofApplication%58forAll%58">installSetUIDTool:ofApplication:forAll:</a></h2>
+</td></tr></table><dl>install tool and make it setuid
+<br><br>
+
+</dl><blockquote><pre>- ( NSString *) installSetUIDTool:
+        (NSString *) fileName ofApplication:
+        (NSString *) applicationName forAll:
+        (BOOL ) installForAll;
+</pre></blockquote>
+<p>Unless installForAll is true, this method will try to install tool into 
+"~/Library/Application Support". If it is impossible to install tool into "~/Library/Application Support", then 
+"/Library/Application Support" will be used.
+<br><br>
+It is OK to call this method more then once. For example, to check where tool has been installed.
+<br><br>
+</p>
+<h5><font face="Lucida Grande,Helvetica,Arial">Parameter Descriptions</font></h5>
+<blockquote>
+<dl>
+<dt><tt><em>fileName</em></tt></dt><dd>tool file name</dd>
+<dt><tt><em>applicationName</em></tt></dt><dd>sub-folder name into which tool will be installed</dd>
+<dt><tt><em>installForAll</em></tt></dt><dd>if false, will attempt to install in ~/Library/Application Support</dd>
+</dl>
+</blockquote>
+<dl><dt><i>method result</i></dt><dd>full path to installed tool
+</dd>
+</dl>
+<hr><!-- headerDoc=instm; uid=//apple_ref/occ/instm/AuthorizationHelper/runTool%58withArgs%58asRoot%58; name=AuthorizationHelper::runTool:withArgs:asRoot: -->
+<a name="//apple_ref/occ/instm/AuthorizationHelper/runTool%58withArgs%58asRoot%58"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h2><a name="runTool%58withArgs%58asRoot%58">runTool:withArgs:asRoot:</a></h2>
+</td></tr></table><dl>runs tool with given args either as root or as user
+<br><br>
+
+</dl><blockquote><pre>- ( NSString *) runTool:
+        (NSString *) fileName withArgs:
+        (NSArray *) args asRoot:
+        (BOOL ) runAsRoot;
+</pre></blockquote>
+<p>If this tool was installed as SETUID and runAsRoot is YES, then installed version 
+of the tool will run. In this case AuthorizationHelper will not employ any additional authorization APIs
+( no authorization dialog will pop-up ).
+<br><br>
+This method will wait until tool closes its stdout. 
+<br><br>
+</p>
+<h5><font face="Lucida Grande,Helvetica,Arial">Parameter Descriptions</font></h5>
+<blockquote>
+<dl>
+<dt><tt><em>fileName</em></tt></dt><dd>tool file name</dd>
+<dt><tt><em>args</em></tt></dt><dd>array of scring to be passed to the tool as parameters</dd>
+<dt><tt><em>runAsRoot</em></tt></dt><dd>it YES, then tool will be run as root</dd>
+</dl>
+</blockquote>
+<dl><dt><i>method result</i></dt><dd>content of stdout
+</dd>
+</dl>
+<hr><!-- headerDoc=instm; uid=//apple_ref/occ/instm/AuthorizationHelper/runScript%58withArgs%58asRoot%58; name=AuthorizationHelper::runScript:withArgs:asRoot: -->
+<a name="//apple_ref/occ/instm/AuthorizationHelper/runScript%58withArgs%58asRoot%58"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h2><a name="runScript%58withArgs%58asRoot%58">runScript:withArgs:asRoot:</a></h2>
+</td></tr></table><dl>runs shell script with given args either as root or as user
+<br><br>
+
+</dl><blockquote><pre>- ( NSString *) runScript:
+        (NSString *) fileName withArgs:
+        (NSArray *) args asRoot:
+        (BOOL ) runAsRoot;
+</pre></blockquote>
+<h5><font face="Lucida Grande,Helvetica,Arial">Parameter Descriptions</font></h5>
+<blockquote>
+<dl>
+<dt><tt><em>fileName</em></tt></dt><dd>shell script file name</dd>
+<dt><tt><em>args</em></tt></dt><dd>array of scring to be passed to the tool as parameters</dd>
+<dt><tt><em>runAsRoot</em></tt></dt><dd>it YES, then tool will be run as root</dd>
+</dl>
+</blockquote>
+<dl><dt><i>method result</i></dt><dd>content of stdout
+</dd>
+</dl>
+<hr><!-- headerDoc=instm; uid=//apple_ref/occ/instm/AuthorizationHelper/runCommand%58asRoot%58; name=AuthorizationHelper::runCommand:asRoot: -->
+<a name="//apple_ref/occ/instm/AuthorizationHelper/runCommand%58asRoot%58"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h2><a name="runCommand%58asRoot%58">runCommand:asRoot:</a></h2>
+</td></tr></table><dl>runs single shell(bash) command either as root or as user
+<br><br>
+
+</dl><blockquote><pre>- ( NSString *) runCommand:
+        (NSString *) shellCommand asRoot:
+        (BOOL ) runAsRoot;
+</pre></blockquote>
+<h5><font face="Lucida Grande,Helvetica,Arial">Parameter Descriptions</font></h5>
+<blockquote>
+<dl>
+<dt><tt><em>shellCommand</em></tt></dt><dd>shell command to be run</dd>
+<dt><tt><em>runAsRoot</em></tt></dt><dd>it YES, then tool will be run as root</dd>
+</dl>
+</blockquote>
+<dl><dt><i>method result</i></dt><dd>content of stdout
+</dd>
+</dl>
+<p>(Last Updated 1/30/2007)
+</p></body></html>

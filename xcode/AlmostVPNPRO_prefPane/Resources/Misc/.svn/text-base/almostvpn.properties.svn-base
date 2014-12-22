@@ -1,0 +1,4 @@
+#
+# Start AlmostVPNTool in 'debuggable' mode 
+#
+#com.leapingbytes.almostvpn.tool.server.debug.On=false

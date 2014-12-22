@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://lbsvn@svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNServer.starter"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="136"
+   name="main.m"
+   text-time="2006-09-12T16:08:45.000000Z"
+   committed-date="2006-10-13T14:14:13.697201Z"
+   checksum="7a690334748c0dde4cd8fde14ac496a6"
+   last-author="atchijov"
+   kind="file"
+   revision="136"/>
+<entry
+   name="main.c"
+   kind="file"
+   deleted="true"
+   revision="113"/>
+<entry
+   name="AlmostVPNServer.starter.xcodeproj"
+   kind="dir"/>
+<entry
+   committed-rev="156"
+   name="almostvpn_jar_md5.h"
+   text-time="2006-11-20T20:47:07.000000Z"
+   committed-date="2006-11-21T02:25:39.697309Z"
+   checksum="583a463d1209ce75c1e310e1977220f2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:53.000000Z"
+   revision="156"/>
+<entry
+   committed-rev="116"
+   name="AlmostVPN.jar"
+   text-time="2006-09-05T12:37:27.000000Z"
+   committed-date="2006-09-05T12:39:52.007191Z"
+   checksum="dd402384ffb5ac2e40d275654b0cb521"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:53.000000Z"
+   revision="116"/>
+</wc-entries>

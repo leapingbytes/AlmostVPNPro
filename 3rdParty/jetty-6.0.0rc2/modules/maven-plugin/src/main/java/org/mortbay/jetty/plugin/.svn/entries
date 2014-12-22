@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/maven-plugin/src/main/java/org/mortbay/jetty/plugin"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="Jetty6RunMojo.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2d67e333c7c58bc62b10855e6da070ca"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Jetty6MavenConfiguration.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5affd7555cf56c1001ec24a55449498c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Jetty6RunWar.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="38d424e8f5293387e8e7c84cb82b292c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RuntimeDependencyResolver.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2bbfa1f7a908adefd4865db0d6d5c4b8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Jetty6PluginWebApplication.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c7e5051e6a096eb813f8ec442df50dd7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Jetty6MavenTagLibConfiguration.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="adee352a41e6fb1ddb50c20627d223db"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AbstractJettyMojo.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="110a6e94e65747e35e809621ea543faa"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Jetty6RunWarExploded.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f7e331ed672f59993d6313c2d145d539"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Jetty6PluginServer.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="32913800a10ce6df66936d59f643ad24"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   name="util"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="AbstractJettyRunMojo.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="297783be6f1f1070736283c245033626"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AbstractJetty6Mojo.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e875014b4ef7d60c50ec81c09c1a85c2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+</wc-entries>

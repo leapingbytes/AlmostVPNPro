@@ -1,0 +1,48 @@
+<html>
+<head>
+	<style>
+		@import "css/AlmostVPN.css";
+	</style>
+	<script type="text/javascript" src="js/prototype.js" ></script>
+	<script type="text/javascript" src="js/AlmostVPN.js" ></script>
+	<script type='text/javascript' src='/System/Library/WidgetResources/AppleClasses/AppleScrollArea.js' charset='utf-8'/>
+	<script type='text/javascript' src='/System/Library/WidgetResources/AppleClasses/AppleScrollbar.js' charset='utf-8'/>
+	<script type="text/javascript" src="/System/Library/WidgetResources/button/genericButton.js" charset="utf-8" ></script>
+
+	<script language="JavaScript" >
+		if( window.widget ) {
+			widget.onshow = onShow;
+			widget.onhide = onHide;
+		} 
+	</script>
+</head>
+
+<body onload="onShow();"  >	
+	<div id="front" onmousemove='mousemove(event);' onmouseout='mouseexit(event);' >
+		<div id="profilesBackDrop" >&nbsp;</div>
+		<img id="faceplate" src="images/faceplate.png" />		
+		<img id="statusIcon" src="images/status-green.png" >
+		<img id="avpnIcon" onClick="openPrefPane()" src="Icon.png" title="open AlmostVPN.prefPane" >
+
+		<img id="startButton" 	src="images/start.png" 		onClick="startProfile();"	title="start profile(s)" >
+		<img id="stopButton" 	src="images/stop.png"	 	onClick="stopProfile();"	title="stop profile(s)" >
+		<img id="pauseButton" 	src="images/pause.png" 		onClick="pauseProfile();"	title="pause profile(s)" >
+		<img id="restartButton" src="images/restart.png" 	onClick="restartService();"	title="restart AlmostVPN Server" >
+		
+		<div id="profiles" >&nbsp;
+		<!--
+			<div class="profile odd" onclick="selectProfile( this );" ><img src="images/green.png" >email@office </div>
+			<div class="profile even"  onclick="selectProfile( this );" ><img src="images/green.png" >email@office </div>
+			<div class="profile odd"  onclick="selectProfile( this );" ><img src="images/green.png" >email@office </div>
+			<div class="profile even"  onclick="selectProfile( this );" ><img src="images/green.png" >email@office </div>
+			<div class="profile odd"  onclick="selectProfile( this );" ><img src="images/green.png" >email@office </div>
+			<div class="profile even"  onclick="selectProfile( this );" ><img src="images/green.png" >email@office </div>
+		-->
+		</div>
+		<div id="profilesScrollbar"></div>
+	</div>
+	<div id="back" >
+		<img src="DefaultBack.png" />
+	</div>
+</body>
+</html>

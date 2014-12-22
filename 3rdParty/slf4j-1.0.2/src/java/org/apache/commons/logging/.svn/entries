@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/slf4j-1.0.2/src/java/org/apache/commons/logging"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   name="impl"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Log.java"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="51f60a40d432dd997f6527fde7193e5f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LogConfigurationException.java"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c85d6264f6bc901e14acf424ddc9c727"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LogFactory.java"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6eab623f36f6fbdac038010ca8824b41"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package.html"
+   text-time="2006-09-01T03:01:50.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b670b5653bb664c66596bbc52d1494cb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+</wc-entries>

@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50E4414A0D5CD72100B4EDF8 /* MoreCFQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E440D90D5CD72100B4EDF8 /* MoreCFQ.h */; };
+		50E4414B0D5CD72100B4EDF8 /* MoreCFQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E440DA0D5CD72100B4EDF8 /* MoreCFQ.m */; };
+		50E4414C0D5CD72100B4EDF8 /* MoreSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E440DB0D5CD72100B4EDF8 /* MoreSecurity.h */; };
+		50E4414D0D5CD72100B4EDF8 /* MoreSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E440DC0D5CD72100B4EDF8 /* MoreSecurity.m */; };
+		50E4414E0D5CD72100B4EDF8 /* MoreSetup.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E440DD0D5CD72100B4EDF8 /* MoreSetup.h */; };
+		50E4414F0D5CD72100B4EDF8 /* MoreUNIX.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E440DE0D5CD72100B4EDF8 /* MoreUNIX.h */; };
+		50E441500D5CD72100B4EDF8 /* MoreUNIX.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E440DF0D5CD72100B4EDF8 /* MoreUNIX.m */; };
+		50E441510D5CD72100B4EDF8 /* myassert.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E440E00D5CD72100B4EDF8 /* myassert.h */; };
+		50E441520D5CD72100B4EDF8 /* myassert.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E440E10D5CD72100B4EDF8 /* myassert.m */; };
+		50E441530D5CD72100B4EDF8 /* UKFileWatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E440E30D5CD72100B4EDF8 /* UKFileWatcher.h */; };
+		50E441540D5CD72100B4EDF8 /* UKFNSubscribeFileWatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E440E40D5CD72100B4EDF8 /* UKFNSubscribeFileWatcher.h */; };
+		50E441550D5CD72100B4EDF8 /* UKFNSubscribeFileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E440E50D5CD72100B4EDF8 /* UKFNSubscribeFileWatcher.m */; };
+		50E441560D5CD72100B4EDF8 /* UKKQueue Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50E440E60D5CD72100B4EDF8 /* UKKQueue Readme.txt */; };
+		50E441570D5CD72100B4EDF8 /* UKKQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E440E70D5CD72100B4EDF8 /* UKKQueue.h */; };
+		50E441580D5CD72100B4EDF8 /* UKKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E440E80D5CD72100B4EDF8 /* UKKQueue.m */; };
+		50E441590D5CD72100B4EDF8 /* UKMainThreadProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E440E90D5CD72100B4EDF8 /* UKMainThreadProxy.h */; };
+		50E4415A0D5CD72100B4EDF8 /* UKMainThreadProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E440EA0D5CD72100B4EDF8 /* UKMainThreadProxy.m */; };
+		50E4415B0D5CD72100B4EDF8 /* AuthorizationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E440EC0D5CD72100B4EDF8 /* AuthorizationHelper.h */; };
+		50E4415C0D5CD72100B4EDF8 /* AuthorizationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E440ED0D5CD72100B4EDF8 /* AuthorizationHelper.m */; };
+		50E4415E0D5CD72100B4EDF8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50E440EF0D5CD72100B4EDF8 /* Info.plist */; };
+		50E4415F0D5CD72100B4EDF8 /* LBArrayController.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E440F00D5CD72100B4EDF8 /* LBArrayController.h */; };
+		50E441600D5CD72100B4EDF8 /* LBArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E440F10D5CD72100B4EDF8 /* LBArrayController.m */; };
+		50E441610D5CD72100B4EDF8 /* LBKeychainAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E440F20D5CD72100B4EDF8 /* LBKeychainAdapter.h */; };
+		50E441620D5CD72100B4EDF8 /* LBKeyChainAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E440F30D5CD72100B4EDF8 /* LBKeyChainAdapter.m */; };
+		50E441630D5CD72100B4EDF8 /* LBPrivelegedTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E440F40D5CD72100B4EDF8 /* LBPrivelegedTask.h */; };
+		50E441640D5CD72100B4EDF8 /* LBPrivelegedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E440F50D5CD72100B4EDF8 /* LBPrivelegedTask.m */; };
+		50E441650D5CD72100B4EDF8 /* LBToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E440F60D5CD72100B4EDF8 /* LBToolbox.h */; };
+		50E441660D5CD72100B4EDF8 /* LBUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E440F70D5CD72100B4EDF8 /* LBUtils.h */; };
+		50E441670D5CD72100B4EDF8 /* LBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E440F80D5CD72100B4EDF8 /* LBUtils.m */; };
+		50E441680D5CD72100B4EDF8 /* SCHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E440F90D5CD72100B4EDF8 /* SCHelper.h */; };
+		50E441690D5CD72100B4EDF8 /* SCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E440FA0D5CD72100B4EDF8 /* SCHelper.m */; };
+		50E4417C0D5CD91D00B4EDF8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E4417B0D5CD91D00B4EDF8 /* Security.framework */; };
+		50E441880D5CDBC900B4EDF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E441870D5CDBC900B4EDF8 /* SystemConfiguration.framework */; };
+		50E441A60D5CDDD000B4EDF8 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E441A50D5CDDD000B4EDF8 /* libcrypto.dylib */; };
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* LBTools4Leo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTools4Leo_Prefix.pch; sourceTree = "<group>"; };
+		50E440D90D5CD72100B4EDF8 /* MoreCFQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCFQ.h; sourceTree = "<group>"; };
+		50E440DA0D5CD72100B4EDF8 /* MoreCFQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreCFQ.m; sourceTree = "<group>"; };
+		50E440DB0D5CD72100B4EDF8 /* MoreSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreSecurity.h; sourceTree = "<group>"; };
+		50E440DC0D5CD72100B4EDF8 /* MoreSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreSecurity.m; sourceTree = "<group>"; };
+		50E440DD0D5CD72100B4EDF8 /* MoreSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreSetup.h; sourceTree = "<group>"; };
+		50E440DE0D5CD72100B4EDF8 /* MoreUNIX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreUNIX.h; sourceTree = "<group>"; };
+		50E440DF0D5CD72100B4EDF8 /* MoreUNIX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreUNIX.m; sourceTree = "<group>"; };
+		50E440E00D5CD72100B4EDF8 /* myassert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myassert.h; sourceTree = "<group>"; };
+		50E440E10D5CD72100B4EDF8 /* myassert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myassert.m; sourceTree = "<group>"; };
+		50E440E30D5CD72100B4EDF8 /* UKFileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKFileWatcher.h; sourceTree = "<group>"; };
+		50E440E40D5CD72100B4EDF8 /* UKFNSubscribeFileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKFNSubscribeFileWatcher.h; sourceTree = "<group>"; };
+		50E440E50D5CD72100B4EDF8 /* UKFNSubscribeFileWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKFNSubscribeFileWatcher.m; sourceTree = "<group>"; };
+		50E440E60D5CD72100B4EDF8 /* UKKQueue Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UKKQueue Readme.txt"; sourceTree = "<group>"; };
+		50E440E70D5CD72100B4EDF8 /* UKKQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKKQueue.h; sourceTree = "<group>"; };
+		50E440E80D5CD72100B4EDF8 /* UKKQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKKQueue.m; sourceTree = "<group>"; };
+		50E440E90D5CD72100B4EDF8 /* UKMainThreadProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKMainThreadProxy.h; sourceTree = "<group>"; };
+		50E440EA0D5CD72100B4EDF8 /* UKMainThreadProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKMainThreadProxy.m; sourceTree = "<group>"; };
+		50E440EC0D5CD72100B4EDF8 /* AuthorizationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationHelper.h; sourceTree = "<group>"; };
+		50E440ED0D5CD72100B4EDF8 /* AuthorizationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizationHelper.m; sourceTree = "<group>"; };
+		50E440EE0D5CD72100B4EDF8 /* execWithPriv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = execWithPriv.c; sourceTree = "<group>"; };
+		50E440EF0D5CD72100B4EDF8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50E440F00D5CD72100B4EDF8 /* LBArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBArrayController.h; sourceTree = "<group>"; };
+		50E440F10D5CD72100B4EDF8 /* LBArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBArrayController.m; sourceTree = "<group>"; };
+		50E440F20D5CD72100B4EDF8 /* LBKeychainAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBKeychainAdapter.h; sourceTree = "<group>"; };
+		50E440F30D5CD72100B4EDF8 /* LBKeyChainAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBKeyChainAdapter.m; sourceTree = "<group>"; };
+		50E440F40D5CD72100B4EDF8 /* LBPrivelegedTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBPrivelegedTask.h; sourceTree = "<group>"; };
+		50E440F50D5CD72100B4EDF8 /* LBPrivelegedTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBPrivelegedTask.m; sourceTree = "<group>"; };
+		50E440F60D5CD72100B4EDF8 /* LBToolbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBToolbox.h; sourceTree = "<group>"; };
+		50E440F70D5CD72100B4EDF8 /* LBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBUtils.h; sourceTree = "<group>"; };
+		50E440F80D5CD72100B4EDF8 /* LBUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBUtils.m; sourceTree = "<group>"; };
+		50E440F90D5CD72100B4EDF8 /* SCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCHelper.h; sourceTree = "<group>"; };
+		50E440FA0D5CD72100B4EDF8 /* SCHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHelper.m; sourceTree = "<group>"; };
+		50E4417B0D5CD91D00B4EDF8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		50E441870D5CDBC900B4EDF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		50E441A50D5CDDD000B4EDF8 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = /usr/lib/libcrypto.dylib; sourceTree = "<absolute>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* LBTools4Leo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LBTools4Leo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+				50E4417C0D5CD91D00B4EDF8 /* Security.framework in Frameworks */,
+				50E441880D5CDBC900B4EDF8 /* SystemConfiguration.framework in Frameworks */,
+				50E441A60D5CDDD000B4EDF8 /* libcrypto.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* LBTools4Leo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* LBTools4Leo */ = {
+			isa = PBXGroup;
+			children = (
+				50E440830D5CD72100B4EDF8 /* Sources */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = LBTools4Leo;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50E441A50D5CDDD000B4EDF8 /* libcrypto.dylib */,
+				50E441870D5CDBC900B4EDF8 /* SystemConfiguration.framework */,
+				50E4417B0D5CD91D00B4EDF8 /* Security.framework */,
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* LBTools4Leo_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		50E440830D5CD72100B4EDF8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				50E440840D5CD72100B4EDF8 /* 3rdparty */,
+				50E440EB0D5CD72100B4EDF8 /* Main */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		50E440840D5CD72100B4EDF8 /* 3rdparty */ = {
+			isa = PBXGroup;
+			children = (
+				50E440D80D5CD72100B4EDF8 /* MoreIsBetter */,
+				50E440E20D5CD72100B4EDF8 /* UKKQueue */,
+			);
+			path = 3rdparty;
+			sourceTree = "<group>";
+		};
+		50E440D80D5CD72100B4EDF8 /* MoreIsBetter */ = {
+			isa = PBXGroup;
+			children = (
+				50E440D90D5CD72100B4EDF8 /* MoreCFQ.h */,
+				50E440DA0D5CD72100B4EDF8 /* MoreCFQ.m */,
+				50E440DB0D5CD72100B4EDF8 /* MoreSecurity.h */,
+				50E440DC0D5CD72100B4EDF8 /* MoreSecurity.m */,
+				50E440DD0D5CD72100B4EDF8 /* MoreSetup.h */,
+				50E440DE0D5CD72100B4EDF8 /* MoreUNIX.h */,
+				50E440DF0D5CD72100B4EDF8 /* MoreUNIX.m */,
+				50E440E00D5CD72100B4EDF8 /* myassert.h */,
+				50E440E10D5CD72100B4EDF8 /* myassert.m */,
+			);
+			path = MoreIsBetter;
+			sourceTree = "<group>";
+		};
+		50E440E20D5CD72100B4EDF8 /* UKKQueue */ = {
+			isa = PBXGroup;
+			children = (
+				50E440E30D5CD72100B4EDF8 /* UKFileWatcher.h */,
+				50E440E40D5CD72100B4EDF8 /* UKFNSubscribeFileWatcher.h */,
+				50E440E50D5CD72100B4EDF8 /* UKFNSubscribeFileWatcher.m */,
+				50E440E60D5CD72100B4EDF8 /* UKKQueue Readme.txt */,
+				50E440E70D5CD72100B4EDF8 /* UKKQueue.h */,
+				50E440E80D5CD72100B4EDF8 /* UKKQueue.m */,
+				50E440E90D5CD72100B4EDF8 /* UKMainThreadProxy.h */,
+				50E440EA0D5CD72100B4EDF8 /* UKMainThreadProxy.m */,
+			);
+			path = UKKQueue;
+			sourceTree = "<group>";
+		};
+		50E440EB0D5CD72100B4EDF8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				50E440EC0D5CD72100B4EDF8 /* AuthorizationHelper.h */,
+				50E440ED0D5CD72100B4EDF8 /* AuthorizationHelper.m */,
+				50E440EE0D5CD72100B4EDF8 /* execWithPriv.c */,
+				50E440EF0D5CD72100B4EDF8 /* Info.plist */,
+				50E440F00D5CD72100B4EDF8 /* LBArrayController.h */,
+				50E440F10D5CD72100B4EDF8 /* LBArrayController.m */,
+				50E440F20D5CD72100B4EDF8 /* LBKeychainAdapter.h */,
+				50E440F30D5CD72100B4EDF8 /* LBKeyChainAdapter.m */,
+				50E440F40D5CD72100B4EDF8 /* LBPrivelegedTask.h */,
+				50E440F50D5CD72100B4EDF8 /* LBPrivelegedTask.m */,
+				50E440F60D5CD72100B4EDF8 /* LBToolbox.h */,
+				50E440F70D5CD72100B4EDF8 /* LBUtils.h */,
+				50E440F80D5CD72100B4EDF8 /* LBUtils.m */,
+				50E440F90D5CD72100B4EDF8 /* SCHelper.h */,
+				50E440FA0D5CD72100B4EDF8 /* SCHelper.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E4414A0D5CD72100B4EDF8 /* MoreCFQ.h in Headers */,
+				50E4414C0D5CD72100B4EDF8 /* MoreSecurity.h in Headers */,
+				50E4414E0D5CD72100B4EDF8 /* MoreSetup.h in Headers */,
+				50E4414F0D5CD72100B4EDF8 /* MoreUNIX.h in Headers */,
+				50E441510D5CD72100B4EDF8 /* myassert.h in Headers */,
+				50E441530D5CD72100B4EDF8 /* UKFileWatcher.h in Headers */,
+				50E441540D5CD72100B4EDF8 /* UKFNSubscribeFileWatcher.h in Headers */,
+				50E441570D5CD72100B4EDF8 /* UKKQueue.h in Headers */,
+				50E441590D5CD72100B4EDF8 /* UKMainThreadProxy.h in Headers */,
+				50E4415B0D5CD72100B4EDF8 /* AuthorizationHelper.h in Headers */,
+				50E4415F0D5CD72100B4EDF8 /* LBArrayController.h in Headers */,
+				50E441610D5CD72100B4EDF8 /* LBKeychainAdapter.h in Headers */,
+				50E441630D5CD72100B4EDF8 /* LBPrivelegedTask.h in Headers */,
+				50E441650D5CD72100B4EDF8 /* LBToolbox.h in Headers */,
+				50E441660D5CD72100B4EDF8 /* LBUtils.h in Headers */,
+				50E441680D5CD72100B4EDF8 /* SCHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* LBTools4Leo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "LBTools4Leo" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LBTools4Leo;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = LBTools4Leo;
+			productReference = 8DC2EF5B0486A6940098B216 /* LBTools4Leo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "LBTools4Leo" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* LBTools4Leo */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* LBTools4Leo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+				50E441560D5CD72100B4EDF8 /* UKKQueue Readme.txt in Resources */,
+				50E4415E0D5CD72100B4EDF8 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E4414B0D5CD72100B4EDF8 /* MoreCFQ.m in Sources */,
+				50E4414D0D5CD72100B4EDF8 /* MoreSecurity.m in Sources */,
+				50E441500D5CD72100B4EDF8 /* MoreUNIX.m in Sources */,
+				50E441520D5CD72100B4EDF8 /* myassert.m in Sources */,
+				50E441550D5CD72100B4EDF8 /* UKFNSubscribeFileWatcher.m in Sources */,
+				50E441580D5CD72100B4EDF8 /* UKKQueue.m in Sources */,
+				50E4415A0D5CD72100B4EDF8 /* UKMainThreadProxy.m in Sources */,
+				50E4415C0D5CD72100B4EDF8 /* AuthorizationHelper.m in Sources */,
+				50E441600D5CD72100B4EDF8 /* LBArrayController.m in Sources */,
+				50E441620D5CD72100B4EDF8 /* LBKeyChainAdapter.m in Sources */,
+				50E441640D5CD72100B4EDF8 /* LBPrivelegedTask.m in Sources */,
+				50E441670D5CD72100B4EDF8 /* LBUtils.m in Sources */,
+				50E441690D5CD72100B4EDF8 /* SCHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LBTools4Leo_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = LBTools4Leo;
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LBTools4Leo_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = LBTools4Leo;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "LBTools4Leo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "LBTools4Leo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

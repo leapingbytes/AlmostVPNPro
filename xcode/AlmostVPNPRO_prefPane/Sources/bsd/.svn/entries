@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Sources/bsd"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="143"
+   name="LBServer.m"
+   text-time="2006-10-16T03:29:34.000000Z"
+   committed-date="2006-10-17T02:00:28.300979Z"
+   checksum="7dd66b9ba1635e9ad7f1a42086a3906b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="143"/>
+<entry
+   committed-rev="119"
+   name="LBIdentity.m"
+   text-time="2006-09-06T12:19:30.000000Z"
+   committed-date="2006-09-06T05:55:04.646239Z"
+   checksum="d9d45709db9d74275946ff14a14d9e76"
+   last-author="atchijov"
+   kind="file"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   prop-time="2006-09-06T12:19:30.000000Z"
+   revision="120"/>
+<entry
+   committed-rev="106"
+   name="LBFile.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="438af5d9e069b99dcdf62a84420bfbc8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="121"
+   name="LBService.h"
+   text-time="2006-09-06T14:40:30.000000Z"
+   committed-date="2006-09-06T14:42:26.996846Z"
+   checksum="1de1698262e39eaa148b13b82cea719c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="121"/>
+<entry
+   committed-rev="106"
+   name="LBFile.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d66c105b1eb61fe99a16c1476334ce08"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="133"
+   name="LBService.m"
+   text-time="2006-09-25T20:30:52.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="96ccdc27b9d652245d1d7c471a33a2a6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="133"
+   name="LBServer.h"
+   text-time="2006-09-26T02:30:19.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="96ed836b69fc08ef55ed241f1d6de934"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="LBIdentity.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1171db774538f4a547f84bb7cfbf3984"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+</wc-entries>

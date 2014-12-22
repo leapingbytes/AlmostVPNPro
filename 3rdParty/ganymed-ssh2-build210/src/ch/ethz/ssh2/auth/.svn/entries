@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="0"
+   schedule="add"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/ganymed-ssh2-build210/src/ch/ethz/ssh2/auth"
+   kind="dir"
+   name=""/>
+<entry
+   schedule="add"
+   kind="file"
+   name="AuthenticationManager.java"/>
+</wc-entries>

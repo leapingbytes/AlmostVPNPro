@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>port</key>
+		<string>8770</string>
+		<key>properties</key>
+		<dict>
+			<key>Machine ID</key>
+			<string>${?Machine ID}</string>
+			<key>Machine Name</key>
+			<string>${?Machine Name}</string>
+			<key>Password</key>
+			<string>false</string>
+			<key>Version</key>
+			<string>65537</string>
+			<key>iPSh Version</key>
+			<string>131072</string>
+			<key>txtvers</key>
+			<string>1</string>
+		</dict>
+		<key>title</key>
+		<string>iPhoto Picture Sharing</string>
+		<key>type</key>
+		<string>_dpap._tcp.</string>
+	</dict>
+	<dict>
+		<key>port</key>
+		<string>3689</string>
+		<key>properties</key>
+		<dict>
+			<key>Database ID</key>
+			<string>${?Database ID}</string>
+			<key>Machine ID</key>
+			<string>${?Machine ID}</string>
+			<key>Machine Name</key>
+			<string>${?Machine Name}</string>
+			<key>Version</key>
+			<string>196610</string>
+			<key>iTSh Version</key>
+			<string>131073</string>
+			<key>Password</key>
+			<string>false</string>
+			<key>txtvers</key>
+			<string>1</string>
+		</dict>
+		<key>title</key>
+		<string>iTunes Music Sharing</string>
+		<key>type</key>
+		<string>_daap._tcp.</string>
+	</dict>
+	<dict>
+		<key>port</key>
+		<string>5298</string>
+		<key>properties</key>
+		<dict>
+			<key>1st</key>
+			<string>${?First Name}</string>
+			<key>last</key>
+			<string>${?Last Name}</string>
+			<key>email</key>
+			<string>${?e-mail}</string>
+			<key>push</key>
+			<string>${?push=6dd529c776d772318078d2595b1b5ed9ee4106bd}</string>			
+			
+			<key>txtvers</key>
+			<string>1</string>
+			
+			<key>vc</key>
+			<string>CUA!</string>
+			
+			<key>port.p2pj</key>
+			<string>5298</string>
+			
+		</dict>
+		<key>title</key>
+		<string>iChat</string>
+		<key>type</key>
+		<string>_presence._tcp.</string>
+	</dict>
+</array>
+</plist>

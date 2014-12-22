@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="0"
+   schedule="add"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/ganymed-ssh2-build210/src/ch/ethz/ssh2/channel"
+   kind="dir"
+   name=""/>
+<entry
+   schedule="add"
+   kind="file"
+   name="Channel.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="ChannelInputStream.java"/>
+<entry
+   schedule="add"
+   name="ChannelManager.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="ChannelOutputStream.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="IChannelWorkerThread.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="LocalAcceptThread.java"/>
+<entry
+   schedule="add"
+   name="RemoteAcceptThread.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="RemoteForwardingData.java"/>
+<entry
+   schedule="add"
+   name="RemoteX11AcceptThread.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="StreamForwarder.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="X11ServerData.java"/>
+</wc-entries>

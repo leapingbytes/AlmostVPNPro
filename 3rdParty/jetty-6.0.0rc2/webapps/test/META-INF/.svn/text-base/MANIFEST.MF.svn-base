@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: gregw
+Build-Jdk: 1.5.0_06
+Extension-Name: test
+Specification-Vendor: Mort Bay Consulting
+Implementation-Vendor: Mort Bay Consulting
+Implementation-Title: test
+Implementation-Version: 6.0.0rc2
+

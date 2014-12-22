@@ -1,0 +1,248 @@
+package com.leapingbytes.bitsToGo.protocol;
+
+import java.nio.ByteBuffer;
+
+import com.leapingbytes.bitsToGo.protocol.spi.ProtocolHeader;
+
+public class IPHeader extends BaseProtocolHeader {
+	public void getFromBuffer(ByteBuffer buffer) {
+		_versionAndIHL 			= buffer.get();
+		_typeOfService 			= buffer.get();
+		_totalLength 			= buffer.getShort();
+		_identification 		= buffer.getShort();
+		_flagsAndFragmentOffset = buffer.getShort();
+		_timeToLive				= buffer.get();
+		_protocol				= buffer.get();
+		_headerChecksum			= buffer.getShort();
+		_sourceIPAddress		= buffer.getInt();
+		_destinationIPAddress 	= buffer.getInt();
+		
+		if( this.ihl() > 5 ) {
+			getOptions(buffer);
+		}
+	}
+
+	public void putToBuffer(ByteBuffer buffer) {
+		buffer.put( _versionAndIHL );
+		buffer.put( _typeOfService );
+		buffer.putShort( _totalLength );
+		buffer.putShort( _identification );
+		buffer.putShort( _flagsAndFragmentOffset );
+		buffer.put( _timeToLive );
+		buffer.put( _protocol );
+		buffer.putShort( _headerChecksum );
+		buffer.putInt( _sourceIPAddress );
+		buffer.putInt( _destinationIPAddress );
+		
+		putOptions(buffer);
+	}
+
+	public int size() {
+		return ihl() * 4;
+	}
+	
+	public String description() {
+//		String result = "\nIP ======================= " + size();
+//		
+//		result += "\n               Version: " + version();
+//		result += "\n                   ihl: " + ihl();
+//		result += "\n           totalLength: " + totalLength();
+//		result += "\n        identification: " + identification();
+//		result += "\n                 flags: " + flagsDescription();
+//		result += "\n       fragment offset: " + fragmentOffset();		
+//		result += "\n          time to live: " + timeToLive();
+//		result += "\n              protocol: " + protocol();		
+//		result += "\n       header checksum: " + headerChecksum();		
+//		result += "\n     source IP address: " + sourceIPAddressDescription();		
+//		result += "\ndestination IP address: " + destinationIPAddressDescription();
+//		result += "\nOptions:\n" + optionsDescription();
+//		result += "\n=======================\n";
+		
+		String result = "IP : " +
+			sourceIPAddressDescription() + " -> " + destinationIPAddressDescription() + 
+			" [ " + totalLength() + " ] " + optionsDescription();
+		
+		return result;
+	}
+	
+	private String optionsDescription() {
+		String result = "";
+		
+		// TODO
+			
+		return result;
+	}
+
+	/* ======================================================================== *
+	 * 
+	 * ======================================================================== */
+	
+	byte		_versionAndIHL 			= 0x45; // version = 4 ihl = 5 
+	byte 		_typeOfService			= 0;
+	short		_totalLength			= 0;
+	short		_identification			= 0;
+	short		_flagsAndFragmentOffset	= 0;
+	byte		_timeToLive				= (byte) 0xff;
+	byte		_protocol				= 0;
+	short		_headerChecksum			= 0;
+	int			_sourceIPAddress		= 0;
+	int			_destinationIPAddress	= 0;
+	
+	public int version() {
+		return ( _versionAndIHL >> 4 ) & 0xF; 
+	}
+	
+	public int ihl() {
+		return _versionAndIHL & 0xF;
+	}
+	
+	public void setIHL() {
+		setIHL(0);
+	}
+	public void setIHL( int v ) {
+		if( v == 0 ) {
+			v = ( 20 + optionsSize()) / 4;
+		}
+		_versionAndIHL = (byte) (( version() << 4 ) | ( v & 0xf ));
+	}
+	
+	public byte typeOfService() {
+		return _typeOfService;
+	}
+	
+	public int typeOfServicePrecedence() {
+		return ( _typeOfService >> 5 ) & 7;
+	}
+	
+	public boolean typeOfServiceLowDelay() {
+		return ( _typeOfService & 0x10 ) != 0;
+	}
+	public boolean typeOfServiceHighThroughput() {
+		return ( _typeOfService & 0x8 ) != 0;
+	}
+	public boolean typeOfServiceHighRelibility() {
+		return ( _typeOfService & 0x4 ) != 0;
+	}
+	
+	public String typeOfServiceDescription() {
+		String result = "";
+		switch(typeOfServicePrecedence()) {
+		case 0 : result = " "; break; // Routine
+		case 1 : result = "Priority "; break;
+		case 2 : result = "Immediate "; break;
+		case 3 : result = "Flash "; break;
+		case 4 : result = "Flash Override "; break;
+		case 5 : result = "CRITIC/ECP "; break;
+		case 6 : result = "Internetwork Control "; break;
+		case 7 : result = "Network Control "; break;
+		default:
+				result = "? "; break;
+		}
+		result += typeOfServiceLowDelay() ? "Low Delay " : " ";
+		result += typeOfServiceHighThroughput() ? "High Throughput " : " ";
+		result += typeOfServiceHighRelibility() ? "High Relibility " : " ";
+		
+		return result;
+	}
+	
+	public int totalLength() {
+		return ((int)_totalLength) & 0xffff;
+	}
+	
+	public void setTotalLength( int v ) {
+		_totalLength = (short) v;
+	}
+	
+	public int identification() {
+		return ((int) _identification) & 0xffff;
+	}
+	
+	public void setIdentification( int v ) {
+		if( v == 0 ) {
+			v = nextNumber();
+		}
+		_identification = (short) (v & 0xffff);
+	}
+	
+	public int flags() {
+		return ( _flagsAndFragmentOffset >> 13 ) & 0x7; 
+	}
+	
+	public boolean flagsDontFragment() {
+		return ( flags() & 0x2 ) != 0; 
+	}
+	
+	public boolean flagsMoreFragments() {
+		return ( flags() & 0x1 ) != 0; 
+	}
+	
+	public String flagsDescription() {
+		String result = "";
+		
+		result += flagsDontFragment() ? "Don't Fragment " : " ";
+		result += flagsMoreFragments() ? "More Fragments " : " ";
+		
+		return result;
+	}
+	
+	public int fragmentOffset() {
+		return _flagsAndFragmentOffset & 0x1fff;
+	}
+	
+	public int timeToLive() {
+		return _timeToLive;
+	}
+	
+	public int protocol() {
+		return _protocol;
+	}
+	
+	public int headerChecksum() {
+		return _headerChecksum;
+	}
+	
+	public void setHeaderChecksum( int v ) {
+		_headerChecksum = (short)( v & 0xffff );
+	}
+	
+	public int sourceIPAddress() {
+		return _sourceIPAddress;
+	}
+	
+	public String sourceIPAddressDescription() {
+		return ipAddressDescription( _sourceIPAddress );
+	}
+	
+	public int destinationIPAddress() {
+		return _destinationIPAddress;
+	}
+
+	public String destinationIPAddressDescription() {
+		return ipAddressDescription( _destinationIPAddress );
+	}
+
+	public ProtocolHeader reply() {
+		IPHeader result = null;
+
+		result = (IPHeader) this.clone();			
+		
+		result._destinationIPAddress = _sourceIPAddress;
+		result._sourceIPAddress = _destinationIPAddress;
+		
+		return result;
+	}	
+	
+	@Override
+	public Object clone() {
+		IPHeader result = (IPHeader) super.clone();
+		
+		return result;
+	}
+
+	private static short _nextSequenceNumber = 0;
+	
+	protected synchronized short nextNumber() {
+		_nextSequenceNumber++;
+		return _nextSequenceNumber;
+	}			
+}

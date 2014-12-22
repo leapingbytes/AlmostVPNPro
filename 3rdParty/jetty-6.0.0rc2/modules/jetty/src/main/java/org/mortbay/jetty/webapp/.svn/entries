@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/jetty/src/main/java/org/mortbay/jetty/webapp"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="WebInfConfiguration.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d3e84508e20387f5988edad9182134c9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="WebAppContext.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="94540467d59a16fa294e13fb59b80cc6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TransformingWebAppClassLoader.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bbe92bdb1d3942b5fabb3297ba086d40"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="JettyWebXmlConfiguration.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e48ce9dc518beb30f3b3bf8ab36fd44a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="WebXmlConfiguration.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b9f7769c51ebe68e90fa0cbcc822ca72"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Configuration.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="240e4675d06c05b52c7c191e0e57bd5a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TagLibConfiguration.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f0c78149344f338f75f9545c0550c508"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="WebAppClassLoader.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="74c3991bfdb9f931ec53e537cc6ebaa9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+</wc-entries>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/servlet-api-2.5/src/main/java/javax/servlet"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="ServletRequestEvent.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="746229b9be378a525da1a3295f54481d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:09.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RequestDispatcher.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="811a4809aa92d9472b5f22ca88617951"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:09.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletContextListener.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="07f11886bbad4155172c462f942f2638"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:09.000000Z"/>
+<entry
+   name="http"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="UnavailableException.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7ba84c556600c4d247090cadba4a5d7e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletResponse.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6681ff63378e3768bb6a0d029d798179"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletRequestListener.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c3e4aaf133cb09d3693a1ef7418e3d0a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletException.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0f8c18385b99fa491a103c820437e8d0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletResponseWrapper.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9de83e1fcf1d8bf6cf7fa23348d28f37"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletConfig.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="43abeb423a064a55d6f18026ef6c7da0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FilterConfig.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="86abd88a1cd53640dbc6215fe46c14c2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package.html"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2a84aa2b9e9a53d5ce324e633ef3c89a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletContextAttributeEvent.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0ab174fbcdb130ccf86c7f37354d98af"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletInputStream.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fbcc7ecc725516d3cbf94db0cdfbd82d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletOutputStream.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="063b73db7cab9062faa7aafb5ccf55a1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="GenericServlet.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="719534ba9d5717d60f753ec7cb67b059"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletContextAttributeListener.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8c6b9846176cf254024fee3dd3af80ea"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletRequestAttributeEvent.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d545940c52e4f622ae365300e47b5392"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Servlet.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a963307e5eab2b3f3035ce3a30b9c35d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Filter.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="784ce14e76b8ba65af1cf6e6fe533b23"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletRequestAttributeListener.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9ab16c7c759cca6f43b0e7f9fdd12549"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FilterChain.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ecc3797032ac18328c7182a02b8a4f88"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletContext.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c3e97693972bb706542c85eb69b9d725"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SingleThreadModel.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="61130e8d8a998228b646219b5fa8f10d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletContextEvent.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b4fafa424c02cfadc48f90e54b19bc64"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletRequest.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6ddb6826ccc6d0be8ce88ab1ebc256ae"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletRequestWrapper.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bada2975af859ec467df3cec6a1338f9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+</wc-entries>

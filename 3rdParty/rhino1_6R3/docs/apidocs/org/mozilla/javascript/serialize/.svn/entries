@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/rhino1_6R3/docs/apidocs/org/mozilla/javascript/serialize"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a7ee7e4bf47759def2e91f11919a4235"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ScriptableInputStream.html"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0cfb862430f593717227673fdc87e2c1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ScriptableOutputStream.html"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="335868cf0916b37dff1d797d96407d5d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7cf998c4df3a16f84b4234697a1a9c23"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-tree.html"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="aa014d08b4e0f46968fb4464d7eeb9ec"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+</wc-entries>

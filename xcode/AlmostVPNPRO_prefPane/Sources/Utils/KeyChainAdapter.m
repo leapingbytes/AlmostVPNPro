@@ -1,0 +1,448 @@
+//
+//  KeyChainAdapter.m
+//  AlmostVPN
+//
+//  Created by andrei tchijov on 9/1/05.
+//  Copyright 2005 Leaping Bytes, LLC. All rights reserved.
+//
+
+#include <unistd.h>
+#include <sys/param.h>
+#include "KeyChainAdapter.h"
+#include "PathLocator.h"
+
+@interface KeyChainAdapter (Private) 
++ (NSString*) describeOSStatus: (OSStatus) status ;
++ (NSString*) getKeychainPasswordCreateIfNotFound: (BOOL) createIfNotFound;
++ (NSString*) getKeychainPassword;
+@end
+
+@implementation KeyChainAdapter
+
+NSArray* tools = nil;
+NSString* keychainPath = nil;
+
++ (SecAccessRef) createAccessWithLabel: (NSString*)label {
+	OSStatus err;
+    SecAccessRef access=nil;
+    SecTrustedApplicationRef myself, tool;
+	
+    err = SecTrustedApplicationCreateFromPath(NULL, &myself);
+	
+	if( err != noErr ) {
+		NSRunAlertPanel( @"Internal Error", @"Fail to get 'myself' application\n%@", @"OK", nil, nil, [ self describeOSStatus: err ] );
+		return nil;
+	}
+	
+    err = SecTrustedApplicationCreateFromPath([[ PathLocator pathForResource: @"almostVPNTool" ] UTF8String ], &tool);
+	if( err != noErr ) {
+		NSRunAlertPanel( @"Internal Error", @"Fail to get 'almostVPNTool' application\n%@", @"OK", nil, nil, [ self describeOSStatus: err ] );
+		return nil;
+	}
+	
+    CFMutableArrayRef trustedApplications= CFArrayCreateMutable( nil, 2, &kCFTypeArrayCallBacks );
+	CFArrayAppendValue( trustedApplications, myself );
+	CFArrayAppendValue( trustedApplications, tool );	
+	
+    err = SecAccessCreate((CFStringRef)label, 
+						  (CFArrayRef)trustedApplications, &access);
+    if (err) return nil;
+    
+	return access;
+}
+
++ (NSString*) getKeychainPassword {
+	return [ self getKeychainPasswordCreateIfNotFound: NO ];
+}
+
++ (NSString*) getDefaultKeychainPath {
+	SecKeychainRef loginKeychain = (SecKeychainRef)nil;
+	SecKeychainStatus status = 0;
+	OSStatus err = SecKeychainCopyDefault( &loginKeychain );
+	if( err == 0 && ( loginKeychain != nil )) {
+		err = SecKeychainGetStatus( loginKeychain, &status );
+	}
+	if( err || ( status == 0 )) {
+		NSRunAlertPanel( @"Internal Error", @"Fail to get 'default'\n%@", @"OK", nil, nil, [ self describeOSStatus: err ] );
+		if( loginKeychain != nil ) {
+			CFRelease( loginKeychain );
+		}
+		return nil;		
+	}
+	UInt32 ioPathLength = MAXPATHLEN;
+	char pathName[ MAXPATHLEN + 1];
+	
+	err = SecKeychainGetPath( loginKeychain,&ioPathLength,&(pathName[0]));
+	
+	NSString* result = [[ NSString alloc ] initWithCString: pathName length: ioPathLength ];
+
+	CFRelease( loginKeychain );
+
+	return result;
+}
+
+NSString* _keychainPassword = nil;
+
++ (NSString*) getKeychainPasswordCreateIfNotFound: (BOOL) createIfNotFound {
+	if( _keychainPassword == nil ) {
+		SecKeychainRef loginKeychain = (SecKeychainRef)nil;
+		SecKeychainStatus status = 0;
+		OSStatus err = SecKeychainCopyDefault( &loginKeychain );
+		if( err == 0 && ( loginKeychain != nil )) {
+			err = SecKeychainGetStatus( loginKeychain, &status );
+		}
+		if( err || ( status == 0 )) {
+			NSRunAlertPanel( @"Internal Error", @"Fail to get 'default'\n%@", @"OK", nil, nil, [ self describeOSStatus: err ] );
+			if( loginKeychain != nil ) {
+				CFRelease( loginKeychain );
+			}
+			return nil;		
+		}
+
+		_keychainPassword = [ self retrivePasswordOfType: kSecProtocolTypeSSH forAccount: @"almostVPN" onServer: @"almostVPN" forPath: @"" fromKeychain: loginKeychain ];
+		if( _keychainPassword == nil && createIfNotFound ) {
+			char	password[ 65 ];
+			int offset = '0';
+			int range = 'z' - '0';
+			srandom( time( nil ) & (long) _keychainPassword );
+			for( int i = 0; i < 64; i++ ) {
+				password[ i ] = offset + random() % range;
+			}
+			password[ 64 ] = 0;
+			_keychainPassword = [ NSString stringWithCString: password length: 64 ];
+			[ self savePassword: _keychainPassword ofType: kSecProtocolTypeSSH forAccount: @"almostVPN" onServer: @"almostVPN" forPath: @"" intoKeychain: loginKeychain ];
+		}
+		
+		[ _keychainPassword retain ];
+		CFRelease( loginKeychain );
+	}
+		
+	return _keychainPassword;	
+}
+
+static SecKeychainRef _theKeychain = nil;
+
++ (NSString*) getKeychainPath {
+	if( keychainPath == nil ) {
+		keychainPath = [[[ PathLocator userKeychainPath: @"AlmostVPN" ] copy ] retain ];
+	}
+	return keychainPath;
+}
+
++ (void) setKeychainPath: (NSString*)aPath {
+	if( aPath != nil ) {
+		aPath = [ aPath copy ];
+		[ keychainPath release ];
+		keychainPath = aPath;
+		
+		if( _theKeychain != nil ) {
+			CFRelease( _theKeychain );
+			_theKeychain = nil;
+		}
+	}
+}
+
+
++ (SecKeychainRef) getKeychain {
+	if(	_theKeychain == nil ) {
+		SecKeychainRef result = (SecKeychainRef)nil;
+		SecKeychainStatus status = 0;
+		const char* aPath = [[ self getKeychainPath ] UTF8String ];
+		OSStatus err = SecKeychainOpen( aPath, &result );
+		if( err == 0 && ( result != nil )) {
+			SecKeychainGetStatus( result, &status );
+		}
+		if( err || ( status == 0 )) {
+			NSString* keychainPassword = [ self getKeychainPasswordCreateIfNotFound: YES ];	
+			const char* password = [ keychainPassword UTF8String ];
+			int	passwordLength = strlen( password );
+
+			SecAccessRef initialAccess = [ KeyChainAdapter createAccessWithLabel: @"AlmostVPN" ];
+			err = SecKeychainCreate ( aPath, passwordLength, password, NO, initialAccess, &result );
+			if( initialAccess ) CFRelease( initialAccess );
+			if( err ) {
+				result = nil;
+			} else {
+				SecKeychainUnlock( result, passwordLength, password, YES );
+			}
+		} else {
+			// Keychain exist. If it is "secure" keychain, then we should be able to get Keychain Password
+			// otherwise use "almostVPN" as a password
+			NSString* keychainPassword = [ self getKeychainPasswordCreateIfNotFound: NO ];	
+			keychainPassword = ( keychainPassword == nil ) ? @"almostVPN" : keychainPassword;
+			const char* password = [ keychainPassword UTF8String ];
+			int	passwordLength = strlen( password );
+			SecKeychainUnlock( result, passwordLength, password, YES );
+		}
+		if( result == nil ) {
+			NSLog( @"+[KeyChainAdaoter getKeychain] : ERROR : Fail to get AlmostVPN.keychain\n" );
+		}
+		
+		_theKeychain = result;
+	} else {
+			NSString* keychainPassword = [ self getKeychainPasswordCreateIfNotFound: NO ];	
+			keychainPassword = ( keychainPassword == nil ) ? @"almostVPN" : keychainPassword;
+			const char* password = [ keychainPassword UTF8String ];
+			int	passwordLength = strlen( password );
+			SecKeychainUnlock( _theKeychain, passwordLength, password, YES );
+	}
+	CFRetain( _theKeychain );
+	return _theKeychain;
+}
++ (void) savePassword: (NSString*) password 
+			   ofType: (SecProtocolType) type 
+		   forAccount: (NSString*) account 
+			 onServer: (NSString*) serverName 
+			  forPath: (NSString*)path {
+	SecKeychainRef		keychain = [ KeyChainAdapter getKeychain ];
+    [ self savePassword: password ofType: type forAccount: account onServer: serverName forPath: path intoKeychain: keychain ];
+	CFRelease( keychain );
+}
+
++ (void) savePassword: (NSString*) password 
+			   ofType: (SecProtocolType) type 
+		   forAccount: (NSString*) account 
+			 onServer: (NSString*) serverName 
+			  forPath: (NSString*)path
+		 intoKeychain: (SecKeychainRef)keychain  {
+	SecKeychainItemRef	itemRef = nil;
+	OSStatus status = SecKeychainFindInternetPassword(
+		keychain,
+		[ serverName length ], [serverName UTF8String ],
+		0, nil,
+		[ account length ], [account UTF8String ],
+		[ path length ], [ path UTF8String ],
+		0,
+		type,
+		kSecAuthenticationTypeDefault,
+		0, nil,
+		&itemRef
+	);
+	
+	if( itemRef != nil ) {
+		status = SecKeychainItemModifyAttributesAndData(
+			itemRef,
+			nil,
+			[password length ], [password UTF8String ]
+		);
+	} else {
+		SecAccessRef access = [ KeyChainAdapter createAccessWithLabel: @"AlmostVPN" ];
+		
+		int port = 0;
+		SecProtocolType protocol = type;
+		SecAuthenticationType authType = kSecAuthenticationTypeDefault;
+		NSString* label = [ NSString stringWithFormat: @"%@@%@", account, serverName ];
+		SecKeychainAttribute attrs[] = {
+		{ kSecLabelItemAttr,	[ label length ],			(void*)[ label UTF8String ]},
+		{ kSecAccountItemAttr,	[ account length ],			(void*)[ account UTF8String ] },
+		{ kSecServerItemAttr,	[ serverName length ],		(void*)[ serverName UTF8String ]},
+		{ kSecPortItemAttr,		sizeof(int),				(int *)&port },
+		{ kSecProtocolItemAttr,	sizeof(SecProtocolType), 	(SecProtocolType *)&protocol },
+		{ kSecAuthenticationTypeItemAttr,
+			sizeof( SecAuthenticationType ), (SecAuthenticationType*)&authType }
+			// { kSecPathItemAttr,		1,							"/" }
+		};
+		SecKeychainAttributeList attributes = { sizeof(attrs) / sizeof(attrs[0]), attrs };
+		status = SecKeychainItemCreateFromContent(
+			kSecInternetPasswordItemClass,
+			&attributes,
+			[ password length ], [ password UTF8String ],
+			keychain, 
+			access,
+			&itemRef
+		);
+		if (access) CFRelease(access);
+	}
+	if (itemRef) CFRelease(itemRef);				
+}
+
++ (NSString*) retrivePasswordOfType: (SecProtocolType) type forAccount: (NSString*) account onServer: (NSString*) serverName forPath: (NSString*)path {
+	SecKeychainRef		keychain = [ KeyChainAdapter getKeychain ];
+	NSString* result = [ self retrivePasswordOfType: type forAccount: account onServer: serverName forPath: path fromKeychain: keychain ];
+	CFRelease( keychain );
+	return result;
+}
+
++ (NSString*) retrivePasswordOfType: (SecProtocolType) type 
+		                 forAccount: (NSString*) account 
+						   onServer: (NSString*) serverName 
+						    forPath: (NSString*)path 
+					   fromKeychain: (SecKeychainRef)keychain {
+	UInt32 length;
+	void* data;
+	
+	SecKeychainSetUserInteractionAllowed( YES );
+	
+	OSStatus status = SecKeychainFindInternetPassword(
+		keychain,
+		[ serverName length ], [ serverName UTF8String ],
+		0, nil,
+		[ account length ], [ account UTF8String ],
+		[ path length ], [ path UTF8String ],
+		0,
+		type,
+		kSecAuthenticationTypeDefault,
+		&length, &data,
+		nil
+	);	
+
+	if( status ) {
+		if( status != errSecItemNotFound ) {
+			NSLog( @"retrivePasswordOfType : Fail to locate password %@@%@/%@ - error %@\n", account, serverName, path, [ self describeOSStatus: status ]);
+		}
+		return nil;
+	} else {
+		NSString* result = [ NSString stringWithCString: data length: length ];
+		return result;
+	}	
+}
+
++ (NSString*) askForPasswordForAccount: (NSString*) account onServer: (NSString*) serverName forPath: (NSString*) path {
+	[ NSApplication sharedApplication ];
+	SInt32 error = 0;
+	NSDictionary* passwordNotificationDictionary = [ NSDictionary dictionaryWithObjectsAndKeys:
+		[ NSURL fileURLWithPath: [ PathLocator pathForResource: @"AlmostVPN.icns" ]],
+		kCFUserNotificationIconURLKey,
+		@"", kCFUserNotificationTextFieldTitlesKey,
+//		[ PathLocator pathForInstalledResource: @"AlmostVPN.icns" ],kCFUserNotificationAlertHeaderKey,
+		@"AlmostVPN", kCFUserNotificationAlertHeaderKey, 
+		[ NSString stringWithFormat: @"Please enter password for\n%@@%@/%@", account, serverName, ( path == nil ? @"" : path )], 
+			kCFUserNotificationAlertMessageKey,
+		@"OK", kCFUserNotificationDefaultButtonTitleKey,
+		@"Cancel", kCFUserNotificationAlternateButtonTitleKey,
+		nil
+	];
+	CFUserNotificationRef passwordNotification = 
+		CFUserNotificationCreate( nil,0.0,kCFUserNotificationStopAlertLevel | CFUserNotificationSecureTextField(0), &error, (CFDictionaryRef)passwordNotificationDictionary );
+	
+	CFOptionFlags responseFlags;
+	SInt32 rc = CFUserNotificationReceiveResponse( passwordNotification, 0.0, &responseFlags );
+	if( rc != 0 || ( responseFlags &  kCFUserNotificationAlternateResponse )) {
+		return nil;
+	} else {
+		NSDictionary* resultsDictionary = (NSDictionary*)CFUserNotificationGetResponseDictionary( passwordNotification );
+		NSString* result = [[ resultsDictionary objectForKey: (NSString*)kCFUserNotificationTextFieldValuesKey ] objectAtIndex: 0 ];
+		return result;
+	}
+}
+
++ (void) forgetPasswordOfType: (SecProtocolType) type forAccount: (NSString*) account onServer: (NSString*) serverName forPath: (NSString*)path {
+	SecKeychainItemRef	itemRef = nil;
+	SecKeychainRef		keychain = [ KeyChainAdapter getKeychain ];
+	OSStatus status = SecKeychainFindInternetPassword(
+		keychain,
+		[serverName length ], [serverName UTF8String ],
+		0, nil,
+		[account length ], [account UTF8String ],
+		[ path length ], [ path UTF8String ],
+		0,
+		type,
+		kSecAuthenticationTypeDefault,
+		nil, nil,
+		&itemRef
+	);
+
+	if( ! status ) {
+		SecKeychainItemDelete( itemRef );
+		CFRelease( itemRef );
+	}	
+	CFRelease( keychain );
+}
+
+
++ (void) saveSSHPassword: (NSString*)password forAccount: (NSString*) account onServer: (NSString*) serverName {
+	[ KeyChainAdapter savePassword: password ofType: kSecProtocolTypeSSH forAccount: account onServer: serverName forPath: nil ];
+}
+
++ (NSString*) retriveSSHPasswordForAccount: (NSString*) account onServer: (NSString*) serverName {
+	return [ KeyChainAdapter retrivePasswordOfType: kSecProtocolTypeSSH forAccount: account onServer: serverName forPath: nil ];
+}
+
++ (void) forgetSSHPasswordForAccount: (NSString*) account onServer: (NSString*) serverName {
+	[ KeyChainAdapter forgetPasswordOfType: kSecProtocolTypeSSH forAccount: account onServer: serverName forPath: nil ];
+}
+
+
++ (NSString*) describeOSStatus: (OSStatus) status {
+	NSError* error = [ NSError errorWithDomain: NSOSStatusErrorDomain code: status userInfo: nil ];
+	return [ error localizedDescription ];
+}
+AuthorizationRef myAuthorizationRef = nil;
+
++ (OSStatus) preauthorize: (NSArray*) theTools {
+	OSStatus myStatus = 0;
+	AuthorizationFlags myFlags = kAuthorizationFlagDefaults;
+	if( myAuthorizationRef == nil ) {
+		tools = [ theTools copy ];
+		myStatus = AuthorizationCreate(NULL, kAuthorizationEmptyEnvironment, myFlags, &myAuthorizationRef);
+		if (myStatus != errAuthorizationSuccess)
+			return myStatus;
+
+		AuthorizationItem* myItems = malloc( sizeof( AuthorizationItem ) * [ tools count ] );
+		for( int i = 0; i < [ tools count ]; i++ ) {
+			myItems[ i ].name = kAuthorizationRightExecute;
+			myItems[ i ].valueLength = [[ tools objectAtIndex: i ] length ];
+			myItems[ i ].value = strdup( [[ tools objectAtIndex: i ] UTF8String ] );
+			myItems[ i ].flags = 0;
+		}
+	
+		AuthorizationRights myRights = {[ tools count ], myItems};
+		myFlags = kAuthorizationFlagDefaults |
+			kAuthorizationFlagInteractionAllowed |
+			kAuthorizationFlagPreAuthorize |
+			kAuthorizationFlagExtendRights;
+		myStatus = AuthorizationCopyRights (myAuthorizationRef, &myRights, NULL, myFlags, NULL );
+	}		
+	return myStatus;
+}
+
++ (BOOL) isAuthorized {
+	return myAuthorizationRef != nil;
+}
++ (void) unauthorize {
+	AuthorizationFree( myAuthorizationRef, kAuthorizationFlagDefaults );
+	myAuthorizationRef = nil;
+}
+
++ (NSString*) runToolAsRoot: (NSString*) toolPath withArgv: (NSArray*) argvArray {
+	OSStatus myStatus;
+	if( ! [ self isAuthorized ] ) {
+		return @"Need to be preauthorized";
+	}
+	
+	if( ! [ tools containsObject: toolPath ] ) {
+		return [ NSString stringWithFormat: @"Not authorized to run this tool '%@'", toolPath ];
+	}
+
+	const char* myToolPath = [ toolPath UTF8String ];
+	char* const * myArguments = malloc( sizeof(char*) * ([ argvArray count ] + 1 ));
+	char** arg = (char**)myArguments;
+	for( int i = 0; i < [ argvArray count ]; i++ ) {
+		(*arg) = (char*)[[ argvArray objectAtIndex: i ] UTF8String ];
+		arg++;
+	}
+	(*arg) = 0;
+	
+	FILE *myCommunicationsPipe = NULL;
+	char myReadBuffer[1024];
+	AuthorizationFlags myFlags = kAuthorizationFlagDefaults;
+	myStatus = AuthorizationExecuteWithPrivileges(
+		myAuthorizationRef, 
+		myToolPath, 
+		myFlags, 
+		myArguments,
+		&myCommunicationsPipe
+	);
+	if (myStatus == errAuthorizationSuccess) {
+		for(;NO;)
+		{
+			int bytesRead = read (fileno (myCommunicationsPipe),
+								  myReadBuffer, sizeof (myReadBuffer));
+			write( fileno( stdout ), myReadBuffer, bytesRead );
+			if (bytesRead < 0) break;
+		}
+	}
+	return myStatus ? [ KeyChainAdapter describeOSStatus: myStatus ] : nil;
+}
+
+@end

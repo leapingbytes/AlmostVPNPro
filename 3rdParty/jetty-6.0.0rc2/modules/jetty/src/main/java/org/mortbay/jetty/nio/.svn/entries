@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/jetty/src/main/java/org/mortbay/jetty/nio"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="NIOConnector.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ea0734aae5fe7922e7abe32e4efe30de"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SelectChannelConnector.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4217285fbc6ace375234b2769fbf75c4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AbstractNIOConnector.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0b8b79dee99523b2a72584a02e5a92f0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HttpChannelEndPoint.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ce5de643fc21983eef85dbd81393950e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="BlockingChannelConnector.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ac2adeef5ef6173dc18288fe68c05e84"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+</wc-entries>

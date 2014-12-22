@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/java/build/docs/javadocs/org/apache/xml/resolver/helpers"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   name="class-use"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Namespaces.html"
+   text-time="2006-09-01T03:01:34.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4efd6a573edc164985e3e6528f157860"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:34.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:34.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0d432d8ea2d0b285d3f0cc656faa8c7a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:34.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-use.html"
+   text-time="2006-09-01T03:01:34.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="96972651e4729438ee735c0930b7e12e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:34.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Debug.html"
+   text-time="2006-09-01T03:01:34.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f696f95752002d980ea995722d67e64e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:34.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:34.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a82d223868a8cf5aea47049adaf83cb6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:34.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-tree.html"
+   text-time="2006-09-01T03:01:34.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0fe16e91a75cd229688c681af3357180"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:34.000000Z"/>
+<entry
+   committed-rev="106"
+   name="PublicId.html"
+   text-time="2006-09-01T03:01:34.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="42c45906b30c709f2ae11513b6ca8e0a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:34.000000Z"/>
+</wc-entries>

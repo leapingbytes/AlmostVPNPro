@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/LBToolbox/Sources/3rdparty/MOKit/MORegexp"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="regc_locale.c"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a4e3b2b5e2f613546f6648736238fe8e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="regc_nfa.c"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c8c864a6b3497ef7876aa9860528428c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="README"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7f360b217fcb2531adfcf73e082e25d1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="regcustom.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0ba606e1f5adfe4bdb0a9b19660a056b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MORegexpHelpers.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f9420fc540629aababfcd756f9c081e1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="regc_color.c"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f3a76750a9034022637658465537b9d3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="regerrs.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3aa9d81bff0512c85bacef38c1b1cad2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="regfree.c"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9c724e8efd95fefc9217054faa5dda47"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="regex.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5257cbe67608ef01fb7e81f127461d6a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="regc_cvec.c"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5f5f7955530a471b7ac7256744063530"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="regexec.c"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d45ed2dfc9d99f1ca412c15b59841f85"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MORegexpHelpers.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a70c9a2831fc6a61fa70933ce3c4c4f3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="regguts.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6e573f94e3b9a630fcdca28fa9740394"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RESyntax.rtf"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="656418376ac3210846dce544f7800dea"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="regerror.c"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7736af96ad718df02902c7c06d4c6f2e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="regc_lex.c"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0e9878481ad7322f842e1bed2eb7da43"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="rege_dfa.c"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="963bcd536179f0ea3d587109a7d8cb69"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="regcomp.c"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="62f2cba04e7c22ee3b3b24fbbe512259"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+</wc-entries>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/jetty/src/main/java/org/mortbay/io/bio"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="StringEndPoint.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e824fbed3988138be27e744e2d906348"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SocketEndPoint.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b4eb4ab0628367330ad148c7098bb224"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="StreamEndPoint.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f2843e7c833a6b569801245fdb3c0763"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+</wc-entries>

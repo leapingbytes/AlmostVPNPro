@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-2.4.1/java/external/src/javax/xml/transform/dom"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="DOMSource.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7872354068da4b2afd022df82a7dac47"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DOMLocator.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="40329e646612e0a97207a33b92fc0544"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DOMResult.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0ff9ab753851165112bfeb523dd01d43"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package.html"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="56db3453db1b604c2497499ceaa459ff"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+</wc-entries>

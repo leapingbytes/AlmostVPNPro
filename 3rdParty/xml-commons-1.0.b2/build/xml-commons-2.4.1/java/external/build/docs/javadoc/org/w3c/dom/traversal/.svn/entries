@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-2.4.1/java/external/build/docs/javadoc/org/w3c/dom/traversal"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="NodeIterator.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="686306ded937b1b727df8393bcf483d5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DocumentTraversal.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cde71fd407508f8bdfcd4985b7c4db0d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1f7f4178b9085602f5e295cd6d62c9fb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TreeWalker.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2de04b700101fff2fe459f9d0281ee6d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="70197963b828b040fa6f8139f042bb08"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-tree.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="730d275cac83ebc223d76e84ed3dabd1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NodeFilter.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="61ca6f4036bbd5efa6a179eb33e96599"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+</wc-entries>

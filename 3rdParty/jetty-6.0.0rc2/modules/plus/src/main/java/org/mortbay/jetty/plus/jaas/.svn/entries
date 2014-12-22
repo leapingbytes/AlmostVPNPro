@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/plus/src/main/java/org/mortbay/jetty/plus/jaas"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="JAASUserPrincipal.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ede1e64e02308d87a5c8a906d23d0a1c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RoleCheckPolicy.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9dd4e457a47dfba8be99cae76d7d1612"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="JAASPrincipal.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ca0076e61c1264461e5ad36b4d31f31b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="JAASRole.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5c77bea4e59e5edbf89017d95469728d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="StrictRoleCheckPolicy.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2882ee0f0bbefee4feeb2e0ca65f5cc4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   name="spi"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="JAASGroup.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="65483e2e068e7b87211c416567dbf944"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   name="callback"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="JAASUserRealm.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="34cd70841dc898a151646f851da73495"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+</wc-entries>

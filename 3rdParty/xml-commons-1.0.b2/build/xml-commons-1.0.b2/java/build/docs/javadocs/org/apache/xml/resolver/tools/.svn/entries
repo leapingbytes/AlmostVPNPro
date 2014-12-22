@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-1.0.b2/java/build/docs/javadocs/org/apache/xml/resolver/tools"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   name="class-use"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="CatalogResolver.html"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="96381ce40daaeba9eef836157b7fa504"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ResolvingXMLReader.html"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bc4ef2412dd4c825d74e5cddc28296c7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ResolvingXMLFilter.html"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bc666119836c56a7a3b098fcb1acb132"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2654e1b1ff7a8310a2f6f3b4910fb246"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ResolvingParser.html"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e1ffb52705c1738f88e7dd376997e7d0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-use.html"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="63b873f283cad9137887c58697467506"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4dd2b70f1dbe5d651f495548b07913c7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-tree.html"
+   text-time="2006-09-01T03:01:12.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e58cc99eaaafa9b89d9c9b7d8746f878"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:12.000000Z"/>
+</wc-entries>

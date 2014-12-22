@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/project-website"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   name="project-site"
+   kind="dir"/>
+<entry
+   name="project-skin"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="pom.xml"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7c83dfa1e59dd6791e0da18d8d681759"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   committed-rev="106"
+   name="README.TXT"
+   text-time="2006-09-01T03:01:01.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e117390efdc79999340f60abc2984a71"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+</wc-entries>

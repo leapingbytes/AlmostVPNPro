@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/rhino1_6R3/src/org/mozilla/javascript/regexp"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="SubString.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5d8c293cf16b048e1af904bc609da346"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeRegExp.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="399e9ac24c3cc293b095325811047dd4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeRegExpCtor.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a55359eeaf0c7abb9238d03ea72ebac7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RegExpImpl.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7a748a8c1215543ba21b86a484d33179"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+</wc-entries>

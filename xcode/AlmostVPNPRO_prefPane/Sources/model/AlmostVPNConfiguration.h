@@ -1,0 +1,77 @@
+//
+//  AlmostVPNConfiguration.h
+//  AlmostVPNPRO_model
+//
+//  Created by andrei tchijov on 11/12/05.
+//  Copyright 2005 Leaping Bytes, LLC. All rights reserved.
+//
+
+#import <Cocoa/Cocoa.h>
+#import "AlmostVPNContainer.h"
+#import "AlmostVPNLocalhost.h"
+
+@interface AlmostVPNConfiguration : AlmostVPNContainer {
+
+}
++ (AlmostVPNConfiguration*) sharedInstance;
+
+- (NSMutableDictionary*) configuration;
+
+- (NSString*) version;
+- (void) setVersion: (NSString*) v;
+
+- (NSString*) userName;
+- (void) setUserName: (NSString*) v;
+
+- (NSString*) userHome;
+- (void) setUserHome: (NSString*) v;
+
+- (NSString*) applicationSupportPath;
+- (void) setApplicationSupportPath: (NSString*) v;
+
+- (NSString*) resourcesPath;
+- (void) setResourcesPath: (NSString*) v;
+
+- (NSString*) preferencesPath;
+- (void) setPreferencesPath: (NSString*) v;
+
+- (NSString*) keychainPath;
+- (void) setKeychainPath: (NSString*) v;
+
+- (NSString*) secureStorePath;
+- (void) setSecureStorePath: (NSString*) v;
+
+- (int) countProfiles;
+- (NSArray*) profiles;
+
+- (int) countLocations;
+- (NSArray*) locations;
+
+- (AlmostVPNLocalhost*) localHost;
+
+- (void) loadFromFile: (NSString*) filePath;
+- (void) saveToFile: (NSString*) filePath;
+
+- (NSString*) fullName;
+- (void) setFullName: (NSString*) v;
+
+- (NSString*) email;
+- (void) setEmail: (NSString*) v;
+
+- (id) runDynamicProxy ;
+- (void) setRunDynamicProxy: (id) v ;
+- (id) shareDynamicProxy ;
+- (void) setShareDynamicProxy: (id) v ;
+- (id) dynamicProxyPort ;
+- (void) setDynamicProxyPort: (id) v ;
+
+- (id) logInitiallyFrozen;
+- (void) setLogInitiallyFrozen: (id) v;
+
+- (id) maxLogSize;
+- (void) setMaxLogSize: (id) v;
+
+- (id) trafficInitiallyFrozen;
+- (void) setTrafficInitiallyFrozen: (id) v;
+
+@end

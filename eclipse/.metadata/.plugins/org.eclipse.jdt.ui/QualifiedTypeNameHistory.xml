@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.leapingbytes.almostvpn.server.profile.ProfileException"/>
+<fullyQualifiedTypeName name="com.jcraft.jsch.Channel"/>
+<fullyQualifiedTypeName name="com.leapingbytes.almostvpn.server.profile.item.impl.SSHUdpPortForward"/>
+<fullyQualifiedTypeName name="com.leapingbytes.almostvpn.util.ssh.ISSHSession.ISSHSessionStateListener"/>
+<fullyQualifiedTypeName name="com.leapingbytes.almostvpn.util.ssh.ISSHSession.IStateListener"/>
+<fullyQualifiedTypeName name="ch.ethz.ssh2.Session"/>
+<fullyQualifiedTypeName name="com.leapingbytes.almostvpn.util.ssh.ISSHSession.IChannel"/>
+<fullyQualifiedTypeName name="java.util.TimerTask"/>
+<fullyQualifiedTypeName name="ch.ethz.ssh2.KnownHosts"/>
+<fullyQualifiedTypeName name="java.util.Timer"/>
+<fullyQualifiedTypeName name="java.io.InterruptedIOException"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="com.leapingbytes.almostvpn.server.profile.item.BaseProfileItem.IProfileItemWatcher"/>
+<fullyQualifiedTypeName name="org.apache.commons.logging.Log"/>
+<fullyQualifiedTypeName name="java.nio.ByteBuffer"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="org.apache.commons.codec.binary.Base64"/>
+<fullyQualifiedTypeName name="com.leapingbytes.bitsToGo.protocol.IP"/>
+<fullyQualifiedTypeName name="com.leapingbytes.bitsToGo.protocol.spi.Packet"/>
+<fullyQualifiedTypeName name="com.leapingbytes.bitsToGo.transport.spi.Connection"/>
+<fullyQualifiedTypeName name="com.leapingbytes.bitsToGo.transport.spi.Transport"/>
+<fullyQualifiedTypeName name="com.leapingbytes.bitsToGo.protocol.spi.Protocol"/>
+<fullyQualifiedTypeName name="com.leapingbytes.bitsToGo.protocol.TCP"/>
+<fullyQualifiedTypeName name="java.net.UnknownHostException"/>
+<fullyQualifiedTypeName name="java.net.ConnectException"/>
+<fullyQualifiedTypeName name="ch.ethz.ssh2.Connection"/>
+<fullyQualifiedTypeName name="com.leapingbytes.bitsToGo.Configuration"/>
+<fullyQualifiedTypeName name="ch.ethz.ssh2.InteractiveCallback"/>
+<fullyQualifiedTypeName name="java.util.Hashtable"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.leapingbytes.bitsToGo.utils.ObjectPool"/>
+<fullyQualifiedTypeName name="com.leapingbytes.bitsToGo.utils.ObjectPool.Factory"/>
+<fullyQualifiedTypeName name="java.nio.channels.Channels"/>
+<fullyQualifiedTypeName name="com.leapingbytes.bitsToGo.utils.Log"/>
+<fullyQualifiedTypeName name="com.leapingbytes.bitsToGo.protocol.spi.Packet.Listener"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+</qualifiedTypeNameHistroy>

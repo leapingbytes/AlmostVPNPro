@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Distro/blurbs"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="133"
+   name="1.1.html"
+   text-time="2006-10-12T17:58:44.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="ec5f06f5eddab43438959c6d8e7b99c2"
+   last-author="atchijov"
+   kind="file"
+   revision="133"/>
+<entry
+   committed-rev="133"
+   name="1.0RC2.html"
+   text-time="2006-10-12T17:56:35.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="0e39ee37ac7fde6856254e6df449ad12"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"
+   revision="133"/>
+</wc-entries>

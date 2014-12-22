@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="110"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/AlmostVPNServer/src/com/leapingbytes/almostvpn/server/profile/configurator/spi"
+   last-author="atchijov"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="dir"
+   name=""
+   committed-rev="106"/>
+<entry
+   checksum="60ef7a342304e91b02ae77a598cfcb00"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="IProfileConfigurator.java"
+   committed-rev="106"/>
+</wc-entries>

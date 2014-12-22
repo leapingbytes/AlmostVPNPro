@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-1.0.b2/java/external/src/org/w3c/dom/stylesheets"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="DocumentStyle.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a144cd5be7964e18981cdb7361132f92"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="StyleSheetList.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9464e7af0742647abd0d04d8dfa6a6f0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="StyleSheet.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4b533f6834cf279d6fea573f24039078"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MediaList.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="44af6148a119ba87e3f6057728708f59"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LinkStyle.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3cba3c5159127fc0f9153142e31aa3f3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+</wc-entries>

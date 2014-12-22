@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/util/src/main/java/org/mortbay/util"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="DateCache.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="98312d296262e698d674ba0caff4fa04"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RolloverFileOutputStream.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8e9c223016b2e1d9f4c6f5e1758caf7b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   name="ajax"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="StringUtil.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6f9c217fed91b4d00d535a020fd60691"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="StringMap.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="db26d8d75921cf92cc3a60425bf45301"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Loader.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0a757d6294bce136f2ed49c91733f467"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Utf8StringBuffer.java"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="526981db1a106a0a67452716affe514e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="IO.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d9762862d82867012f991462df2f55e0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ByteArrayISO8859Writer.java"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="03f256ad8b930611fa92c7aac0794c6b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MultiException.java"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b3d1d8cfa38fb6ef768d7fcd26ea5453"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LazyList.java"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cc9d39094100a72d4e39479e26f140c8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MultiPartOutputStream.java"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0050f2d7e0a656fe190c9dce3f2b1208"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MultiPartWriter.java"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d47061805196a1f8b3ae11420e6390c3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TypeUtil.java"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="da87c32491c5a591a64e6175512da5e2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ByteArrayOutputStream2.java"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="438a57e8f78bec09bdaa22cefc39a5c1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="QuotedStringTokenizer.java"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7cbbba62cd313f7b510fb7aa7d70af8b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AttributesMap.java"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4e9af58e4cdabfeb92b7313d820b19ac"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="UrlEncoded.java"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9f25bde625e57d40ab8cd938813d1663"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Attributes.java"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="39f6fa8a775617818090b6d8d64fbf89"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MultiMap.java"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0399c33cea5a9d1483aa6297ac0371d7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="URIUtil.java"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ace4aa8f55ad94c41aad522c0efab289"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SingletonList.java"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="929edfe6d2869a262f8e71dc96b19bfb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+</wc-entries>

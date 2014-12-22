@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="111"
+   name=""
+   committed-date="2006-09-01T03:13:55.561000Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/AlmostVPNServer"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   prop-time="2006-09-01T03:12:04.000000Z"
+   revision="111"/>
+<entry
+   committed-rev="157"
+   name=".classpath"
+   text-time="2006-11-05T19:33:12.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="3444acd1f1c1144518de82f2a8ff2aee"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+<entry
+   committed-rev="106"
+   name=".project"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4a89bcaa81be0341641eac80f0fcde72"
+   last-author="atchijov"
+   kind="file"
+   revision="110"/>
+<entry
+   name="src"
+   kind="dir"/>
+<entry
+   name=".externalToolBuilders"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="ProfileWithNetbeans.txt"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="012ced9de2305944815e0a0afd1af022"
+   last-author="atchijov"
+   kind="file"
+   revision="110"/>
+<entry
+   committed-rev="106"
+   name="calculateMD5.sh"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1e0dec30c1419a330c03b063f5f4228f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:03:35.000000Z"
+   revision="110"/>
+<entry
+   name=".settings"
+   kind="dir"/>
+<entry
+   committed-rev="157"
+   name="build.xml"
+   text-time="2006-11-06T17:09:00.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="468314f5c290b4af18e0039273712179"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+</wc-entries>

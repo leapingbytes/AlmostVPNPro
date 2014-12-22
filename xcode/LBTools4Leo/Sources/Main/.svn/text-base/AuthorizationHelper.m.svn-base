@@ -1,0 +1,84 @@
+//
+//  AuthorizationHelper.m
+//  LBToolbox
+//
+//  Created by andrei tchijov on 10/27/05.
+//  Copyright 2005 Leaping Bytes, LLC. All rights reserved.
+//
+
+#include <Security/Authorization.h>
+#include <sys/param.h>
+
+#include <sys/stat.h>
+#include <sys/wait.h>
+#include <sys/types.h>
+#include <sys/fcntl.h>
+#include <sys/errno.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <string.h>
+#include <mach-o/dyld.h>
+
+#import "AuthorizationHelper.h"
+
+
+@implementation AuthorizationHelper
+
++ (void) runAsRoot: (NSString*) commandPath withArguments: (NSArray*) commandArguments {
+	NSLog( @"Not yet implmented : class: %@, method: %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+}
++ (void) makeSetUidRoot: (NSString*) commandPath {
+	NSLog( @"Not yet implmented : class: %@, method: %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));	
+}
+
+typedef int (*NSGetExecutablePathProcPtr)(char *buf, size_t *bufsize);
++ (void) selfRepair {
+	char* myPath = (char*)malloc( 1024+1 );
+	size_t myPathLength = 1024;
+	
+	((NSGetExecutablePathProcPtr) NSAddressOfSymbol(NSLookupAndBindSymbol("__NSGetExecutablePath")))(myPath, &myPathLength);
+	
+	/*  Self repair code.  We ran ourselves using AuthorizationExecuteWithPrivileges()
+        so we need to make ourselves setuid root to avoid the need for this the next time around. */
+	
+    AuthorizationRef auth;
+
+	struct stat st;
+	int fd_tool;
+	
+	/* Recover the passed in AuthorizationRef. */
+	if(  AuthorizationCreate(NULL, kAuthorizationEmptyEnvironment, kAuthorizationFlagDefaults, &auth))
+//
+//	if (AuthorizationCopyPrivilegedReference(&auth, kAuthorizationFlagDefaults))
+		return;
+	
+    AuthorizationFlags flags = kAuthorizationFlagDefaults | kAuthorizationFlagInteractionAllowed | kAuthorizationFlagExtendRights;
+	AuthorizationItem right = {
+		 "system.preferences", 0, NULL, kAuthorizationFlagDefaults
+	};
+	AuthorizationRights rightSet = { 1, &right };
+    if( AuthorizationCopyRights(auth, &rightSet, kAuthorizationEmptyEnvironment, flags, NULL)) 
+		return;
+	
+//	if (AuthorizationCopyPrivilegedReference(&auth, kAuthorizationFlagDefaults))
+//		return;
+	
+	/* Open tool exclusively, so noone can change it while we bless it */
+	fd_tool = open(myPath, O_NONBLOCK|O_RDONLY|O_EXLOCK, 0);
+	
+	if (fd_tool == -1) {
+		return;
+	}
+	
+	if (fstat(fd_tool, &st))
+		return;
+	
+	if (st.st_uid != 0)
+		fchown(fd_tool, 0, st.st_gid);
+	
+	/* Disable group and world writability and make setuid root. */
+	fchmod(fd_tool, (st.st_mode & (~(S_IWGRP|S_IWOTH))) | S_ISUID);
+	
+	close(fd_tool);		
+}
+@end

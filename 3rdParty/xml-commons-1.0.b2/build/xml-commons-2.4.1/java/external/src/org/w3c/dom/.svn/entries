@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-2.4.1/java/external/src/org/w3c/dom"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   name="ranges"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="CDATASection.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b1bef248d65dd6b85bef4caea4b33940"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:30.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Comment.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fa9971cf1e7c5b76136a33f43957cb31"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:30.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DocumentFragment.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8b7e7e4d1ff8591b36e79f0c6f6455f7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:30.000000Z"/>
+<entry
+   name="css"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Attr.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d29e939969f6ea516207fca3b1c02735"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:30.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Entity.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="58a362a72c60971fee8b102f396bfbab"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:30.000000Z"/>
+<entry
+   name="views"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="ProcessingInstruction.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0a4c21bc4ff76420810a2ebf3d2cfbd7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:30.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Document.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9f62660478aa5bd14fe13027361d0f96"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:30.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DocumentType.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="04ca2f80bb1f4478e864052c8362cfaa"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:30.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NodeList.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4ac6f2614474858c7812ad06344988c3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:30.000000Z"/>
+<entry
+   name="traversal"
+   kind="dir"/>
+<entry
+   name="html"
+   kind="dir"/>
+<entry
+   name="events"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Text.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="62d3e823ebe2833e4453f6f8fc45c925"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:30.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Node.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4a990f322d79348efc261d226c69c016"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DOMImplementation.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="293b8cb0241ea7ff0c5a62d66257b987"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CharacterData.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2d8aa7210a972c05afd8996ab64776a4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NamedNodeMap.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ba6a338ef1bedc5751e5348a1861f92b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Element.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4e87a3c78abcb5e090deb04557086840"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Notation.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f227a49176bda21e4e4aad3995cfe9e7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+<entry
+   committed-rev="106"
+   name="EntityReference.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4571746c4693e246851174e198265cbf"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+<entry
+   name="stylesheets"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="DOMException.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1661a5689efe5622cd1213fda59ae69b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+</wc-entries>

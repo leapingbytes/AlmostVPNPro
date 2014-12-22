@@ -1,0 +1,5 @@
+1162221984503	Extract interface 'ISSHSession'
+1162237835246	Rename method 'Shell'
+1162237825563	Rename method 'Exec'
+1162237810354	Rename method 'directTcpIpChannel'
+1162237721174	Rename method 'Excec'

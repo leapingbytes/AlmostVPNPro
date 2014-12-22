@@ -1,0 +1,364 @@
+//
+//  AlmostVPNMenuBar.m
+//  AlmostVPN
+//
+//  Created by andrei tchijov on 11/17/05.
+//  Copyright 2005 Leaping Bytes, LLC. All rights reserved.
+//
+
+#import "AlmostVPNProMenuBar.h"
+#import "PathLocator.h"
+#import "ServerHelper.h"
+#import "ServerMonitor.h"
+#import "LogRecord.h"
+//#import "KeyChainAdapter.h"
+
+static BOOL _debug_ = NO;
+static AlmostVPNProMenuBar* _singleton = nil;
+
+#define MYLog if( _debug_ ) NSLog
+
+@implementation AlmostVPNProMenuBar
+
++ (AlmostVPNProMenuBar*) sharedInstance {
+	return _singleton;
+}
+
+- (void) awakeFromNib {
+	_singleton = self;
+	
+	_profileStates = [[ NSMutableDictionary alloc ] init ];
+	[ PathLocator setBundleIdentifier: @"com.leapingbytes.AlmostVPNPRO.MenuBar" ];
+	
+//	if ( [[ NSFileManager defaultManager ] fileExistsAtPath: [ PathLocator preferencesPath ]] ) {
+//		[ _configuration loadFromFile: [ PathLocator preferencesPath ]];
+//	}
+	
+	_configuration = [ AlmostVPNConfiguration sharedInstance ];
+	[ self listProfiles ];
+//	[ _configuration loadFromFile: [ PathLocator preferencesPath ]];
+	
+	_statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength] retain];
+	NSMenu* _statusItemMenu = [[ NSMenu alloc ] initWithTitle: @"AlmostVPNPRO" ];
+	[ _statusItemMenu setDelegate: self ];
+	
+//	[_statusItem setTitle: NSLocalizedString(@"AlmostVPN",@"")];
+	[ _statusItem setToolTip: @"AlmostVPN/PRO" ];
+    [_statusItem setMenu:_statusItemMenu];
+    [_statusItem setHighlightMode:YES];    // if this is not set, your menu will not highlight when clicked
+    [_statusItem setImage: [ PathLocator imageNamed:  @"MenuBarEmpty" ]];   
+	
+	[[ NSNotificationCenter defaultCenter ]
+		addObserver: self selector: @selector( doServerEvent: ) name: @"ServerEvent" object: nil
+	];
+	[[ NSNotificationCenter defaultCenter ]
+		addObserver: self selector: @selector( doServerStateEvent: ) name: @"ServerStateEvent" object: nil
+	];
+
+	[ ServerMonitor monitor: @"127.0.0.1" ];	
+}
+
+- (id) valueForUndefinedKey: (NSString*)aKey {
+//	return [ super valueForUndefinedKey: aKey ];
+	return nil;
+}
+
+- (NSString*) oneAttribute {
+	return @"Hello";
+}
+
+- (void) setOneAttribute:(NSString*) v {
+}
+
+- (NSArray*) listProfiles {
+	@synchronized ( self ) {	
+		NSDictionary* preferenceAttributes = [[ NSFileManager defaultManager ] 
+			fileAttributesAtPath: [ PathLocator preferencesPath ] traverseLink: NO 
+		];
+		NSDate* fileModificationDate = [ preferenceAttributes fileModificationDate ];
+		if( ! [ _configurationModificationDate isEqual: fileModificationDate] ) {
+			MYLog( @"listProfile : new configuration file!!!\n"  );
+
+			[ _configurationModificationDate release ];
+			_configurationModificationDate = [fileModificationDate copy ];
+			NSArray* oldProfiles = [ _configuration profiles ];			
+			[ _configuration loadFromFile: [ PathLocator preferencesPath ]];
+			for( int i = 0; i < [ oldProfiles count ]; i++ ) {
+				AlmostVPNProfile* oldProfile = [ oldProfiles objectAtIndex: i ];
+				NSString* uuid = [ oldProfile uuid ];
+				AlmostVPNProfile* profile = (AlmostVPNProfile*)[ AlmostVPNObject findObjectWithUUID: uuid ];
+				if( profile != nil ) {
+					[ profile setState: [(AlmostVPNProfile*)[ oldProfiles objectAtIndex: i ] state ]];
+					[ profile setStateComment: [[ oldProfiles objectAtIndex: i ] stateComment ]];
+				} else {
+					MYLog( @"listProfile : can not find old profile %@(%@)\n", [ oldProfile name ], uuid );
+				}
+			}
+		}
+		return [ _configuration profiles ];
+	} 
+	
+	return nil; // to make compiler happy
+}
+
+- (void) doServerEvent: (NSNotification*) notification {
+	NSAutoreleasePool* poll = [[ NSAutoreleasePool alloc ] init ];
+
+	NSString* string = (NSString*)[ notification object ];
+	
+	LogRecord* record = [ LogRecord parseServerEvent: string ];
+
+	if( record != nil && [ record isStateEvent ] ) {
+		@synchronized ( self ) {	
+			NSString* uuid			= [ record profileUuid ];
+			NSString* state			= [ record profileState ]; 
+			NSString* stateComment	= [ record profileStateComment ];
+			
+			AlmostVPNProfile* profile = (AlmostVPNProfile*)[ AlmostVPNObject findObjectWithUUID: uuid ];
+			if( profile != nil ) {		
+				MYLog( @"doServerEvent : %@ - %@ (%@)\n", [ profile name ], state, uuid );
+				
+				[ profile setState: state ];
+				[ profile setStateComment: stateComment ];
+			} else {
+				MYLog( @"doServerEvent : can not find profile %@\n", uuid );
+				MYLog( @"AllObjects:\n%@\n", _configuration );
+			}
+						
+			[_statusItem setImage: [ PathLocator imageNamed: [ self statusToImageName ]]];   		
+		}
+	}	
+	[ poll drain ];
+}
+
+- (void) resetProfileStates {
+	NSArray* profiles = [ self listProfiles ];
+	NSEnumerator* profileEnum = [ profiles objectEnumerator ];
+	AlmostVPNProfile* profile;
+	while(( profile = [ profileEnum nextObject ] ) != nil ) {
+		[ profile setState: nil ];
+	}
+}
+
+- (void) doServerStateEvent: (NSNotification*) notification {
+//	[ self setServerIsRunning: [ notification object ]];
+	MYLog( @"doServerStateEvent : %@\n", notification );
+	_serviceIsRunning = [[ notification object ] boolValue ];
+	if( ! _serviceIsRunning ) {
+		[ self resetProfileStates ];
+		[_statusItem setImage: [ PathLocator imageNamed: @"MenuBarEmpty" ]];   		
+	}
+}
+
+- (NSString*) statusToImageName {
+	if( ! _serviceIsRunning ) {
+		return @"MenuBarEmpty";
+	}
+
+	NSArray* profiles = [ self listProfiles ];
+	NSEnumerator* profileEnum = [ profiles objectEnumerator ];
+	AlmostVPNProfile* profile;
+	_agregatedStatus = @"";
+	BOOL someRunning = NO;
+	BOOL someStarting = NO;
+	BOOL someStopping = NO;
+	BOOL someFail = NO;
+	BOOL someIdle = NO;
+	while(( profile = [ profileEnum nextObject ] ) != nil ) {
+		NSString* state = [  profile state ];
+		
+		someRunning = someRunning || [ @"running" isEqual: state ];
+		someStarting = someStarting || [ @"starting" isEqual: state ];
+		someStopping = someStopping || [ @"stopping" isEqual: state ];
+		someFail = someFail || [ @"fail" isEqual: state ];
+		someIdle = someIdle || [ @"idle" isEqual: state ];
+	}
+	
+	if( someFail ) {
+		return @"MenuBarRed";
+	}
+	if( someStarting || someStopping ) {
+		return @"MenuBarYellow";
+	}
+	if( someRunning ) {
+		return @"MenuBarGreen";
+	}
+	return _serviceIsRunning ? @"MenuBarGray" : @"MenuBarEmpty";
+}
+
+- (void) stopProfile: (id) sender {
+	[ ServerHelper stopProfile: [ sender title ]];
+}
+
+- (void) startProfile: (id) sender {
+	[ ServerHelper startProfile: [ sender title ]];
+}
+
+- (BOOL) isLocked {
+	return NO;
+}
+
+- (void) quit: (id) sender {
+	exit( 0 );
+}
+
+- (void) stopAlmostVPNService: (id) sender {	
+	[ ServerHelper stopService ];
+}
+
+- (void) startAlmostVPNService: (id) sender {	
+	[ ServerHelper startService ];
+}
+
+- (void) restartAlmostVPNService: (id) sender {	
+	[ ServerHelper restartService ];
+}
+
+- (void) startAlmostVPN: (id) sender {	
+	NSString* prefPanePath = [ @"~/Library/PreferencePanes/AlmostVPNPRO.prefPane" stringByExpandingTildeInPath ];
+	if( ! [[ NSFileManager defaultManager ] fileExistsAtPath: prefPanePath ] ) {
+		prefPanePath = @"/Library/PreferencePanes/AlmostVPNPRO.prefPane";
+	}
+	[	
+		[ NSTask 
+			launchedTaskWithLaunchPath: @"/usr/bin/open"  
+			arguments: [ NSArray arrayWithObject: prefPanePath ]
+		] 
+		waitUntilExit 
+	];
+}
+
+#pragma mark -
+#pragma mark NSMenu Delegate
+- (int)numberOfItemsInMenu: (NSMenu*) menu {		
+	return 1;
+}
+
+- (BOOL)menu:(NSMenu *)menu updateItem:(NSMenuItem *)item atIndex:(int)index shouldCancel:(BOOL)shouldCancel {
+	NSAutoreleasePool* poll = [[ NSAutoreleasePool alloc ] init ];
+
+	NSArray* profiles = [ self listProfiles ];
+	NSEnumerator* profileEnum = [ profiles objectEnumerator ];
+	AlmostVPNProfile* profile;
+	while(( profile = [ profileEnum nextObject ] ) != nil ) {
+		NSString* state = [ profile state ];
+		NSString* stateComment = [ profile stateComment ];
+		SEL itemSelector;
+		BOOL itemEnabled = YES;
+		if( [ @"running" isEqual: state ] || [ @"fail" isEqual: state ] ) {
+			itemSelector = @selector( stopProfile: );
+			stateComment = [ NSString stringWithFormat: @"%@.\n Click to stop.", stateComment ]; 
+		} else if( [ @"starting" isEqual: state ] || [ @"stopping" isEqual: state ] ) {
+			itemSelector = nil;
+			itemEnabled = NO;
+		} else {
+			itemSelector = @selector( startProfile: );
+			stateComment = [ NSString stringWithFormat: @"%@.\n Click to start.", stateComment ]; 
+		}
+		NSString* profileName = [ profile name ];
+//		NSString* stateIcon = [ _profileStates objectForKey: profileName ];
+		NSString* stateIcon = [ profile stateColor ];
+		stateIcon = [ stateIcon substringToIndex: [ stateIcon length ] - 4 ];
+		if( [ stateIcon length ] == 0 ) {
+			stateIcon = @"blank";
+		}
+		MYLog( @"%@ : %@ (%@)\n", profileName, stateIcon, [ profile uuid ] );
+		
+		if( item != nil ) {
+			[ item setTitle: profileName ];
+			[ item setAction: itemSelector ];
+			[ item setKeyEquivalent: @"" ];
+		} else {
+			item = [[ NSMenuItem alloc ] initWithTitle: profileName action: itemSelector keyEquivalent: @"" ];
+			[ menu addItem: item ];				
+			[ item release ];
+		}
+		[ item setToolTip: stateComment ];
+		[ item setTarget: self ]; [ item setEnabled: itemEnabled ];	
+		[ item setImage: [ PathLocator imageNamed: stateIcon ofSize: NSMakeSize( 12.0, 12.0 )]];
+		item = nil;			
+	}
+	[ menu addItem: [ NSMenuItem separatorItem ]];
+		NSString* serviceTitle;
+		SEL serviceSelector;
+		if( _serviceIsRunning ) {
+			serviceTitle = @"Restart AVPN Service";
+			serviceSelector = @selector( restartAlmostVPNService: );
+		} else {
+			serviceTitle = @"Start AVPN Service";
+			serviceSelector = @selector( startAlmostVPNService: );
+		}
+		item = [[ NSMenuItem alloc ] initWithTitle: serviceTitle action: serviceSelector keyEquivalent: @"" ];
+			[ item setTarget: self ];
+			[ item setEnabled: YES ];
+			[ menu addItem: item ];
+		[ item release ];
+		if( _serviceIsRunning ) {
+			item = [[ NSMenuItem alloc ] initWithTitle: @"Stop AVPN Service" action: @selector( stopAlmostVPNService: ) keyEquivalent: @"" ];
+				[ item setTarget: self ];
+				[ item setEnabled: YES ];
+				[ menu addItem: item ];
+			[ item release ];
+		}
+	[ menu addItem: [ NSMenuItem separatorItem ]];
+	item = [[ NSMenuItem alloc ] initWithTitle: @"AlmostVPN/PRO" action: @selector( startAlmostVPN: ) keyEquivalent: @"" ];
+		[ item setTarget: self ];
+		[ item setEnabled: YES ];
+		[ item setToolTip: @"Start AlmostVPN/PRO" ];
+		[ menu addItem: item ];
+	[ item release ];
+	item = [[ NSMenuItem alloc ] initWithTitle: @"Quit" action: @selector( quit: ) keyEquivalent: @"" ];
+		[ item setTarget: self ];
+		[ item setEnabled: YES ];
+		[ item setToolTip: @"Quict Menu Bar Controller" ];
+		[ menu addItem: item ];
+	[ item release ];
+	
+	[ poll release ];
+	
+	return NO;
+}
+
+
+- (BOOL) application: (NSApplication*) a delegateHandlesKey: (NSString*) key {
+	if( [ key isEqual: @"profiles" ] ) {
+		return YES;
+	}
+	if( [ key isEqual: @"startThisProfile" ] ) {
+		return YES;
+	}
+	if( [ key isEqual: @"stopThisProfile" ] ) {
+		return YES;
+	}
+	
+	return NO;
+}
+
+- (NSArray*) profiles {
+	return [ self listProfiles ];
+}
+
+- (AlmostVPNProfile*) valueInProfilesWithName: (NSString*) name {
+	NSArray* profiles = [ self profiles ];
+	for( int i = 0; i < [ profiles count ]; i++ ) {
+		AlmostVPNProfile* result = [ profiles objectAtIndex: i ];
+		if( [ name isEqual: [ result name ]] ) {
+			return result;
+		}
+	}
+	return nil;
+}
+
+- (void) startThisProfile: (AlmostVPNProfile*) p {
+	[ ServerHelper startProfile: [ p name ]];
+}
+- (void) stopThisProfile: (AlmostVPNProfile*) p {
+	[ ServerHelper stopProfile: [ p name ]];
+}
+
+@end
+
+#pragma mark -
+int main(int argc, char *argv[]) {
+    return NSApplicationMain(argc,  (const char **) argv);
+}

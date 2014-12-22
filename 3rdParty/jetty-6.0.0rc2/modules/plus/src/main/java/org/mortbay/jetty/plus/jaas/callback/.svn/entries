@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/plus/src/main/java/org/mortbay/jetty/plus/jaas/callback"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="DefaultCallbackHandler.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f2457c3d24c2fea335901c161613f06e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ObjectCallback.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3c2522344ff0cec8d80ef63993a5229f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RequestParameterCallback.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="48a8124804b000a11c4380a23fe215ec"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AbstractCallbackHandler.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b242a0f34ee9cf6b8db3934aba7c9284"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:08.000000Z"/>
+</wc-entries>

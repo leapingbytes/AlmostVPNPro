@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/commons-logging-1.0.4/docs/style"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="print.css"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d0b24690a82744b7d0c724012e401f78"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-base.css"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e950878fc2b765268001bd3151b25086"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-classic.css"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="06dd945a10af4c39ddce24c16c2ac3da"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-theme.css"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="25eb0dc7c322396da3b169fec9035537"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+</wc-entries>

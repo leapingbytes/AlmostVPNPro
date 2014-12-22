@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/java/external/src/org/w3c/dom/traversal"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="NodeIterator.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cd5e8b3a4157f9e2868edbffd9bfa0fa"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DocumentTraversal.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fc457a137797a518dbced808ce44c88f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TreeWalker.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ab989811b9b127273887ca7d2ed5adef"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NodeFilter.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1a041273981f22c619a988e50f6b80a9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+</wc-entries>

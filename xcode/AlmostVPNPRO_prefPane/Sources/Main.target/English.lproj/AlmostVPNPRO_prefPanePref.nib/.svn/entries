@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Sources/Main.target/English.lproj/AlmostVPNPRO_prefPanePref.nib"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="smallSMB.tiff"
+   text-time="2006-09-05T12:37:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5f2c80b67927c9051c92476839af866e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="154"
+   name="info.nib"
+   text-time="2006-11-20T20:52:48.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="add7677cd4973908259073d450f651ee"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="154"/>
+<entry
+   committed-rev="154"
+   name="keyedobjects.nib"
+   text-time="2006-11-20T20:52:49.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="fc484aa3627d7c8a33f38dbe0091b78c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="154"/>
+<entry
+   committed-rev="133"
+   name="classes.nib"
+   text-time="2006-10-12T01:02:17.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="8fe8ad0f844536e96a0600d9a8e7e5bf"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="data.dependency"
+   text-time="2006-09-05T12:37:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1e3a2e5d81173c0a8236b13ca7471bd9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="smallAFP.tiff"
+   text-time="2006-09-05T12:37:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="280778cc25b4c4d28acf01c7b5436808"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="smallVNC.tiff"
+   text-time="2006-09-05T12:37:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="17c28ea106f029e63bd915f96ecd2d88"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+</wc-entries>

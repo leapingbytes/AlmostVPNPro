@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-2.4.1/java/external/build/docs/javadoc/org/xml/sax/helpers"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="ParserAdapter.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d2dc18c2e22ce54cca9675c687da17ed"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AttributeListImpl.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1dc2a51c1e286f2fc107ba1fb5209285"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DefaultHandler.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="175a276e5971f85aac3c1238967a5a3f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1389a467ae443205bf7d34725b643bec"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ParserFactory.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="317fabaab36efe2d8575c3f9a10fb437"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+<entry
+   committed-rev="106"
+   name="XMLReaderAdapter.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b2fa2ad7a311d7acda6d6380f0f0da38"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LocatorImpl.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2d25bc955d85ce901e95013df9eeb752"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5403cf3b906915f0f3b2ebe41673c726"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AttributesImpl.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e11d2c23a4b684ecb670537efdfd1812"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+<entry
+   committed-rev="106"
+   name="XMLFilterImpl.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0726e4b68e7a3922a6429af8400e23ff"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-tree.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4773b7f37c9f0453242187aa812427cb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NamespaceSupport.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cb2e0ff4fc856fd82759e7d978aa9ab3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+<entry
+   committed-rev="106"
+   name="XMLReaderFactory.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="aae466d23887960532572b856504b75f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+</wc-entries>

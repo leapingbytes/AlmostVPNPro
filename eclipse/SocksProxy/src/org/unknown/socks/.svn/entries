@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/SocksProxy/src/org/unknown/socks"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="AuthenticationNone.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c6b09b620b88e7c5f3080aa24cd7ec45"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="106"
+   name="UserPasswordAuthentication.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ed1fa011893066b41c5d72787c3677fa"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="158"
+   name="SocksException.java"
+   text-time="2006-10-30T19:04:44.000000Z"
+   committed-date="2006-11-21T02:27:35.419454Z"
+   checksum="3b1cf178206c8be2e153e4cb809c3f59"
+   last-author="atchijov"
+   kind="file"
+   revision="158"/>
+<entry
+   committed-rev="127"
+   name="SocksDialog.java"
+   text-time="2006-09-11T22:45:22.000000Z"
+   committed-date="2006-09-13T04:05:59.656000Z"
+   checksum="fea69aacaeb401a595176d76d4e7e4fa"
+   last-author="atchijov"
+   kind="file"
+   revision="127"/>
+<entry
+   committed-rev="140"
+   name="ProxyServer.java"
+   text-time="2006-09-18T20:09:09.000000Z"
+   committed-date="2006-10-13T14:18:32.283733Z"
+   checksum="2b38bcbd14f77c8be87d51787f1a59d5"
+   last-author="atchijov"
+   kind="file"
+   revision="140"/>
+<entry
+   committed-rev="106"
+   name="Socks4Proxy.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e4a7ee5db86be517d0e73873ab14ddca"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="127"
+   name="Socks5Proxy.java"
+   text-time="2006-09-11T22:45:21.000000Z"
+   committed-date="2006-09-13T04:05:59.656000Z"
+   checksum="a054fc29539bbf44379ac7199b972edb"
+   last-author="atchijov"
+   kind="file"
+   revision="127"/>
+<entry
+   committed-rev="127"
+   name="Socks4Message.java"
+   text-time="2006-09-11T22:45:21.000000Z"
+   committed-date="2006-09-13T04:05:59.656000Z"
+   checksum="a67cd1e80d89275fa884cf3daccd278d"
+   last-author="atchijov"
+   kind="file"
+   revision="127"/>
+<entry
+   committed-rev="127"
+   name="UDPRelayServer.java"
+   text-time="2006-09-11T22:45:21.000000Z"
+   committed-date="2006-09-13T04:05:59.656000Z"
+   checksum="7400fced00c64334a3e225c8bcd5bc9a"
+   last-author="atchijov"
+   kind="file"
+   revision="127"/>
+<entry
+   committed-rev="127"
+   name="InetRange.java"
+   text-time="2006-09-11T22:45:21.000000Z"
+   committed-date="2006-09-13T04:05:59.656000Z"
+   checksum="8f468ba17320e0aea0bab916b6d79861"
+   last-author="atchijov"
+   kind="file"
+   revision="127"/>
+<entry
+   committed-rev="106"
+   name="Socks5Message.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="99b994b500fc59264d8e32b047fe8681"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="106"
+   name="UDPEncapsulation.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="33b668663a6113c0c61809ec920bac7e"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="106"
+   name="Authentication.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a294cf2c7eef807a6181cd8e83b19b0e"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="106"
+   name="Proxy.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="679a7587146fdb4334c93d86eedca3fe"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="127"
+   name="Socks5DatagramSocket.java"
+   text-time="2006-09-11T22:45:22.000000Z"
+   committed-date="2006-09-13T04:05:59.656000Z"
+   checksum="c0458ebb4872100ede4dcd714b624c33"
+   last-author="atchijov"
+   kind="file"
+   revision="127"/>
+<entry
+   committed-rev="127"
+   name="SocksServerSocket.java"
+   text-time="2006-09-11T22:45:22.000000Z"
+   committed-date="2006-09-13T04:05:59.656000Z"
+   checksum="c52c6edc7d66002b88f82ce2fbc85c61"
+   last-author="atchijov"
+   kind="file"
+   revision="127"/>
+<entry
+   committed-rev="106"
+   name="ProxyMessage.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2a5c5418505b3be3a13c578203cee452"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   name="server"
+   kind="dir"/>
+<entry
+   committed-rev="127"
+   name="SocksSocket.java"
+   text-time="2006-09-11T22:45:21.000000Z"
+   committed-date="2006-09-13T04:05:59.656000Z"
+   checksum="7085020f40cb8cafe1a402d135ec8878"
+   last-author="atchijov"
+   kind="file"
+   revision="127"/>
+<entry
+   name="examples"
+   kind="dir"/>
+</wc-entries>

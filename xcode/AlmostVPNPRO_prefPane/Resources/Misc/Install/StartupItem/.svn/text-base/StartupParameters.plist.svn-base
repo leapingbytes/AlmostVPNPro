@@ -1,0 +1,10 @@
+{
+    Description     = "AlmostVPN Server";
+    Provides        = ("AlmostVPN");
+    Requires        = ("Network");
+    OrderPreference = "Late";
+    Messages = {
+        start = "Starting AlmostVPN Server";
+        stop  = "Stopping AlmostVPN Server";
+    };
+}

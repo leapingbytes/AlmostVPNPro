@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/jCocoa"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jmdns"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jetty"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/logging"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/rhino"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SocksProxy"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jsch"/>
+	<classpathentry kind="lib" path="/ganimed-ssh-beta/bin" sourcepath="/ganimed-ssh-beta/src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

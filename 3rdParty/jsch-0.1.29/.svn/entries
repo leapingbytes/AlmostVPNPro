@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jsch-0.1.29"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   name="build"
+   kind="dir"/>
+<entry
+   name="tools"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="LICENSE.txt"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5a3d92481613043fd0f6dfbd265c2058"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   name="dist"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="build.bat"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d3ed53c0841738adafdd591046e3fbb0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   name="src"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="ChangeLog"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c79cb52de61e6cc72e895981b23085c9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="build.sh"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="de28b69e893ce0dcd3b12cf3a3d8a862"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="README"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d8b8118c196adb2dbede891139f33e9a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   name="examples"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="build.xml"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="695ceb22dcdd782ed5a142c585b06e81"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+</wc-entries>

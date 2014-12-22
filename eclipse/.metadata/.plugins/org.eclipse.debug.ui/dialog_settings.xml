@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="561" key="org.eclipse.debug.ui.InspectPopupDialogDIALOG_WIDTH"/>
+	<item value="445" key="org.eclipse.debug.ui.InspectPopupDialogDIALOG_Y_ORIGIN"/>
+	<item value="37" key="org.eclipse.jdt.internal.debug.ui.actions.PopupDisplayAction$DisplayPopupDIALOG_HEIGHT"/>
+	<item value="631" key="org.eclipse.jdt.internal.debug.ui.actions.PopupDisplayAction$DisplayPopupDIALOG_Y_ORIGIN"/>
+	<item value="295" key="org.eclipse.debug.ui.InspectPopupDialogDIALOG_X_ORIGIN"/>
+	<item value="158" key="org.eclipse.jdt.internal.debug.ui.actions.PopupDisplayAction$DisplayPopupDIALOG_WIDTH"/>
+	<item value="282" key="org.eclipse.debug.ui.InspectPopupDialogDIALOG_HEIGHT"/>
+	<item value="44" key="org.eclipse.jdt.internal.debug.ui.actions.PopupDisplayAction$DisplayPopupDIALOG_X_ORIGIN"/>
+	<section name="org.eclipse.debug.ui.SCOPED_SAVE_SELECTION_DIALOG">
+		<item value="343" key="DIALOG_WIDTH"/>
+		<item value="193" key="DIALOG_Y_ORIGIN"/>
+		<item value="463" key="DIALOG_HEIGHT"/>
+		<item value="467" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Lucida Grande|11|0|CARBON|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.debug.ui.sourcelookup.SourceLookupDialog">
+		<item value="525" key="DIALOG_WIDTH"/>
+		<item value="201" key="DIALOG_Y_ORIGIN"/>
+		<item value="450" key="DIALOG_HEIGHT"/>
+		<item value="376" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Lucida Grande|11|0|CARBON|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.debug.ui.STRING_VARIABLE_SELECTION_DIALOG_SECTION">
+		<item value="382" key="DIALOG_WIDTH"/>
+		<item value="-46" key="DIALOG_Y_ORIGIN"/>
+		<item value="549" key="DIALOG_HEIGHT"/>
+		<item value="209" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Lucida Grande|11|0|CARBON|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.debug.ui.LAUNCH_CONFIGURATION_PROPERTIES_DIALOG_SECTION">
+		<item value="800" key="DIALOG_WIDTH"/>
+		<item value="-143" key="DIALOG_Y_ORIGIN"/>
+		<item value="640" key="DIALOG_HEIGHT"/>
+		<item value="-46" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Lucida Grande|11.0|0|CARBON|1|Lucida Grande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.debug.ui.LAUNCH_CONFIGURATIONS_DIALOG_SECTION">
+		<item value="825" key="DIALOG_WIDTH"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value=", org.eclipse.jdt.launching.localJavaApplication, org.eclipse.jdt.launching.remoteJavaApplication, org.eclipse.tptp.platform.analysis.core.ui.launch.analysisLaunchConfigurationType, " key="org.eclipse.debug.ui.EXPANDED_NODES"/>
+		<item value="1028" key="DIALOG_HEIGHT"/>
+		<item value="148" key="DIALOG_X_ORIGIN"/>
+		<item value="299" key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_1"/>
+		<item value="700" key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_2"/>
+		<item value="1|Lucida Grande|11.0|0|CARBON|1|Lucida Grande" key="DIALOG_FONT_NAME"/>
+	</section>
+</section>

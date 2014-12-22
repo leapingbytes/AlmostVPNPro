@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/rhino1_6R3/toolsrc/org/mozilla/javascript/tools/idswitch"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="Main.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="48a2ade6d58521263f7c38612f2db25a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="IdValuePair.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fbea8435d5786b75909340d74ae2e902"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SwitchGenerator.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f705c25d9fc39be4b8e7674956f8da03"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FileBody.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0a96a13190d47256704e83126de28616"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CodePrinter.java"
+   text-time="2006-09-01T03:01:44.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e38e1f0c2a18c71c596e0fa62f8b0700"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+</wc-entries>

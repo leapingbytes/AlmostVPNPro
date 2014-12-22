@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/commons-logging-1.0.4/docs/images/logos"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="maven-build-successfull.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e7950707f8b76fe87d46530b4340564d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-redgreen.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a409adcfc767fbc6592567548e661b5f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-button-teal.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d9458d47e03de16e21522d230ca70717"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-bolt.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="da4b074872a493f839ec01d45483d621"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-button-blue.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ff596529f1c20470780bcd6dcf6c04ff"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-button-copper.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="87811df27182424cce8b2c6e4a0f4793"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-bulldozer.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2138d99e48f2c6a5392becbdfd21eefd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-button-pinky.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="40e6e71ff31bee975a62902d77f198d9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-petesucks.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e5747ea366c6005cb0b51a56f83e1602"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-brewed.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4b398ec4d9c0d522734345055af38f25"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-button-1.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3d9b371c3549c7d85c2314a3e8f0df60"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-button-green.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ca3b83bc2c79c66d8763d66378b55b14"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-button-2.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="10f471186e47d2f87caafbef84f6109d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-propaganda-2.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a11d3861e0f6751bcf3b706ec4f45864"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-button-3.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="59fe18c1d9ff41117edd3cb5f28f0f70"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-button-4.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f44b468ccf99896b3ab7036ba9e2d355"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-propaganda.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b0259e823240a8e35344f277fb952583"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-button-5.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="341e5e5b7d9896494fd7c760b0f41ab7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-feather.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5e56f0b218fb1c1679a522940e2af584"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-built.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9ef9833d5d4adb668ff094f2ae026de9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-button-purple.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9943cf4ae5c4a74b14bb907c9f483889"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-mavenfactured.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2cd9bffff9ce2a29fab184d7f43d2f0f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-button-black.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="19e18b0b7bde79d55a6637895ad847fe"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="maven-frankenstein.png"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="50ae50875573bce8901017928f559802"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+</wc-entries>

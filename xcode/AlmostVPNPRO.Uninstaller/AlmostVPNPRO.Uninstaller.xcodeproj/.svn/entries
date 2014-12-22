@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO.Uninstaller/AlmostVPNPRO.Uninstaller.xcodeproj"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="135"
+   name="atchijov.perspective"
+   text-time="2006-09-16T02:55:49.000000Z"
+   committed-date="2006-10-13T14:13:53.587093Z"
+   checksum="24798fe89ef9430f6373e59ce58e17c4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:00.000000Z"
+   revision="135"/>
+<entry
+   committed-rev="135"
+   name="project.pbxproj"
+   text-time="2006-09-16T02:55:51.000000Z"
+   committed-date="2006-10-13T14:13:53.587093Z"
+   checksum="fbd2c88370488914c5bf7e323721e6d2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:00.000000Z"
+   revision="135"/>
+<entry
+   committed-rev="106"
+   name="default.pbxuser"
+   text-time="2006-09-01T03:19:00.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="70c6bce5a99d60ab37f522ddc3c48e6c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:00.000000Z"/>
+<entry
+   committed-rev="135"
+   name="atchijov.pbxuser"
+   text-time="2006-09-16T02:55:51.000000Z"
+   committed-date="2006-10-13T14:13:53.587093Z"
+   checksum="35b3fd046597e9847061e6e19e541347"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:00.000000Z"
+   revision="135"/>
+</wc-entries>

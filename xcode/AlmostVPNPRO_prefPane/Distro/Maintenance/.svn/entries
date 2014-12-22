@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Distro/Maintenance"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="154"
+   name="makeIt.sh"
+   text-time="2006-11-06T17:22:40.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="469df4b1e4bd47c88d6300174bbd9127"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"
+   revision="154"/>
+<entry
+   committed-rev="133"
+   name="PrepareDistro.scpt"
+   text-time="2006-10-16T14:00:42.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="de20b069a563c42f366133f091f7d818"
+   last-author="atchijov"
+   kind="file"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   prop-time="2006-09-01T03:19:28.000000Z"
+   revision="141"/>
+</wc-entries>

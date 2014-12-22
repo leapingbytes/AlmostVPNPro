@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-1.0.b2/java/external/build/docs/dom/traversal-range"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="spec.css"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c96ebf35e8501ca72a4f47f9865b6e1e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:14.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ecma-script-binding.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="66dada26279dbe0145d2ea7d5006ae79"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:14.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ranges.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="eb7bb15c10f26430375d3da59141a1ef"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:14.000000Z"/>
+<entry
+   committed-rev="106"
+   name="idl-definitions.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6f2ab4341a81343d7a2331d6a7fae767"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:14.000000Z"/>
+<entry
+   committed-rev="106"
+   name="references.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8ff4a63aa847f5e848e6d614a7c91fdb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:14.000000Z"/>
+<entry
+   committed-rev="106"
+   name="W3C-REC.css"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b174f3c3aff38ef67521c3962e52b60a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:14.000000Z"/>
+<entry
+   committed-rev="106"
+   name="copyright-notice.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bc35199ee9db5fcffa4179d843e9a083"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:14.000000Z"/>
+<entry
+   committed-rev="106"
+   name="java-binding.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6a87d5f9a310f5fe180b2da7ad612024"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:14.000000Z"/>
+<entry
+   committed-rev="106"
+   name="acknowledgements.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="093fcf07ccd0bc7fb2db311faa26802d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:14.000000Z"/>
+<entry
+   name="images"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="traversal.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="34602739145ea7b1ab6b93c3066de6e9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:14.000000Z"/>
+<entry
+   committed-rev="106"
+   name="def-index.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6e8f2676002646741b6c05cd2ef11bc1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:14.000000Z"/>
+<entry
+   committed-rev="106"
+   name="glossary.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2b302be8cf71a6a25862c7f5a7fb9650"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:14.000000Z"/>
+<entry
+   name="idl"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Overview.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="74061519e0e969614acc42945c772de2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:14.000000Z"/>
+<entry
+   committed-rev="106"
+   name="COPYRIGHT.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ea79a75523148cb102a6636fb173d42f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:14.000000Z"/>
+<entry
+   committed-rev="106"
+   name="expanded-toc.html"
+   text-time="2006-09-01T03:01:15.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7c4632a7fb42202684d4c34e67fd9b15"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:14.000000Z"/>
+</wc-entries>

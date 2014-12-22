@@ -1,0 +1,19 @@
+//
+//  LBAlmostVPNController.m
+//  AlmostVPN
+//
+//  Created by andrei tchijov on 8/22/05.
+//  Copyright 2005 Leaping Bytes, LLC. All rights reserved.
+//
+
+#import "LBAlmostVPNController.h"
+
+
+@implementation LBAlmostVPNController
+
+- (id) init {
+	self = [ super initWithWindowNibName: @"AlmostVPNPRO_prefPanePref" ];
+	return self;
+}
+
+@end

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<session version="1.0">
+<refactoring id="org.eclipse.jdt.ui.rename.java.project" stamp="1161798387442" flags="7" description="Rename Java project 'ganimed-ssh'" comment="Rename Java project 'ganimed-ssh' to 'ganimed-ssh-stable'&#10;- Original element: 'ganimed-ssh'&#10;- Update references to refactored element" input="=ganimed-ssh" name="ganimed-ssh-stable" references="true" version="1.0"/>
+</session>

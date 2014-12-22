@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name=".project"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5bcc403cee91eb99a51c77488cffcbc6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:00.000000Z"/>
+<entry
+   name="patches"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="pom.xml"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d96e7e9556c6df15db8e0a737c888745"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:00.000000Z"/>
+<entry
+   committed-rev="106"
+   name=".classpath"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1eb4e5278c521047c8bb3e148bf2c09e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:00.000000Z"/>
+<entry
+   name="webapps"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="VERSION.txt"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="314c14e5994035fefb1d86666aef47c8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:01.000000Z"/>
+<entry
+   name="logs"
+   kind="dir"/>
+<entry
+   name="LICENSES"
+   kind="dir"/>
+<entry
+   name="extras"
+   kind="dir"/>
+<entry
+   name="lib"
+   kind="dir"/>
+<entry
+   name="project-website"
+   kind="dir"/>
+<entry
+   name="bin"
+   kind="dir"/>
+<entry
+   name="modules"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="start.jar"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="330e0bdad5ccb85731868633a61c4ef8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   name="resources"
+   kind="dir"/>
+<entry
+   name="etc"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="README.txt"
+   text-time="2006-09-01T03:01:11.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="053c90188bcceae9554d983c97f4383e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:11.000000Z"/>
+<entry
+   name="examples"
+   kind="dir"/>
+</wc-entries>

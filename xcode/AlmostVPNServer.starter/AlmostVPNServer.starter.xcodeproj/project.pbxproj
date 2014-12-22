@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		501495CB0A86AFF800EF55B4 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 501495CA0A86AFF800EF55B4 /* libcrypto.dylib */; };
+		501D79DD09E16012006D1B5D /* JavaVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501D79DC09E16012006D1B5D /* JavaVM.framework */; };
+		501D79E309E16078006D1B5D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501D79E209E16078006D1B5D /* Security.framework */; };
+		501D7A5509E16205006D1B5D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501D7A5309E16205006D1B5D /* Cocoa.framework */; };
+		501D7A5609E16205006D1B5D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501D7A5409E16205006D1B5D /* SystemConfiguration.framework */; };
+		501FF2450C18910300047745 /* libAlmostVPNJNI.macosx.static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 501FF2440C18910300047745 /* libAlmostVPNJNI.macosx.static.a */; };
+		5086BA470AA64606003AA782 /* liblbToolboxLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5086BA460AA64606003AA782 /* liblbToolboxLib.a */; };
+		8DD76FAC0486AB0100D96B5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.m */; settings = {ATTRIBUTES = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		501FF1D70C188F8100047745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 507B197C0B85131200EDD025 /* AlmostVPNJNI.macosx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 501FF1D00C188F6300047745;
+			remoteInfo = AlmostVPNJNI.macosx.static;
+		};
+		501FF2410C1890C200047745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 507B197C0B85131200EDD025 /* AlmostVPNJNI.macosx.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 501FF1CF0C188F6300047745;
+			remoteInfo = AlmostVPNJNI.macosx.static;
+		};
+		507B19800B85131200EDD025 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 507B197C0B85131200EDD025 /* AlmostVPNJNI.macosx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC0C705546C1D00DB518D;
+			remoteInfo = AlmostVPNJNI.macosx;
+		};
+		5086BA400AA64557003AA782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5086BA3A0AA64557003AA782 /* LBToolbox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = LBToolbox;
+		};
+		5086BA420AA64557003AA782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5086BA3A0AA64557003AA782 /* LBToolbox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 50401BAF091B913E007B796B;
+			remoteInfo = lbToolboxLib;
+		};
+		50963A360AA7ED9900E3D1D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5086BA3A0AA64557003AA782 /* LBToolbox.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 507171D10911E79A00489EDE;
+			remoteInfo = All;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		501495C50A867DCB00EF55B4 /* libssl.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.0.9.dylib; path = /usr/lib/libssl.0.9.dylib; sourceTree = "<absolute>"; };
+		501495CA0A86AFF800EF55B4 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = /usr/lib/libcrypto.dylib; sourceTree = "<absolute>"; };
+		501496190A86DACD00EF55B4 /* almostvpn_jar_md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = almostvpn_jar_md5.h; sourceTree = "<group>"; };
+		501D79DC09E16012006D1B5D /* JavaVM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaVM.framework; path = /System/Library/Frameworks/JavaVM.framework; sourceTree = "<absolute>"; };
+		501D79E209E16078006D1B5D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		501D7A5309E16205006D1B5D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		501D7A5409E16205006D1B5D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		501FF2440C18910300047745 /* libAlmostVPNJNI.macosx.static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAlmostVPNJNI.macosx.static.a; path = ../AlmostVPNJNI.macosx/build/Release/libAlmostVPNJNI.macosx.static.a; sourceTree = SOURCE_ROOT; };
+		507B197C0B85131200EDD025 /* AlmostVPNJNI.macosx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlmostVPNJNI.macosx.xcodeproj; path = ../AlmostVPNJNI.macosx/AlmostVPNJNI.macosx.xcodeproj; sourceTree = SOURCE_ROOT; };
+		5086BA3A0AA64557003AA782 /* LBToolbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LBToolbox.xcodeproj; path = ../LBToolbox/LBToolbox.xcodeproj; sourceTree = SOURCE_ROOT; };
+		5086BA460AA64606003AA782 /* liblbToolboxLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblbToolboxLib.a; path = ../LBToolbox/build/Release/liblbToolboxLib.a; sourceTree = SOURCE_ROOT; };
+		50963A3B0AA7EDBC00E3D1D4 /* LBToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LBToolbox.framework; path = ../LBToolbox/build/Debug/LBToolbox.framework; sourceTree = SOURCE_ROOT; };
+		8DD76FB20486AB0100D96B5E /* AlmostVPNServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlmostVPNServer; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76FAD0486AB0100D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501D79DD09E16012006D1B5D /* JavaVM.framework in Frameworks */,
+				501D79E309E16078006D1B5D /* Security.framework in Frameworks */,
+				501D7A5509E16205006D1B5D /* Cocoa.framework in Frameworks */,
+				501D7A5609E16205006D1B5D /* SystemConfiguration.framework in Frameworks */,
+				501495CB0A86AFF800EF55B4 /* libcrypto.dylib in Frameworks */,
+				5086BA470AA64606003AA782 /* liblbToolboxLib.a in Frameworks */,
+				501FF2450C18910300047745 /* libAlmostVPNJNI.macosx.static.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* AlmostVPNServer.starter */ = {
+			isa = PBXGroup;
+			children = (
+				501FF2440C18910300047745 /* libAlmostVPNJNI.macosx.static.a */,
+				507B197C0B85131200EDD025 /* AlmostVPNJNI.macosx.xcodeproj */,
+				5086BA3A0AA64557003AA782 /* LBToolbox.xcodeproj */,
+				5086B92A0AA62ACA003AA782 /* Frameworks */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = AlmostVPNServer.starter;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7796FE84155DC02AAC07 /* main.m */,
+				501496190A86DACD00EF55B4 /* almostvpn_jar_md5.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FB20486AB0100D96B5E /* AlmostVPNServer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		507B197D0B85131200EDD025 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				507B19810B85131200EDD025 /* libAlmostVPNToolJNI.macosx.jnilib.dylib */,
+				501FF1D80C188F8100047745 /* libAlmostVPNJNI.macosx.static.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5086B92A0AA62ACA003AA782 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50963A3B0AA7EDBC00E3D1D4 /* LBToolbox.framework */,
+				5086BA460AA64606003AA782 /* liblbToolboxLib.a */,
+				501495CA0A86AFF800EF55B4 /* libcrypto.dylib */,
+				501495C50A867DCB00EF55B4 /* libssl.0.9.dylib */,
+				501D7A5309E16205006D1B5D /* Cocoa.framework */,
+				501D7A5409E16205006D1B5D /* SystemConfiguration.framework */,
+				501D79E209E16078006D1B5D /* Security.framework */,
+				501D79DC09E16012006D1B5D /* JavaVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5086BA3B0AA64557003AA782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5086BA410AA64557003AA782 /* LBToolbox.framework */,
+				5086BA430AA64557003AA782 /* liblbToolboxLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76FA90486AB0100D96B5E /* AlmostVPNServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "AlmostVPNServer" */;
+			buildPhases = (
+				501496130A86D9F600EF55B4 /* ShellScript */,
+				8DD76FAB0486AB0100D96B5E /* Sources */,
+				8DD76FAD0486AB0100D96B5E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50963A370AA7ED9900E3D1D4 /* PBXTargetDependency */,
+				501FF2420C1890C200047745 /* PBXTargetDependency */,
+			);
+			name = AlmostVPNServer;
+			productInstallPath = "$(HOME)/bin";
+			productName = AlmostVPNServer.starter;
+			productReference = 8DD76FB20486AB0100D96B5E /* AlmostVPNServer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "AlmostVPNServer.starter" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* AlmostVPNServer.starter */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 507B197D0B85131200EDD025 /* Products */;
+					ProjectRef = 507B197C0B85131200EDD025 /* AlmostVPNJNI.macosx.xcodeproj */;
+				},
+				{
+					ProductGroup = 5086BA3B0AA64557003AA782 /* Products */;
+					ProjectRef = 5086BA3A0AA64557003AA782 /* LBToolbox.xcodeproj */;
+				},
+			);
+			targets = (
+				8DD76FA90486AB0100D96B5E /* AlmostVPNServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		501FF1D80C188F8100047745 /* libAlmostVPNJNI.macosx.static.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAlmostVPNJNI.macosx.static.a;
+			remoteRef = 501FF1D70C188F8100047745 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		507B19810B85131200EDD025 /* libAlmostVPNToolJNI.macosx.jnilib.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libAlmostVPNToolJNI.macosx.jnilib.dylib;
+			remoteRef = 507B19800B85131200EDD025 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5086BA410AA64557003AA782 /* LBToolbox.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LBToolbox.framework;
+			remoteRef = 5086BA400AA64557003AA782 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5086BA430AA64557003AA782 /* liblbToolboxLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblbToolboxLib.a;
+			remoteRef = 5086BA420AA64557003AA782 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		501496130A86D9F600EF55B4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				../../eclipse/AlmostVPNServer/AlmostVPN.jar,
+				../AlmostVPNPRO_prefPane/Resources/Scripts/cleanup.sh,
+				../AlmostVPNPRO_prefPane/Resources/Scripts/install.sh,
+				./build/Release/AlmostVPNServer,
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/almostvpn_jar_md5.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp ../../eclipse/AlmostVPNServer/AlmostVPN.jar .\nALMOSTVPN_JAR_MD5=$( md5 -q ./AlmostVPN.jar )\necho \"#define ALMOSTVPN_JAR_MD5 \\\"$ALMOSTVPN_JAR_MD5\\\"\" > almostvpn_jar_md5.h\nINSTALL_SH_MD5=$( md5 -q ../AlmostVPNPRO_prefPane/Resources/Scripts/install.sh )\necho \"#define INSTALL_SH_MD5 \\\"$INSTALL_SH_MD5\\\"\" >> almostvpn_jar_md5.h\nCLEANUP_SH_MD5=$( md5 -q ../AlmostVPNPRO_prefPane/Resources/Scripts/cleanup.sh )\necho \"#define CLEANUP_SH_MD5 \\\"$CLEANUP_SH_MD5\\\"\" >> almostvpn_jar_md5.h\n\necho \"#define BUILD_DATE \\\"$( date )\\\"\" >> almostvpn_jar_md5.h";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76FAB0486AB0100D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76FAC0486AB0100D96B5E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		501FF2420C1890C200047745 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlmostVPNJNI.macosx.static;
+			targetProxy = 501FF2410C1890C200047745 /* PBXContainerItemProxy */;
+		};
+		50963A370AA7ED9900E3D1D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = All;
+			targetProxy = 50963A360AA7ED9900E3D1D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB928608733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(SRCROOT)/../LBToolbox/build/Debug",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G4;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = /System/Library/Frameworks/JavaVM.framework/Versions/1.4/Headers;
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(LIBRARY_SEARCH_PATHS)",
+					"$(SRCROOT)/../LBToolbox/build/Debug",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../AlmostVPNJNI.macosx/build/Release\"";
+				PRODUCT_NAME = AlmostVPNServer;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		1DEB928708733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(SRCROOT)/../LBToolbox/build/Release",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G4;
+				HEADER_SEARCH_PATHS = /System/Library/Frameworks/JavaVM.framework/Versions/1.4/Headers;
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(LIBRARY_SEARCH_PATHS)",
+					"$(SRCROOT)/../LBToolbox/build/Release",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../AlmostVPNJNI.macosx/build/Release\"";
+				PRODUCT_NAME = AlmostVPNServer;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1DEB928A08733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(HEADER_SEARCH_PATHS)";
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		1DEB928B08733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(HEADER_SEARCH_PATHS)";
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "AlmostVPNServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928608733DD80010E9CD /* Debug */,
+				1DEB928708733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "AlmostVPNServer.starter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928A08733DD80010E9CD /* Debug */,
+				1DEB928B08733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

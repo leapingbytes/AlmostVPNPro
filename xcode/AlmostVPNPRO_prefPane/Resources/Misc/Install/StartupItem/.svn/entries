@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Resources/Misc/Install/StartupItem"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="StartupParameters.plist"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6cf675b5b506b7bca1c5daebe7b48f52"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="154"
+   name="AlmostVPN"
+   text-time="2006-11-08T18:03:39.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="a808443a82b96a09801b9e8ad5684112"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"
+   revision="154"/>
+</wc-entries>

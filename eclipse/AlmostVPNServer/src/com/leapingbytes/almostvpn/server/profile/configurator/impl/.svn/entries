@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/AlmostVPNServer/src/com/leapingbytes/almostvpn/server/profile/configurator/impl"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   revision="110"/>
+<entry
+   committed-rev="157"
+   name="RemoteControlConfigurator.java"
+   text-time="2006-10-26T17:04:15.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="2e77d67651c50ce45353da82eb8e6119"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+<entry
+   committed-rev="106"
+   name="BonjourConfigurator.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7ee5994316e7268e5eff2223b73663dc"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="106"
+   name="ConfiguratorRepository.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ed66a4b2c91582ed76742ad67f1feb49"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="157"
+   name="FileConfigurator.java"
+   text-time="2006-11-06T18:47:19.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="17e6c509ac368b5ebb5107a9be5b7c55"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+<entry
+   committed-rev="106"
+   name="PrinterConfigurator.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d79d32a5e76600ca4c04e99a6ab19fc3"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="157"
+   name="SessionConfigurator.java"
+   text-time="2006-11-13T14:28:38.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="8505503573fe89740bf50ba0e71ea55a"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+<entry
+   committed-rev="157"
+   name="TunnelConfigurator.java"
+   text-time="2006-10-26T02:19:54.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="7cce52ecb01dd1fe31b439a0a920dc4a"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+<entry
+   committed-rev="157"
+   name="HostAliasConfigurator.java"
+   text-time="2006-10-30T16:23:12.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="f3a8e9925525f8326fc0992773169b97"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+<entry
+   committed-rev="106"
+   name="pacSupport.js"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fd2e532f4ef59a579f6e14fef496a5a3"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="157"
+   name="DriveConfigurator.java"
+   text-time="2006-11-05T20:09:07.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="56e1cea18efa3c857e1938f3d1c9df31"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+</wc-entries>

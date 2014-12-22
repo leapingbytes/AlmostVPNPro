@@ -1,0 +1,26 @@
+//
+//  InstallManager.h
+//  AlmostVPNPRO_prefPane
+//
+//  Created by andrei tchijov on 9/7/06.
+//  Copyright 2006 Leaping Bytes, LLC. All rights reserved.
+//
+
+#import <Cocoa/Cocoa.h>
+#import "AVPN.h"
+
+#define InstallManager avpnClass( InstallManager )
+
+@interface InstallManager : NSObject {
+}
+
++ (void) ensureInstall;
+
++ (BOOL) checkLoginItem: (NSString*) path;
++ (BOOL) installLoginItem: (NSString*) path;
++ (BOOL) removeLoginItem: (NSString*) path;
+
++ (id) menuBarAppStartOnLogin;
++ (void) setMenuBarAppStartOnLogin: (id) v;
+
+@end

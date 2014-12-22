@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/commons-logging-1.0.4/docs/apidocs/org/apache/commons/logging/class-use"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="Log.html"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ad6a258ffadaeb37598c08b839372af5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LogSource.html"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="095f8e5089954b20e59b6b0dfd0f5b95"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LogConfigurationException.html"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d170d050b7b9eb6af1aaea56c620d8ab"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LogFactory.html"
+   text-time="2006-09-01T03:01:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7ceff709fc722cc00b1184c34891a825"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:48.000000Z"/>
+</wc-entries>

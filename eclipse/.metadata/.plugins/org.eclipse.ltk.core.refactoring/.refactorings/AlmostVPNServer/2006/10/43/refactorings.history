@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<session version="1.0">
+<refactoring id="org.eclipse.jdt.ui.rename.field" stamp="1161827823467" flags="589830" description="Rename field 'AVPNServiceBothType'" comment="Rename field 'AVPNServiceBothType' in 'com.leapingbytes.almostvpn.model.Model' to 'AVPNServiceTCPAndUDPType'&#10;- Original element: 'com.leapingbytes.almostvpn.model.Model.AVPNServiceBothType'&#10;- Renamed element: 'com.leapingbytes.almostvpn.model.Model.AVPNServiceTCPAndUDPType'&#10;- Update references to refactored element&#10;- Update textual occurrences in comments and strings" getter="false" delegate="false" input="/src&lt;com.leapingbytes.almostvpn.model{Model.java[Model^AVPNServiceBothType" setter="false" deprecate="true" name="AVPNServiceTCPAndUDPType" references="true" textual="false" version="1.0"/>
+</session>

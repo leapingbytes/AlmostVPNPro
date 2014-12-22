@@ -1,0 +1,168 @@
+//
+//  InstallManager.m
+//  AlmostVPNPRO_prefPane
+//
+//  Created by andrei tchijov on 9/7/06.
+//  Copyright 2006 Leaping Bytes, LLC. All rights reserved.
+//
+
+#import "InstallManager.h"
+#import "PathLocator.h"
+#import "ServerHelper.h"
+
+@interface NSDictionary (InstallManager)
+-(NSString*) stdOut;
+-(NSString*) stdErr;
+-(int) rc;
+-(BOOL) isOK;
+@end
+
+@implementation NSDictionary (InstallManager)
+-(NSString*) stdOut {
+	return [ self objectForKey: @"std-out" ];
+}
+-(NSString*) stdErr {
+	return [ self objectForKey: @"std-err" ];
+}
+-(int) rc {
+	NSNumber* result = [ self objectForKey: @"rc" ];
+	return [ result intValue ];
+}
+-(BOOL) isOK {
+	return [ self rc ] == 0;
+}
+@end
+
+@interface InstallManager (private)
++(int) checkInstall;
++(NSDictionary*) runInstallSh: (NSString*) command;
++(NSDictionary*) runInstallSh: (NSString*) command withArgument: (NSString*) arg;
+@end
+@implementation InstallManager (private)
++(NSDictionary*) runInstallSh: (NSString*) command {
+	return [ self runInstallSh: command withArgument: nil ];
+}
+
++(NSDictionary*) runInstallSh: (NSString*) command withArgument: (NSString*) arg {
+	NSString* installShPath = [ PathLocator pathForResource: @"install.sh" ];
+	NSTask* installShTask = [[ NSTask alloc ] init ];
+	[ installShTask setLaunchPath: installShPath ];
+	NSArray* taskArgs = [ NSArray arrayWithObjects: 
+		command,
+		NSUserName(),
+		[ PathLocator resourcePath ],
+		[ PathLocator applicationSupportPath ],
+		[ PathLocator preferencesPath ],
+		arg,
+		nil
+	];
+	[ installShTask setArguments: taskArgs ];
+	NSPipe* stdOutPipe = [ NSPipe pipe ];	
+	[ installShTask setStandardOutput: stdOutPipe ];
+	NSPipe* stdErrPipe = [ NSPipe pipe ];	
+	[ installShTask setStandardError: stdErrPipe ];
+
+	[ installShTask launch ];
+	[ installShTask waitUntilExit ];
+	
+	NSData* outData = [[ stdOutPipe fileHandleForReading ] readDataToEndOfFile ];
+	NSString* result = [ NSString stringWithCString: [ outData bytes ] length: [ outData length ]];
+
+	int rc = [ installShTask terminationStatus ];
+	
+	NSData* errData = [[ stdErrPipe fileHandleForReading ] readDataToEndOfFile ];
+	NSString* errorString = [ NSString stringWithCString: [ errData bytes ] length: [ errData length ]];
+	if( rc  != 0 ) {
+		NSLog( @"AVPN : installManager : ERROR %d\nout:%@\nerr:%@", rc, result, errorString );
+	}
+	return [ NSDictionary dictionaryWithObjectsAndKeys: 
+		result, @"out-data", 
+		errorString, @"err-data", 
+		[ NSNumber numberWithInt: rc ], @"rc",
+		nil
+	];
+}
++ (int) checkInstall {
+	NSDictionary* result = [ self runInstallSh: @"check" ];
+	
+	return result == nil ? -1 : [ result rc ];
+}
+@end
+@implementation InstallManager
++ (BOOL) checkLoginItem: (NSString*) path {
+	NSDictionary* result = [ self runInstallSh: @"checkLoginItem" withArgument: path ];
+	return [ result isOK ];
+}
+
++ (BOOL) installLoginItem: (NSString*) path {
+	[ self runInstallSh: @"removeLoginItem" withArgument: [ path lastPathComponent ]];
+	NSDictionary* result = [ self runInstallSh: @"installLoginItem" withArgument: path ];
+	return [ result isOK ];
+}
+
++ (BOOL) removeLoginItem: (NSString*) path {
+	NSDictionary* result = [ self runInstallSh: @"uninstallLoginItem" withArgument: path ];
+	return [ result isOK ];
+}
+
++ (void) ensureInstall {
+	[ ServerHelper setupServer ];
+	int installStatus = [ self checkInstall ];
+	switch( installStatus ) {
+		case 0 : // All is well
+			; // do nothing
+		break;
+		case 1 : // Servince is not installed
+			[ ServerHelper installService ];
+		case 2 : // Login Item not installed
+			[ self installLoginItem: [ PathLocator pathForResource: @"AVPN.Agent.app" ]];
+		break;
+	}
+}
+
+static id		_menuBarAppInstalled = nil;
+
++ (id) menuBarAppStartOnLogin {
+	if( _menuBarAppInstalled == nil ) {
+		BOOL v = [ self checkLoginItem: [ PathLocator pathForResource: @"AlmostVPNProMenuBar.app" ]];
+		_menuBarAppInstalled = [[ NSNumber alloc ] initWithBool: v ];
+	}
+	return _menuBarAppInstalled;
+}
+
++ (void) setMenuBarAppStartOnLogin: (id) v {
+	v = [ v copy ];
+	[ _menuBarAppInstalled release ];
+	_menuBarAppInstalled = v;
+	
+	if( [ v boolValue ] ) {
+		[ self installLoginItem: [ PathLocator pathForResource: @"AlmostVPNProMenuBar.app"  ]];
+	} else {
+		[ self removeLoginItem: [ PathLocator pathForResource: @"AlmostVPNProMenuBar.app"  ]];
+	}
+}
+
+static id	_widgetInstalled = nil;
+
++ (id) widgetInstall {
+	if( _widgetInstalled == nil ) {
+		NSDictionary* result = [ self runInstallSh: @"checkWidget" ];
+		_widgetInstalled = [[ NSNumber alloc ] initWithBool: [ result isOK ]]; 
+	}
+	return _widgetInstalled;
+}
+
++ (void) setWidgetInstall: (id) v {
+	v = [ v copy ];
+	[ _widgetInstalled release ];
+	_widgetInstalled = v;
+	
+	if( [ v boolValue ] ) {
+		[ self runInstallSh: @"installWidget" ];
+	} else {
+		[ self runInstallSh: @"uninstallWidget" ];
+	}
+}
+
+
+@end

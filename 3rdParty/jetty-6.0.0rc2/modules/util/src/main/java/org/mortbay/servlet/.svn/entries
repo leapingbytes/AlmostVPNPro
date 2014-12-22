@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/util/src/main/java/org/mortbay/servlet"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="WelcomeFilter.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c01a5a89c637608d0e347d0917709ee2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CGI.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="12676a655e7c0500612e1ff07557fabd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ThrottlingFilter.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d23c0284880c0ca36c6924655418b15f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ProxyServlet.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="261affb42c76093fd070b4509f170c58"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MultiPartFilter.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3e6be8981ca437936a8caa25edd6b018"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NoJspServlet.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="efff3d898ce9ebf0b0697f4ca35330db"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+</wc-entries>

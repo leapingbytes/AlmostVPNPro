@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/lib/naming"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="jetty-naming-6.0.0rc2.jar"
+   text-time="2006-09-01T03:01:03.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5daef5309b52d04ae2eb1f2404b23f14"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:03.000000Z"/>
+</wc-entries>

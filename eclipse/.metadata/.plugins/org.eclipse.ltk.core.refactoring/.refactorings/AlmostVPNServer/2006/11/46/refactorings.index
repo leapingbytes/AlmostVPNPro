@@ -1,0 +1,6 @@
+1163428101371	Rename method 'ProxyEnabled'
+1163428144274	Rename method 'ProxyAutoDiscoveryEnabled'
+1163428135346	Rename method 'ProxyAutoConfigURL'
+1163428127181	Rename method 'ProxyAutoConfigEnabled'
+1163428118777	Rename method 'ProxyPort'
+1163428110082	Rename method 'ProxyHost'

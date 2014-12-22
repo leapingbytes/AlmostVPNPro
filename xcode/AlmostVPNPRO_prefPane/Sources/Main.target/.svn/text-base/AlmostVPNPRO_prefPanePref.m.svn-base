@@ -1,0 +1,18 @@
+//
+//  AlmostVPNPRO_prefPanePref.m
+//  AlmostVPNPRO_prefPane
+//
+//  Created by andrei tchijov on 10/25/05.
+//  Copyright (c) 2005 Leaping Bytes, LLC. All rights reserved.
+//
+
+#import "AlmostVPNPRO_prefPanePref.h"
+
+
+@implementation AlmostVPNPRO_prefPanePref
+
+- (void) mainViewDidLoad
+{
+}
+
+@end

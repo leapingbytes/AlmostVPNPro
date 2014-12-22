@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-2.4.1/java/external/build/docs/javadoc/javax/xml/transform/sax"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="SAXSource.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0e43523d9193ee22004320d38fdddc98"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TemplatesHandler.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d1c8fdf65a19f47378369c281560e98e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TransformerHandler.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4d682492e2660f32b71baf603e84a261"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="83caef2f2d3d5d69a9c7c03ccfdd42be"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SAXTransformerFactory.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2faed8a9ff3d43cd35002b16e23c81d4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="999f869b139d7bc5d582612190c3b95d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-tree.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7e61b84001e2cbf60dbee0bfcac0f4bc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SAXResult.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="63880edd48ecb9e5c9aa7831b64c279a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+</wc-entries>

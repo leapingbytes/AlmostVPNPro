@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="0"
+   schedule="add"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/ganymed-ssh2-build210/src/ch/ethz/ssh2/crypto"
+   kind="dir"
+   name=""/>
+<entry
+   schedule="add"
+   name="Base64.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="CryptoWishList.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="KeyMaterial.java"/>
+<entry
+   schedule="add"
+   name="PEMDecoder.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="PEMStructure.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="SimpleDERReader.java"/>
+<entry
+   schedule="add"
+   kind="dir"
+   name="cipher"/>
+<entry
+   schedule="add"
+   name="dh"
+   kind="dir"/>
+<entry
+   schedule="add"
+   kind="dir"
+   name="digest"/>
+</wc-entries>

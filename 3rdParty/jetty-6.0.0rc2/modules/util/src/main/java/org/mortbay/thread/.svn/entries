@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/util/src/main/java/org/mortbay/thread"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="ThreadPool.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9000857b758d1ae195a2f946670db1b0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="BoundedThreadPool.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cb16faa9754ec509926f532baa9811e0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Timeout.java"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b0e8d6507130fc5e2640a6ddc05847b6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+</wc-entries>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   schedule="add"
+   revision="0"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/ganymed-ssh2-build210/src/ch/ethz/ssh2/crypto/dh"
+   name=""
+   kind="dir"/>
+<entry
+   schedule="add"
+   name="DhExchange.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="DhGroupExchange.java"/>
+</wc-entries>

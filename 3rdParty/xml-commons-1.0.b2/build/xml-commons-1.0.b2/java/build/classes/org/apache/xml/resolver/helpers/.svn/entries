@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-1.0.b2/java/build/classes/org/apache/xml/resolver/helpers"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="PublicId.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="53ecd335a1eaecfd86fbda836eb90d08"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Namespaces.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="520dd229d7885d709a94ad3d3b268513"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Debug.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="098e9a32f81b1c3aaac8f53e0d733b2b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+</wc-entries>

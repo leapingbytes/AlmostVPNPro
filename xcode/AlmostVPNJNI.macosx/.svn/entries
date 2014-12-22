@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNJNI.macosx"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="main.m"
+   text-time="2006-09-01T03:16:23.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="106deb29e49b2cc3da98f2c8dff208e6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:16:23.000000Z"/>
+<entry
+   name="Tools"
+   kind="dir"/>
+<entry
+   committed-rev="155"
+   name="SystemConfigurationProvider.m"
+   text-time="2006-11-13T18:44:35.000000Z"
+   committed-date="2006-11-21T02:25:23.659200Z"
+   checksum="21f311e8d0aa00d1287d43fefd9c0758"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:16:23.000000Z"
+   revision="155"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNJNI.macosx_Prefix.pch"
+   text-time="2006-09-01T03:16:23.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e91b6f4d3a6217c627f9e7182ca7a9ec"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:16:23.000000Z"/>
+<entry
+   committed-rev="134"
+   name="KeychainMasterPasswodProvider.c"
+   text-time="2006-09-17T18:59:01.000000Z"
+   committed-date="2006-10-13T14:13:39.247145Z"
+   checksum="f41d35a20cee660cf64cf7342346c26d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:16:23.000000Z"
+   revision="134"/>
+<entry
+   name="AlmostVPNJNI.macosx.xcodeproj"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="com_leapingbytes_almostvpn_util_macosx_KeychainMasterPasswordProvider.h"
+   text-time="2006-09-01T03:16:23.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b2daf462edd9112174ff3f28cecbb77b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:16:23.000000Z"/>
+<entry
+   committed-rev="155"
+   name="com_leapingbytes_almostvpn_util_macosx_SystemConfigurationProvider.h"
+   text-time="2006-11-13T15:48:35.000000Z"
+   committed-date="2006-11-21T02:25:23.659200Z"
+   checksum="384c42f3c292bec4c109c2f923715e9b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:16:23.000000Z"
+   revision="155"/>
+</wc-entries>

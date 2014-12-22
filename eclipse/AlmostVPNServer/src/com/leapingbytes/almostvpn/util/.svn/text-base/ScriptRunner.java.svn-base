@@ -1,0 +1,175 @@
+package com.leapingbytes.almostvpn.util;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.security.MessageDigest;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import com.leapingbytes.almostvpn.server.profile.ProfileException;
+import com.leapingbytes.jcocoa.NSDictionary;
+
+public class ScriptRunner {
+	private static final Log log = LogFactory.getLog( ScriptRunner.class );
+	
+	private static String[] _env = null;
+
+	public static String runScript( String script ) throws ProfileException {
+		return runScript( script, null, null );
+	}
+	
+	public static String runScript( StringBuffer script ) throws ProfileException {
+		return ScriptRunner.runScript( script, null, null );
+	}
+	
+	public static String runScript( String script, String[] env, String user ) throws ProfileException {
+		return runScript( new StringBuffer( script ), env, user );		
+	}
+	
+	public static String runScript( StringBuffer script, String[] env, String user ) throws ProfileException {
+		if( script.length() == 0 ) {
+			return "";
+		}
+		if( ! testScriptIntegrity( "utils.sh" ) ) {
+			String msg = "utils.sh was tempered with";
+			log.error( "msg" );
+			throw new ProfileException( msg );
+		}
+		log.info( "Script : " + script );
+		try {
+			int lastIndex = script.lastIndexOf( "&&" );
+			if(script.substring( lastIndex + 2 ).trim().length() == 0 ) {
+				script.setLength( lastIndex );
+			}
+			String[] command = user == null 
+				? new String[] {
+						"/bin/bash",
+						"-c",
+						". utils.sh && " + script
+				}
+				: new String[] {
+								"/usr/bin/su",
+								user,			
+								"-c",
+								"/bin/bash -c \". utils.sh && " + script + "\""
+				};
+			Process p = Runtime.getRuntime().exec( command, appendToEnv( env ));
+			
+			DataConsumer out = new DataConsumer( p.getInputStream());
+			DataConsumer err = new DataConsumer( p.getErrorStream());
+			
+			if( waitForProcess(  p ) == 0 ) {
+				log.info( "Script out :\n" + out.data() + "\nScript err :\n" + err.data());
+				return out.data();
+			} else {
+				throw new ProfileException( "Fail to run script :\n" + script + "\nScript out :\n" + out.data() + "\nScript err :\n" + err.data() );
+			}
+		} catch (IOException e) {
+			throw new ProfileException( "Fail to run script :\n" + script, e );
+		}
+	}
+	
+	static NSDictionary _scripts_checksums = null;
+	
+	private static boolean testScriptIntegrity( String scriptName ) {
+		if( _scripts_checksums == null ) {
+			URL md5PlistURL = Thread.currentThread().getContextClassLoader().getResource( "md5.plist" );
+			_scripts_checksums = NSDictionary.dictionaryWithContentOfTheURL( md5PlistURL );
+		}
+		
+		NSDictionary scriptChecksum = (NSDictionary) _scripts_checksums.objectForKey( scriptName );
+		if( scriptChecksum == null ) {
+			return false;
+		}
+		String scriptMD5 = (String) scriptChecksum.objectForKey( "md5" );
+		String md5 = null;
+		try {
+			md5 = getMD5Checksum( scriptName );
+		} catch (Exception e) {
+			log.error( "Fail to calculate md5 for : " + scriptName, e );
+		}
+		
+		if( md5 == null || scriptMD5 == null) {
+			return false;
+		}
+		
+		return scriptMD5.equalsIgnoreCase( md5 );
+	}
+	private static String[] appendToEnv( String[] env ) {
+		if( env == null ) {
+			return null;
+		}
+		List list = new ArrayList( Arrays.asList( getEnv()));
+		for( int i = 0; i < env.length; i++ ) {
+			list.add( env[ i ] );
+		}
+		return (String[])list.toArray( new String[ list.size() ]);
+	}
+	
+	private static String[] getEnv() {
+		if( _env == null ) {
+			Process p;
+			try {
+				p = Runtime.getRuntime().exec( "/usr/bin/env" );
+
+				DataConsumer out = new DataConsumer( p.getInputStream());
+				DataConsumer err = new DataConsumer( p.getErrorStream());
+				
+				if( waitForProcess( p ) == 0 ) {
+					_env = out.data().split( "\n" );
+				} else {
+					log.error( "Fail to get env : " + err.data() );
+				}
+			} catch (IOException e) {
+				log.error( "Fail to get env : ", e );
+			}
+			
+		}
+		
+		return _env;
+	}
+	
+	private static int waitForProcess( Process p ) {
+		int exitCode = 0;
+		while( true ) {
+			try {
+				exitCode = p.waitFor();
+				break;
+			} catch (InterruptedException e) {
+				// do nothing
+			}
+		}		
+		return exitCode;
+	}
+	
+	public static byte[] createChecksum(String filename) throws Exception {
+		InputStream fis = new FileInputStream(filename);
+
+		byte[] buffer = new byte[1024];
+		MessageDigest complete = MessageDigest.getInstance("MD5");
+		int numRead;
+		do {
+			numRead = fis.read(buffer);
+			if (numRead > 0) {
+				complete.update(buffer, 0, numRead);
+			}
+		} while (numRead != -1);
+		fis.close();
+		return complete.digest();
+	}
+
+	public static String getMD5Checksum(String filename) throws Exception {
+		byte[] b = createChecksum(filename);
+		String result = "";
+		for (int i = 0; i < b.length; i++) {
+			result += Integer.toString((b[i] & 0xff) + 0x100, 16).substring(1);
+		}
+		return result;
+}	
+}

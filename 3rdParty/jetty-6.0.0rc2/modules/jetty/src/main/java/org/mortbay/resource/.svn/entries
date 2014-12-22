@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/jetty/src/main/java/org/mortbay/resource"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="ResourceFactory.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e32e9361929b0e5f6b886bbdbfc91c34"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="JarFileResource.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="be244baf9c8447ce7544148828ecc1b8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="JarResource.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b984a158fd93f4128f089b292b2237d7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FileResource.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="290b6984efb968703737f766ff82392b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Resource.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cc88b1f6d2e3779fcff5165912127431"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="URLResource.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="dca94a527121218e20ea808781dcdf67"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="BadResource.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3210044c668202cb39be4dcc4469c5a0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+</wc-entries>

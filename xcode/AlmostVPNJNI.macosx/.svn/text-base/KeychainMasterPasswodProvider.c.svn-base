@@ -1,0 +1,246 @@
+#include "com_leapingbytes_almostvpn_util_macosx_KeychainMasterPasswordProvider.h"
+#include <CoreFoundation/CoreFoundation.h>
+#include <Security/Security.h>
+#include <stdlib.h>
+#include <memory.h>
+
+typedef signed char		BOOL; 
+#define YES             (BOOL)1
+#define NO              (BOOL)0
+
+/*
+	private native String getKeychainPassword( 
+		String type,
+		String account,
+		String serverName,
+		String path,
+		String keychainPath
+	);
+
+ */
+SecKeychainRef getKeychain( JNIEnv* env, jstring jKeychainPath ) {
+	SecKeychainRef result = (SecKeychainRef)nil;
+	SecKeychainStatus status = 0;
+	OSStatus err = 0;
+	
+	const char* aPath = jKeychainPath == NULL ? NULL : (*env)->GetStringUTFChars( env, jKeychainPath, NULL );	
+	
+	if( jKeychainPath == NULL ) {
+		err = SecKeychainCopyDefault( &result );
+	} else {
+		err = SecKeychainOpen( aPath, &result );	
+	}
+	if( err == 0 && ( result != nil )) {
+		err = SecKeychainGetStatus( result, &status );
+	}
+
+	if( err || ( status == 0 )) {
+		fprintf( stderr, "AlmostVPN : KeychainMasterPasswordProvider.getKeychain : Fail to get keychain %s : %d:%d\n", 
+			(aPath == NULL) ? "DEFAULT" : aPath, err, status );
+	}
+	
+	if( aPath != NULL ) {
+		(*env)->ReleaseStringUTFChars( env, jKeychainPath, aPath );	
+	}
+	
+	if( err || ( status == 0 )) {
+		return NULL;
+	} else {
+		return result;
+	}
+}
+
+SecProtocolType stringToSecProtocolType( const char* str ) {
+	SecProtocolType result = 0;
+	for( int i = 0; i < 4; i++ ) {
+		int byte = ( str[ i ] == 0 ? ' ' : str[ i ]) & 0xff;
+		result = ( result << 8 ) + byte;
+	}
+	return result;
+}
+
+SecAccessRef createAccessWithLabel( char* label ) {
+	OSStatus err;
+    SecAccessRef access=nil;
+    SecTrustedApplicationRef myself;
+	
+    err = SecTrustedApplicationCreateFromPath( NULL, &myself );
+	
+	if( err != noErr ) {
+		fprintf( stderr, "AlmostVPN : KeychainMasterPasswordProvider.createAccessWithLabel : SecTrustedApplicationCreateFromPath Failed\n");
+		return NULL;
+	}
+	
+    CFMutableArrayRef trustedApplications= CFArrayCreateMutable( nil, 1, &kCFTypeArrayCallBacks );
+	CFArrayAppendValue( trustedApplications, myself );
+	
+	CFStringRef cfLabel = CFStringCreateWithCString( NULL, label, kCFStringEncodingUTF8 );
+    err = SecAccessCreate(cfLabel, (CFArrayRef)trustedApplications, &access);
+    if (err) { 
+		fprintf( stderr, "AlmostVPN : KeychainMasterPasswordProvider.createAccessWithLabel : Fail with label %s : %d\n", 
+			label, err  );
+		return nil;
+	}
+    
+	return access;
+}
+
+
+JNIEXPORT jstring JNICALL 
+	Java_com_leapingbytes_almostvpn_util_macosx_KeychainMasterPasswordProvider_getKeychainPassword
+  	( 
+  		JNIEnv* env, 
+  		jobject this, 
+  		jstring jType,
+  		jstring jAccount, 
+  		jstring jServerName,
+  		jstring jPath, 
+  		jstring jKeychainPath
+  	) 
+{
+	SecKeychainRef keychain = getKeychain( env, jKeychainPath );
+	
+//	if( keychain == NULL ) {
+//		return NULL;
+//	}
+
+	UInt32 length;
+	void* data;
+	
+	SecKeychainSetUserInteractionAllowed( YES );
+	
+	const char* type = jType == NULL ? "ssh" : (*env)->GetStringUTFChars( env, jType, NULL );
+	const char* serverName = (*env)->GetStringUTFChars( env, jServerName, NULL );
+	const char* account = (*env)->GetStringUTFChars( env, jAccount, NULL );
+	const char* path = jPath == NULL ? "" : (*env)->GetStringUTFChars( env, jPath, NULL );
+	
+//	printf( "keychain = %x\n", keychain );
+//	printf( "type = %x\n", stringToSecProtocolType( type ));
+//	printf( "%s %s %s %s\n", type, serverName, account, path );
+	
+	OSStatus status = SecKeychainFindInternetPassword(
+		keychain,
+		strlen( serverName ), serverName,
+		0, nil,
+		strlen( account ), account,
+		strlen( path ), path,
+		0,
+		stringToSecProtocolType( type ),
+		kSecAuthenticationTypeDefault,
+		&length, &data,
+		nil
+	);	
+	
+	jstring jResult = NULL;
+
+	if( status ) {
+		fprintf( stderr, "AlmostVPN : KeychainMasterPasswordProvider.JNI_getKeychainPassword : SecKeychainFindInternetPassword Failed %d\n", status );
+
+//		printf( "status = %d\n", status );
+		jResult = NULL;
+	} else {
+		char* result = (char*)malloc( length + 1 );
+		memcpy( result, data, length );
+		result[ length ] = 0;
+		jResult = (*env)->NewStringUTF( env, result );
+		free( result );
+	}	
+
+	if( jType != NULL ) { (*env)->ReleaseStringUTFChars( env, jType, type ); }
+	(*env)->ReleaseStringUTFChars( env, jServerName, serverName );
+	(*env)->ReleaseStringUTFChars( env, jAccount, account );
+	if( jPath != NULL ) { (*env)->ReleaseStringUTFChars( env, jPath, path ); }
+	
+	if( keychain != NULL ) {
+		CFRelease( keychain );
+	}
+		
+	return jResult;
+}
+
+JNIEXPORT void JNICALL 
+	Java_com_leapingbytes_almostvpn_util_macosx_KeychainMasterPasswordProvider_setKeychainPassword
+  	( 
+  		JNIEnv* env, 
+  		jobject this,
+  		jstring jPassword, 
+  		jstring jType,
+  		jstring jAccount, 
+  		jstring jServerName,
+  		jstring jPath, 
+  		jstring jKeychainPath
+  	) 
+{
+	SecKeychainRef keychain = getKeychain( env, jKeychainPath );
+	
+//	if( keychain == NULL ) {
+//		return;
+//	}
+
+	const char* password = (*env)->GetStringUTFChars( env, jPassword, NULL );
+	const char* type = jType == NULL ? "ssh" : (*env)->GetStringUTFChars( env, jType, NULL );
+	const char* serverName = (*env)->GetStringUTFChars( env, jServerName, NULL );
+	const char* account = (*env)->GetStringUTFChars( env, jAccount, NULL );
+	const char* path = jPath == NULL ? "" : (*env)->GetStringUTFChars( env, jPath, NULL );
+	
+	
+	SecKeychainItemRef	itemRef = nil;
+	OSStatus status = SecKeychainFindInternetPassword(
+		keychain,
+		strlen( serverName ), serverName,
+		0, nil,
+		strlen( account ), account,
+		strlen( path ), path,
+		0,
+		stringToSecProtocolType( type ),
+		kSecAuthenticationTypeDefault,
+		0, nil,
+		&itemRef
+	);
+	
+	if( itemRef != nil ) {
+		status = SecKeychainItemModifyAttributesAndData(
+			itemRef,
+			nil,
+			strlen( password ), password
+		);
+	} else {
+		SecAccessRef access = createAccessWithLabel( "AlmostVPN" );
+		
+		int port = 0;
+		SecProtocolType protocol = stringToSecProtocolType( type );
+		SecAuthenticationType authType = kSecAuthenticationTypeDefault;
+		char* label = malloc( strlen( account ) + strlen( "@" ) + strlen( serverName ) + 1 );
+		label[0] = 0;
+		strcat( label, account );
+		strcat( label, "@" );
+		strcat( label, serverName );
+
+		SecKeychainAttribute attrs[] = {
+		{ kSecLabelItemAttr,	strlen( label ),			(void*)label },
+		{ kSecAccountItemAttr,	strlen( account ),			(void*)account },
+		{ kSecServerItemAttr,	strlen( serverName ),		(void*)serverName },
+		{ kSecPortItemAttr,		sizeof(int),				(int *)&port },
+		{ kSecProtocolItemAttr,	sizeof(SecProtocolType), 	(SecProtocolType *)&protocol },
+		{ kSecAuthenticationTypeItemAttr,
+			sizeof( SecAuthenticationType ), (SecAuthenticationType*)&authType }
+			// { kSecPathItemAttr,		1,							"/" }
+		};
+		SecKeychainAttributeList attributes = { sizeof(attrs) / sizeof(attrs[0]), attrs };
+		status = SecKeychainItemCreateFromContent(
+			kSecInternetPasswordItemClass,
+			&attributes,
+			strlen( password ), password,
+			keychain, 
+			access,
+			&itemRef
+		);
+		if (access) CFRelease(access);
+	}
+	if (itemRef) CFRelease(itemRef);				
+	
+
+	if( keychain != NULL ) {
+		CFRelease( keychain );
+	}
+}

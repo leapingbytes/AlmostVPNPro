@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-2.4.1/java/external/build/classes/javax/xml/transform"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   name="dom"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Result.class"
+   text-time="2006-09-01T03:01:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5995e647761d357bb45cbe47f7f41b6a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TransformerException.class"
+   text-time="2006-09-01T03:01:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="00d7120e43aa4a6b6ae9d9d2fe5615d4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="URIResolver.class"
+   text-time="2006-09-01T03:01:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d0232c6e74b2b81a8bb7ab347559a5f8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SourceLocator.class"
+   text-time="2006-09-01T03:01:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2ab2ee74a5cd3475c6e5e4744cee0c3f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:28.000000Z"/>
+<entry
+   name="stream"
+   kind="dir"/>
+<entry
+   name="sax"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="TransformerFactory.class"
+   text-time="2006-09-01T03:01:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="28fc73c69a1dd21b2cab9d7441f95fbf"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="OutputKeys.class"
+   text-time="2006-09-01T03:01:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="541ef5a806b314de6e734e53b377857e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TransformerFactoryConfigurationError.class"
+   text-time="2006-09-01T03:01:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="151c60466a3abf8a40f0ce46758c5358"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Templates.class"
+   text-time="2006-09-01T03:01:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fc8774837ad03bcc285cfe84e9e6aae4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ErrorListener.class"
+   text-time="2006-09-01T03:01:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a03a342406da821536709d11427e589a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FactoryFinder.class"
+   text-time="2006-09-01T03:01:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9c441de780f8b0e30efd37332a6dafa4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Source.class"
+   text-time="2006-09-01T03:01:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="48aaa66a86771c757b02972c868d1a0f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Transformer.class"
+   text-time="2006-09-01T03:01:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e563922a1726901547f00b4851f2133c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FactoryFinder$ConfigurationError.class"
+   text-time="2006-09-01T03:01:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8e5fbb3d9e4befcea2fc535e90669053"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TransformerConfigurationException.class"
+   text-time="2006-09-01T03:01:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d1a817c33206ab32d528d507480d199c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:28.000000Z"/>
+</wc-entries>

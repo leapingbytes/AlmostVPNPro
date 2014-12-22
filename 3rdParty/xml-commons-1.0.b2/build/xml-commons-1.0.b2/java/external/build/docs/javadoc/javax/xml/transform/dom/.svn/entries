@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-1.0.b2/java/external/build/docs/javadoc/javax/xml/transform/dom"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="DOMResult.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d86e26c19ede15165fa5c9cb42e2cd24"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:16.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DOMSource.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a42142f01ce3bfb75df3b810f96e75d9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:16.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DOMLocator.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b8649dacb7e4eed13526bb0e96382bfd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:16.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4e47f4d880e36afd64ca361140d76fb5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:16.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fae122fe6f03c5f4252dbe46e2071149"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:16.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-tree.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="776bbe8f66012e55245d1e79c3efbc82"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:16.000000Z"/>
+</wc-entries>

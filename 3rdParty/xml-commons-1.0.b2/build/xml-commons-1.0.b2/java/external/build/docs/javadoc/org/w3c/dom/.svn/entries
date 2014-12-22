@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-1.0.b2/java/external/build/docs/javadoc/org/w3c/dom"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="Entity.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="908d1258516180208bc9af159bc3f65d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   name="ranges"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="ProcessingInstruction.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f99317085f312d95b99cf0b83464f8b7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Document.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="25b41aeb79601d0691fed87564b3bf5d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DocumentType.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="379de7658473bcc205830bedc9a6f0fd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NodeList.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fb15398351cf46a6569b8c4d4d715267"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9c2a4c719b5db2fb5ffd1625ea8c60f8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Text.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="edab108af25a7dd504213bce122b9b57"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Node.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1986fec30c66e0ccfc269166cd6978ad"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   name="css"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="DOMImplementation.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8752df912cfed9703e395b6c1c942f4b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CharacterData.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="950568247b00a5f30873e219a9d2a785"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8af8a1ecdb422e7001380b6770c8e9f0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NamedNodeMap.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="dca3b43c6a3528d71e80a51f84b5f3a4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-tree.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="80b14f1789226c1939d220369816a3fb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Element.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="27dda77887e986c055b6c1f5750460e0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   name="views"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Notation.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9cc6878b043d33958c020e701857359f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="EntityReference.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b279213bc7693b91968d07dfd6b72715"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DOMException.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6e7acc4d4c7aa87c95ed2b82c6812666"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   name="traversal"
+   kind="dir"/>
+<entry
+   name="html"
+   kind="dir"/>
+<entry
+   name="events"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="CDATASection.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8b78da9a32fd935366f3116dd08cf6d5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:15.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DocumentFragment.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b2c8dd995f714ea7e2594de1ce35d338"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:16.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Comment.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3a78b885cebbd745c44583e348edf7ff"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:16.000000Z"/>
+<entry
+   name="stylesheets"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Attr.html"
+   text-time="2006-09-01T03:01:16.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1a9e561e4ae09a70340c145aa2265167"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:16.000000Z"/>
+</wc-entries>

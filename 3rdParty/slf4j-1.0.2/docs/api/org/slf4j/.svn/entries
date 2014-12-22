@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/slf4j-1.0.2/docs/api/org/slf4j"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="Constants.html"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="635c3a04258816a1a44b41284ae0043c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:50.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Logger.html"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e26cc167a105afd5596f34222d163591"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ILoggerFactory.html"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4a4e65ff4810c30abe8ef7ea31eb85ff"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Marker.html"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8b5a3f399974d8025ce11c8fcbc36b37"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="IMarkerFactory.html"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fdf8158765614e32c5db481ee72b797b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="106436bbda7da5a62bda333ad8324d60"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-use.html"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6c0afea25b8a0c2ab0a4eef3ef23fd50"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="29773d5f948f80485c9570e2e58b16a5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-tree.html"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="aa563a5466f992081d8e8a0db253a61e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MarkingLogger.html"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c112df79590e95e0612302e9ffcb5e06"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   name="spi"
+   kind="dir"/>
+<entry
+   name="class-use"
+   kind="dir"/>
+<entry
+   name="impl"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="LoggerFactory.html"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="56edfb5d950385f2208d7757ed2e859b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MarkerFactory.html"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="930370a233670f7d55f2da5c73e4af0e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+</wc-entries>

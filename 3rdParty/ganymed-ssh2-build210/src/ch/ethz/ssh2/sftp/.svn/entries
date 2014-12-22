@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   schedule="add"
+   revision="0"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/ganymed-ssh2-build210/src/ch/ethz/ssh2/sftp"
+   name=""
+   kind="dir"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="AttrTextHints.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="AttribBits.java"/>
+<entry
+   schedule="add"
+   name="AttribFlags.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="AttribPermissions.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="AttribTypes.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="ErrorCodes.java"/>
+<entry
+   schedule="add"
+   name="OpenFlags.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="Packet.java"/>
+</wc-entries>

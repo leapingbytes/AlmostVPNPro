@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/jsp-api-2.0/src/main/java/javax/servlet/jsp/tagext"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="ValidationMessage.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="eeaee910fc1dc373ec9b1f219ecbed3e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TryCatchFinally.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="42608e526e8e2ea1523432adf017511b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="VariableInfo.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="004f75ff92888f93ef0d9f7b912c6386"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FunctionInfo.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3984a2c42d429966523a2edf53d5647e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TagData.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="90c0ecf1721dee079421b7b94b60bf87"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TagLibraryValidator.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="baf4fcd23de9323d491ea0502cb3edbb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="PageData.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3202521189fdf3e8331c6cb04b856692"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TagSupport.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b0eec1c2249bb23cf3e5f7be00ca99bc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Tag.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3948a5a2aa6b37db3e92474d2c1cbab0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TagAttributeInfo.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="84bc5104d986ce610a1ebff5fd26ef59"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TagLibraryInfo.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="69ea6f48baf9c8ae5295314f757d433b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TagAdapter.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d021b84470f16b899ca50f837aa0ccb5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package.html"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2b0ce70aabc99c6ea7c3ea2437cb5343"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="JspFragment.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f45b573a0c6cf48035d40aab77ff33e0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SimpleTagSupport.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a944a498f8cb0e379e55a105536b2023"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   name="doc-files"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="SimpleTag.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="254732e155e5136c14f443a9f3265552"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="BodyTagSupport.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7299ec2fdf2ba692e345174b223e490f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TagFileInfo.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e74f838b36a9241868e821722756f019"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TagInfo.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cca00d1199ab4eb28b5c3c4dff838ef9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="JspTag.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a790cdc0aa7b868cb0835a9fa7b11aff"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="BodyContent.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="77241db230dc8121195d9609bd1ca5c5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="BodyTag.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9ec23fb07855db87050a04d594b59926"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="IterationTag.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3d5ef193ee0019c3414d0dcdcfe70cfd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TagExtraInfo.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bf0883e21fbf93ff34cbd50f3b0dbdba"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DynamicAttributes.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9dcc2e6678924a561010a8ed90cf958e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TagVariableInfo.java"
+   text-time="2006-09-01T03:01:08.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a339bccdda2fbc59d06865c4e27a135f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+</wc-entries>

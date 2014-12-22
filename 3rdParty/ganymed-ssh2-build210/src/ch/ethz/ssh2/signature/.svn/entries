@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   schedule="add"
+   revision="0"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/ganymed-ssh2-build210/src/ch/ethz/ssh2/signature"
+   name=""
+   kind="dir"/>
+<entry
+   schedule="add"
+   name="DSAPrivateKey.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="DSAPublicKey.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="DSASHA1Verify.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="DSASignature.java"/>
+<entry
+   schedule="add"
+   name="RSAPrivateKey.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="RSAPublicKey.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="RSASHA1Verify.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="RSASignature.java"/>
+</wc-entries>

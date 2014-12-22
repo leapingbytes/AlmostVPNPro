@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-1.0.b2/java/external/src/org/w3c/dom/html"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="HTMLStyleElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="592ac9589149b612004d8a45bf71b87d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLUListElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="dfa49f76e154f028bf95e1d73012271b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLBaseFontElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0d8641ae8514f57f2f5a8101c5fc5b62"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLIFrameElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="eb6bd4330cdcc2c6ce8352f6fb86c474"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLHtmlElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d252fea75305d72c30d0f04e3b2c330e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLMenuElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2677bcce814f7a1b1b078b9afc44e6bd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLParagraphElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bd8a3d87ce0247b5289a62d44fabc40f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLFrameSetElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="60fdfd1e592d12c2bfb8cc27f33dca39"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLAreaElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4f5dac6c0bffd0f8e9bba2939a93f8f4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLOptionElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="466bfb89fdd18b2d02c34fb482f94077"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLAnchorElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5b2d37367dab92d7e8227bef75202300"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLLabelElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e11c42c3c3b600e7e33a66d92bd93b65"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f5dd06d82ab434fb9b7c1d512b14b8df"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLOptGroupElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="05d9a0f561443db8398591443c1b138d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLTitleElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b4f2893dda8ec69396b883ee2e5ea7a5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLImageElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1362b183cae19f72b121dc4789130133"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLTableColElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="de01fe4756f84969b6fb69bf044c1a0b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLPreElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3a1ab34cbb757eda71134011fee28fdf"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLTableCellElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="afbba95b2c8efb2cd57ef6642794be5f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLQuoteElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2f0f5d5e7cc6bcb0d12e9a0a7df33ea2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLBodyElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0561c37f7e79b59f948c5f740cd7c5ab"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLLinkElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d0332846bf4c20df1268453a04936e85"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLFieldSetElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cab54d24d51cb2c5867e08fecf2f1edf"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLInputElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9eacb616c7081ffa1ef774cb38c9d0c3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLParamElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5ddf44074a6e03c0a63c90cbe7f985d9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLHeadElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d16a0b4f4f047299fcea6ca289b6a3d8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLBRElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cac7ae7ee106aae95e5e98c44bf23354"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLFormElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2dee7178ee3db8ad1ebdec2a03966759"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLIsIndexElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="714221eebce815ef3f8ce8047a5c2368"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLDirectoryElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a5c75d210753ccf21d6e908b05b6f182"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLLIElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="722d74466bf9f65567ca81ca5e6c570d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLDocument.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d45c1132635d028514c21376c1ceecbe"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLScriptElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="97771c07f91dba3fdc2472a1d31fd57a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLTableCaptionElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="03a285afdad465385c50a87b774b2adf"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLFontElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a4d52ad9b9f58277942a6a77077e23f1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLObjectElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="92018ad1771a1ed1f0a5a889612c4e31"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLHRElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3a7850851fd6a9caaf34e55394d478c1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLBaseElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c37ad8e6b3e4a56f63a2cd252e7965cd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLButtonElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="135c4eac674842d9ef9275654bb82de7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLTableSectionElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9b09697a21a1bf935fa8cabe93353840"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLMapElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f76021935ac3a7d09278f24c49683f08"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLTextAreaElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5ee4aa5a4847117a94e093a2942b652e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLDListElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c88b984e01bb19fcaac1a03e195e03b2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLModElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b4d45f06258b336fa499d539d735a8c4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLSelectElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="eb0ecde959539afc5d69f8457045fa40"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLTableRowElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7c2673d845d43c4d67db0f39ce0adeb9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLCollection.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0f40f5d5968c994159f10427ce98e310"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLDivElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="dd022df393f6ad1ac86f4b04cfe774b3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLAppletElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fbfe69d4fb17c192f5e866702ecf12eb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLMetaElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e7614d56ffca909d7d9b239b0bac3d52"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLTableElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="dc18618ca21f5a2f450fd018452cf8ab"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLFrameElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="42e50e9bd17a503a06b2049d6b832578"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLOListElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f2e98534c288e28ded1e421a6599ccc8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLLegendElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="517bc2cd230a3aa1049cd95acb8f0b3d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLHeadingElement.java"
+   text-time="2006-09-01T03:01:20.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a118bc4d2010e9fd695f4787a6ca5004"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:20.000000Z"/>
+</wc-entries>

@@ -1,0 +1,94 @@
+<project name="AlmostVPNTool" default="dist" basedir="." >
+	<property name="LOG_HOME" value="../../3rdParty/commons-logging-1.0.4" />
+	
+	<!--
+	<property name="JSCH_VERSION" value="0.1.29" />
+	<property name="JSCH_HOME" value="../../3rdParty/jsch-${JSCH_VERSION}" />
+	-->
+	<property name="SSH_VERSION" value="build211beta2" />
+	<property name="SSH_HOME" value="../../3rdParty/ganymed-ssh2-${SSH_VERSION}" />
+
+	<property name="JMDNS_HOME" value="../../3rdParty/jmdns-1.0" />
+	
+	<property name="JETTY_HOME" value="../../3rdParty/jetty-6.0.1" />
+	<property name="JETTY_VERSION" value="-6.0.1" />
+	
+	<property name="RHINO_HOME" value="../../3rdParty/rhino1_6R3" />
+	
+	<property name="JCOCOA_HOME" value="../jCocoa" />
+
+	<property name="SOCKS_HOME" value="../SocksProxy" />
+	
+	<target name="dist" >
+		<delete dir="./dist" />
+		<mkdir  dir="./dist" />
+		
+		<!-- JETTY  -->	
+		<echo>-- jetty</echo>
+		<unjar src="${JETTY_HOME}/lib/jetty${JETTY_VERSION}.jar" dest="./dist" />
+		<delete dir="./dist/META-INF" />
+		<unjar src="${JETTY_HOME}/lib/jetty-util${JETTY_VERSION}.jar" dest="./dist" />
+		<delete dir="./dist/META-INF" />
+		<unjar src="${JETTY_HOME}/lib/servlet-api-2.5${JETTY_VERSION}.jar" dest="./dist" />
+		<delete dir="./dist/META-INF" />
+		
+		<!-- JMDNS (Bonjour)  -->	
+		<echo>-- jmdns</echo>
+		<unjar src="${JMDNS_HOME}/lib/jmdns.jar" dest="./dist" />
+		<delete dir="./dist/META-INF" />
+		
+		<!-- JSCH - - >
+		<unjar src="${JSCH_HOME}/dist/lib/jsch-${JSCH_VERSION}.jar" dest="./dist" />
+		<delete dir="./dist/META-INF" />
+		<copy todir="./dist" >
+		    <fileset dir="${JSCH_HOME}/build"/>
+		</copy>
+		-->
+		
+		<!-- SSH -->
+		<echo>-- ssh</echo>
+		<copy todir="./dist" >
+		    <fileset dir="${SSH_HOME}/bin"/>
+		</copy>
+
+		<!-- commons-logging -->	
+		<echo>-- commons-logging</echo>
+		<unjar src="${LOG_HOME}/commons-logging.jar" dest="./dist" />
+		<delete dir="./dist/META-INF" />
+		
+		<!-- rhino -->
+		<echo>-- rhino</echo>
+		<unjar src="${RHINO_HOME}/js.jar" dest="./dist" />
+		<delete dir="./dist/META-INF" />
+
+		<!-- jCocoa -->	
+		<echo>-- jCocoa</echo>
+		<copy todir="./dist">
+		    <fileset dir="${JCOCOA_HOME}/bin"/>
+		</copy>
+		
+		<!-- SOCKS -->	
+		<echo>-- socks</echo>
+		<copy todir="./dist">
+		    <fileset dir="${SOCKS_HOME}/bin"/>
+		</copy>
+		
+		<!-- self -->	
+		<echo>-- self</echo>
+		<copy todir="./dist">
+		    <fileset dir="./bin"/>
+		</copy>
+		
+		<!-- save MD5 checksums of all *.sh files -->
+		<exec executable="./calculateMD5.sh" output="./dist/md5.plist" >	
+			<arg line="../../xcode/AlmostVPNPRO_prefPane/Resources/Scripts" />
+		</exec>
+		
+		<!-- create jar -->
+		<jar destfile="./AlmostVPN.jar" basedir="./dist" compress="yes" >
+			<manifest>
+			      <attribute name="Main-Class" value="com.leapingbytes.almostvpn.server.ToolServer"/>
+			</manifest>
+		</jar>
+	</target>
+</project>

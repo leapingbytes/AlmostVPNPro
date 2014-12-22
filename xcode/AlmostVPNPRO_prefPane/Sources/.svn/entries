@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Sources"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   name="DebugHarness.target"
+   kind="dir"/>
+<entry
+   name="Utils"
+   kind="dir"/>
+<entry
+   name="model"
+   kind="dir"/>
+<entry
+   name="SM2DGraphView"
+   kind="dir"/>
+<entry
+   name="Agent.target"
+   kind="dir"/>
+<entry
+   name="SSHAgent-import"
+   kind="dir"/>
+<entry
+   name="AlmostVPN.widget"
+   kind="dir"/>
+<entry
+   name="bsd"
+   kind="dir"/>
+<entry
+   name="Main.target"
+   kind="dir"/>
+<entry
+   name="ChickenPassword.target"
+   kind="dir"/>
+<entry
+   name="MenuBar.target"
+   kind="dir"/>
+</wc-entries>

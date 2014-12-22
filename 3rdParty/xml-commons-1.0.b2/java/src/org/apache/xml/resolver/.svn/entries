@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/java/src/org/apache/xml/resolver"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   name="tools"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Resolver.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5402ab2c47092604d2c56f1a58a5ecd6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   name="helpers"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="LICENSE"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3e1c7b8dcf6c25d29e9386d1c62a9eef"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   name="apps"
+   kind="dir"/>
+<entry
+   name="readers"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="CatalogManager.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="05c8ab1004ff1c5e94f7a1daab79681e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CatalogException.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a04562388f47f856b3374ded14817d49"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   committed-rev="106"
+   name="overview.html"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ced1f68fa3c97785b9689f6997fc82b5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Catalog.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9e9f7932ffe512f84e38f9c5ba38e4d5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CatalogEntry.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f48c01acba63584463d661b4a8605b55"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package.html"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ed64e39cdb6e9686809a5d0d881c9f11"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+</wc-entries>

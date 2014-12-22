@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNJNI.macosx/Tools"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="SCHelper.m"
+   text-time="2006-09-01T03:16:23.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a4f090dcc8a6d62fb0688d0d53137043"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:16:23.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SCHelper.h"
+   text-time="2006-09-01T03:16:23.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="11cf0c5053b2c217ec65e00d08bb5838"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:16:23.000000Z"/>
+</wc-entries>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/rhino1_6R3/examples"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="enum.js"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9d07f78fbd8f23362a25537c88120fa3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="unique.js"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9f42ab3348c10bf92ad188b08c554ebf"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DynamicScopes.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e80f46dd505d738732be36f46265c7fe"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NervousText.js"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bcd98417644a3a6ad721c16e439900ec"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="liveConnect.js"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="66f2209b67b841f4a56ceac244655f49"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Matrix.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="691c4e177ef5580622b867decfe82004"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SwingApplication.js"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="52d37b77acd9e488083b158835b8d5e7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Shell.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="421cd2f047443966ba7f9cf38239d852"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RunScript2.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="efef42f4b00da7e1e31d50d00c36f3f2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RunScript3.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2372ede7d96cd08632ad9ef887cced3b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RunScript4.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ed1cefd8e3ebe8bae8d0b5ec2219fbdf"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Counter.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4f9dd7f0d6299f30f13ee889350a53f0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CounterTest.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8338ad38c71acd743b63af5ac6253d9a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="File.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="93b0369031602bb74c512e61a1e9326a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   name="E4X"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Control.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="187f8c82a3c6c31eef680ea67c160dfe"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Foo.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b351b2bb9924b8c30207515e2fe36280"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jsdoc.html"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="38145b5a5b64fe23d555ed5e694c21e8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RunScript.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7c317daa8fd0918382f7450fdda88bf4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NervousText.html"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f1595efaa2a61aff2cc2514de2981c3a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="checkParam.js"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d18e8d30660846824cef666f6d46e83a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="PrimitiveWrapFactory.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="75eb50ffd51152dd3396c9cabf63a8da"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jsdoc.js"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5fc30f10c7dabfac98f66d57c81a9313"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+</wc-entries>

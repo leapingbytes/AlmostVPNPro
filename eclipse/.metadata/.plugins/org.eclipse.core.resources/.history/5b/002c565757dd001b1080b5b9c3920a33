@@ -1,0 +1,89 @@
+package com.leapingbytes.bitsToGo.transport;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.Socket;
+import java.nio.ByteBuffer;
+
+public abstract class SocketBasedConnection extends BaseConnection implements Runnable {
+	String			_host;
+	int				_port;
+	
+	Socket			_socket;
+	
+	InputStream		_is;
+	OutputStream	_os;
+
+	private ByteBuffer		_ioBuffer;
+	
+	protected ByteBuffer ioBuffer() {
+		if( _ioBuffer == null ) {
+			_ioBuffer = ByteBuffer.allocate( 64*1024 );
+		}
+		return _ioBuffer;
+	}
+	
+	Thread			_thread = null;
+	
+	boolean			_timeToDie = false;
+	
+	boolean			_reconnectOnFailure = false;
+	
+	@Override
+	public void sendData(ByteBuffer buffer) throws IOException {
+		_os.write( buffer.array(), 0, buffer.remaining());
+		_os.flush();
+	}
+
+	public abstract void connect(String host, int port) throws IOException;
+	
+	public void shutdown() {
+		_timeToDie = true;
+		
+		try { _is.close(); } catch ( Throwable t ) { /* DO NOTHING */ }
+		try { _os.close(); } catch ( Throwable t ) { /* DO NOTHING */ }
+		try { _socket.close(); } catch ( Throwable t ) { /* DO NOTHING */ }
+		
+		_thread.interrupt();
+	}
+	
+	protected void listen() {
+		_thread = new Thread( this );
+		_ioBuffer = ByteBuffer.allocate( 64*1024 );
+		_thread.start();
+	}
+	
+	public void run() {
+		while( ! _timeToDie ) {
+			int bytesCount = 0;
+			try {
+				bytesCount = _is.read( _ioBuffer.array() );
+				
+				if( bytesCount < 0 ) {
+					System.err.println("read eof ");
+					break;
+				} else if( bytesCount == 0 ) {
+					System.err.println("read 0 bytes ");
+					continue;
+				}
+				System.out.println("SocketBasedConnection.run : read " + bytesCount + " bytes");
+				
+				_ioBuffer.position( bytesCount );
+				_ioBuffer.flip();
+				_consumer.data( _ioBuffer, this );
+
+				ioBuffer().clear();
+			} catch (IOException e) {
+				shutdown();
+				if( _reconnectOnFailure ) {
+					try {
+						connect( _host, _port );						
+					} catch (IOException e1) {
+						// DO NOTHING
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   schedule="add"
+   revision="0"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/ganymed-ssh2-build210/src/ch/ethz/ssh2/crypto/digest"
+   name=""
+   kind="dir"/>
+<entry
+   schedule="add"
+   name="Digest.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="HMAC.java"/>
+<entry
+   schedule="add"
+   name="HashForSSH2Types.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="MAC.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="MD5.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="SHA1.java"/>
+</wc-entries>

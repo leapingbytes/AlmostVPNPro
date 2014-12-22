@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/LBToolbox/Sources/3rdparty/MoreIsBetter"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="MoreSecurity.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0c59b0d0efed07e3aabe6493f344c24c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MoreUNIX.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7ac0ab13a5fcafdbccba33b8ac6ca65a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MoreCFQ.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e2379466f6a41a506a4f952dfbf325d8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="myassert.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="def118df5cbc0a58ea8ccba967a311bc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MoreSecurity.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f4a7ad02d745fb1109abfe0e02c9a3b3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MoreCFQ.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="438993a9a8f4a74d08cd935e14abb2b9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MoreSetup.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="89ea3f63feb139eda6233a2e9c0ed958"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MoreUNIX.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1b643b790d2774ee2b6a8b463c702696"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="myassert.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b1fae2791a37f14b939b6d1d9936e041"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+</wc-entries>

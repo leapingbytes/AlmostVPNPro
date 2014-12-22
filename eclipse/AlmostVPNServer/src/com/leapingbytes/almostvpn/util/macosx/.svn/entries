@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/AlmostVPNServer/src/com/leapingbytes/almostvpn/util/macosx"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   revision="110"/>
+<entry
+   committed-rev="139"
+   name="KeychainMasterPasswordProvider.java"
+   text-time="2006-10-10T20:23:10.000000Z"
+   committed-date="2006-10-13T14:18:18.166311Z"
+   checksum="3335705dd4945f8a899b1101c7ad33a8"
+   last-author="atchijov"
+   kind="file"
+   revision="139"/>
+<entry
+   committed-rev="157"
+   name="SystemConfigurationProvider.java"
+   text-time="2006-11-13T15:26:38.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="8436ed66b53a89e09aca16156051f0a7"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+</wc-entries>

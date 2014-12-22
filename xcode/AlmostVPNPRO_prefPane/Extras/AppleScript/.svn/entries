@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Extras/AppleScript"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="startProfile.scpt"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e9bb8b56d588261b95306e66a11c76c7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="stopAll.scpt"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="527f05f1783bcf3633e977909ddf87e3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="listProfiles.scpt"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="318d66e3ae1d1650d9a206153a5efbc6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="README.txt"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b7cfb7fb594bd13deab2556a1e90be44"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="startAll.scpt"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3793ab57c58a78eef96eece56e7ee54d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="stopProfile.scpt"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="def601305f243a83b043a5a420fe04b4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+</wc-entries>

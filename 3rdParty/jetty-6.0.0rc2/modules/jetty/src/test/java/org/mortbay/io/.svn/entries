@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/jetty/src/test/java/org/mortbay/io"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="BufferUtilTest.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6b98048a524998e7e8c33b792b286f7c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="IOTest.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fe5434a2c711f73b897a76462f2bc678"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="BufferTest.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b5e557adcb4ad5a12986ac28bbd65882"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="BufferCacheTest.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="97c2194520fc28e187bf1abe186e1541"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+</wc-entries>

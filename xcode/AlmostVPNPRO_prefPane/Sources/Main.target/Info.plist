@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+    <key>CFBundleName</key>
+	<string>AlmostVPN/PRO</string>
+<!--    <string>${PRODUCT_NAME}</string> -->
+	<key>CFBundleIconFile</key>
+	<string>AlmostVPNPRO.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.leapingbytes.AlmostVPNPRO</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<!--
+	<key>CFBundleShortVersionString</key>
+	<string>${ALMOST_VPN_VERSION}</string>
+	-->
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>${ALMOST_VPN_VERSION}/${ALMOST_VPN_MILESTONE} (${ALMOST_VPN_DATE})</string>
+	<key>NSMainNibFile</key>
+	<string>AlmostVPNPRO_prefPanePref</string>
+	<key>NSPrefPaneIconFile</key>
+	<string>AlmostVPNPRO.icns</string>
+	<key>NSPrefPaneIconLabel</key>
+	<string>AlmostVPN
+PRO </string>
+	<key>NSPrincipalClass</key>
+	<string>AlmostVPNPRO_prefPanePref</string>
+	<key>LBAlmostVPNVersion</key>
+	<string>${ALMOST_VPN_VERSION}</string>
+	<key>LBAlmostVPNMilestone</key>
+	<string>${ALMOST_VPN_MILESTONE}</string>
+	<key>NSPrefPaneSearchParameters</key>
+	<string>AlmostVPNPRO</string>
+</dict>
+</plist>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/servlet-api-2.5/src/main/resources/javax/servlet/resources"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="j2ee_web_services_client_1_1.xsd"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ed56d7e69f93cee685c399c3028a714f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="j2ee_web_services_1_1.xsd"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1fe7f50cc579a8f7250d18f81cba2f7f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="j2ee_1_4.xsd"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8a5a606585d85897f54f1a580c3c65f1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="javaee_web_services_client_1_2.xsd"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7301ad2c4df8c4d8a0b118b1387aceff"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="web-app_2_2.dtd"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7d573b63b56adffc2ab6d1409d15f2ce"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="datatypes.dtd"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="533f17315ff0065edb2612751dd1f1d3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="web-app_2_3.dtd"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="021016907698878f426ca88b167d24fd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jsp_2_0.xsd"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="045ff8fbe7bd3ede51067f33a7f53819"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jsp_2_1.xsd"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0f298b559c826e8c90a12e512104d256"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="XMLSchema.dtd"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c3d6dc66092e298c136cfe37406d1e60"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="javaee_5.xsd"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4f15b3562574468f405488917a5a5491"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="web-app_2_4.xsd"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fed0d07b8decad1aa6ec18168c824557"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="web-app_2_5.xsd"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="19a44d18791a766f5fc9f51c96f279c7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+<entry
+   committed-rev="106"
+   name="xml.xsd"
+   text-time="2006-09-01T03:01:10.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e8c6a7bb3b0aa5fe2029607ead65c0c5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:10.000000Z"/>
+</wc-entries>

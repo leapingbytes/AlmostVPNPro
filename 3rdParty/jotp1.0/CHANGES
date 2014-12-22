@@ -1,0 +1,8 @@
+
+
+1.0 -   This was mainly just to fix an embarrassing bit of debug
+	code that snuck into 0.8 which caused the passphrase to
+	be echoed to the java console. Also yanked the copyright msg,
+	people are welcome to do whatever they like with this.
+
+0.8 - The original release, supported MD4 and MD5

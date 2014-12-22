@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="110"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/AlmostVPNServer/.settings"
+   last-author="atchijov"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="dir"
+   name=""
+   committed-rev="106"/>
+<entry
+   checksum="87c639b62b5f56e0b6e47a106d244c1a"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="org.eclipse.jdt.core.prefs"
+   committed-rev="106"/>
+<entry
+   checksum="736adbb1afa3f5c37776ffb5f1244111"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="org.eclipse.jdt.ui.prefs"
+   committed-rev="106"/>
+<entry
+   checksum="de7ef8188ff3f9aac23cd3c9b777ea5d"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name="org.eclipse.ltk.core.refactoring.prefs"
+   committed-rev="106"/>
+</wc-entries>

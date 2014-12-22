@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/LBToolbox/Sources/3rdparty/MOKit"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="MORegexFormatter.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="adfae89558c57cc2396df8c4fea5a960"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MORESyntaxFormatter.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="75e5f2c8f8099816cfb7d3baf3923ae5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOTabView.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7b2e0380d9903f39266fdf0ce8c4561c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOViewListLabelView.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7ab0b0a21f0e0b18c31d7bfbbc4e2e17"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOViewListView.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="180f1c894cdabdcde0b4a5785727ae67"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MORegexFormatter.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4bfddae214170f2c416bc0834c4b3144"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   name="MORegexp"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="MOExtendedMenuItem.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e7853f909d9895dc238ebd12d3e6fbde"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOKitPrefix.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="db8cc18e967644e2916899702eb04de6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MORESyntaxFormatter.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="06b0d87931aa6d80377b0c26ded94004"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOTabView.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0ae74c11e3f060c4221374fe20062c2d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOViewListLabelView.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cb9869484acaf933bd5166998dd82f56"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOViewListView.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2e9367605f5bab0636546ec8ad5a2e0e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="_MO_WindowController.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6cf4c5af41d73264aa58a0fe1b2f2079"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NSEvent_MOLocationAdditions.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5d4e5b77aa5d99c53c053e9519be96f1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOExtendedMenuItem.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="af732df459287577212a7af45553b147"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MORegularExpression_Private.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="873d648573f47a1d39ac3a3e3f844ffe"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="_MO_WindowController.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="da4600c45a12af58323fa436b8bf48b5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NSEvent_MOLocationAdditions.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2f034badabe67828feb5650ba858a24b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MORuntimeUtilities.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2f54ce16d3a9f07a2cbb1c7023be7ba2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOViewListViewItem.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="eb379377bc48aeff7be82272973fb338"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MORegularExpression_Private.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3efd4a0777dd792b3ce613fbffa2ac35"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MODebug_Private.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="84394fd91d9313c4f7c5eaa18f4cdeed"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MORuntimeUtilities.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="52fc8642c5c764de24b3ce55161c2e52"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOViewListViewItem.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="99fa7baea8a1e2b1c1189012d47ccb08"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOKit.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2846649e8c7f5cbf4fe344acf7b5df0b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOSplitViewController.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a7de9015f1347374ef99a05aef925964"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOAssertions.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4cca01bcf677bda3f0be89498eddba06"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOExtendedOutlineView.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="26ca963800e371206d0e62923a238491"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOFileCompletionStrategy.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7a6ba9428215b9526bcc9aec73530798"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOCompletionStrategy.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="03f4f733753465d223b4b2325f93d44d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOFoundationExtras.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="18cb0926e1f232510cfd24c16ff091d3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NSView_MOSizing.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ea492a998b7ede2cc8f9fc58f0bf2851"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOAssertions.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3d5f18e6a2436f2018970e5132048915"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOSplitViewController.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="49585b803bc498fc03bbbaae6879a956"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOExtendedOutlineView.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e9c85ebe361f8de15f7669940478d8ce"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOFileCompletionStrategy.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4867e58e1feeb61d2c6916034d4109f8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOCompletionStrategy.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7e50a84ef0b096aca2d2fe83b07db314"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOFoundationExtras.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="27feb45af063b81214c9d49a4bb6d90d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   name="HSRegexp"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="MOExtendedTableView.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="986186e2608ef85b16cdd920e7724a97"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NSView_MOSizing.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="59255f4fe998f076f268204f94458001"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOCompletionManager.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="481e94b8a692096662ded2561949d782"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOTabViewController.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0f6d4a2aa9480315a23dc982d88a1bea"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOViewListViewController.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6000eb3d2ff951123efa05bd18719d02"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOExtendedTableView.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1a1ebdf2599155278e11e7673143432c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOCompletionManager.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d0bb73e95e982cf52bf17940eeafe855"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOViewControllerView.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6e30e43e41c3df0b5706c2a7111dfd48"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOTabViewController.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c267a43242a863e7745124540c84e8a2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOViewListViewController.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b81227b1cca9431a1883e8ad1c1f32f2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOViewListViewItem_Private.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="185169044f1b5dedebfd3c84bf07dbda"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOViewController.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5afbc47525572a73edde26c4330d2e4a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOViewControllerView.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7f9a334e52548e72c9370e18eae3df9f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MORegularExpression.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cc82593bc17a58e05572acaf3d4ce941"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOViewController.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="abbbd44b37e1835931e19a6297c87fb7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOKitDefines.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1b8fa328b1e9da5d678661e1ab44e591"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOExtendedMenu.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="489563bcce9a62460f6d8f063ef052b6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MORegularExpression.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0da955d4cf3e1ef8955bf4d5c82718ab"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MODebug.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="089a495f4debc9ae42f9ea94dcba4c23"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MOExtendedMenu.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e0f60fbb59787276fff670bb3d81a30f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MODebug.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bb4cbf302f9477a115a08ccfa191d4fd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:20:13.000000Z"/>
+</wc-entries>

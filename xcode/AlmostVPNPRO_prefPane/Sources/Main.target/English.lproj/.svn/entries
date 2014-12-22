@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Sources/Main.target/English.lproj"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="infoPlist.strings"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a63aa3ad8df4e956ad16d2ecb6559da0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO.searchTerms"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f116a8faa96416b0f04958891e25599d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   name="AlmostVPNPRO_prefPanePref.nib"
+   kind="dir"/>
+</wc-entries>

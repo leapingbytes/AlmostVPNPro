@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+  
+
+
+  
+  <title>AlmostVPN 1.0 User Manual / Quick Configuration</title>
+  <link rel="stylesheet" href="../css/main.css" type="text/css">
+</head>
+
+
+<body>
+
+
+<h1 style="text-align: right;">
+Quick Configuration</h1>
+
+
+<br>
+
+
+Best way to get you going with AlmostVPN fast is by using "quick
+config" dialog. &nbsp;Use "quick config" button at the bottom of
+the
+window to activate it. &nbsp;This dialog provides you with 3 ways
+to
+configure AlmostVPN:<br>
+
+
+<ul>
+
+
+  <li>you can import configuration data from other applications,</li>
+
+
+  <li>you can use shortcuts for configuring access to most
+popular applications,</li>
+
+
+  <li>you can use your favorite command line</li>
+
+
+</ul>
+
+
+All 3 screens work the same way. &nbsp;Once you "happy" with
+configuration data, you can click "add" button to configure AlmostVPN
+accordingly. &nbsp;By default configuration will be applied to
+"Quick
+Config" profile, but you can change it by entering other name in combo
+box at the bottom of the screen. &nbsp;You can press "add" button
+as
+many times as needed to configure many different things. Press "done"
+to close "Quick Config" dialog.<br>
+
+
+<h2>Importing</h2>
+
+
+When you start AlmostVPN for the very first time, &nbsp;it will do
+quick search for configuration data from older version of AlmostVPN and
+some other SSH Tunnel managing applications. &nbsp;If AlmostVPN was
+able to find such configuration files, it will present you with
+something like this:
+<div style="text-align: center;"><img alt="" src="images/Import.png" border="0"><br>
+
+
+</div>
+
+
+In case you keep your configuration files in "non-standard" place (
+~/Library/Preferences ), you can use "browse..." button to add
+additional configuration files to the list. &nbsp;Once you got
+file(s)
+you want to import configuration from you can click "add" button to
+import configuration into AlmostVPN. &nbsp;You can designate a
+profile
+into which the configuration data will be imported by entering profile
+name into combo box at the bottom of the dialog (by default profile
+name "Quick Config" will be used).<br>
+
+
+<div style="margin-left: 40px;"><span style="font-weight: bold;"><br>
+
+
+NOTE:</span> If application support notion of profile, than
+profile
+name in the combo box will be ignored (this is the case for AlmostVPN
+0.9.x and SSHTM).<br>
+
+
+<br>
+
+
+<span style="font-weight: bold;">NOTE:</span>
+SSHAgent does not store
+its configuration in "well known" place. You need to use "browse..."
+button to locate SSH Agent "*.tunnel" files.</div>
+
+
+<h2>Shortcuts for Popular Applications</h2>
+
+
+AlmostVPN can do really amazing things, but quite often your initial
+needs will be quite simple. &nbsp;Take a look at "Quick
+Config/Popular"
+screen and see if it could help you with configuration.
+<div style="text-align: center;"><img alt="" src="images/Popular.png" border="0"></div>
+
+
+First of all, you need to provide information about your SSH Server
+(like host name, user name and password). &nbsp;Than you can enter
+any
+combination of additional data. <br>
+
+
+<br>
+
+
+<div style="margin-left: 40px;"><span style="font-weight: bold;">FOR EXAMPLE:</span>
+if you want to configure access to your e-mail server, you will need to
+enter host name for your incoming e-mail server, select incoming email
+server type ( POP3, IMAP or IMAPs), enter host name for outgoing e-mail
+server (SMTP) and then click "add" button. &nbsp;AlmostVPN will
+automatically configure profile which when running, will provide access
+to your e-mail server(s). <br>
+<br>
+
+
+</div>
+
+
+You can choose to which profile the configuration data should be added
+to, by entering profile name in combo box at the bottom of the screen.
+&nbsp;You can do "add" more then once. &nbsp;So in order to
+configure
+access to more then one e-mail server you will need to
+repeat&nbsp;process described above for each server. &nbsp;You
+can
+configure access to remote drives, web server, remote control, printer
+and file in the similar manner.<br>
+
+
+<h2>Command Line</h2>
+
+
+If you coming to world of AlmostVPN from the command line, you are in
+luck. &nbsp;AlmostVPN allows you to use your favorite command line
+to
+do configuration<br>
+
+
+<div style="text-align: center;"><img alt="" src="images/CommandLine.png" border="0"></div>
+
+
+Enter (or paste) your command at the top text area and AlmostVPN will
+show in the bottom area result of your command interpretation. Not all
+command line options make sense to AlmostVPN. Some of them will be
+ignored (<span style="color: rgb(192, 192, 192);">-x</span>),
+while some other may be flagged as "not supported" (<span style="color: rgb(255, 0, 0); text-decoration: underline;">-x</span>).
+&nbsp;If you agree with the way AlmostVPN interpreted your command
+line, you can click "add" button to configure AlmostVPN accordingly.
+</body>
+</html>

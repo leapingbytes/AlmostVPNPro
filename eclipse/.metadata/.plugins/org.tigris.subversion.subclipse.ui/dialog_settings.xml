@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="428" key="CommitDialog.weights.0"/>
+	<item value="571" key="CommitDialog.weights.1"/>
+	<item value="234" key="HistoryTableProvider.SVNHistoryPage.Author"/>
+	<item value="224" key="CommitDialog.location.y"/>
+	<item value="false" key="CommitDialog.sortReversed"/>
+	<item value="367" key="CommitDialog.location.x"/>
+	<item value="150" key="CommitDialog.column2"/>
+	<item value="1" key="CommitDialog.sortColumn"/>
+	<item value="301" key="CommitDialog.column1"/>
+	<item value="294" key="HistoryTableProvider.SVNHistoryPage.Date"/>
+	<item value="587" key="HistoryTableProvider.SVNHistoryPage.Comment"/>
+	<item value="620" key="CommitDialog.size.x"/>
+	<item value="662" key="CommitDialog.size.y"/>
+	<item value="150" key="CommitDialog.column3"/>
+	<item value="20" key="CommitDialog.column0"/>
+	<item value="118" key="HistoryTableProvider.SVNHistoryPage.Revision"/>
+	<section name="IgnoreResourcesDialog">
+		<item value="0" key="Action"/>
+	</section>
+	<section name="NewLocationWizard">
+		<list key="ConfigurationWizardMainPage.STORE_URL_ID">
+			<item value="svn+ssh://svn/AlmostVPNRepository"/>
+		</list>
+	</section>
+</section>

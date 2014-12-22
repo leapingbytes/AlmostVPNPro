@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Sources/MenuBar.target"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNMenuBar-Info.plist"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="606be1df6e9a33de114b80382e9137df"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNProMenuBar-Info.plist"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="efc34614ae6c18be6551d79f806caf63"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   name="AlmostVPNProMenuBar~.nib"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPN.sdef"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0a85030590d4769c2f5447deb50c2262"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="133"
+   name="AlmostVPNProMenuBar.h"
+   text-time="2006-09-26T01:52:29.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="cb8a89212ab49a43baffccf7b1280ee8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"
+   revision="133"/>
+<entry
+   name="AlmostVPNProMenuBar.nib"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNProMenuBarApp.h"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="faa2e49e92e9d6216f1e934e4997c348"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNProfileMNScriptability.h"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a3f277f0f93a59ff582a6e13c46059e5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="151"
+   name="AlmostVPNProMenuBar.m"
+   text-time="2006-11-13T14:17:04.000000Z"
+   committed-date="2006-11-13T14:19:00.512629Z"
+   checksum="59ef263470b636233cc1f7116f9704a7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"
+   revision="151"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNProMenuBar.scriptTerminology"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d201493efee7a4b5f3dab27def2a1e85"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNProMenuBarApp.m"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4646a4a9dec8ea273d1065665c176eb2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   name="Icons"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNProMenuBar.scriptSuite"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6368fc909af1707f82d084e09c8f7d35"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNProfileMNScriptability.m"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3ec1a7c6a7c125e1c7396dc72c401a14"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+</wc-entries>

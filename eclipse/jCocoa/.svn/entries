@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="110"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/jCocoa"
+   last-author="atchijov"
+   prop-time="2006-09-01T03:12:34.000000Z"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   committed-date="2006-09-01T03:13:40.148000Z"
+   kind="dir"
+   name=""
+   committed-rev="110"/>
+<entry
+   revision="109"
+   checksum="cefc960b0016f1a14bc19a328b083626"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name=".classpath"
+   committed-rev="106"/>
+<entry
+   revision="109"
+   checksum="ab5cf2acfe2f33d084e2453c8380ad4b"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   kind="file"
+   name=".project"
+   committed-rev="106"/>
+<entry
+   name=".settings"
+   kind="dir"/>
+<entry
+   kind="dir"
+   name="src"/>
+</wc-entries>

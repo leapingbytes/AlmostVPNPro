@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/rhino1_6R3/src/org/mozilla/javascript"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="VMBridge.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b3f3a4340557f461a38d0bb866d1d8ff"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DefiningClassLoader.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8a23a0a4cd7701ca09f540ce929b6b82"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeMath.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e8e7f0211acda8a06fe83a52f04f955e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   name="optimizer"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Interpreter.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5af291264bbec8aba0fe68d1acc49a30"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Script.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e9a79151ad3d94a74b11544c50570ff8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeJavaPackage.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="50646ba3100879b9a33ff3f03decaa30"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Arguments.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="018939d1cd016649622cffa928bcdfc9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   name="debug"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="ErrorReporter.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0024a525f33b0c9c7ac84d0294e3573b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeJavaClass.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a25beb86305e811ffed4b79ad8cf91fb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeWith.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d35f2346ae7ccd1ebc773cab07a716d8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ContextAction.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1bd4592bacd7d89e400bee2533359d30"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="JavaAdapter.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="453f913c491c5b7018f5f3756dd89f81"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Decompiler.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2282ee38aa540263d308693491281d00"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeDate.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="753a849a696e172aff51532b9a395f42"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Kit.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f7adcb05d635009244c6a9fdc15f5fd5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ClassCache.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="06c8ed329845b57b610aafd80548acd2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="IdFunctionObject.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fa1acf4adca2a9ba0fd16b3c3a2eb497"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ContextListener.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6c4e130811599525069868ab33f81c35"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="InterpretedFunction.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="56ed1e9e4717826f5123060730d54817"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="JavaMembers.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6eec59ab6c97e4435cdb292780a523d5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="IdScriptableObject.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c37f8fbc665045bd0349d89a9e5c0106"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RegExpProxy.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="50536b1fe5b4da9ffb7bfc82304f51a5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RhinoException.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="903c7665633cd43ba754ca785f20f97a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeNumber.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fa15031266b6102cc36b1e580abdf026"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="InterfaceAdapter.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5b2dfe49280d55fff747798105bf2e7c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="UniqueTag.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6d1823226db054613615694a99676c37"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NodeTransformer.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7ae7404735998e58528ab45b1ec567b4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ObjArray.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fe4d1f83fdbe08e1e2985a09e6fd49c1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   name="regexp"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="GeneratedClassLoader.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f2c00455d28a8790fc207bdf41584fcd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   name="continuations"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="ScriptableObject.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="43b3e3912b6834a07819a5cf915b5c68"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="EcmaError.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0afd69c397905cba775db48ad6af2ad4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Wrapper.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="87d4f80e7c29e42ef423c7c1b24225b7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Token.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b766dbe27cf1474c9125f081dfcfcdbd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="BaseFunction.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bac9cba753a686a8001c1b5b9268fd93"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MemberBox.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5888409a3bd02230fbe6664a45977121"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeArray.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e4d3bd641e6749dd054e1ae3365224cd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeBoolean.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="80ec9570e2f7eee36de275a59e2e7f23"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DToA.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a4c5e835a15674baca5b1041ccfbc67b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FunctionNode.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1cce67b6e74996f806e272599e8c8834"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Parser.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e7e698f37d54f86e7e85382f2e003d39"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RefCallable.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c562112ccb70aa452541dc11a72486f0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="IdFunctionCall.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a13fc6134e8c7a321d96a05e80451d17"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ScriptOrFnNode.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f7387fdef1cc34f5da9b2b42b398757b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Undefined.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8a51e6bc41d1e81730e3b106cf1388a8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="IRFactory.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="303524283f7eab9f258a000f5575beb8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Delegator.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3120cddab2c131479c0245d9099a87b2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   name="serialize"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="ScriptRuntime.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="81b4215eb360fefb72f93a56dafeea8c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SecurityController.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e2346e8d0f2325ee9935a2cf2dea9cb3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeScript.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b5ac0dc46099438a066afc736e3488f9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ContextFactory.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b822ddd3e3e273165a899053aedfde9e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="UintMap.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b3c81d7e17502e6575becc5a4278b838"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeObject.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3e68768b36de14fa0f7730821b065c5f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeString.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f47a738cb27f2d063cead8a74195adde"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeJavaObject.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cc28419d876443ef423790865923e143"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DefaultErrorReporter.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e8d471b8874a9843907319ce1bd992e1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="EvaluatorException.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e8fa15169dc36d4aedd4c263dc966c40"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="WrappedException.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b018ed60c1e6225f43c37d0f173f9c62"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ClassShutter.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bebfeca9ca5b6f850632293cf0d62a9b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Node.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0cf80a35a2799cc60566f5d0b3d79e65"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ObjToIntMap.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d112520f700950c9b18c81c311237c67"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeJavaMethod.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="45946fd329be71e5c03c6ff40fc11066"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TokenStream.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1fb9c2a0643d303098c4ea47bf8b6b04"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Synchronizer.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="85da373a61308f06d49486bef7cc6b88"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeJavaConstructor.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9afc6ed30f1d3976658bf0a29b5062a9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="CompilerEnvirons.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7ff4f67220e760c28e4d038415da5c1c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Callable.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9b8c93af2cdfee85ac98405adabd0683"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeError.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f2363d90e4c762f27b92af10f8b5bb18"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="WrapFactory.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bb756ba9f1a478c94dfc03ad3731e9ca"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LazilyLoadedCtor.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1203d434f3e35d27bc63d5fa97d8d3df"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeGlobal.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="feab17bd15c06becef5eaf9aa55b5b30"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Ref.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="04843d1b4f64bf90ed1795874deb2111"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FunctionObject.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5c22ea4e3b145e22288df9deefc7d817"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ImporterTopLevel.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="86d5582105789fe6b66ab4a3afc8e6d0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SpecialRef.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="910cc85f18fe175f5ed21c755c3aa0cb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   name="xml"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="NativeCall.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ac5cbb2969bbc705798891a0bb9bf2e3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Context.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2b609b7434e47f0c79eb5b273f6fbfef"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="JavaScriptException.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b6d28d3fa1836f8cd72e463737916b2f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Function.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3308fe5edf390f52beba5a83ec05697f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeJavaTopPackage.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="336a0914a7f208c7c9a145eceabcdd93"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NativeJavaArray.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="03464fda6b45b9ff45907c66020b2ab1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Scriptable.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d304a34482f53800121c61bdf5d30fdb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   name="resources"
+   kind="dir"/>
+<entry
+   name="jdk11"
+   kind="dir"/>
+<entry
+   name="jdk13"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="NativeFunction.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cf023ed2e7303dce62da8b3d96eaf1a0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="InterpreterData.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="64bb6fa82327218bc38d46e09130e393"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+</wc-entries>

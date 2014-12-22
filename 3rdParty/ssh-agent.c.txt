@@ -1,0 +1,1203 @@
+  1 /*
+  2  * Copyright 2004 Sun Microsystems, Inc.  All rights reserved.
+  3  * Use is subject to license terms.
+  4  */
+  5 
+  6 /*
+  7  * Author: Tatu Ylonen <ylo@cs.hut.fi>
+  8  * Copyright (c) 1995 Tatu Ylonen <ylo@cs.hut.fi>, Espoo, Finland
+  9  *                    All rights reserved
+ 10  * The authentication agent program.
+ 11  *
+ 12  * As far as I am concerned, the code I have written for this software
+ 13  * can be used freely for any purpose.  Any derived versions of this
+ 14  * software must be clearly marked as such, and if the derived work is
+ 15  * incompatible with the protocol description in the RFC file, it must be
+ 16  * called by a name other than "ssh" or "Secure Shell".
+ 17  *
+ 18  * Copyright (c) 2000, 2001 Markus Friedl.  All rights reserved.
+ 19  *
+ 20  * Redistribution and use in source and binary forms, with or without
+ 21  * modification, are permitted provided that the following conditions
+ 22  * are met:
+ 23  * 1. Redistributions of source code must retain the above copyright
+ 24  *    notice, this list of conditions and the following disclaimer.
+ 25  * 2. Redistributions in binary form must reproduce the above copyright
+ 26  *    notice, this list of conditions and the following disclaimer in the
+ 27  *    documentation and/or other materials provided with the distribution.
+ 28  *
+ 29  * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ 30  * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ 31  * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ 32  * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ 33  * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ 34  * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ 35  * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ 36  * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ 37  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ 38  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 39  */
+ 40 
+ 41 #include "includes.h"
+ 42 #include "sys-queue.h"
+ 43 RCSID("$OpenBSD: ssh-agent.c,v 1.105 2002/10/01 20:34:12 markus Exp $");
+ 44 
+ 45 #pragma ident   "%Z%%M% %I%     %E% SMI"
+ 46 
+ 47 #ifdef HAVE_SOLARIS_PRIVILEGE
+ 48 #include <priv.h>
+ 49 #endif /* HAVE_SOLARIS_PRIVILEGE */
+ 50 
+ 51 #include <openssl/evp.h>
+ 52 #include <openssl/md5.h>
+ 53 
+ 54 #include "ssh.h"
+ 55 #include "rsa.h"
+ 56 #include "buffer.h"
+ 57 #include "bufaux.h"
+ 58 #include "xmalloc.h"
+ 59 #include "getput.h"
+ 60 #include "key.h"
+ 61 #include "authfd.h"
+ 62 #include "compat.h"
+ 63 #include "log.h"
+ 64 
+ 65 #ifdef SMARTCARD
+ 66 #include "scard.h"
+ 67 #endif
+ 68 
+ 69 typedef enum {
+ 70         AUTH_UNUSED,
+ 71         AUTH_SOCKET,
+ 72         AUTH_CONNECTION
+ 73 } sock_type;
+ 74 
+ 75 typedef struct {
+ 76         int fd;
+ 77         sock_type type;
+ 78         Buffer input;
+ 79         Buffer output;
+ 80         Buffer request;
+ 81 } SocketEntry;
+ 82 
+ 83 u_int sockets_alloc = 0;
+ 84 SocketEntry *sockets = NULL;
+ 85 
+ 86 typedef struct identity {
+ 87         TAILQ_ENTRY(identity) next;
+ 88         Key *key;
+ 89         char *comment;
+ 90         u_int death;
+ 91 } Identity;
+ 92 
+ 93 typedef struct {
+ 94         int nentries;
+ 95         TAILQ_HEAD(idqueue, identity) idlist;
+ 96 } Idtab;
+ 97 
+ 98 /* private key table, one per protocol version */
+ 99 Idtab idtable[3];
+100 
+101 int max_fd = 0;
+102 
+103 /* pid of shell == parent of agent */
+104 pid_t parent_pid = -1;
+105 
+106 /* pathname and directory for AUTH_SOCKET */
+107 char socket_name[1024];
+108 char socket_dir[1024];
+109 
+110 /* locking */
+111 int locked = 0;
+112 char *lock_passwd = NULL;
+113 
+114 #ifdef HAVE___PROGNAME
+115 extern char *__progname;
+116 #else
+117 char *__progname;
+118 #endif
+119 
+120 static void
+121 close_socket(SocketEntry *e)
+122 {
+123         close(e->fd);
+124         e->fd = -1;
+125         e->type = AUTH_UNUSED;
+126         buffer_free(&e->input);
+127         buffer_free(&e->output);
+128         buffer_free(&e->request);
+129 }
+130 
+131 static void
+132 idtab_init(void)
+133 {
+134         int i;
+135 
+136         for (i = 0; i <=2; i++) {
+137                 TAILQ_INIT(&idtable[i].idlist);
+138                 idtable[i].nentries = 0;
+139         }
+140 }
+141 
+142 /* return private key table for requested protocol version */
+143 static Idtab *
+144 idtab_lookup(int version)
+145 {
+146         if (version < 1 || version > 2)
+147                 fatal("internal error, bad protocol version %d", version);
+148         return &idtable[version];
+149 }
+150 
+151 static void
+152 free_identity(Identity *id)
+153 {
+154         key_free(id->key);
+155         xfree(id->comment);
+156         xfree(id);
+157 }
+158 
+159 /* return matching private key for given public key */
+160 static Identity *
+161 lookup_identity(Key *key, int version)
+162 {
+163         Identity *id;
+164 
+165         Idtab *tab = idtab_lookup(version);
+166         TAILQ_FOREACH(id, &tab->idlist, next) {
+167                 if (key_equal(key, id->key))
+168                         return (id);
+169         }
+170         return (NULL);
+171 }
+172 
+173 /* send list of supported public keys to 'client' */
+174 static void
+175 process_request_identities(SocketEntry *e, int version)
+176 {
+177         Idtab *tab = idtab_lookup(version);
+178         Identity *id;
+179         Buffer msg;
+180 
+181         buffer_init(&msg);
+182         buffer_put_char(&msg, (version == 1) ?
+183             SSH_AGENT_RSA_IDENTITIES_ANSWER : SSH2_AGENT_IDENTITIES_ANSWER);
+184         buffer_put_int(&msg, tab->nentries);
+185         TAILQ_FOREACH(id, &tab->idlist, next) {
+186                 if (id->key->type == KEY_RSA1) {
+187                         buffer_put_int(&msg, BN_num_bits(id->key->rsa->n));
+188                         buffer_put_bignum(&msg, id->key->rsa->e);
+189                         buffer_put_bignum(&msg, id->key->rsa->n);
+190                 } else {
+191                         u_char *blob;
+192                         u_int blen;
+193                         key_to_blob(id->key, &blob, &blen);
+194                         buffer_put_string(&msg, blob, blen);
+195                         xfree(blob);
+196                 }
+197                 buffer_put_cstring(&msg, id->comment);
+198         }
+199         buffer_put_int(&e->output, buffer_len(&msg));
+200         buffer_append(&e->output, buffer_ptr(&msg), buffer_len(&msg));
+201         buffer_free(&msg);
+202 }
+203 
+204 /* ssh1 only */
+205 static void
+206 process_authentication_challenge1(SocketEntry *e)
+207 {
+208         u_char buf[32], mdbuf[16], session_id[16];
+209         u_int response_type;
+210         BIGNUM *challenge;
+211         Identity *id;
+212         int i, len;
+213         Buffer msg;
+214         MD5_CTX md;
+215         Key *key;
+216 
+217         buffer_init(&msg);
+218         key = key_new(KEY_RSA1);
+219         if ((challenge = BN_new()) == NULL)
+220                 fatal("process_authentication_challenge1: BN_new failed");
+221 
+222         (void) buffer_get_int(&e->request);                      /* ignored */
+223         buffer_get_bignum(&e->request, key->rsa->e);
+224         buffer_get_bignum(&e->request, key->rsa->n);
+225         buffer_get_bignum(&e->request, challenge);
+226 
+227         /* Only protocol 1.1 is supported */
+228         if (buffer_len(&e->request) == 0)
+229                 goto failure;
+230         buffer_get(&e->request, session_id, 16);
+231         response_type = buffer_get_int(&e->request);
+232         if (response_type != 1)
+233                 goto failure;
+234 
+235         id = lookup_identity(key, 1);
+236         if (id != NULL) {
+237                 Key *private = id->key;
+238                 /* Decrypt the challenge using the private key. */
+239                 if (rsa_private_decrypt(challenge, challenge, private->rsa) <= 0)
+240                         goto failure;
+241 
+242                 /* The response is MD5 of decrypted challenge plus session id. */
+243                 len = BN_num_bytes(challenge);
+244                 if (len <= 0 || len > 32) {
+245                         log("process_authentication_challenge: bad challenge length %d", len);
+246                         goto failure;
+247                 }
+248                 memset(buf, 0, 32);
+249                 BN_bn2bin(challenge, buf + 32 - len);
+250                 MD5_Init(&md);
+251                 MD5_Update(&md, buf, 32);
+252                 MD5_Update(&md, session_id, 16);
+253                 MD5_Final(mdbuf, &md);
+254 
+255                 /* Send the response. */
+256                 buffer_put_char(&msg, SSH_AGENT_RSA_RESPONSE);
+257                 for (i = 0; i < 16; i++)
+258                         buffer_put_char(&msg, mdbuf[i]);
+259                 goto send;
+260         }
+261 
+262 failure:
+263         /* Unknown identity or protocol error.  Send failure. */
+264         buffer_put_char(&msg, SSH_AGENT_FAILURE);
+265 send:
+266         buffer_put_int(&e->output, buffer_len(&msg));
+267         buffer_append(&e->output, buffer_ptr(&msg), buffer_len(&msg));
+268         key_free(key);
+269         BN_clear_free(challenge);
+270         buffer_free(&msg);
+271 }
+272 
+273 /* ssh2 only */
+274 static void
+275 process_sign_request2(SocketEntry *e)
+276 {
+277         u_char *blob, *data, *signature = NULL;
+278         u_int blen, dlen, slen = 0;
+279         extern int datafellows;
+280         int ok = -1, flags;
+281         Buffer msg;
+282         Key *key;
+283 
+284         datafellows = 0;
+285 
+286         blob = buffer_get_string(&e->request, &blen);
+287         data = buffer_get_string(&e->request, &dlen);
+288 
+289         flags = buffer_get_int(&e->request);
+290         if (flags & SSH_AGENT_OLD_SIGNATURE)
+291                 datafellows = SSH_BUG_SIGBLOB;
+292 
+293         key = key_from_blob(blob, blen);
+294         if (key != NULL) {
+295                 Identity *id = lookup_identity(key, 2);
+296                 if (id != NULL)
+297                         ok = key_sign(id->key, &signature, &slen, data, dlen);
+298         }
+299         key_free(key);
+300         buffer_init(&msg);
+301         if (ok == 0) {
+302                 buffer_put_char(&msg, SSH2_AGENT_SIGN_RESPONSE);
+303                 buffer_put_string(&msg, signature, slen);
+304         } else {
+305                 buffer_put_char(&msg, SSH_AGENT_FAILURE);
+306         }
+307         buffer_put_int(&e->output, buffer_len(&msg));
+308         buffer_append(&e->output, buffer_ptr(&msg),
+309             buffer_len(&msg));
+310         buffer_free(&msg);
+311         xfree(data);
+312         xfree(blob);
+313         if (signature != NULL)
+314                 xfree(signature);
+315 }
+316 
+317 /* shared */
+318 static void
+319 process_remove_identity(SocketEntry *e, int version)
+320 {
+321         u_int blen, bits;
+322         int success = 0;
+323         Key *key = NULL;
+324         u_char *blob;
+325 
+326         switch (version) {
+327         case 1:
+328                 key = key_new(KEY_RSA1);
+329                 bits = buffer_get_int(&e->request);
+330                 buffer_get_bignum(&e->request, key->rsa->e);
+331                 buffer_get_bignum(&e->request, key->rsa->n);
+332 
+333                 if (bits != key_size(key))
+334                         log("Warning: identity keysize mismatch: actual %u, announced %u",
+335                             key_size(key), bits);
+336                 break;
+337         case 2:
+338                 blob = buffer_get_string(&e->request, &blen);
+339                 key = key_from_blob(blob, blen);
+340                 xfree(blob);
+341                 break;
+342         }
+343         if (key != NULL) {
+344                 Identity *id = lookup_identity(key, version);
+345                 if (id != NULL) {
+346                         /*
+347                          * We have this key.  Free the old key.  Since we
+348                          * don\'t want to leave empty slots in the middle of
+349                          * the array, we actually free the key there and move
+350                          * all the entries between the empty slot and the end
+351                          * of the array.
+352                          */
+353                         Idtab *tab = idtab_lookup(version);
+354                         if (tab->nentries < 1)
+355                                 fatal("process_remove_identity: "
+356                                     "internal error: tab->nentries %d",
+357                                     tab->nentries);
+358                         TAILQ_REMOVE(&tab->idlist, id, next);
+359                         free_identity(id);
+360                         tab->nentries--;
+361                         success = 1;
+362                 }
+363                 key_free(key);
+364         }
+365         buffer_put_int(&e->output, 1);
+366         buffer_put_char(&e->output,
+367             success ? SSH_AGENT_SUCCESS : SSH_AGENT_FAILURE);
+368 }
+369 
+370 static void
+371 process_remove_all_identities(SocketEntry *e, int version)
+372 {
+373         Idtab *tab = idtab_lookup(version);
+374         Identity *id;
+375 
+376         /* Loop over all identities and clear the keys. */
+377         for (id = TAILQ_FIRST(&tab->idlist); id;
+378             id = TAILQ_FIRST(&tab->idlist)) {
+379                 TAILQ_REMOVE(&tab->idlist, id, next);
+380                 free_identity(id);
+381         }
+382 
+383         /* Mark that there are no identities. */
+384         tab->nentries = 0;
+385 
+386         /* Send success. */
+387         buffer_put_int(&e->output, 1);
+388         buffer_put_char(&e->output, SSH_AGENT_SUCCESS);
+389 }
+390 
+391 static void
+392 reaper(void)
+393 {
+394         u_int now = time(NULL);
+395         Identity *id, *nxt;
+396         int version;
+397         Idtab *tab;
+398 
+399         for (version = 1; version < 3; version++) {
+400                 tab = idtab_lookup(version);
+401                 for (id = TAILQ_FIRST(&tab->idlist); id; id = nxt) {
+402                         nxt = TAILQ_NEXT(id, next);
+403                         if (id->death != 0 && now >= id->death) {
+404                                 TAILQ_REMOVE(&tab->idlist, id, next);
+405                                 free_identity(id);
+406                                 tab->nentries--;
+407                         }
+408                 }
+409         }
+410 }
+411 
+412 static void
+413 process_add_identity(SocketEntry *e, int version)
+414 {
+415         Idtab *tab = idtab_lookup(version);
+416         int type, success = 0, death = 0;
+417         char *type_name, *comment;
+418         Key *k = NULL;
+419 
+420         switch (version) {
+421         case 1:
+422                 k = key_new_private(KEY_RSA1);
+423                 (void) buffer_get_int(&e->request);              /* ignored */
+424                 buffer_get_bignum(&e->request, k->rsa->n);
+425                 buffer_get_bignum(&e->request, k->rsa->e);
+426                 buffer_get_bignum(&e->request, k->rsa->d);
+427                 buffer_get_bignum(&e->request, k->rsa->iqmp);
+428 
+429                 /* SSH and SSL have p and q swapped */
+430                 buffer_get_bignum(&e->request, k->rsa->q); /* p */
+431                 buffer_get_bignum(&e->request, k->rsa->p); /* q */
+432 
+433                 /* Generate additional parameters */
+434                 rsa_generate_additional_parameters(k->rsa);
+435                 break;
+436         case 2:
+437                 type_name = buffer_get_string(&e->request, NULL);
+438                 type = key_type_from_name(type_name);
+439                 xfree(type_name);
+440                 switch (type) {
+441                 case KEY_DSA:
+442                         k = key_new_private(type);
+443                         buffer_get_bignum2(&e->request, k->dsa->p);
+444                         buffer_get_bignum2(&e->request, k->dsa->q);
+445                         buffer_get_bignum2(&e->request, k->dsa->g);
+446                         buffer_get_bignum2(&e->request, k->dsa->pub_key);
+447                         buffer_get_bignum2(&e->request, k->dsa->priv_key);
+448                         break;
+449                 case KEY_RSA:
+450                         k = key_new_private(type);
+451                         buffer_get_bignum2(&e->request, k->rsa->n);
+452                         buffer_get_bignum2(&e->request, k->rsa->e);
+453                         buffer_get_bignum2(&e->request, k->rsa->d);
+454                         buffer_get_bignum2(&e->request, k->rsa->iqmp);
+455                         buffer_get_bignum2(&e->request, k->rsa->p);
+456                         buffer_get_bignum2(&e->request, k->rsa->q);
+457 
+458                         /* Generate additional parameters */
+459                         rsa_generate_additional_parameters(k->rsa);
+460                         break;
+461                 default:
+462                         buffer_clear(&e->request);
+463                         goto send;
+464                 }
+465                 break;
+466         }
+467         comment = buffer_get_string(&e->request, NULL);
+468         if (k == NULL) {
+469                 xfree(comment);
+470                 goto send;
+471         }
+472         success = 1;
+473         while (buffer_len(&e->request)) {
+474                 switch (buffer_get_char(&e->request)) {
+475                 case SSH_AGENT_CONSTRAIN_LIFETIME:
+476                         death = time(NULL) + buffer_get_int(&e->request);
+477                         break;
+478                 default:
+479                         break;
+480                 }
+481         }
+482         if (lookup_identity(k, version) == NULL) {
+483                 Identity *id = xmalloc(sizeof(Identity));
+484                 id->key = k;
+485                 id->comment = comment;
+486                 id->death = death;
+487                 TAILQ_INSERT_TAIL(&tab->idlist, id, next);
+488                 /* Increment the number of identities. */
+489                 tab->nentries++;
+490         } else {
+491                 key_free(k);
+492                 xfree(comment);
+493         }
+494 send:
+495         buffer_put_int(&e->output, 1);
+496         buffer_put_char(&e->output,
+497             success ? SSH_AGENT_SUCCESS : SSH_AGENT_FAILURE);
+498 }
+499 
+500 /* XXX todo: encrypt sensitive data with passphrase */
+501 static void
+502 process_lock_agent(SocketEntry *e, int lock)
+503 {
+504         int success = 0;
+505         char *passwd;
+506 
+507         passwd = buffer_get_string(&e->request, NULL);
+508         if (locked && !lock && strcmp(passwd, lock_passwd) == 0) {
+509                 locked = 0;
+510                 memset(lock_passwd, 0, strlen(lock_passwd));
+511                 xfree(lock_passwd);
+512                 lock_passwd = NULL;
+513                 success = 1;
+514         } else if (!locked && lock) {
+515                 locked = 1;
+516                 lock_passwd = xstrdup(passwd);
+517                 success = 1;
+518         }
+519         memset(passwd, 0, strlen(passwd));
+520         xfree(passwd);
+521 
+522         buffer_put_int(&e->output, 1);
+523         buffer_put_char(&e->output,
+524             success ? SSH_AGENT_SUCCESS : SSH_AGENT_FAILURE);
+525 }
+526 
+527 static void
+528 no_identities(SocketEntry *e, u_int type)
+529 {
+530         Buffer msg;
+531 
+532         buffer_init(&msg);
+533         buffer_put_char(&msg,
+534             (type == SSH_AGENTC_REQUEST_RSA_IDENTITIES) ?
+535             SSH_AGENT_RSA_IDENTITIES_ANSWER : SSH2_AGENT_IDENTITIES_ANSWER);
+536         buffer_put_int(&msg, 0);
+537         buffer_put_int(&e->output, buffer_len(&msg));
+538         buffer_append(&e->output, buffer_ptr(&msg), buffer_len(&msg));
+539         buffer_free(&msg);
+540 }
+541 
+542 #ifdef SMARTCARD
+543 static void
+544 process_add_smartcard_key (SocketEntry *e)
+545 {
+546         char *sc_reader_id = NULL, *pin;
+547         int i, version, success = 0;
+548         Key **keys, *k;
+549         Identity *id;
+550         Idtab *tab;
+551 
+552         sc_reader_id = buffer_get_string(&e->request, NULL);
+553         pin = buffer_get_string(&e->request, NULL);
+554         keys = sc_get_keys(sc_reader_id, pin);
+555         xfree(sc_reader_id);
+556         xfree(pin);
+557 
+558         if (keys == NULL || keys[0] == NULL) {
+559                 error("sc_get_keys failed");
+560                 goto send;
+561         }
+562         for (i = 0; keys[i] != NULL; i++) {
+563                 k = keys[i];
+564                 version = k->type == KEY_RSA1 ? 1 : 2;
+565                 tab = idtab_lookup(version);
+566                 if (lookup_identity(k, version) == NULL) {
+567                         id = xmalloc(sizeof(Identity));
+568                         id->key = k;
+569                         id->comment = xstrdup("smartcard key");
+570                         id->death = 0;
+571                         TAILQ_INSERT_TAIL(&tab->idlist, id, next);
+572                         tab->nentries++;
+573                         success = 1;
+574                 } else {
+575                         key_free(k);
+576                 }
+577                 keys[i] = NULL;
+578         }
+579         xfree(keys);
+580 send:
+581         buffer_put_int(&e->output, 1);
+582         buffer_put_char(&e->output,
+583             success ? SSH_AGENT_SUCCESS : SSH_AGENT_FAILURE);
+584 }
+585 
+586 static void
+587 process_remove_smartcard_key(SocketEntry *e)
+588 {
+589         char *sc_reader_id = NULL, *pin;
+590         int i, version, success = 0;
+591         Key **keys, *k = NULL;
+592         Identity *id;
+593         Idtab *tab;
+594 
+595         sc_reader_id = buffer_get_string(&e->request, NULL);
+596         pin = buffer_get_string(&e->request, NULL);
+597         keys = sc_get_keys(sc_reader_id, pin);
+598         xfree(sc_reader_id);
+599         xfree(pin);
+600 
+601         if (keys == NULL || keys[0] == NULL) {
+602                 error("sc_get_keys failed");
+603                 goto send;
+604         }
+605         for (i = 0; keys[i] != NULL; i++) {
+606                 k = keys[i];
+607                 version = k->type == KEY_RSA1 ? 1 : 2;
+608                 if ((id = lookup_identity(k, version)) != NULL) {
+609                         tab = idtab_lookup(version);
+610                         TAILQ_REMOVE(&tab->idlist, id, next);
+611                         tab->nentries--;
+612                         free_identity(id);
+613                         success = 1;
+614                 }
+615                 key_free(k);
+616                 keys[i] = NULL;
+617         }
+618         xfree(keys);
+619 send:
+620         buffer_put_int(&e->output, 1);
+621         buffer_put_char(&e->output,
+622             success ? SSH_AGENT_SUCCESS : SSH_AGENT_FAILURE);
+623 }
+624 #endif /* SMARTCARD */
+625 
+626 /* dispatch incoming messages */
+627 
+628 static void
+629 process_message(SocketEntry *e)
+630 {
+631         u_int msg_len, type;
+632         u_char *cp;
+633 
+634         /* kill dead keys */
+635         reaper();
+636 
+637         if (buffer_len(&e->input) < 5)
+638                 return;         /* Incomplete message. */
+639         cp = buffer_ptr(&e->input);
+640         msg_len = GET_32BIT(cp);
+641         if (msg_len > 256 * 1024) {
+642                 close_socket(e);
+643                 return;
+644         }
+645         if (buffer_len(&e->input) < msg_len + 4)
+646                 return;
+647 
+648         /* move the current input to e->request */
+649         buffer_consume(&e->input, 4);
+650         buffer_clear(&e->request);
+651         buffer_append(&e->request, buffer_ptr(&e->input), msg_len);
+652         buffer_consume(&e->input, msg_len);
+653         type = buffer_get_char(&e->request);
+654 
+655         /* check wheter agent is locked */
+656         if (locked && type != SSH_AGENTC_UNLOCK) {
+657                 buffer_clear(&e->request);
+658                 switch (type) {
+659                 case SSH_AGENTC_REQUEST_RSA_IDENTITIES:
+660                 case SSH2_AGENTC_REQUEST_IDENTITIES:
+661                         /* send empty lists */
+662                         no_identities(e, type);
+663                         break;
+664                 default:
+665                         /* send a fail message for all other request types */
+666                         buffer_put_int(&e->output, 1);
+667                         buffer_put_char(&e->output, SSH_AGENT_FAILURE);
+668                 }
+669                 return;
+670         }
+671 
+672         debug("type %d", type);
+673         switch (type) {
+674         case SSH_AGENTC_LOCK:
+675         case SSH_AGENTC_UNLOCK:
+676                 process_lock_agent(e, type == SSH_AGENTC_LOCK);
+677                 break;
+678         /* ssh1 */
+679         case SSH_AGENTC_RSA_CHALLENGE:
+680                 process_authentication_challenge1(e);
+681                 break;
+682         case SSH_AGENTC_REQUEST_RSA_IDENTITIES:
+683                 process_request_identities(e, 1);
+684                 break;
+685         case SSH_AGENTC_ADD_RSA_IDENTITY:
+686         case SSH_AGENTC_ADD_RSA_ID_CONSTRAINED:
+687                 process_add_identity(e, 1);
+688                 break;
+689         case SSH_AGENTC_REMOVE_RSA_IDENTITY:
+690                 process_remove_identity(e, 1);
+691                 break;
+692         case SSH_AGENTC_REMOVE_ALL_RSA_IDENTITIES:
+693                 process_remove_all_identities(e, 1);
+694                 break;
+695         /* ssh2 */
+696         case SSH2_AGENTC_SIGN_REQUEST:
+697                 process_sign_request2(e);
+698                 break;
+699         case SSH2_AGENTC_REQUEST_IDENTITIES:
+700                 process_request_identities(e, 2);
+701                 break;
+702         case SSH2_AGENTC_ADD_IDENTITY:
+703         case SSH2_AGENTC_ADD_ID_CONSTRAINED:
+704                 process_add_identity(e, 2);
+705                 break;
+706         case SSH2_AGENTC_REMOVE_IDENTITY:
+707                 process_remove_identity(e, 2);
+708                 break;
+709         case SSH2_AGENTC_REMOVE_ALL_IDENTITIES:
+710                 process_remove_all_identities(e, 2);
+711                 break;
+712 #ifdef SMARTCARD
+713         case SSH_AGENTC_ADD_SMARTCARD_KEY:
+714                 process_add_smartcard_key(e);
+715                 break;
+716         case SSH_AGENTC_REMOVE_SMARTCARD_KEY:
+717                 process_remove_smartcard_key(e);
+718                 break;
+719 #endif /* SMARTCARD */
+720         default:
+721                 /* Unknown message.  Respond with failure. */
+722                 error("Unknown message %d", type);
+723                 buffer_clear(&e->request);
+724                 buffer_put_int(&e->output, 1);
+725                 buffer_put_char(&e->output, SSH_AGENT_FAILURE);
+726                 break;
+727         }
+728 }
+729 
+730 static void
+731 new_socket(sock_type type, int fd)
+732 {
+733         u_int i, old_alloc;
+734 
+735         if (fcntl(fd, F_SETFL, O_NONBLOCK) < 0)
+736                 error("fcntl O_NONBLOCK: %s", strerror(errno));
+737 
+738         if (fd > max_fd)
+739                 max_fd = fd;
+740 
+741         for (i = 0; i < sockets_alloc; i++)
+742                 if (sockets[i].type == AUTH_UNUSED) {
+743                         sockets[i].fd = fd;
+744                         sockets[i].type = type;
+745                         buffer_init(&sockets[i].input);
+746                         buffer_init(&sockets[i].output);
+747                         buffer_init(&sockets[i].request);
+748                         return;
+749                 }
+750         old_alloc = sockets_alloc;
+751         sockets_alloc += 10;
+752         if (sockets)
+753                 sockets = xrealloc(sockets, sockets_alloc * sizeof(sockets[0]));
+754         else
+755                 sockets = xmalloc(sockets_alloc * sizeof(sockets[0]));
+756         for (i = old_alloc; i < sockets_alloc; i++)
+757                 sockets[i].type = AUTH_UNUSED;
+758         sockets[old_alloc].type = type;
+759         sockets[old_alloc].fd = fd;
+760         buffer_init(&sockets[old_alloc].input);
+761         buffer_init(&sockets[old_alloc].output);
+762         buffer_init(&sockets[old_alloc].request);
+763 }
+764 
+765 static int
+766 prepare_select(fd_set **fdrp, fd_set **fdwp, int *fdl, int *nallocp)
+767 {
+768         u_int i, sz;
+769         int n = 0;
+770 
+771         for (i = 0; i < sockets_alloc; i++) {
+772                 switch (sockets[i].type) {
+773                 case AUTH_SOCKET:
+774                 case AUTH_CONNECTION:
+775                         n = MAX(n, sockets[i].fd);
+776                         break;
+777                 case AUTH_UNUSED:
+778                         break;
+779                 default:
+780                         fatal("Unknown socket type %d", sockets[i].type);
+781                         break;
+782                 }
+783         }
+784 
+785         sz = howmany(n+1, NFDBITS) * sizeof(fd_mask);
+786         if (*fdrp == NULL || sz > *nallocp) {
+787                 if (*fdrp)
+788                         xfree(*fdrp);
+789                 if (*fdwp)
+790                         xfree(*fdwp);
+791                 *fdrp = xmalloc(sz);
+792                 *fdwp = xmalloc(sz);
+793                 *nallocp = sz;
+794         }
+795         if (n < *fdl)
+796                 debug("XXX shrink: %d < %d", n, *fdl);
+797         *fdl = n;
+798         memset(*fdrp, 0, sz);
+799         memset(*fdwp, 0, sz);
+800 
+801         for (i = 0; i < sockets_alloc; i++) {
+802                 switch (sockets[i].type) {
+803                 case AUTH_SOCKET:
+804                 case AUTH_CONNECTION:
+805                         FD_SET(sockets[i].fd, *fdrp);
+806                         if (buffer_len(&sockets[i].output) > 0)
+807                                 FD_SET(sockets[i].fd, *fdwp);
+808                         break;
+809                 default:
+810                         break;
+811                 }
+812         }
+813         return (1);
+814 }
+815 
+816 static void
+817 after_select(fd_set *readset, fd_set *writeset)
+818 {
+819         struct sockaddr_un sunaddr;
+820         socklen_t slen;
+821         char buf[1024];
+822         int len, sock;
+823         u_int i;
+824         uid_t euid;
+825         gid_t egid;
+826 
+827         for (i = 0; i < sockets_alloc; i++)
+828                 switch (sockets[i].type) {
+829                 case AUTH_UNUSED:
+830                         break;
+831                 case AUTH_SOCKET:
+832                         if (FD_ISSET(sockets[i].fd, readset)) {
+833                                 slen = sizeof(sunaddr);
+834                                 sock = accept(sockets[i].fd,
+835                                     (struct sockaddr *) &sunaddr, &slen);
+836                                 if (sock < 0) {
+837                                         error("accept from AUTH_SOCKET: %s",
+838                                             strerror(errno));
+839                                         break;
+840                                 }
+841                                 if (getpeereid(sock, &euid, &egid) < 0) {
+842                                         error("getpeereid %d failed: %s",
+843                                             sock, strerror(errno));
+844                                         close(sock);
+845                                         break;
+846                                 }
+847                                 if ((euid != 0) && (getuid() != euid)) {
+848                                         error("uid mismatch: "
+849                                             "peer euid %u != uid %u",
+850                                             (u_int) euid, (u_int) getuid());
+851                                         close(sock);
+852                                         break;
+853                                 }
+854                                 new_socket(AUTH_CONNECTION, sock);
+855                         }
+856                         break;
+857                 case AUTH_CONNECTION:
+858                         if (buffer_len(&sockets[i].output) > 0 &&
+859                             FD_ISSET(sockets[i].fd, writeset)) {
+860                                 do {
+861                                         len = write(sockets[i].fd,
+862                                             buffer_ptr(&sockets[i].output),
+863                                             buffer_len(&sockets[i].output));
+864                                         if (len == -1 && (errno == EAGAIN ||
+865                                             errno == EINTR))
+866                                                 continue;
+867                                         break;
+868                                 } while (1);
+869                                 if (len <= 0) {
+870                                         close_socket(&sockets[i]);
+871                                         break;
+872                                 }
+873                                 buffer_consume(&sockets[i].output, len);
+874                         }
+875                         if (FD_ISSET(sockets[i].fd, readset)) {
+876                                 do {
+877                                         len = read(sockets[i].fd, buf, sizeof(buf));
+878                                         if (len == -1 && (errno == EAGAIN ||
+879                                             errno == EINTR))
+880                                                 continue;
+881                                         break;
+882                                 } while (1);
+883                                 if (len <= 0) {
+884                                         close_socket(&sockets[i]);
+885                                         break;
+886                                 }
+887                                 buffer_append(&sockets[i].input, buf, len);
+888                                 process_message(&sockets[i]);
+889                         }
+890                         break;
+891                 default:
+892                         fatal("Unknown type %d", sockets[i].type);
+893                 }
+894 }
+895 
+896 static void
+897 cleanup_socket(void *p)
+898 {
+899         if (socket_name[0])
+900                 unlink(socket_name);
+901         if (socket_dir[0])
+902                 rmdir(socket_dir);
+903 }
+904 
+905 static void
+906 cleanup_exit(int i)
+907 {
+908         cleanup_socket(NULL);
+909         exit(i);
+910 }
+911 
+912 static void
+913 cleanup_handler(int sig)
+914 {
+915         cleanup_socket(NULL);
+916         _exit(2);
+917 }
+918 
+919 static void
+920 check_parent_exists(int sig)
+921 {
+922         int save_errno = errno;
+923 
+924         if (parent_pid != -1 && getppid() != parent_pid) {
+925                 /* printf("Parent has died - Authentication agent exiting.\n"); */
+926                 cleanup_handler(sig); /* safe */
+927         }
+928         signal(SIGALRM, check_parent_exists);
+929         alarm(10);
+930         errno = save_errno;
+931 }
+932 
+933 static void
+934 usage(void)
+935 {
+936         fprintf(stderr,
+937                 gettext("Usage: %s [options] [command [args ...]]\n"
+938                     "Options:\n"
+939                     "  -c          Generate C-shell commands on stdout.\n"
+940                     "  -s          Generate Bourne shell commands on stdout.\n"
+941                     "  -k          Kill the current agent.\n"
+942                     "  -d          Debug mode.\n"
+943                     "  -a socket   Bind agent socket to given name.\n"),
+944                 __progname);
+945         exit(1);
+946 }
+947 
+948 int
+949 main(int ac, char **av)
+950 {
+951         int sock, c_flag = 0, d_flag = 0, k_flag = 0, s_flag = 0, ch, nalloc;
+952         char *shell, *pidstr, *agentsocket = NULL;
+953         const char *format;
+954         fd_set *readsetp = NULL, *writesetp = NULL;
+955         struct sockaddr_un sunaddr;
+956 #ifdef HAVE_SETRLIMIT
+957         struct rlimit rlim;
+958 #endif
+959 #ifdef HAVE_CYGWIN
+960         int prev_mask;
+961 #endif
+962         extern int optind;
+963         extern char *optarg;
+964         pid_t pid;
+965         char pidstrbuf[1 + 3 * sizeof pid];
+966 #ifdef HAVE_SOLARIS_PRIVILEGE
+967         priv_set_t *myprivs;
+968 #endif /* HAVE_SOLARIS_PRIVILEGE */
+969 
+970         /* drop */
+971         setegid(getgid());
+972         setgid(getgid());
+973 
+974         (void) g11n_setlocale(LC_ALL, "");
+975 
+976         SSLeay_add_all_algorithms();
+977 
+978         __progname = get_progname(av[0]);
+979         init_rng();
+980         seed_rng();
+981 
+982         while ((ch = getopt(ac, av, "cdksa:")) != -1) {
+983                 switch (ch) {
+984                 case 'c':
+985                         if (s_flag)
+986                                 usage();
+987                         c_flag++;
+988                         break;
+989                 case 'k':
+990                         k_flag++;
+991                         break;
+992                 case 's':
+993                         if (c_flag)
+994                                 usage();
+995                         s_flag++;
+996                         break;
+997                 case 'd':
+998                         if (d_flag)
+999                                 usage();
+1000                         d_flag++;
+1001                         break;
+1002                 case 'a':
+1003                         agentsocket = optarg;
+1004                         break;
+1005                 default:
+1006                         usage();
+1007                 }
+1008         }
+1009         ac -= optind;
+1010         av += optind;
+1011 
+1012         if (ac > 0 && (c_flag || k_flag || s_flag || d_flag))
+1013                 usage();
+1014 
+1015         if (ac == 0 && !c_flag && !s_flag) {
+1016                 shell = getenv("SHELL");
+1017                 if (shell != NULL && strncmp(shell + strlen(shell) - 3, "csh", 3) == 0)
+1018                         c_flag = 1;
+1019         }
+1020         if (k_flag) {
+1021                 pidstr = getenv(SSH_AGENTPID_ENV_NAME);
+1022                 if (pidstr == NULL) {
+1023                         fprintf(stderr,
+1024                                 gettext("%s not set, cannot kill agent\n"),
+1025                                 SSH_AGENTPID_ENV_NAME);
+1026                         exit(1);
+1027                 }
+1028                 pid = atoi(pidstr);
+1029                 if (pid < 1) {
+1030                         fprintf(stderr,
+1031                             gettext("%s=\")%s\", which is not a good PID\n"),
+1032                             SSH_AGENTPID_ENV_NAME, pidstr);
+1033                         exit(1);
+1034                 }
+1035                 if (kill(pid, SIGTERM) == -1) {
+1036                         perror("kill");
+1037                         exit(1);
+1038                 }
+1039                 format = c_flag ? "unsetenv %s;\n" : "unset %s;\n";
+1040                 printf(format, SSH_AUTHSOCKET_ENV_NAME);
+1041                 printf(format, SSH_AGENTPID_ENV_NAME);
+1042                 printf("echo ");
+1043                 printf(gettext("Agent pid %ld killed;\n"), (long)pid);
+1044                 exit(0);
+1045         }
+1046         parent_pid = getpid();
+1047 
+1048         if (agentsocket == NULL) {
+1049                 /* Create private directory for agent socket */
+1050                 strlcpy(socket_dir, "/tmp/ssh-XXXXXXXX", sizeof socket_dir);
+1051                 if (mkdtemp(socket_dir) == NULL) {
+1052                         perror("mkdtemp: private socket dir");
+1053                         exit(1);
+1054                 }
+1055                 snprintf(socket_name, sizeof socket_name, "%s/agent.%ld", socket_dir,
+1056                     (long)parent_pid);
+1057         } else {
+1058                 /* Try to use specified agent socket */
+1059                 socket_dir[0] = '\0';
+1060                 strlcpy(socket_name, agentsocket, sizeof socket_name);
+1061         }
+1062 
+1063         /*
+1064          * Create socket early so it will exist before command gets run from
+1065          * the parent.
+1066          */
+1067         sock = socket(AF_UNIX, SOCK_STREAM, 0);
+1068         if (sock < 0) {
+1069                 perror("socket");
+1070                 cleanup_exit(1);
+1071         }
+1072         memset(&sunaddr, 0, sizeof(sunaddr));
+1073         sunaddr.sun_family = AF_UNIX;
+1074         strlcpy(sunaddr.sun_path, socket_name, sizeof(sunaddr.sun_path));
+1075 #ifdef HAVE_CYGWIN
+1076         prev_mask = umask(0177);
+1077 #endif
+1078         if (bind(sock, (struct sockaddr *) & sunaddr, sizeof(sunaddr)) < 0) {
+1079                 perror("bind");
+1080 #ifdef HAVE_CYGWIN
+1081                 umask(prev_mask);
+1082 #endif
+1083                 cleanup_exit(1);
+1084         }
+1085 #ifdef HAVE_CYGWIN
+1086         umask(prev_mask);
+1087 #endif
+1088         if (listen(sock, 128) < 0) {
+1089                 perror("listen");
+1090                 cleanup_exit(1);
+1091         }
+1092 
+1093         /*
+1094          * Fork, and have the parent execute the command, if any, or present
+1095          * the socket data.  The child continues as the authentication agent.
+1096          */
+1097         if (d_flag) {
+1098                 log_init(__progname, SYSLOG_LEVEL_DEBUG1, SYSLOG_FACILITY_AUTH, 1);
+1099                 format = c_flag ? "setenv %s %s;\n" : "%s=%s; export %s;\n";
+1100                 printf(format, SSH_AUTHSOCKET_ENV_NAME, socket_name,
+1101                     SSH_AUTHSOCKET_ENV_NAME);
+1102                 printf("echo ");
+1103                 printf(gettext("Agent pid %ld;\n"), (long)parent_pid);
+1104                 goto skip;
+1105         }
+1106         pid = fork();
+1107         if (pid == -1) {
+1108                 perror("fork");
+1109                 cleanup_exit(1);
+1110         }
+1111         if (pid != 0) {         /* Parent - execute the given command. */
+1112                 close(sock);
+1113                 snprintf(pidstrbuf, sizeof pidstrbuf, "%ld", (long)pid);
+1114                 if (ac == 0) {
+1115                         format = c_flag ? "setenv %s %s;\n" : "%s=%s; export %s;\n";
+1116                         printf(format, SSH_AUTHSOCKET_ENV_NAME, socket_name,
+1117                             SSH_AUTHSOCKET_ENV_NAME);
+1118                         printf(format, SSH_AGENTPID_ENV_NAME, pidstrbuf,
+1119                             SSH_AGENTPID_ENV_NAME);
+1120                         printf("echo ");
+1121                         printf(gettext("Agent pid %ld;\n"), (long)pid);
+1122                         exit(0);
+1123                 }
+1124                 if (setenv(SSH_AUTHSOCKET_ENV_NAME, socket_name, 1) == -1 ||
+1125                     setenv(SSH_AGENTPID_ENV_NAME, pidstrbuf, 1) == -1) {
+1126                         perror("setenv");
+1127                         exit(1);
+1128                 }
+1129                 execvp(av[0], av);
+1130                 perror(av[0]);
+1131                 exit(1);
+1132         }
+1133         /* child */
+1134         log_init(__progname, SYSLOG_LEVEL_INFO, SYSLOG_FACILITY_AUTH, 0);
+1135 
+1136 #ifdef HAVE_SOLARIS_PRIVILEGE
+1137         /*
+1138          * Drop unneeded privs, including basic ones like fork/exec.
+1139          *
+1140          * Idiom: remove from 'basic' privs we know we don't want,
+1141          * invert the result and remove the resulting set from P.
+1142          *
+1143          * None of the priv_delset() calls below, nor the setppriv call
+1144          * below can fail, so their return values are not checked.
+1145          */
+1146         if ((myprivs = priv_str_to_set("basic", ",", NULL)) == NULL)
+1147                 fatal("priv_str_to_set failed: %m");
+1148         (void) priv_delset(myprivs, PRIV_PROC_EXEC);
+1149         (void) priv_delset(myprivs, PRIV_PROC_FORK);
+1150         (void) priv_delset(myprivs, PRIV_FILE_LINK_ANY);
+1151         (void) priv_delset(myprivs, PRIV_PROC_INFO);
+1152         (void) priv_delset(myprivs, PRIV_PROC_SESSION);
+1153         priv_inverse(myprivs);
+1154         (void) setppriv(PRIV_OFF, PRIV_PERMITTED, myprivs);
+1155         (void) priv_freeset(myprivs);
+1156 #endif /* HAVE_SOLARIS_PRIVILEGE */
+1157 
+1158         if (setsid() == -1) {
+1159                 error("setsid: %s", strerror(errno));
+1160                 cleanup_exit(1);
+1161         }
+1162 
+1163         (void)chdir("/");
+1164         close(0);
+1165         close(1);
+1166         close(2);
+1167 
+1168 #ifdef HAVE_SETRLIMIT
+1169         /* deny core dumps, since memory contains unencrypted private keys */
+1170         rlim.rlim_cur = rlim.rlim_max = 0;
+1171         if (setrlimit(RLIMIT_CORE, &rlim) < 0) {
+1172                 error("setrlimit RLIMIT_CORE: %s", strerror(errno));
+1173                 cleanup_exit(1);
+1174         }
+1175 #endif
+1176 
+1177 skip:
+1178         fatal_add_cleanup(cleanup_socket, NULL);
+1179         new_socket(AUTH_SOCKET, sock);
+1180         if (ac > 0) {
+1181                 signal(SIGALRM, check_parent_exists);
+1182                 alarm(10);
+1183         }
+1184         idtab_init();
+1185         if (!d_flag)
+1186                 signal(SIGINT, SIG_IGN);
+1187         signal(SIGPIPE, SIG_IGN);
+1188         signal(SIGHUP, cleanup_handler);
+1189         signal(SIGTERM, cleanup_handler);
+1190         nalloc = 0;
+1191 
+1192         while (1) {
+1193                 prepare_select(&readsetp, &writesetp, &max_fd, &nalloc);
+1194                 if (select(max_fd + 1, readsetp, writesetp, NULL, NULL) < 0) {
+1195                         if (errno == EINTR)
+1196                                 continue;
+1197                         fatal("select: %s", strerror(errno));
+1198                 }
+1199                 after_select(readsetp, writesetp);
+1200         }
+1201         /* NOTREACHED */
+1202         return (0);     /* keep lint happy */
+1203 }

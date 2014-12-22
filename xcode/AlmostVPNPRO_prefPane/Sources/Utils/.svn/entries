@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Sources/Utils"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="SecureStorageProvider.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d32b24b3d4c61497e97510a372bf1353"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="IconNameToImageConverter.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6813b5fb0b1e63f207ee47bbda633922"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="133"
+   name="ServerHelper.h"
+   text-time="2006-09-26T02:30:43.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="58ca9f8487bb4b3fa87d5f2d8e61d3f5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="154"
+   name="ServerHelper.m"
+   text-time="2006-11-08T20:06:50.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="42b6421be7870bbcaa1e406087720627"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="154"/>
+<entry
+   committed-rev="123"
+   name="LBNSPanel.h"
+   text-time="2006-09-06T16:40:09.000000Z"
+   committed-date="2006-09-06T16:40:16.843143Z"
+   checksum="b42fba7165485663dc0c1c9eb70c2b26"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="123"/>
+<entry
+   committed-rev="133"
+   name="LogRecord.h"
+   text-time="2006-09-19T16:00:36.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="64683d7d0ce357a26e24057637ec70eb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="LBNSTabView.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fb1f18f797dfacc5724216d259eb4c3d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="121"
+   name="LBNSPanel.m"
+   text-time="2006-09-06T12:48:14.000000Z"
+   committed-date="2006-09-06T14:42:26.996846Z"
+   checksum="2a6a7b50b08ced3d97ce2ff116095ff7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="121"/>
+<entry
+   committed-rev="133"
+   name="LogRecord.m"
+   text-time="2006-09-19T16:11:13.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="23cf22e0d8a2b34da0950fd04fb08e1e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="LBNSTabView.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1ddc114ae93d234af8bbe7dcd692283d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBNSOutlineView.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1fec70e9a589a3e7eb05d6a2a0f8f4d2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="KeyChainAdapter.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6296c4d3004da168ec5678bc7696af04"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBNSOutlineView.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="163f59c14a32fefc96789343cfcb8688"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="133"
+   name="LBArrayController.h"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="9b5efbe9698e74a686214fc9964a775e"
+   last-author="atchijov"
+   kind="file"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="KeyChainAdapter.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="dc13d61311475ceb68eb03bbacff41c1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBNSTableView.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="524a4c5708b15e6c7617835e316076f5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="133"
+   name="LBArrayController.m"
+   text-time="2006-09-01T03:20:13.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="d55f60a6df5df25c5fb3e21cde1f37f2"
+   last-author="atchijov"
+   kind="file"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="LBNSTableView.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9a1f3fc66c8e54b98e47edc035d54e27"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ImageAndTextCell.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="90979185375955d52ca316ea47400280"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBTransparentOutlineView.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="55d7c68bc32127a4d076cdc7eea3a1a7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServerMonitor.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="45b5aa157e61483f3cfa73714c9040ba"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBUtils.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cb2439c62edb0c4b9891f51739363ac1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBTransparentOutlineView.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="960e6bb6a1ee701c65f995ab44994433"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ImageAndTextCell.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="092643ee069742a30c4b72a72c0d6f6f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="133"
+   name="PathLocator.h"
+   text-time="2006-09-26T01:51:08.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="8125112ade218c9694dbfb548cce84e2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="LBTransparentTableView.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6e4cce01d3de0b4d7631347f2c2cbece"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBUtils.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="489112353cb839fa345f0b4165ea7b8e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="133"
+   name="ServerMonitor.m"
+   text-time="2006-09-18T19:59:52.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="e3b976b544c368d8010e2357633153c9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="133"
+   name="PathLocator.m"
+   text-time="2006-09-20T15:50:17.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="f46bf14569c04c98f244996385f61a66"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="SecureStorageProvider.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5ceaa6fe48592f2d6effe8f409aa9653"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="IconNameToImageConverter.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="72c8362e5424c35ce6f2368b68914750"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LBTransparentTableView.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="428d7812ef8d499115ab567739325827"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+</wc-entries>

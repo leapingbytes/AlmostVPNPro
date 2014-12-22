@@ -1,0 +1,3 @@
+org.slf4j
+org.slf4j.impl
+org.slf4j.spi

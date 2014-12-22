@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO.Uninstaller/Icons"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="AlertStopIcon.icns"
+   text-time="2006-09-01T03:19:00.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5c7b5a39a6a3304c693a4026de7bf87e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:00.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LockedIcon.icns"
+   text-time="2006-09-01T03:19:00.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="93f9f11f1131f596b320e950e5fdfd71"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:00.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_Uninstall.icns"
+   text-time="2006-09-01T03:19:00.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b71737833ee3d28fae74b961033600f3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:00.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_askPassword.png"
+   text-time="2006-09-01T03:19:00.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e7321f76a3b3ee50df21ec243db11172"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:00.000000Z"/>
+<entry
+   committed-rev="106"
+   name="UnlockedIcon.icns"
+   text-time="2006-09-01T03:19:00.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d00181200c60d7cc85f70f91adf30f4e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:00.000000Z"/>
+</wc-entries>

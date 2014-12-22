@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeTarget = D2AAC0C605546C1D00DB518D /* AlmostVPNJNI.macosx */;
+		addToTargets = (
+			D2AAC0C605546C1D00DB518D /* AlmostVPNJNI.macosx */,
+		);
+		breakpointsGroup = 501D7AB709E1669B006D1B5D /* XCBreakpointsBucket */;
+		codeSenseManager = 501D7A7F09E16337006D1B5D /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXErrorsWarningsDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					300,
+					200,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXErrorsWarningsDataSource_TypeID,
+					PBXErrorsWarningsDataSource_MessageID,
+					PBXErrorsWarningsDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					515.5835,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					697,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.XCSCMDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					604,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_SCM_ColumnID,
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					200,
+					448,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 185133763;
+			PBXWorkspaceStateSaveDate = 185133763;
+		};
+		perUserProjectItems = {
+			502A61680A89015F008DBCC7 /* PBXTextBookmark */ = 502A61680A89015F008DBCC7 /* PBXTextBookmark */;
+			502A61690A89015F008DBCC7 /* PBXTextBookmark */ = 502A61690A89015F008DBCC7 /* PBXTextBookmark */;
+			505567670ADC25A000AA97B9 /* PBXTextBookmark */ = 505567670ADC25A000AA97B9 /* PBXTextBookmark */;
+			505567690ADC25A000AA97B9 /* PBXTextBookmark */ = 505567690ADC25A000AA97B9 /* PBXTextBookmark */;
+			505655CF0B03AB2F001CFBE7 /* PBXTextBookmark */ = 505655CF0B03AB2F001CFBE7 /* PBXTextBookmark */;
+			505655D20B03AB2F001CFBE7 /* PBXTextBookmark */ = 505655D20B03AB2F001CFBE7 /* PBXTextBookmark */;
+			50B50E910B08C86F00E696DA /* PBXTextBookmark */ = 50B50E910B08C86F00E696DA /* PBXTextBookmark */;
+			50B50E920B08C86F00E696DA /* PBXTextBookmark */ = 50B50E920B08C86F00E696DA /* PBXTextBookmark */;
+			50B50EC20B08EBA000E696DA /* PBXTextBookmark */ = 50B50EC20B08EBA000E696DA /* PBXTextBookmark */;
+			50B50EC30B08EBA000E696DA /* PBXTextBookmark */ = 50B50EC30B08EBA000E696DA /* PBXTextBookmark */;
+			50B50EC40B08EBA000E696DA /* PBXTextBookmark */ = 50B50EC40B08EBA000E696DA /* PBXTextBookmark */;
+			50B50EF90B08FAA200E696DA /* PBXTextBookmark */ = 50B50EF90B08FAA200E696DA /* PBXTextBookmark */;
+			50DA1F580AA7DE010099AA1C /* PBXTextBookmark */ = 50DA1F580AA7DE010099AA1C /* PBXTextBookmark */;
+			50DA1F590AA7DE010099AA1C /* PBXTextBookmark */ = 50DA1F590AA7DE010099AA1C /* PBXTextBookmark */;
+			50DA1F5C0AA7DE010099AA1C /* PBXTextBookmark */ = 50DA1F5C0AA7DE010099AA1C /* PBXTextBookmark */;
+			50DA1F5D0AA7DE010099AA1C /* PBXTextBookmark */ = 50DA1F5D0AA7DE010099AA1C /* PBXTextBookmark */;
+		};
+		sourceControlManager = 501D7A7E09E16337006D1B5D /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	501D7A7E09E16337006D1B5D /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 1;
+		scmConfiguration = {
+		};
+		scmType = scm.subversion;
+	};
+	501D7A7F09E16337006D1B5D /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	501D7A8209E163D8006D1B5D /* com_leapingbytes_almostvpn_util_macosx_KeychainMasterPasswordProvider.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {895, 790}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {865, 790}}";
+			sepNavWindowFrame = "{{19, 0}, {1275, 1002}}";
+		};
+	};
+	501D7A8309E163D8006D1B5D /* KeychainMasterPasswodProvider.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1070, 3690}}";
+			sepNavSelRange = "{753, 22}";
+			sepNavVisRect = "{{0, 780}, {865, 790}}";
+		};
+	};
+	501D7AB709E1669B006D1B5D /* XCBreakpointsBucket */ = {
+		isa = XCBreakpointsBucket;
+		name = AlmostVPNJNI.macosx;
+		objects = (
+		);
+	};
+	502A5FA20A87F707008DBCC7 /* SystemConfigurationProvider.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1014, 2415}}";
+			sepNavSelRange = "{3685, 0}";
+			sepNavVisRect = "{{0, 1196}, {889, 790}}";
+		};
+	};
+	502A5FBE0A87F7EA008DBCC7 /* com_leapingbytes_almostvpn_util_macosx_SystemConfigurationProvider.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {865, 825}}";
+			sepNavSelRange = "{414, 0}";
+			sepNavVisRect = "{{0, 0}, {865, 790}}";
+		};
+	};
+	502A609D0A87FB28008DBCC7 /* SCHelper.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {865, 790}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {865, 790}}";
+		};
+	};
+	502A609E0A87FB28008DBCC7 /* SCHelper.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1028, 1095}}";
+			sepNavSelRange = "{524, 25}";
+			sepNavVisRect = "{{0, 20}, {865, 790}}";
+		};
+	};
+	502A61680A89015F008DBCC7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 502A5FA20A87F707008DBCC7 /* SystemConfigurationProvider.m */;
+		name = "SystemConfigurationProvider.m: 47";
+		rLen = 0;
+		rLoc = 576;
+		rType = 0;
+		vrLen = 1565;
+		vrLoc = 3;
+	};
+	502A61690A89015F008DBCC7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 502A609E0A87FB28008DBCC7 /* SCHelper.m */;
+		name = SCDynamicStoreCopyKeyList;
+		rLen = 25;
+		rLoc = 524;
+		rType = 0;
+		vrLen = 1736;
+		vrLoc = 0;
+	};
+	505567670ADC25A000AA97B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 501D7A8209E163D8006D1B5D /* com_leapingbytes_almostvpn_util_macosx_KeychainMasterPasswordProvider.h */;
+		name = "com_leapingbytes_almostvpn_util_macosx_KeychainMasterPasswordProvider.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1417;
+		vrLoc = 0;
+	};
+	505567690ADC25A000AA97B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 501D7A8209E163D8006D1B5D /* com_leapingbytes_almostvpn_util_macosx_KeychainMasterPasswordProvider.h */;
+		name = "com_leapingbytes_almostvpn_util_macosx_KeychainMasterPasswordProvider.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1417;
+		vrLoc = 0;
+	};
+	505655CF0B03AB2F001CFBE7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 501D7A8309E163D8006D1B5D /* KeychainMasterPasswodProvider.c */;
+		name = SecKeychainCopyDefault;
+		rLen = 22;
+		rLoc = 753;
+		rType = 0;
+		vrLen = 1525;
+		vrLoc = 1311;
+	};
+	505655D20B03AB2F001CFBE7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 501D7A8309E163D8006D1B5D /* KeychainMasterPasswodProvider.c */;
+		name = SecKeychainCopyDefault;
+		rLen = 22;
+		rLoc = 753;
+		rType = 0;
+		vrLen = 1525;
+		vrLoc = 1311;
+	};
+	50B50E910B08C86F00E696DA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 502A5FBE0A87F7EA008DBCC7 /* com_leapingbytes_almostvpn_util_macosx_SystemConfigurationProvider.h */;
+		name = "com_leapingbytes_almostvpn_util_macosx_SystemConfigurationProvider.h: 40";
+		rLen = 0;
+		rLoc = 1670;
+		rType = 0;
+		vrLen = 807;
+		vrLoc = 1197;
+	};
+	50B50E920B08C86F00E696DA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: 'self' undeclared (first use in this function)";
+		fRef = 502A5FA20A87F707008DBCC7 /* SystemConfigurationProvider.m */;
+		rLen = 1;
+		rLoc = 95;
+		rType = 1;
+	};
+	50B50EC20B08EBA000E696DA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 502A5FBE0A87F7EA008DBCC7 /* com_leapingbytes_almostvpn_util_macosx_SystemConfigurationProvider.h */;
+		name = "com_leapingbytes_almostvpn_util_macosx_SystemConfigurationProvider.h: 10";
+		rLen = 0;
+		rLoc = 414;
+		rType = 0;
+		vrLen = 2023;
+		vrLoc = 0;
+	};
+	50B50EC30B08EBA000E696DA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 502A5FA20A87F707008DBCC7 /* SystemConfigurationProvider.m */;
+		name = jboolean;
+		rLen = 8;
+		rLoc = 1922;
+		rType = 0;
+		vrLen = 1656;
+		vrLoc = 1135;
+	};
+	50B50EC40B08EBA000E696DA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 502A5FBE0A87F7EA008DBCC7 /* com_leapingbytes_almostvpn_util_macosx_SystemConfigurationProvider.h */;
+		name = "com_leapingbytes_almostvpn_util_macosx_SystemConfigurationProvider.h: 10";
+		rLen = 0;
+		rLoc = 414;
+		rType = 0;
+		vrLen = 2023;
+		vrLoc = 0;
+	};
+	50B50EF90B08FAA200E696DA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 502A5FA20A87F707008DBCC7 /* SystemConfigurationProvider.m */;
+		name = "SystemConfigurationProvider.m: setObject";
+		rLen = 0;
+		rLoc = 3685;
+		rType = 0;
+		vrLen = 1911;
+		vrLoc = 2261;
+	};
+	50DA1F580AA7DE010099AA1C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 502A609D0A87FB28008DBCC7 /* SCHelper.h */;
+		name = "SCHelper.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 602;
+		vrLoc = 0;
+	};
+	50DA1F590AA7DE010099AA1C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 502A609E0A87FB28008DBCC7 /* SCHelper.m */;
+		name = SCDynamicStoreCopyKeyList;
+		rLen = 25;
+		rLoc = 524;
+		rType = 0;
+		vrLen = 1150;
+		vrLoc = 0;
+	};
+	50DA1F5C0AA7DE010099AA1C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 502A5FBE0A87F7EA008DBCC7 /* com_leapingbytes_almostvpn_util_macosx_SystemConfigurationProvider.h */;
+		name = "com_leapingbytes_almostvpn_util_macosx_SystemConfigurationProvider.h: Java_com_leapingbytes_almostvpn_util_macosx_SystemConfigurationProvider_getConfigurationObject";
+		rLen = 162;
+		rLoc = 611;
+		rType = 0;
+		vrLen = 1103;
+		vrLoc = 0;
+	};
+	50DA1F5D0AA7DE010099AA1C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 502A609D0A87FB28008DBCC7 /* SCHelper.h */;
+		name = "SCHelper.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 602;
+		vrLoc = 0;
+	};
+	D2AAC0C605546C1D00DB518D /* AlmostVPNJNI.macosx */ = {
+		activeExec = 0;
+	};
+}

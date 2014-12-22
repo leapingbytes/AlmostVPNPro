@@ -1,0 +1,185 @@
+package com.leapingbytes.almostvpn.server.profile.configurator.impl;
+
+import java.io.File;
+
+import com.leapingbytes.almostvpn.model.Model;
+import com.leapingbytes.almostvpn.path.PathLocator;
+import com.leapingbytes.almostvpn.server.profile.ProfileException;
+import com.leapingbytes.almostvpn.server.profile.configurator.BaseConfigurator;
+import com.leapingbytes.almostvpn.server.profile.item.impl.AliasAddress;
+import com.leapingbytes.almostvpn.server.profile.item.impl.BonjourAd;
+import com.leapingbytes.almostvpn.server.profile.item.impl.PostfixMarker;
+import com.leapingbytes.almostvpn.server.profile.item.impl.SSHCommand;
+import com.leapingbytes.almostvpn.server.profile.item.impl.SSHPortForward;
+import com.leapingbytes.almostvpn.server.profile.item.impl.SSHSession;
+import com.leapingbytes.almostvpn.server.profile.item.impl.SSHUdpPortForward;
+import com.leapingbytes.almostvpn.server.profile.item.impl.Script;
+import com.leapingbytes.almostvpn.server.profile.item.spi.IProfileItem;
+import com.leapingbytes.almostvpn.util.Bonjour;
+import com.leapingbytes.jcocoa.NSDictionary;
+
+public class RemoteControlConfigurator extends BaseConfigurator {
+
+	protected RemoteControlConfigurator() {
+		super( Model.AVPNRemoteControlRefClass );
+	}
+	
+	public IProfileItem configure(NSDictionary definition) throws ProfileException {
+		IProfileItem	result = null;
+		
+		Model	remoteControlRef = new Model( definition );
+		Model 	remoteControlRefParent = remoteControlRef.parentModel();
+		
+		Model	remoteControl = remoteControlRef.referencedModel();
+		Model	remoteControlHost = remoteControl.parentModel();
+		Model 	remoteControlLocation = remoteControlHost.isLocation() || remoteControlHost.isLocalhost() ?
+				remoteControlHost :
+				remoteControlHost.parentModel();
+		
+		String	rcType = remoteControl.type();
+		int		rcPort = remoteControl.port();
+		
+		boolean useRemoteHostAsIs = false;
+		
+		SSHSession session = (SSHSession) profile().configure( remoteControlLocation.definition());	
+		
+		result = session;
+		
+		if( Model.AVPNShellType.equals( rcType )) { // Start shell
+			SSHCommand execConsole = (SSHCommand) add( new SSHCommand( session, "pwd", true, false, false, true ));
+			execConsole.setPrerequisit( PostfixMarker.marker());
+			result = session;
+		} else {
+			String bindToAddress = remoteControlRefParent.isProfile() ? null : remoteControlRefParent.aliasAddress();
+			if( bindToAddress == null ) {
+				AliasAddress aliasAddress = new AliasAddress();
+				aliasAddress.setPrerequisit( result );
+				bindToAddress = aliasAddress.ip();
+				result = add( aliasAddress );
+			}
+			
+			if( Model.AVPNARDType.equals( rcType )) {
+				result = configureRemoteControlTunnel( result, session, remoteControlHost.address(), useRemoteHostAsIs, 5900, bindToAddress, true, false ); 
+//				result = configureRemoteControlTunnel( result, session, remoteControlHost.address(), 3283, bindToAddress, false, true ); 
+//				SSHPortForward portForward = new SSHPortForward( session, SSHPortForward.REMOTE, 3283, "127.0.0.1", 3283 );
+//				portForward.setPrerequisit( result );
+//				result = add( portForward );
+				// result = configureRemoteControlTunnel( result, session, remoteControlHost.address(), 5988, bindToAddress, false, true ); 
+			} else {
+				result = configureRemoteControlTunnel( result, session, remoteControlHost.address(), useRemoteHostAsIs, rcPort , bindToAddress, true, false ); 
+			}
+
+			if( remoteControlRef.useBonjour() ) {
+				String bonjourName = remoteControlRefParent.isProfile() ? remoteControlHost.name() : remoteControlRefParent.aliasName();
+				if( Model.AVPNVNCType.equals( rcType )) {
+					BonjourAd bonjour = (BonjourAd) add( new BonjourAd( Bonjour._VNC_TYPE_, bonjourName, bindToAddress, rcPort, null ));
+					bonjour.setPrerequisit( PostfixMarker.marker());
+				} else if( Model.AVPNARDType.equals( rcType )) {
+					BonjourAd bonjour = (BonjourAd) add( new BonjourAd( Bonjour._RFB_TYPE_, bonjourName, bindToAddress, rcPort, null ));
+					bonjour.setPrerequisit( PostfixMarker.marker());					
+				}
+			}
+			if( remoteControlRef.startToControl()) {
+				
+				Model account = remoteControl.account();
+				String userName = "";
+				if( account.userName() != null && account.userName().length() > 0 ) {
+					userName = account.userName();
+				}
+				String password = "";
+				if( account.password() != null && account.password().length() > 0 ) {
+					password = account.password();
+				}
+				
+				String doControlScript = PathLocator.sharedInstance().resolveHomePath( remoteControlRef.controlCommand());
+				
+				if( doControlScript.charAt(0) != '/' && doControlScript.charAt(0) != '.' ) { 
+					File doControlFile = new File( doControlScript );
+					if( doControlFile.canRead()) {
+						doControlScript = "./" +  doControlScript;
+					} else {
+						doControlFile = new File( PathLocator.sharedInstance().supportFilePath( doControlScript ) );					
+						if( doControlFile.canRead()) {
+							doControlScript = PathLocator.sharedInstance().supportFilePath( doControlScript );
+						}
+					}
+				}
+				doControlScript = doControlScript.replaceAll( " ", "\\ " );
+								
+				Script doControl = new Script( "\"" + doControlScript + "\" start" , "\"" + doControlScript + "\" stop "  + Script._DO_RESULT_MARKER_ );
+				String[] env = new String[] {
+						"_rc_type_=" + rcType,
+						"_rc_address_=" + bindToAddress,
+						"_rc_port_=" + rcPort,
+						"_rc_host_=" + remoteControlHost.name(),
+						"_rc_user_name_=" + userName,
+						"_rc_password_=" + password						
+				};
+				doControl.setUser( PathLocator.sharedInstance().userName());
+				doControl.setEnv( env );
+				doControl.setPrerequisit( result );
+				doControl = (Script) add( doControl );
+				result = doControl;
+			}
+		}
+		
+		return result;
+	}
+	
+	IProfileItem configureRemoteControlTunnel( 
+		IProfileItem result, 
+		SSHSession session, 
+		String remoteAddress,
+		boolean useRemoteAddressAsIs,
+		int rcPort, 
+		String bindToAddress, 
+		boolean doTCP, boolean doUDP 
+	) throws ProfileException {
+		//
+		// Configure TCP tunnel
+		//
+		SSHPortForward portForward = null;
+		if( doTCP ) {
+			portForward = new SSHPortForward( session, SSHPortForward.LOCAL, 0, remoteAddress, rcPort, useRemoteAddressAsIs );
+				portForward.setBindToAddress( bindToAddress );
+				portForward.setPrerequisit( result );				
+			portForward =  (SSHPortForward) add( portForward );
+			bindToAddress = portForward.bindToAddress();
+			
+			int bindToPort = portForward.srcPort();
+			
+			Script configureFireWall = (Script) add( new Script(
+					"addIPFWRule " + bindToAddress + " " + rcPort + " " + bindToAddress + " " + bindToPort,
+					"deleteIPFWRule " + Script._DO_RESULT_MARKER_
+			));
+			
+			configureFireWall.setPrerequisit( PostfixMarker.marker());
+			
+			result = portForward;
+		}
+	
+		//
+		// Configure UDP tunnel
+		//
+		if( doUDP ) {
+			SSHUdpPortForward udpPortForward = new SSHUdpPortForward( session, SSHPortForward.LOCAL, portForward == null ? 0 : portForward.srcPort(), remoteAddress, rcPort, false );
+				udpPortForward.setBindToAddress( bindToAddress );
+				udpPortForward.setPrerequisit( result );				
+			udpPortForward =  (SSHUdpPortForward) add( udpPortForward );
+			bindToAddress = udpPortForward.bindToAddress();
+			
+			int bindToPort = udpPortForward.srcPort();
+			
+			if( portForward == null ) {
+				Script configureFireWall = (Script) add( new Script(
+						"addIPFWRule " + bindToAddress + " " + rcPort + " " + bindToAddress + " " + bindToPort,
+						"deleteIPFWRule " + Script._DO_RESULT_MARKER_
+				));			
+				configureFireWall.setPrerequisit( PostfixMarker.marker());
+			}
+			result = udpPortForward;
+		}
+	
+		return result;
+	}
+}

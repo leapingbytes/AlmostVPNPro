@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/rhino1_6R3/deprecatedsrc/org/mozilla/javascript"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="PropertyException.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ce1d261d31c31fca9010c36ef3f50553"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NotAFunctionException.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5a4f2de25d6e962f2a3c2a32ecc5bdcb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ClassDefinitionException.java"
+   text-time="2006-09-01T03:01:45.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a7b8a4f88d1ba022360c56c3b4e584c4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:45.000000Z"/>
+</wc-entries>

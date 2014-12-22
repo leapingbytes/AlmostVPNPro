@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string>AlmostVPNPRO</string>
+	<key>AppleEventCode</key>
+	<string>avpn</string>
+
+	<key>Classes</key>
+	<dict>
+		<key>NSApplication</key>
+		<dict>
+			<key>AppleEventCode</key>
+			<string>capp</string>
+			
+			<key>Superclass</key>
+			<string>NSCoreSuite.NSApplication</string>
+			
+			<key>Attributes</key>
+			<dict>
+				<key>oneAttribute</key>
+				<dict>
+					<key>AppleEventCode</key>
+					<string>aone</string>
+					<key>Type</key>
+					<string>NSString</string>
+				</dict>
+			</dict>
+<!--			
+			<key>ToManyRelationships</key>
+			<dict>
+				<key>profiles</key>
+				<dict>
+					<key>AppleEventCode</key>
+					<string>avpp</string>
+					<key>ReadOnly</key>
+					<string>YES</string>
+					<key>Type</key>
+					<string>AlmostVPNProfile</string>
+				</dict>
+			</dict>
+-->
+		</dict>
+<!--
+		<key>AlmostVPNProfile</key>
+		<dict>
+			<key>AppleEventCode</key>
+			<string>avpp</string>
+			<key>Attributes</key>
+			<dict>
+				<key>name</key>
+				<dict>
+					<key>AppleEventCode</key>
+					<string>pnam</string>
+					<key>ReadOnly</key>
+					<string>YES</string>
+					<key>Type</key>
+					<string>NSString</string>
+				</dict>
+				<key>status</key>
+				<dict>
+					<key>AppleEventCode</key>
+					<string>pstt</string>
+					<key>ReadOnly</key>
+					<string>YES</string>
+					<key>Type</key>
+					<string>NSString</string>
+				</dict>
+			</dict>
+			<key>Superclass</key>
+			<string>NSCoreSuite.AbstractObject</string>
+			<key>SupportedCommands</key>
+			<dict>
+				<key>start</key>
+				<string>start:</string>
+				<key>stop</key>
+				<string>stop:</string>
+			</dict>
+		</dict>
+-->		
+	</dict>
+<!--	
+	<key>Commands</key>
+	<dict>
+		<key>start</key>
+		<dict>
+			<key>AppleEventClassCode</key>
+			<string>avpn</string>
+			<key>AppleEventCode</key>
+			<string>strt</string>
+			<key>CommandClass</key>
+			<string>NSScriptCommand</string>
+		</dict>
+		<key>stop</key>
+		<dict>
+			<key>AppleEventClassCode</key>
+			<string>avpn</string>
+			<key>AppleEventCode</key>
+			<string>stop</string>
+			<key>CommandClass</key>
+			<string>NSScriptCommand</string>
+		</dict>
+	</dict>
+-->
+</dict>
+</plist>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/rhino1_6R3/xmlimplsrc/org/mozilla/javascript/xmlimpl"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="XML.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="38a8c767f7ae4454d34a6fe2e20a0f7a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="QName.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="596a8ba0429f11c70fa214d1bfd81851"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="XMLName.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="270b6bf98dce991d3cbf0772cb703a68"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="XMLWithScope.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d16cfff7b06a0e653acad81fe812dcea"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LogicalEquality.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c419605cd4e81e354e479f1eb554a3f6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="XMLCtor.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="88b3b05d4fec155a5e67de9c69ce0d1f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="XMLLibImpl.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="24f7db7e1ff26ad50d4b0cc083c2949f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="XMLObjectImpl.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="53f86f4c40c69059b721260fbc8b4bad"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Namespace.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a92faec9f9b9981663e3394d7b34f749"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NamespaceHelper.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0d33ab8be46b682adfd66ff5f74ab2a3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="XMLList.java"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8144ffdf10d3c94ae63f0d2dbf9b95b3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+</wc-entries>

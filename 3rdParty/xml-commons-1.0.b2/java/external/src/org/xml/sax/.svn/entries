@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/java/external/src/org/xml/sax"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="AttributeList.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="72159b02626f88715397ced8e35313eb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SAXNotSupportedException.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0bab417f123e66191ccb53ed9a2647ae"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Locator.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b26befa3bb88be71ad931afb23c8f7b5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SAXNotRecognizedException.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f9a3d624ac5d6f5954b5f13731ff6617"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SAXParseException.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2adb86f1b17af41b0dc47da868130204"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="XMLFilter.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="43d4b0b818241ba3fdbc1f6b4c0fd78b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ContentHandler.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bbeeb97ddfe0c6e803c7579877a5be18"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HandlerBase.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="97bdccfedfc513dc8eba680aff5da3dc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DTDHandler.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d6e8b08f9de73c47565bffbe4ae6a772"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SAXException.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="052cfef2ae34c0f2f134f87babfe9ca4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DocumentHandler.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f7453111abea32ae8d4a8220b7fcd6d3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package.html"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3f9b52d35f23d3c29250bb467b7a4a23"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="InputSource.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1286bb44f3256d0b1cc6a0bc9dce0a06"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   name="ext"
+   kind="dir"/>
+<entry
+   name="helpers"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="XMLReader.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3d843647292cc250001508528b595248"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Attributes.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ee939a62d64682b37c80a835ece6fb20"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ErrorHandler.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8db9a986c814e7331760d1f5cb974407"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Parser.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a5d6c22858e241424fc93d73c99c4d47"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+<entry
+   committed-rev="106"
+   name="EntityResolver.java"
+   text-time="2006-09-01T03:01:42.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1e4db61b35216026736bd20aae3703e2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:42.000000Z"/>
+</wc-entries>

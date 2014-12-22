@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Sources/Main.target"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="133"
+   name="ForPayManager.h"
+   text-time="2006-09-26T02:22:30.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="db344444c2c4059d04d8c4201b75abf1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="133"
+   name="ActivationManager.h"
+   text-time="2006-09-19T16:12:54.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="c3fa3ef0f0cacca4b2beb7ce10d8bc48"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="Info.plist"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="57ff5ac59330d6d8521298737e3644a0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="154"
+   name="LocationTester.h"
+   text-time="2006-11-20T20:23:44.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="0be29634dce73c84fd92c4aa0c387337"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="154"/>
+<entry
+   committed-rev="133"
+   name="ForPayManager.m"
+   text-time="2006-09-20T20:35:52.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="ecdccc11b5d4ca67c14d9f9f5ad8a4ac"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="154"
+   name="ActivationManager.m"
+   text-time="2006-11-15T21:17:47.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="f09ae4c07f468e06c2b5fab82aa2ba87"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="154"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_prefPanePref.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c0311d0e02bdf8d8682e7326da3e189a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="132"
+   name="InstallManager.h"
+   text-time="2006-09-08T22:12:32.000000Z"
+   committed-date="2006-09-14T02:38:15.552332Z"
+   checksum="bfc6b2fd6240e7dd51363da0affb60b2"
+   last-author="atchijov"
+   kind="file"
+   revision="132"/>
+<entry
+   committed-rev="106"
+   name="QuickConfigHelper.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="dbabfeb542fed45495467c3b30dab00a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="154"
+   name="LocationTester.m"
+   text-time="2006-11-20T20:35:26.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="8d933b8ea336c5d5205a6e09b564b565"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="154"/>
+<entry
+   committed-rev="121"
+   name="AVPN.h"
+   text-time="2006-09-06T14:39:53.000000Z"
+   committed-date="2006-09-06T14:42:26.996846Z"
+   checksum="9e4e9c5319535497eb1ec74ce167c881"
+   last-author="atchijov"
+   kind="file"
+   revision="121"/>
+<entry
+   committed-rev="133"
+   name="InstallManager.m"
+   text-time="2006-10-12T01:19:18.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="fd174f87efff9a6302b3910491cd79f3"
+   last-author="atchijov"
+   kind="file"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_prefPanePref.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b90b18c14a9c5bff693745e09e359405"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="133"
+   name="QuickConfigHelper.m"
+   text-time="2006-10-05T03:08:49.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="f7c81fa2ac7852d7f5189f5184016fcd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="BonjourManager.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="aba87ca7dd75ac2d264605f9ba373ed1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="133"
+   name="BonjourManager.m"
+   text-time="2006-09-26T02:24:33.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="11ca53a348bc321f15af7decd46ccecb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="133"
+   name="AlmostVPNConfigurationController.h"
+   text-time="2006-09-26T02:21:05.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="2b9e18be54d5600719d21c62aa048c7d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="154"
+   name="AlmostVPNConfigurationController.m"
+   text-time="2006-11-08T20:05:51.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="0fa0b13def79aded4271e5bced067dc1"
+   last-author="atchijov"
+   kind="file"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   prop-time="2006-09-06T12:19:28.000000Z"
+   revision="154"/>
+<entry
+   name="English.lproj"
+   kind="dir"/>
+</wc-entries>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="0"
+   schedule="add"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/ganymed-ssh2-build210/src/ch/ethz/ssh2/crypto/cipher"
+   kind="dir"
+   name=""/>
+<entry
+   schedule="add"
+   name="AES.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="BlockCipher.java"/>
+<entry
+   schedule="add"
+   name="BlockCipherFactory.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="BlowFish.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="CBCMode.java"/>
+<entry
+   schedule="add"
+   name="CTRMode.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="CipherInputStream.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="CipherOutputStream.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="DES.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="DESede.java"/>
+<entry
+   schedule="add"
+   name="NullCipher.java"
+   kind="file"/>
+</wc-entries>

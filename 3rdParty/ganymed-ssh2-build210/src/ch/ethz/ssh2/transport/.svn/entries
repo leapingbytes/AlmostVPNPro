@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="0"
+   schedule="add"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/ganymed-ssh2-build210/src/ch/ethz/ssh2/transport"
+   kind="dir"
+   name=""/>
+<entry
+   schedule="add"
+   kind="file"
+   name="ClientServerHello.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="KexManager.java"/>
+<entry
+   schedule="add"
+   name="KexParameters.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="KexState.java"/>
+<entry
+   schedule="add"
+   name="MessageHandler.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="NegotiateException.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="NegotiatedParameters.java"/>
+<entry
+   schedule="add"
+   name="TransportConnection.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="TransportManager.java"/>
+</wc-entries>

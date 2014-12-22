@@ -1,0 +1,205 @@
+//
+//  AlmostVPNIdentity.m
+//  AlmostVPNPRO_model
+//
+//  Created by andrei tchijov on 11/14/05.
+//  Copyright 2005 Leaping Bytes, LLC. All rights reserved.
+//
+
+#import "AlmostVPNIdentity.h"
+#import "AlmostVPNContainer.h"
+
+#define _MEDIA_KEY_				@"media"
+#define _PATH_KEY_				@"path"
+#define _USE_PASSPHRASE_KEY_	@"use-passphrase"
+#define _ASK_PASSPHRASE_KEY_	@"ask-passphrase"
+
+#define _PASSPHRASE_KEY_		@"passphrase"
+#define _DEFAULT_KEY_			@"is-default"
+
+#define _TYPE_KEY_				@"type"
+#define _BITS_KEY_				@"bits"
+#define _FINGERPRINT_KEY_		@"fingerprint"
+#define _DIDGEST_KEY_			@"didgest"
+
+#define _FILE_MEDIA_			@"file"
+#define _KEYCHAIN_MEDIA_		@"keychain"
+
+@implementation AlmostVPNIdentity
+//+ (void) initialize {
+//	[self 
+//		setKeys:[NSArray arrayWithObjects:@"usePassphrase", @"askPassphrase", nil ]	
+//		triggerChangeNotificationsForDependentKey:@"passphraseEditable"
+//	];
+//	[self 
+//		setKeys:[NSArray arrayWithObjects:@"usePassphrase", @"askPassphrase", nil ]	
+//		triggerChangeNotificationsForDependentKey:@"passphrase"
+//	];
+//}
+//
+
+- (BOOL) isEqual: (id) other {
+	if( self == other ) {
+		return YES;
+	}
+	if( [ other isMemberOfClass: [ AlmostVPNIdentity class ]] ) {
+		NSString* selfName = [ self name ];
+		NSString* otherName = [ (AlmostVPNIdentity*)other name ];
+		if( [ @"-none-" isEqual: selfName ] ) {
+			return [ selfName isEqual: otherName ];
+		} else {
+			return [[ self uuid ] isEqual: [ (AlmostVPNIdentity*)other uuid ]];
+		}
+	} else {
+		return NO;
+	}
+}
+
+- (id) initWithDictionary: (NSDictionary*) aDictionary {
+	[ super initWithDictionary: aDictionary ];
+
+	[ self setValue: [ aDictionary objectForKey: _MEDIA_KEY_ ] forKey: _MEDIA_KEY_ ];
+	[ self setValue: [ aDictionary objectForKey: _PATH_KEY_ ] forKey: _PATH_KEY_ ];
+	[ self setValue: [ aDictionary objectForKey: _PASSPHRASE_KEY_ ] forKey: _PASSPHRASE_KEY_ ];
+	[ self setValue: [ aDictionary objectForKey: _DEFAULT_KEY_ ] forKey: _DEFAULT_KEY_ ];
+	[ self setValue: [ aDictionary objectForKey: _TYPE_KEY_ ] forKey: _TYPE_KEY_ ];
+	[ self setValue: [ aDictionary objectForKey: _BITS_KEY_ ] forKey: _BITS_KEY_ ];
+	[ self setValue: [ aDictionary objectForKey: _FINGERPRINT_KEY_ ] forKey: _FINGERPRINT_KEY_ ];
+	[ self setValue: [ aDictionary objectForKey: _DIDGEST_KEY_ ] forKey: _DIDGEST_KEY_ ];
+
+	[ self setObject: [ aDictionary objectForKey: _USE_PASSPHRASE_KEY_ ] forKey: _USE_PASSPHRASE_KEY_ ];
+	[ self setObject: [ aDictionary objectForKey: _ASK_PASSPHRASE_KEY_ ] forKey: _ASK_PASSPHRASE_KEY_ ];
+	
+	[ AlmostVPNIdentity performOnDelegate: OBJECT_WAS_INIT_WITH_DICTIONARY withObject: self ];	
+	return self;
+}
+
++ (BOOL) isKeySecure: (id) aKey {
+	return [ _PASSPHRASE_KEY_ isEqual: aKey ];
+}
+
+- (IdentityMedia) mediaStringToMedia: (NSString*) v {
+	if( [ _FILE_MEDIA_ isEqual: v ] ) return FILE_MEDIA;
+	if( [ _KEYCHAIN_MEDIA_ isEqual: v ] ) return KEYCHAIN_MEDIA;
+	return FILE_MEDIA;
+}
+
+- (NSString*) mediaToMediaString: (IdentityMedia) v {
+	switch( v ) {
+		case FILE_MEDIA : return _FILE_MEDIA_;
+		case KEYCHAIN_MEDIA : return _KEYCHAIN_MEDIA_;
+		default:
+			return FILE_MEDIA;
+	}
+}
+
+- (id) media {
+	return [ NSNumber numberWithInt: [ self mediaStringToMedia: [ self stringValueForKey: _MEDIA_KEY_ ]]];
+}
+
+- (void) setMedia: (id ) value {
+	[ self setStringValue: [ self mediaToMediaString: [ value intValue ]] forKey: _MEDIA_KEY_ ];
+}
+
+- (NSString*) path {
+	return [ self stringValueForKey: _PATH_KEY_ ];
+}
+- (void) setPath: (NSString*)value {
+	[ self setStringValue: value forKey: _PATH_KEY_ ];
+}
+
+
+- (NSString*) passphrase {
+	return [ self stringValueForKey: _PASSPHRASE_KEY_ ];
+}
+- (void) setPassphrase: (NSString*) value {
+	[ self setStringValue: value forKey: _PASSPHRASE_KEY_ ];
+	if( [ value length ] == 0 ) {
+		[ self setUsePassphrase: [ NSNumber numberWithBool: NO ]];
+	} else {
+		[ self setUsePassphrase: [ NSNumber numberWithBool: YES ]];
+	}
+}
+
+- (id) usePassphrase {
+	return [ self booleanObjectForKey: _USE_PASSPHRASE_KEY_ ];
+}
+
+- (id) passphraseEditable {
+//	BOOL usePassphrase = [[ self booleanObjectForKey: _USE_PASSPHRASE_KEY_ ] boolValue ];
+	BOOL askPassphrase = [[ self booleanObjectForKey: _ASK_PASSPHRASE_KEY_ ] boolValue ];
+	
+	return [ NSNumber numberWithBool: ! askPassphrase ];
+}
+
+- (void) setUsePassphrase: (id) value {
+	[ self setBooleanObject: value forKey: _USE_PASSPHRASE_KEY_ ];
+//	if( ! [ value boolValue ] ) {
+//		[ self setPassphrase: @"" ];
+//	}
+}
+
+- (id) askPassphrase {
+	return [ self booleanObjectForKey: _ASK_PASSPHRASE_KEY_ ];
+}
+- (void) setAskPassphrase: (id) value {
+	[ self setBooleanObject: value forKey: _ASK_PASSPHRASE_KEY_ ];
+	if( [ value boolValue ] ) {
+		[ self setPassphrase: @"@ASK@" ];
+	} else {
+		[ self setPassphrase: @"" ];
+	}
+}
+
+- (id) isDefaultIdentity {
+	return [ self booleanObjectForKey: _DEFAULT_KEY_ ];
+}
+
+- (void) setIsDefaultIdentity: (id) value {
+	if( [ value boolValue ] ) {
+		AlmostVPNContainer* parent = (AlmostVPNContainer*)[ self parent ];
+		NSArray* siblings = [ parent childrenKindOfClass: [ AlmostVPNIdentity class ]];
+		for( int i = 0; i < [ siblings count ]; i++ ) {
+			[[ siblings objectAtIndex: i ] setIsDefaultIdentity: [ NSNumber numberWithInt: 0 ]];
+		}
+	}
+	[ self setBooleanObject: value forKey: _DEFAULT_KEY_ ];
+}
+
+- (NSString*) icon {
+	if( [[ self isDefaultIdentity ] boolValue ]) {
+		return [ NSString stringWithFormat: @"Default%@", [ super icon ]];
+	} else {
+		return [ super icon ];
+	}
+}
+
+-(NSString*) type {
+	return [ self stringValueForKey: _TYPE_KEY_ ];
+}
+-(void) setType: (NSString*)v {
+	[ self setStringValue: v forKey: _TYPE_KEY_ ];
+}
+
+-(NSString*) bits {
+	return [ self stringValueForKey: _BITS_KEY_ ];
+}
+-(void) setBits: (NSString*) v {
+	[ self setStringValue: v forKey: _BITS_KEY_ ];
+}
+
+-(NSString*) fingerprint {
+	return [ self stringValueForKey: _FINGERPRINT_KEY_ ];
+}
+-(void) setFingerprint: (NSString*) v {
+	[ self setStringValue: v forKey: _FINGERPRINT_KEY_ ];
+}
+
+-(NSString*) digest {
+	return [ self stringValueForKey: _DIDGEST_KEY_ ];
+}
+-(void) setDigest: (NSString*) v {
+	[ self setStringValue: v forKey: _DIDGEST_KEY_ ];
+}
+
+@end

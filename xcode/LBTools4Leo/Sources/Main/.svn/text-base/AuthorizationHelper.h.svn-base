@@ -1,0 +1,18 @@
+//
+//  AuthorizationHelper.h
+//  LBToolbox
+//
+//  Created by andrei tchijov on 10/27/05.
+//  Copyright 2005 Leaping Bytes, LLC. All rights reserved.
+//
+
+#import <Cocoa/Cocoa.h>
+
+
+@interface AuthorizationHelper : NSObject {
+
+}
++ (void) runAsRoot: (NSString*) commandPath withArguments: (NSArray*) commandArguments;
++ (void) makeSetUidRoot: (NSString*) commandPath;
++ (void) selfRepair;
+@end

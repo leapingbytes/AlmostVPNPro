@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO.Uninstaller/English.lproj"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="InfoPlist.strings"
+   text-time="2006-09-01T03:19:00.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cf0b0304ee4cb04d38fbd41db4e5d0ad"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:00.000000Z"/>
+<entry
+   name="MainMenu.nib"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="locversion.plist"
+   text-time="2006-09-01T03:19:00.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ca00ec2d48b2fd048886ea90fd0e017c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:00.000000Z"/>
+<entry
+   name="MainMenu~.nib"
+   kind="dir"/>
+</wc-entries>

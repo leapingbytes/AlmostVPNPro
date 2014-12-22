@@ -1,0 +1,256 @@
+package com.leapingbytes.bitsToGo.protocol;
+
+import java.nio.ByteBuffer;
+
+public class TCPHeader extends BaseProtocolHeader {
+
+	public ByteBuffer bytes() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String description() {
+		String result = "\nTCP ======================= " + size();
+		
+		result += "\n     source port: " + sourcePort();
+		result += "\ndestination port: " + destinationPort();
+		result += "\n sequence number: " + sequenceNumber();
+		result += "\n      ack number: " + acknowledgmentNumber();
+		result += "\n     data offset: " + dataOffset();
+		result += "\n        checksum: " + checksum();
+		result += "\n          window: " + window();
+		result += "\n           flags: " + 
+			( URGFlag() ? "URG " : "" ) +
+			( ACKFlag() ? "ACK " : "" ) +
+			( PSHFlag() ? "PSH " : "" ) +
+			( RSTFlag() ? "RST " : "" ) +
+			( SYNFlag() ? "SYN " : "" ) +
+			( FINFlag() ? "FIN " : "" ) +
+			"";
+		result += "\nOptions:\n" + optionsDescription();
+		result += "\n=======================\n";
+		
+		return result;
+	}
+	
+	private String optionsDescription() {
+		String result = "";
+		
+		for( int i = 0; i < _optionsCount; i++ ) {
+			switch( _options[ i ]._type ) {
+			case 0 : result += "END\n"; break;
+			case 1 : result += "NOP\n"; break;
+			case 2 : 
+				result += "MSS " + bytes2number( _options[ i ]._bytes ) + "\n";
+				break;
+			case 3 :
+				result += "WSOPT " + bytes2number( _options[ i ]._bytes ) + "\n";
+				break;
+			case 4: result += "SACK permitted\n"; break;
+			case 5: 
+				result += "SACK block\n";
+				break;
+			case 8:
+				result += "TSOPT " + bytes2number( _options[ i ]._bytes, 0, 4 ) + " " + bytes2number( _options[ i ]._bytes, 4, 4 ) + "\n";
+				break;
+			default:
+				result += "Option : " +  _options[ i ]._type + "\n";
+					
+			}
+		}
+		
+		return result;
+	}
+
+	public void getFromBuffer(ByteBuffer buffer) {
+		int headerBegin = buffer.position();
+		
+		_sourcePort 			= buffer.getShort();
+		_destinationPort 		= buffer.getShort();
+		_sequenceNumber			= buffer.getInt();
+		_acknowledgmentNumber	= buffer.getInt();
+		_dataOffsetAndFlags		= buffer.getShort();
+		_window					= buffer.getShort();
+		_checksum				= buffer.getShort();
+		_urgentPointer			= buffer.getShort();
+		
+		int dataBegin = headerBegin + this.dataOffset() * 4;
+		
+		getOptions( buffer, dataBegin );
+	}
+
+	public void putToBuffer(ByteBuffer buffer) {
+		buffer.putShort( _sourcePort );
+		buffer.putShort( _destinationPort );
+		buffer.putInt( _sequenceNumber );
+		buffer.putInt( _acknowledgmentNumber );
+		buffer.putShort( _dataOffsetAndFlags );
+		buffer.putShort( _window );
+		buffer.putShort( _checksum );
+		buffer.putShort( _urgentPointer );
+		
+		putOptions( buffer );
+	}
+
+	public int size() {
+		setDataOffset();
+		
+		return dataOffset() * ( 32 / 8 );
+	}
+
+	/* ======================================================================== *
+	 * 
+	 * ======================================================================== */
+	
+	short 	_sourcePort;
+	short 	_destinationPort;
+	int		_sequenceNumber;
+	int		_acknowledgmentNumber;
+	short	_dataOffsetAndFlags;
+	short	_window;
+	short	_checksum;
+	short	_urgentPointer;
+	
+	public int sourcePort() {
+		return ((int)_sourcePort) & 0xffff;
+	}
+	public void setSourcePort( int v ) {
+		_sourcePort = (short) v;
+	}
+	
+	public int destinationPort() {
+		return ((int)_destinationPort) & 0xffff;
+	}
+	public void setDestinationPort( int v ) {
+		_destinationPort = (short) v;
+	}
+	
+	public long sequenceNumber() {
+		return ((long)_sequenceNumber) & 0xffffffffl;
+	}
+	public void setSequenceNumber( long v ) {
+		_sequenceNumber = (int) v;
+	}
+	
+	public long acknowledgmentNumber() {
+		return ((long)_acknowledgmentNumber) & 0xffffffffl;
+	}
+	public void setAcknowledgmentNumber( long v ) {
+		_acknowledgmentNumber = (int) v;
+	}
+	
+	public int dataOffset() {
+		int result = (_dataOffsetAndFlags >> 12 ) & 0xf;
+		
+		return result;
+	}
+	public void setDataOffset() {
+		setDataOffset( 0 );
+	}
+	public void setDataOffset( int v ) {
+		if( v == 0 ) {
+			v = ( 20 + this.optionsSize() ) / 4 ;
+		}
+		_dataOffsetAndFlags = (short) (( v << 12 ) | ( _dataOffsetAndFlags & ( ~ ( 0xf << 12 ))));
+	}
+	
+	public boolean URGFlag() {
+		return ( _dataOffsetAndFlags & 0x20 ) != 0; 
+	}
+	
+	public void setURGFlag( boolean v ) {
+		if( v ) {
+			_dataOffsetAndFlags |= 0x20;
+		} else {
+			_dataOffsetAndFlags &= ( ~ 0x20 );
+		}
+	}
+
+	public boolean ACKFlag() {
+		return ( _dataOffsetAndFlags & 0x10 ) != 0; 
+	}
+	public void setACKFlag( boolean v ) {
+		if( v ) {
+			_dataOffsetAndFlags |= 0x10;
+		} else {
+			_dataOffsetAndFlags &= ( ~ 0x10 );
+		}
+	}
+
+	public boolean PSHFlag() {
+		return ( _dataOffsetAndFlags & 0x8 ) != 0; 
+	}
+	public void setPSHFlag( boolean v ) {
+		if( v ) {
+			_dataOffsetAndFlags |= 0x8;
+		} else {
+			_dataOffsetAndFlags &= ( ~ 0x8 );
+		}
+	}
+
+	public boolean RSTFlag() {
+		return ( _dataOffsetAndFlags & 0x4 ) != 0; 
+	}
+	public void setRSTFlag( boolean v ) {
+		if( v ) {
+			_dataOffsetAndFlags |= 0x4;
+		} else {
+			_dataOffsetAndFlags &= ( ~ 0x4 );
+		}
+	}
+
+	public boolean SYNFlag() {
+		return ( _dataOffsetAndFlags & 0x2 ) != 0; 
+	}
+	public void setSYNFlag( boolean v ) {
+		if( v ) {
+			_dataOffsetAndFlags |= 0x2;
+		} else {
+			_dataOffsetAndFlags &= ( ~ 0x2 );
+		}
+	}
+
+	public boolean FINFlag() {
+		return ( _dataOffsetAndFlags & 0x1 ) != 0; 
+	}
+	public void setFINFlag( boolean v ) {
+		if( v ) {
+			_dataOffsetAndFlags |= 0x1;
+		} else {
+			_dataOffsetAndFlags &= ( ~ 0x1 );
+		}
+	}
+	
+	public int window() {
+		return ((int)_window) & 0xffff;
+	}
+	public void setWindow( int v ) {
+		_window = (short)v;
+	}
+	
+	public int checksum() {
+		return ((int)_checksum) & 0xffff;
+	}
+	
+	public void setChecksum( int v ) {
+		_checksum = (short) ( v & 0xffff );
+	}
+	
+	public int urgentPointer() {
+		return ((int)_urgentPointer) & 0xffff;
+	}
+	
+	public void setUrgentPointer( int v ) {
+		_urgentPointer = (short) v;
+	}
+	
+	public TCPHeader reply() {
+		TCPHeader result = (TCPHeader) this.clone();
+		result._dataOffsetAndFlags = 0;
+		result.setWindow( 0xffff );
+		result.setDataOffset();
+		result.setSourcePort( destinationPort());
+		result.setDestinationPort( sourcePort());
+		return result;
+	}
+}

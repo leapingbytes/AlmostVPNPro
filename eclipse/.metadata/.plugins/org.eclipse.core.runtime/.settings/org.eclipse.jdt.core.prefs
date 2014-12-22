@@ -1,0 +1,15 @@
+#Thu Oct 15 00:52:08 EDT 2009
+org.eclipse.jdt.core.userLibrary.logging=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="1">\n\t<archive path\="/Users/atchijov/Work/LeapingBytes/AlmostVPNPRO/3rdParty/commons-logging-1.0.4/commons-logging-api.jar" sourceattachment\="/3rdParty/commons-logging-1.0.4/src"/>\n\t<archive path\="/Users/atchijov/Work/LeapingBytes/AlmostVPNPRO/3rdParty/commons-logging-1.0.4/commons-logging.jar" sourceattachment\="/3rdParty/commons-logging-1.0.4/src"/>\n</userlibrary>\n
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=src
+org.eclipse.jdt.core.userLibrary.rhino=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="1">\n\t<archive path\="/Users/atchijov/Work/LeapingBytes/workspace/3rdParty/rhino1_6R2/js.jar"/>\n</userlibrary>\n
+org.eclipse.jdt.core.userLibrary.jmdns=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="1">\n\t<archive path\="/Users/atchijov/Work/LeapingBytes/AlmostVPNPRO/3rdParty/jmdns-1.0/lib/jmdns.jar"/>\n</userlibrary>\n
+org.eclipse.jdt.core.userLibrary.jsch=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="1">\n\t<archive path\="/Users/atchijov/Work/LeapingBytes/AlmostVPNPRO/3rdParty/jsch-0.1.29/dist/lib/jsch-0.1.29.jar" sourceattachment\="/Users/atchijov/Work/LeapingBytes/AlmostVPNPRO/3rdParty/jsch-0.1.29/src"/>\n</userlibrary>\n
+org.eclipse.jdt.core.userLibrary.jetty=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="1">\n\t<archive path\="/Users/atchijov/Work/LeapingBytes/AlmostVPNPRO/3rdParty/jetty-6.0.2/lib/servlet-api-2.5-6.0.2.jar"/>\n\t<archive path\="/Users/atchijov/Work/LeapingBytes/AlmostVPNPRO/3rdParty/jetty-6.0.2/lib/jetty-6.0.2.jar" sourceattachment\="/Users/atchijov/Work/LeapingBytes/AlmostVPNPRO/3rdParty/jetty-6.0.2"/>\n\t<archive path\="/Users/atchijov/Work/LeapingBytes/AlmostVPNPRO/3rdParty/jetty-6.0.2/lib/jetty-util-6.0.2.jar" sourceattachment\="/Users/atchijov/Work/LeapingBytes/AlmostVPNPRO/3rdParty/jetty-6.0.2"/>\n</userlibrary>\n
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=/Applications/eclipse-3.2
+org.eclipse.jdt.core.builder.resourceCopyExclusionFilter=*.launch
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=/Applications/eclipse-3.2/plugins/org.junit_3.8.1
+eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.JUNIT_SRC_HOME=/Applications/eclipse-3.2/plugins/org.eclipse.jdt.source_3.2.0.v20060609m-F7snq1fxia-Z4XP/src/org.junit_3.8.1
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/src.jar

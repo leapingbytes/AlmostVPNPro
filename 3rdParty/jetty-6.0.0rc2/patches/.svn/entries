@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/patches"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="sslSelectChannelConnector.patch"
+   text-time="2006-09-01T03:01:00.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b24350251a2740b9cb8f87bbb5b3bd2a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:00.000000Z"/>
+<entry
+   committed-rev="106"
+   name="j2mecdc.patch"
+   text-time="2006-09-01T03:01:00.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a2ee41f98e5c97878b39b1111cfa23db"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:00.000000Z"/>
+<entry
+   committed-rev="106"
+   name="joda-time.README"
+   text-time="2006-09-01T03:01:00.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5d19cc80aab30cde6088d62d36e70735"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:00.000000Z"/>
+<entry
+   committed-rev="106"
+   name="joda-time.patch"
+   text-time="2006-09-01T03:01:00.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c7eab9dc5228eaa4e25b5eba8a30cacc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:00.000000Z"/>
+</wc-entries>

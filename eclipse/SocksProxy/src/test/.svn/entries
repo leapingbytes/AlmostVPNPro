@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   revision="106"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/SocksProxy/src/test"
+   last-author="atchijov"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name=""
+   kind="dir"
+   committed-rev="106"/>
+<entry
+   checksum="6afcf07d4d90c7d888e5d9b79a2c7a38"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name="Echo.java"
+   kind="file"
+   committed-rev="106"/>
+<entry
+   checksum="82ed635a181b663420a9a40d74207cea"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name="SocksTest.java"
+   kind="file"
+   committed-rev="106"/>
+<entry
+   checksum="5cfa28292625170a3e131bff0c0c591e"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name="SocksUDPEcho.java"
+   kind="file"
+   committed-rev="106"/>
+<entry
+   checksum="5e5f711a001108fed1c79f922b7c126f"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name="TestClient.java"
+   kind="file"
+   committed-rev="106"/>
+<entry
+   checksum="78de9ef0d39d344d331cd0c24f290cef"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name="TestServer.java"
+   kind="file"
+   committed-rev="106"/>
+<entry
+   checksum="b6b311e2e9616fb15ad22391c73b45be"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name="TestService.java"
+   kind="file"
+   committed-rev="106"/>
+<entry
+   checksum="fc2ab9d2ad75756f37bab854df6897cf"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name="UDPEcho.java"
+   kind="file"
+   committed-rev="106"/>
+<entry
+   checksum="1a6c0252fc35e119aa5e4fa071f3aafe"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name="UPSOCKS.java"
+   kind="file"
+   committed-rev="106"/>
+</wc-entries>

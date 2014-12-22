@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Sources/model"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNTrash.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="150148c652e28f4624aae610bf63e27b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNResource.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="817d90335db51c0ce88ffdf2f84932f8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNProfiles.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="20ba4ec5e8d0e1926a42917153e37624"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNGroup.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="de03a9526c2d657741b381d970cdc70e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="133"
+   name="AlmostVPNRemoteControl.h"
+   text-time="2006-09-26T01:58:24.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="cc1a24bb16defb1d159f6c77bfbf1e4e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNResource.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bc99b930d95b677c87bb8e04efc73611"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="133"
+   name="AlmostVPNViewable.h"
+   text-time="2006-09-20T14:51:08.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="0080abad6dc9130d7e8e8991f39ee7cd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="133"
+   name="AlmostVPNModel.h"
+   text-time="2006-09-20T15:04:40.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="353928491aa40e4e40adafb0d7099fac"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNGroup.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bfa050325b0126ecc707bda517883607"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNRemoteControl.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="84a344d48a3be083f7b4449717e0e9d3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="125"
+   name="AlmostVPNObjectRef.h"
+   text-time="2006-09-06T16:54:00.000000Z"
+   committed-date="2006-09-06T17:01:42.981287Z"
+   checksum="81714f5fec4b6c8f398288dcfa79b723"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="125"/>
+<entry
+   committed-rev="133"
+   name="AlmostVPNViewable.m"
+   text-time="2006-09-20T16:00:27.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="efa84951dfc1753d43138d72002c52cf"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNDriveRef.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="be08b24ea3a45f0657495b6d6b2ffd98"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="133"
+   name="AlmostVPNConfiguration.h"
+   text-time="2006-09-26T01:46:18.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="d4467ad25f2fbff994abbe9ef0d2d3ee"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="142"
+   name="AlmostVPNLocation.h"
+   text-time="2006-10-17T01:31:23.000000Z"
+   committed-date="2006-10-17T01:59:38.984963Z"
+   checksum="3b6f3c6810c30a1e27f148ce19ecc711"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="142"/>
+<entry
+   committed-rev="125"
+   name="AlmostVPNObjectRef.m"
+   text-time="2006-09-06T16:53:54.000000Z"
+   committed-date="2006-09-06T17:01:42.981287Z"
+   checksum="d0f48904b674088084ebe36a2f24ad0d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="125"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNDrive.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f9c993833078f9d1c5f95393df2e662c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNBonjourRef.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ae60ff828c237de19d64d76d16461cae"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNDriveRef.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d075ab94903f7d28fd7df80e14807d80"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNFileRef.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="96e55a575fc278b571360d78d0f875c8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="154"
+   name="AlmostVPNConfiguration.m"
+   text-time="2006-11-09T17:17:16.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="35db650beeb3b680e0295f86bec4ec31"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="154"/>
+<entry
+   committed-rev="154"
+   name="AlmostVPNLocation.m"
+   text-time="2006-11-20T18:11:16.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="7d0873f5a886e3f391ee80ad45588f48"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="154"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNHost.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="74ceea28a3fada3ba40b6627138fdcd7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNDrive.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9b391aabc0c4e71318454773b5d3ee9c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNFile.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c71b01e032140dc40a60f0c8ab683bcc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNBonjourRef.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fa23489b4c119594401fa4452d7e35a1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPrinterRef.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="52ebd64b0704f57414cb19b413602934"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNFileRef.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="363e17fc995b1abc56cf3e7871626e3c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="154"
+   name="AlmostVPNHost.m"
+   text-time="2006-11-08T19:32:39.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="8fdf3c4e3ba36499d6f5a8be8a1a81ac"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="154"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNContainer.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="096f32f88d3b991feb0f7436319ac9b7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPrinter.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a56e20328912b6d373a4b21bc2599e8f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNFile.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4e6259378e162e1ed1d737c9d608d8ae"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPrinterRef.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4d3bc1e907520b5ae1f5dc5e23bdf172"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNHostAlias.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="188de138214ceade3a4f7cd0a786b633"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNContainer.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="77c858bc150be1518a5fd1f0d65efc0e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNLocalhost.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7c1d9a1062a9e643f1d89c19c708bc18"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPrinter.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="287729095216505eed1f354837a39bab"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNIdentity.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2306b2fcd011a9469baa34ada2444aa1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="133"
+   name="AlmostVPNRemoteControlRef.h"
+   text-time="2006-09-26T02:20:30.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="4d106133c955e632eba33b536c9f798d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNLocations.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e807c198c396d5cf096bf51f110027f1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNHostAlias.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e8b66aa45deaa346042793e260379d86"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNAccount.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c7ae421694ed20cef7522dbdad395575"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNLocalhost.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="db4a5f43e00b81efa83c85e2af32002b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="154"
+   name="AlmostVPNIdentity.m"
+   text-time="2006-11-20T20:47:01.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="93074328bb59de410b6781af9a4a1124"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="154"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNRemoteControlRef.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bcd49c3da30e1c7384acef966b9a3b63"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNLocations.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d04ad2f11f28c64d99744f2b01016efd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="133"
+   name="AlmostVPNProfile.h"
+   text-time="2006-09-26T01:52:48.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="ed1eed03b4d12bb8edabab5108842f31"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNService.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="22c6747131dff7fa1f396ee22eafde7a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="154"
+   name="AlmostVPNAccount.m"
+   text-time="2006-11-20T18:11:32.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="a664261051c435cd1cf70279ee908892"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="154"/>
+<entry
+   committed-rev="133"
+   name="AlmostVPNProfile.m"
+   text-time="2006-09-16T03:12:33.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="a685cf22c15de1630c4ef5b03c8b2235"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="154"
+   name="AlmostVPNService.m"
+   text-time="2006-10-26T02:09:17.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="3cfe24ead25366555b0b9c6bb4737a04"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="154"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNTunnel.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b16046fe8b4842260e281418aede498b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="133"
+   name="AlmostVPNObject.h"
+   text-time="2006-09-26T01:57:48.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="e5be4b75828f41c4ad46eb42ca706ce2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNTunnel.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="081c66ba1bcd94548aa47808b83c51a6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="133"
+   name="AlmostVPNObject.m"
+   text-time="2006-09-26T01:57:51.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="ccc60d9e35d67893439cffb628b83498"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNBonjour.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="63fd3ff196b3aad759ccb79e4aaed624"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_model_Prefix.pch"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="02b2ab854679c46997f48b7e8de45a2f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNTrash.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c6e09bd6de8e3e2ed00e43c24bae99ab"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNBonjour.m"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9a1e7a0f6491bded7460d9b9bc2764cb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNProfiles.h"
+   text-time="2006-09-01T03:19:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="07587c32ed1c74aa550bbc3567f4f6ec"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:27.000000Z"/>
+</wc-entries>

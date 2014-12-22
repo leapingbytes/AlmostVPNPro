@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-2.4.1/java/external/build/docs/javadoc/javax/xml/transform"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   name="dom"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Result.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="900a2b3c9ae8852156ffea06c4ced18f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TransformerException.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fc162d54fd50737a32d60e3a7f2fafb2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="URIResolver.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="05eba0e41045fe6ab92522fc6ba4d4e3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="310e797afc5b8e11d2720067abc5b574"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SourceLocator.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c73a590eb5919340352972bf8837430c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="987006a44c90fbe329e71c2b8587915d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-tree.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="202766f6779e87d16dd545405399e9c1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   name="stream"
+   kind="dir"/>
+<entry
+   name="sax"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="TransformerFactory.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2ed97eb6a1b869f5116fbbbd08b0d7f6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="OutputKeys.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="360a06c01726683ae77947a584777413"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TransformerFactoryConfigurationError.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="95468856c389a6932d990713c79e7b06"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Templates.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4cc3f09dc88ecf620d4eeb8717b4573b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ErrorListener.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4e52dc139a0b7406521b27f587f928ba"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Source.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="86099684c6a16db17bd585454f990331"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Transformer.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="343f93117fee1e4e00a47ccd6bc13fc3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TransformerConfigurationException.html"
+   text-time="2006-09-01T03:01:27.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a41c053b1b498ff640042ef3c1b534fb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:27.000000Z"/>
+</wc-entries>

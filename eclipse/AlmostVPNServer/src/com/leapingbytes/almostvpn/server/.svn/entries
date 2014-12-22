@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/AlmostVPNServer/src/com/leapingbytes/almostvpn/server"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   revision="110"/>
+<entry
+   name="jetty"
+   kind="dir"/>
+<entry
+   name="profile"
+   kind="dir"/>
+<entry
+   committed-rev="157"
+   name="ToolServer.java"
+   text-time="2006-11-13T15:44:17.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="a8b287b0febb6d5801540bebc779cab1"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+<entry
+   committed-rev="157"
+   name="MonitorLogHandler.java"
+   text-time="2006-11-06T17:21:36.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="b24f723b70fe83cb72731e60f81b0cd8"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+<entry
+   committed-rev="106"
+   name="RegistrationCenter.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f8a562044e3cb298adfb30b4c3e22ee1"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="106"
+   name="ToolException.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f688f8b3f1e14c68d4ff928699382633"
+   last-author="atchijov"
+   kind="file"/>
+</wc-entries>

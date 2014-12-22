@@ -1,0 +1,1 @@
+This scripts require AlmostVPN/PRO RC3 or better

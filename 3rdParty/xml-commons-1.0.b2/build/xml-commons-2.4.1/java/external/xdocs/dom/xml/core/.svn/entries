@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-2.4.1/java/external/xdocs/dom/xml/core"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="introduction.xml"
+   text-time="2006-09-01T03:01:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="54f81a234af551020d6f3301cd91ced9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="dom-spec.xml"
+   text-time="2006-09-01T03:01:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="06d6ef28803c6f61cd1622068037f15f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="changes.xml"
+   text-time="2006-09-01T03:01:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="17a0ae13177b8dc324a84e83ede1e755"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="core.xml"
+   text-time="2006-09-01T03:01:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="477f74f15d6743d8979d1b5462fab204"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="i18nfunctions.xml"
+   text-time="2006-09-01T03:01:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6e40f604ef9aed5ca9be8fe8f5c1f251"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:29.000000Z"/>
+<entry
+   name="definitions"
+   kind="dir"/>
+</wc-entries>

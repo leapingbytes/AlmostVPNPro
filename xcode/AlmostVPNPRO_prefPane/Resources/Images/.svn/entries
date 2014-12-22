@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Resources/Images"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="106"
+   name="SSHAgentLogo.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="df425a1cfd0101aa467ac1a52e585b00"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="GeneralSettings.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="05da1cb590a24ee86e3f6051d8aa288f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DefaultIdentity.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="82fa280286f20261668f57fafb251e2d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="smalSMB.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="416f2a344b5a44288b385b854d010b91"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Profile.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a0de8637cd9a6e585fb95c4f257bf71a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Service.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="416529d1e40a9e3bcfe7b82f732d6fdc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DeploymentSettings.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="dd0fd7d649a453931a01565cfeb0b7a4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Tunnel.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9efb57541c37756de27c2e11b9354d76"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="red.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="34f78ce8d9a518be69bb51f9a3fb030c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="yellow.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="85b7cb923c132274ee0f47b9534f131c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="145"
+   name="terminal.png"
+   text-time="2006-10-17T01:49:14.000000Z"
+   committed-date="2006-10-17T02:01:32.972387Z"
+   checksum="a04f205cc8f78d7892c9157c3c02aacf"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-17T02:01:14.000000Z"
+   revision="145"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO.icns"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="795ffef5af2b0008c1f33c7ee2d3e436"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_askError.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4b012e1a5f7925e91ff76dcbac9128b8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_icon.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b4b1a3bc1f495c7564cd791e271457bb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="133"
+   name="dollar.png"
+   text-time="2006-09-19T15:49:28.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="842d359e9799910d9af7cdc89e5f7147"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:49.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="Bonjour.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="27c3f0cbaf46091169ce8a3c5ddc7a37"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Trash.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7dc2615ba535b327b6422c36f18e379a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Profiles.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a0de8637cd9a6e585fb95c4f257bf71a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="smalAFP.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6b62c930f13762a0b07176221f4baacc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="smalARD.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e0a6e3fb8ab3b68ef6cd5467a8be7aac"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="STMLogo.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="eb82bae1fcac105fb10858b12639ec23"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="132"
+   name="BarGraphPattern.png"
+   text-time="2006-05-29T20:48:56.000000Z"
+   committed-date="2006-09-14T02:38:15.552332Z"
+   checksum="59054dae622a6b08b4390bec091d2608"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-14T02:37:57.000000Z"
+   revision="132"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_askPassword.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e7321f76a3b3ee50df21ec243db11172"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="smalRDC.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0bd9f8f128c45760074d0cf00876f766"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_askWarning.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a3990c7e8d3959a8d89449dda21c2f62"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RemoteControl.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fcc114dee6b5bf4f4c906dbea9ac02d9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="JellyfisshLogo.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="73c5161c0e224b193f3896191daad01a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="green.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3a579a42a79ae24507de8c1bfcb8677d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="smalVNC.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="79c64304f8efb4351a9b648a5c52d100"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNLogo.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="06341eb3293c34d3a36ff74318cc5b59"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="grey.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ad66ae25af5268eaa99bc886b1acc4f4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DriveRef.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cce59df4b06a35d158e6d46f2182d377"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Location.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ace27e6c7232c072262b73358c04f9ff"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Drive.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7a776b7f15ed041724fc8583d12ae52d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="132"
+   name="BarGraphTop.png"
+   text-time="2006-05-29T21:00:22.000000Z"
+   committed-date="2006-09-14T02:38:15.552332Z"
+   checksum="79ef3b75085fdaa4eb743798317e8bec"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-14T02:37:57.000000Z"
+   revision="132"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_Cleanup.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d3bd6d3cf10ef3828630541e5cc31953"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="BonjourRef.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e4bec9e3f682e841f3ca7f01f21bf1c1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FileRef.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="839ba9c010cb11a87fa72ab9a0eded3d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Host.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5bba8c05a7583ea4f40aba328418e199"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="File.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d6745806780e40246d3363c69315564e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="PrinterRef.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a67bc10bd0524798e1bfabba9ace0922"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="UnknownLogo.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="078418a416fb1989fbf6652559e5be39"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ActivationSettings.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3401f3d210f7933da9eb9ed8d0a482be"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Printer.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cf4a69df0b40275d24a335e6d4092fc7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPRO_Cleanup.icns"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b08b42e973e5e1da362638fef058b839"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="smalShell.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4f155badd4e4b09d7347365f96a78efa"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="configDialog.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="58281d11a203cb4ca1a88f30b40fee2e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPROMenuBar_icon.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="feaf0c43d119bfc0658664de7b3ca2d2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HostAlias.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e90c9228c41cfa124bf53ea3587d61c2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="blank.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4ba5ef636ba224b65de0f1be848a4275"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="blue.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d7334227d4c6c14dd3109edae5216afa"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Localhost.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="416b80764d13fe521aa36fe3352eb442"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SecuritySettings.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="74348a7337cfa3106e23da62592de652"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RemoteControlRef.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e8202d07df3ff43edc44fd2249fd4987"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Identity.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="466106e42f94c09c3e24bf32a0c15d94"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SSHKeychainLogo.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a41ab067c1177b0176a878b13812c59d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Locations.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b98f9482da59d1534d7ae3a82ec3df53"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+</wc-entries>

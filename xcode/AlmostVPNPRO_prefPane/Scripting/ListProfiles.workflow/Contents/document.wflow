@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>87</string>
+	<key>AMApplicationVersion</key>
+	<string>1.0.4</string>
+	<key>AMDocumentVersion</key>
+	<string>1</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0</string>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionIconName</key>
+				<string>AppleScript</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}
+	set allProfiles to {}
+	tell application "System Events"
+		set avpnPlistPath to "" &amp; (path to preferences from user domain) &amp; "com.leapingbytes.AlmostVPNPro.plist"
+		set avpnPlistFile to open for access file avpnPlistPath
+		set avpnPlistText to read avpnPlistFile as text
+		set p to make new property list item with data avpnPlistText
+		set children to property list item "children" of p
+		repeat with i from 1 to (count property list items of children)
+			set child to property list item i of children
+			set childName to property list item "name" of child
+			set childClass to property list item "class-name" of child
+			if value of childClass is "AlmostVPNProfile" then
+				set allProfiles to allProfiles &amp; {value of childName}
+			end if
+		end repeat
+	end tell
+	
+	return allProfiles
+end run</string>
+				</dict>
+				<key>Application</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>Utility</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>EF681260-6E1A-4D5C-8E85-20950B6BE481</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>A075A112-0D01-41B7-ABDB-4719C400ADEB</string>
+				<key>StartAction</key>
+				<false/>
+				<key>UUID</key>
+				<string>A53B8720-5E50-4F9E-8656-90B15B8E461B</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>collapsed</key>
+			<false/>
+			<key>isOutletsVisible</key>
+			<false/>
+			<key>isViewVisible</key>
+			<true/>
+			<key>location</key>
+			<string>1132.000000:405.666656</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0</string>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionIconName</key>
+				<string>AppleScript</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}
+	set resultList to {}
+	repeat with i from 1 to count items of input
+		set thisProfileName to item i of input
+		set statusObject to {profileName:thisProfileName, status:"", statusMessage:""}
+		set resultList to resultList &amp; {statusObject}
+	end repeat
+	set text item delimiters to return
+	set statusOutput to do shell script "curl http://localhost:1313/almostvpn/control/do?action=status\\&amp;report-format=txt|grep -v uuid"
+	set statusLines to text items of statusOutput
+	repeat with i from 1 to (count items of statusLines)
+		set text item delimiters to "|"
+		set statusLineItems to text items of item i of statusLines
+		set profileName to item 2 of statusLineItems
+		set profileStatus to item 3 of statusLineItems
+		set profileStatusMessage to item 4 of statusLineItems
+		repeat with j from 1 to (count items of resultList)
+			if profileName is (get profileName of item j of resultList) then
+				set status of item j of resultList to profileStatus
+				set statusMessage of item j of resultList to profileStatusMessage
+			end if
+		end repeat
+	end repeat
+	return resultList
+end run</string>
+				</dict>
+				<key>Application</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>Utility</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>AC4AC5E9-2D62-4950-A736-D30A35C64281</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>9FECCDF1-526C-4F3A-9AC5-2EF3CDB1873E</string>
+				<key>StartAction</key>
+				<false/>
+				<key>UUID</key>
+				<string>19F8D42A-205C-4E52-B276-4440906C3B78</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>collapsed</key>
+			<false/>
+			<key>isOutletsVisible</key>
+			<false/>
+			<key>isViewVisible</key>
+			<true/>
+			<key>location</key>
+			<string>1132.000000:265.666656</string>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>18231C55-3E50-40C4-B6DF-45D76B9E410A</key>
+		<dict>
+			<key>from</key>
+			<string>A53B8720-5E50-4F9E-8656-90B15B8E461B - A075A112-0D01-41B7-ABDB-4719C400ADEB</string>
+			<key>to</key>
+			<string>19F8D42A-205C-4E52-B276-4440906C3B78 - AC4AC5E9-2D62-4950-A736-D30A35C64281</string>
+		</dict>
+	</dict>
+	<key>state</key>
+	<dict>
+		<key>actionsSplitView</key>
+		<real>175</real>
+		<key>layoutFrame</key>
+		<string>{{0, 0}, {1025, 874}}</string>
+		<key>layoutScrollPosition</key>
+		<string>{{0, 0}, {1025, 874}}</string>
+		<key>mainSplitView</key>
+		<real>220</real>
+		<key>minorSplitView</key>
+		<real>732</real>
+		<key>windowFrame</key>
+		<string>{{5, 0}, {1275, 1002}}</string>
+	</dict>
+</dict>
+</plist>

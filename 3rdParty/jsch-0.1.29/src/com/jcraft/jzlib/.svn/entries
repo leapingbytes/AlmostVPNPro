@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jsch-0.1.29/src/com/jcraft/jzlib"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="Tree.java"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="067dd63da800a704cae31c1c78819a45"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Inflate.java"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fab2cda8949e3c92317e2bfc80feb698"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Deflate.java"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6a749da96ce8dcfca9ee902b11e347e6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ZStreamException.java"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ed6a3bb0c315ece374d35a584df396bd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ZInputStream.java"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a7180fa02041958d5d4e0bf91e58c905"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ZStream.java"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0434d97846f8f540d6a81bdb1cb9caa6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ZOutputStream.java"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d638f53ddfaa6c44332ee29e6f8efeda"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="StaticTree.java"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4c2c00740a06562380ceab210a59f100"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="InfBlocks.java"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="dee986d23ff4e5ba8dd79e3958b19164"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="InfCodes.java"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="39519d3571b0fadb028fae3d0fb2252a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="JZlib.java"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1b08ef9b532b3a93f781ca53cffbd748"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Adler32.java"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bf0ceae793296ce952fe464e8ec77e4b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="InfTree.java"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0b73513df56a1dac18c3a5de2cf88af7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+</wc-entries>

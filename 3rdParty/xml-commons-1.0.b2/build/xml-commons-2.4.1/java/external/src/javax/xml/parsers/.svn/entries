@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-2.4.1/java/external/src/javax/xml/parsers"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="FactoryFinder.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9ba69e52d81c1f6b0a2dfc926a1de2cd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SAXParserFactory.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="69d62036f5fcb7b46ca0fb1f756f0231"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ParserConfigurationException.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3b6e432c0b757c20b843443f7ce8c53e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DocumentBuilder.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7dd53cf7e6053cea27f3514d0992f23c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SAXParser.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c62f61ff0fc238fcf4de863ae9e93d39"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FactoryConfigurationError.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b3531cc1625123fe3112a6a7a3b71c49"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DocumentBuilderFactory.java"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7462c62ab743256c385b6a86b9d786ea"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package.html"
+   text-time="2006-09-01T03:01:31.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3ae2d8e43e008c7c82282e70730988b7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:31.000000Z"/>
+</wc-entries>

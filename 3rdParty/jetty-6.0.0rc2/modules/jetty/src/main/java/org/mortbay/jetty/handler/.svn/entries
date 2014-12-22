@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/jetty/src/main/java/org/mortbay/jetty/handler"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="AbstractHandler.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7365838d9ae59109cadb8ca834f0afda"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ContextHandler.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4a1973765e74d2d93c8ea1e3c1ae8af0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DefaultHandler.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="82bebc896f8f1ae0062b018303302936"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AbstractHandlerContainer.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ffa34e0ed824e8faaf886e3f81fa312a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ResourceHandler.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b795fe89b15501bef35a0988f1630dff"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ErrorHandler.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ade2b1a2769b79878016efb5394caff5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RequestLogHandler.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="40493fac8e2aebfff8090d89e1a7f090"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="StatisticsHandler.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="acf3e11bf27ea64626fe7a0d35edfeed"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HandlerCollection.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fefdaf1a35cf16b401d210ac54ee0422"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HandlerList.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="261b1298ead8ec7648918b277fa424c7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="MovedContextHandler.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="414f09696e1caa215054124f4593edb7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ContextHandlerCollection.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bfd27b0200a8c5402435026ccf3b457d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HandlerWrapper.java"
+   text-time="2006-09-01T03:01:07.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="cfb9abbdab6330f9b1f574f6797298f6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:07.000000Z"/>
+</wc-entries>

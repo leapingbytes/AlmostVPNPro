@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-1.0.b2/java/external/build/classes/javax/xml/parsers"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="DocumentBuilderFactory.class"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c727b5b825191354cbf3bb1c6f6033fd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FactoryFinder.class"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7d4d410e9afeb34be65d9bdf2ee9ba5e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SAXParserFactory.class"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7ff203405ea3da8d779643837dc6b26d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ParserConfigurationException.class"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d33f7027da013ab9dd104b45aa6f10ec"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DocumentBuilder.class"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7494e4ad5d8397b32dfc28965da56a4a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FactoryFinder$ConfigurationError.class"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2744ca5cd12c176d8b25c32ff448cb3e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SAXParser.class"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1899b8cfe190a3b0af0b94b2adcb41f3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FactoryConfigurationError.class"
+   text-time="2006-09-01T03:01:18.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7d03c2b608227cbeb740b47e8a8c6f4a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+</wc-entries>

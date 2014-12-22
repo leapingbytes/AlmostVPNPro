@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-1.0.b2/java/build/classes/org/apache/xml/resolver/readers"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="CatalogReader.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ac9bb7e9705af99ca0a4153bf9a9253f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DOMCatalogReader.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e7d893bda293d328f9869a425a4b96ee"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="OASISXMLCatalogReader.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5d151ececa44bc11f93cb1da7ca86d6f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ExtendedXMLCatalogReader.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="00095c57477f50ed3518f27b18f44a89"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TR9401CatalogReader.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="75715bc5a3c2ff06a639289c01656fb7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TextCatalogReader.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c06cd85295765f2e2a6c66c6d5b2fba5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SAXCatalogParser.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c7ec4b0331cf6f2b3afdb362664888f4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="XCatalogReader.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="766bf188267bf7bf087599dc2fdec6cf"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SAXParserHandler.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bc164bf3fb7749efc1fd29d8f75209e8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DOMCatalogParser.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="709a6e2a76b2fcdc9d18dfb5a035ddf7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SAXCatalogReader.class"
+   text-time="2006-09-01T03:01:13.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7506332a3a1f417a28e8e22d8ce9abeb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:13.000000Z"/>
+</wc-entries>

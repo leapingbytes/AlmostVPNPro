@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		501FF1DA0C188F9500047745 /* javah */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 501FF2350C18902F00047745 /* Build configuration list for PBXAggregateTarget "javah" */;
+			buildPhases = (
+				501FF1D90C188F9500047745 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = javah;
+			productName = javah;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		501D7A8409E163D8006D1B5D /* com_leapingbytes_almostvpn_util_macosx_KeychainMasterPasswordProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 501D7A8209E163D8006D1B5D /* com_leapingbytes_almostvpn_util_macosx_KeychainMasterPasswordProvider.h */; };
+		501D7A8509E163D8006D1B5D /* KeychainMasterPasswodProvider.c in Sources */ = {isa = PBXBuildFile; fileRef = 501D7A8309E163D8006D1B5D /* KeychainMasterPasswodProvider.c */; };
+		501D7A9109E1649F006D1B5D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501D7A9009E1649F006D1B5D /* Security.framework */; };
+		501FF1E60C188FD300047745 /* KeychainMasterPasswodProvider.c in Sources */ = {isa = PBXBuildFile; fileRef = 501D7A8309E163D8006D1B5D /* KeychainMasterPasswodProvider.c */; };
+		501FF1E70C188FD300047745 /* SystemConfigurationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 502A5FA20A87F707008DBCC7 /* SystemConfigurationProvider.m */; };
+		501FF1E80C188FD300047745 /* SCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 502A609E0A87FB28008DBCC7 /* SCHelper.m */; };
+		501FF22C0C188FE600047745 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		501FF22D0C188FE600047745 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501D7A9009E1649F006D1B5D /* Security.framework */; };
+		501FF22E0C188FE600047745 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502A60AA0A87FB78008DBCC7 /* SystemConfiguration.framework */; };
+		502A5FA40A87F707008DBCC7 /* SystemConfigurationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 502A5FA20A87F707008DBCC7 /* SystemConfigurationProvider.m */; };
+		502A5FBF0A87F7EA008DBCC7 /* com_leapingbytes_almostvpn_util_macosx_SystemConfigurationProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 502A5FBE0A87F7EA008DBCC7 /* com_leapingbytes_almostvpn_util_macosx_SystemConfigurationProvider.h */; };
+		502A609F0A87FB28008DBCC7 /* SCHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 502A609D0A87FB28008DBCC7 /* SCHelper.h */; };
+		502A60A00A87FB28008DBCC7 /* SCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 502A609E0A87FB28008DBCC7 /* SCHelper.m */; };
+		502A60AB0A87FB78008DBCC7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502A60AA0A87FB78008DBCC7 /* SystemConfiguration.framework */; };
+		D2AAC0CC05546C4400DB518D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		501FF1E00C188FB500047745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 501FF1DA0C188F9500047745;
+			remoteInfo = javah;
+		};
+		501FF1E40C188FC200047745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 501FF1DA0C188F9500047745;
+			remoteInfo = javah;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* AlmostVPNJNI.macosx_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlmostVPNJNI.macosx_Prefix.pch; sourceTree = "<group>"; };
+		501D7A8209E163D8006D1B5D /* com_leapingbytes_almostvpn_util_macosx_KeychainMasterPasswordProvider.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = com_leapingbytes_almostvpn_util_macosx_KeychainMasterPasswordProvider.h; sourceTree = "<group>"; };
+		501D7A8309E163D8006D1B5D /* KeychainMasterPasswodProvider.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = KeychainMasterPasswodProvider.c; sourceTree = "<group>"; };
+		501D7A9009E1649F006D1B5D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		501FF1D00C188F6300047745 /* libAlmostVPNJNI.macosx.static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlmostVPNJNI.macosx.static.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		502A5FA20A87F707008DBCC7 /* SystemConfigurationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemConfigurationProvider.m; sourceTree = "<group>"; };
+		502A5FBE0A87F7EA008DBCC7 /* com_leapingbytes_almostvpn_util_macosx_SystemConfigurationProvider.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = com_leapingbytes_almostvpn_util_macosx_SystemConfigurationProvider.h; sourceTree = "<group>"; };
+		502A609D0A87FB28008DBCC7 /* SCHelper.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SCHelper.h; path = Tools/SCHelper.h; sourceTree = SOURCE_ROOT; };
+		502A609E0A87FB28008DBCC7 /* SCHelper.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SCHelper.m; path = Tools/SCHelper.m; sourceTree = SOURCE_ROOT; };
+		502A60AA0A87FB78008DBCC7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		D2A6134D07B89F6200DD23D3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		D2AAC0C705546C1D00DB518D /* libAlmostVPNToolJNI.macosx.jnilib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libAlmostVPNToolJNI.macosx.jnilib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		501FF1CE0C188F6300047745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501FF22C0C188FE600047745 /* Cocoa.framework in Frameworks */,
+				501FF22D0C188FE600047745 /* Security.framework in Frameworks */,
+				501FF22E0C188FE600047745 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC0C505546C1D00DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2AAC0CC05546C4400DB518D /* Cocoa.framework in Frameworks */,
+				501D7A9109E1649F006D1B5D /* Security.framework in Frameworks */,
+				502A60AB0A87FB78008DBCC7 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC0C705546C1D00DB518D /* libAlmostVPNToolJNI.macosx.jnilib.dylib */,
+				501FF1D00C188F6300047745 /* libAlmostVPNJNI.macosx.static.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* AlmostVPNJNI.macosx */ = {
+			isa = PBXGroup;
+			children = (
+				502A609C0A87FAED008DBCC7 /* Tools */,
+				501D7A9009E1649F006D1B5D /* Security.framework */,
+				501D7A8109E163C8006D1B5D /* src */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = AlmostVPNJNI.macosx;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				502A60AA0A87FB78008DBCC7 /* SystemConfiguration.framework */,
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2A6134D07B89F6200DD23D3 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* AlmostVPNJNI.macosx_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		501D7A8109E163C8006D1B5D /* src */ = {
+			isa = PBXGroup;
+			children = (
+				502A5FBE0A87F7EA008DBCC7 /* com_leapingbytes_almostvpn_util_macosx_SystemConfigurationProvider.h */,
+				501D7A8209E163D8006D1B5D /* com_leapingbytes_almostvpn_util_macosx_KeychainMasterPasswordProvider.h */,
+				501D7A8309E163D8006D1B5D /* KeychainMasterPasswodProvider.c */,
+				502A5FA20A87F707008DBCC7 /* SystemConfigurationProvider.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		502A609C0A87FAED008DBCC7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				502A609D0A87FB28008DBCC7 /* SCHelper.h */,
+				502A609E0A87FB28008DBCC7 /* SCHelper.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		501FF1CC0C188F6300047745 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC0C305546C1D00DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501D7A8409E163D8006D1B5D /* com_leapingbytes_almostvpn_util_macosx_KeychainMasterPasswordProvider.h in Headers */,
+				502A5FBF0A87F7EA008DBCC7 /* com_leapingbytes_almostvpn_util_macosx_SystemConfigurationProvider.h in Headers */,
+				502A609F0A87FB28008DBCC7 /* SCHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		501FF1CF0C188F6300047745 /* AlmostVPNJNI.macosx.static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 501FF1D30C188F8100047745 /* Build configuration list for PBXNativeTarget "AlmostVPNJNI.macosx.static" */;
+			buildPhases = (
+				501FF1CC0C188F6300047745 /* Headers */,
+				501FF1CD0C188F6300047745 /* Sources */,
+				501FF1CE0C188F6300047745 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				501FF1E50C188FC200047745 /* PBXTargetDependency */,
+			);
+			name = AlmostVPNJNI.macosx.static;
+			productName = AlmostVPNJNI.macosx.static;
+			productReference = 501FF1D00C188F6300047745 /* libAlmostVPNJNI.macosx.static.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2AAC0C605546C1D00DB518D /* AlmostVPNJNI.macosx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB917D08733D990010E9CD /* Build configuration list for PBXNativeTarget "AlmostVPNJNI.macosx" */;
+			buildPhases = (
+				D2AAC0C305546C1D00DB518D /* Headers */,
+				D2AAC0C405546C1D00DB518D /* Sources */,
+				D2AAC0C505546C1D00DB518D /* Frameworks */,
+				501D7A9409E164F0006D1B5D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				501FF1E10C188FB500047745 /* PBXTargetDependency */,
+			);
+			name = AlmostVPNJNI.macosx;
+			productName = AlmostVPNJNI.macosx;
+			productReference = D2AAC0C705546C1D00DB518D /* libAlmostVPNToolJNI.macosx.jnilib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB918108733D990010E9CD /* Build configuration list for PBXProject "AlmostVPNJNI.macosx" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* AlmostVPNJNI.macosx */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			targets = (
+				D2AAC0C605546C1D00DB518D /* AlmostVPNJNI.macosx */,
+				501FF1CF0C188F6300047745 /* AlmostVPNJNI.macosx.static */,
+				501FF1DA0C188F9500047745 /* javah */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		501D7A9409E164F0006D1B5D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "REAL_NAME=$( basename $EXECUTABLE_NAME .dylib )\necho cp build/$BUILD_STYLE/$EXECUTABLE_NAME build/$BUILD_STYLE/$REAL_NAME \ncp build/$BUILD_STYLE/$EXECUTABLE_NAME build/$BUILD_STYLE/$REAL_NAME";
+		};
+		501FF1D90C188F9500047745 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "javah -classpath ../../eclipse/AlmostVPNServer/bin com.leapingbytes.almostvpn.util.macosx.SystemConfigurationProvider com.leapingbytes.almostvpn.util.macosx.KeychainMasterPasswordProvider\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		501FF1CD0C188F6300047745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501FF1E60C188FD300047745 /* KeychainMasterPasswodProvider.c in Sources */,
+				501FF1E70C188FD300047745 /* SystemConfigurationProvider.m in Sources */,
+				501FF1E80C188FD300047745 /* SCHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC0C405546C1D00DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501D7A8509E163D8006D1B5D /* KeychainMasterPasswodProvider.c in Sources */,
+				502A5FA40A87F707008DBCC7 /* SystemConfigurationProvider.m in Sources */,
+				502A60A00A87FB28008DBCC7 /* SCHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		501FF1E10C188FB500047745 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 501FF1DA0C188F9500047745 /* javah */;
+			targetProxy = 501FF1E00C188FB500047745 /* PBXContainerItemProxy */;
+		};
+		501FF1E50C188FC200047745 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 501FF1DA0C188F9500047745 /* javah */;
+			targetProxy = 501FF1E40C188FC200047745 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB917E08733D990010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AlmostVPNJNI.macosx_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = libAlmostVPNToolJNI.macosx.jnilib;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		1DEB917F08733D990010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AlmostVPNJNI.macosx_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = libAlmostVPNToolJNI.macosx.jnilib;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1DEB918208733D990010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/System/Library/Frameworks/JavaVM.framework/Headers,
+					"$(HEADER_SEARCH_PATHS)",
+				);
+				MACH_O_TYPE = mh_dylib;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		1DEB918308733D990010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/System/Library/Frameworks/JavaVM.framework/Headers,
+					"$(HEADER_SEARCH_PATHS)",
+				);
+				MACH_O_TYPE = mh_dylib;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+		501FF1D40C188F8100047745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = AlmostVPNJNI.macosx.static;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		501FF1D50C188F8100047745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = AlmostVPNJNI.macosx.static;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		501FF2360C18902F00047745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = javah;
+			};
+			name = Debug;
+		};
+		501FF2370C18902F00047745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = javah;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB917D08733D990010E9CD /* Build configuration list for PBXNativeTarget "AlmostVPNJNI.macosx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB917E08733D990010E9CD /* Debug */,
+				1DEB917F08733D990010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB918108733D990010E9CD /* Build configuration list for PBXProject "AlmostVPNJNI.macosx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB918208733D990010E9CD /* Debug */,
+				1DEB918308733D990010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		501FF1D30C188F8100047745 /* Build configuration list for PBXNativeTarget "AlmostVPNJNI.macosx.static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				501FF1D40C188F8100047745 /* Debug */,
+				501FF1D50C188F8100047745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		501FF2350C18902F00047745 /* Build configuration list for PBXAggregateTarget "javah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				501FF2360C18902F00047745 /* Debug */,
+				501FF2370C18902F00047745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

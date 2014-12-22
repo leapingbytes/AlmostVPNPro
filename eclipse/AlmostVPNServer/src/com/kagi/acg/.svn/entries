@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/AlmostVPNServer/src/com/kagi/acg"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   revision="110"/>
+<entry
+   committed-rev="106"
+   name="BigIntArithmetic.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fb142b98072ab2c0949390e46c679219"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="157"
+   name="DecodeRegCode.java"
+   text-time="2006-10-30T16:23:12.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="33bbc6756fa03ac605dceace0e2bf8dc"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+</wc-entries>

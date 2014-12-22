@@ -1,0 +1,118 @@
+#!/bin/bash
+
+. /etc/rc.common
+
+#
+# AlmostVPN Server
+#
+BASE_DIR=`dirname $0`
+BASE_DIR=`cd $BASE_DIR; pwd`
+#
+# AlmostVPN.env gets created during install (first run) and 
+# provides following variables:
+#	- $AVPN_USER			- User Name
+#	- $AVPN_RESOURCES		- Path to (AlmostVPNPRO bundle)/Contents/Resources
+#	- $AVPN_SUPPORT			- Path to .../Library/Application Support/AlmostVPNPRO
+#	- $AVPN_PREFERENCES		- Path to .../Library/Preferences/com.leapingbytes.AlmostVPNPRO.plist
+#
+. $BASE_DIR/AlmostVPN.env
+
+if [ ! -d "$AVPN_SUPPORT" ]
+then
+	mkdir -p "$AVPN_SUPPORT"
+	chown $AVPN_USER "$AVPN_SUPPORT"
+fi
+
+# . $AVPN_RESOURCES/utils.sh
+#
+# Utilities
+#
+function ConsoleMessage() {
+	echo "$( date ) AlmostVPNServer : $1" >/dev/console
+}
+
+function getPid() {
+	 ps -axww -O user | grep $1 | grep $2 | grep -v grep | cut -c 1-5 | head -1
+}
+
+function testForAnyPid() {
+	local pidToTest=$1
+	if [ $( ps -o pid -p $pidToTest | wc -l ) != 1 ]
+	then
+		echo $pidToTest
+	else
+		echo 0
+	fi
+}
+
+function waitForAnyPid() {
+	local pidToWait=$1
+	if [ "$pidToWait" = "" ]
+	then
+		echo 0
+		return
+	fi
+	local waitTimeout=${2:-5}
+	
+	for (( i=0 ; i < $waitTimeout ; i++ )) 
+	do
+		if [ $( testForAnyPid $pidToWait ) != 0 ]
+		then
+			sleep 1
+		else
+			echo $i
+			return
+		fi
+	done
+	echo $i
+}
+
+function waitForAnyProcess() {
+	local processPid=$( getPid $1 $2 )
+	waitForAnyPid $processPid $3 >/dev/null 2>&1
+}
+
+#
+# Locate AlmostVPNServer
+#
+if [ -z "$AVPN_SERVER_PATH" ]
+then
+	AVPN_SERVER_PATH="$AVPN_SUPPORT/AlmostVPNServer"
+	if [ ! -f "$AVPN_SERVER_PATH" ]
+	then
+		AVPN_SERVER_PATH="/Library/Application Support/AlmostVPNPRO/AlmostVPNServer"
+	fi
+	if [ ! -f "$AVPN_SERVER_PATH" ]
+	then
+		ConsoleMessage "FATAL : Can not find AlmostVPNServer"
+		exit 1
+	fi
+fi
+
+#
+# Meat
+#
+function StartService () {
+    ConsoleMessage "Starting AlmostVPN server"
+	cd $AVPN_RESOURCES
+	"$AVPN_SERVER_PATH" --startJVM $AVPN_PREFERENCES >>"$AVPN_SUPPORT/almostvpn.log" 2>&1 &
+	echo "$!" >/var/run/almostvpn.pid
+}
+
+function StopService () {
+    ConsoleMessage "Stopping AlmostVPN server"
+	curl -m 5 http://127.0.0.1:1313/almostvpn/control/do?action=exit >/dev/null 2>&1
+	waitForAnyProcess AlmostVPNServer "startJVM" 10
+	local PID="$( cat /var/run/almostvpn.pid )" 
+	rm -rf /var/run/almostvpn.pid  >/dev/null 2>&1
+	[ -z "$PID" ] && PID="$( ps -ax | grep AlmostVPNServer | grep startJVM | grep -v grep | cut -c 1-5 )"
+    [ -n "$PID" ] && kill $PID  >/dev/null 2>&1
+}
+
+function RestartService () {
+    ConsoleMessage "Restarting AlmostVPN server"
+    StopService
+    StartService
+}
+
+RunService "$1"

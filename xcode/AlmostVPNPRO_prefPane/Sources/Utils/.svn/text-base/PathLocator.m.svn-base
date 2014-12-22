@@ -1,0 +1,205 @@
+//
+//  PathLocator.m
+//  AlmostVPN
+//
+//  Created by andrei tchijov on 9/2/05.
+//  Copyright 2005 Leaping Bytes, LLC. All rights reserved.
+//
+#include <unistd.h>
+#include <sys/param.h>
+
+#include <Security/Security.h>
+
+#import "PathLocator.h"
+
+@implementation PathLocator
+//
+// These 3 always point to  com.leapingbytes.AlmostVPNPRO bundle
+//
+static NSString* prefPaneInstallPath = nil;
+static NSString* prefPaneResourcePath = nil;
+static NSString* executablePath = nil;
+static NSString* macOSPath = nil;
+
+//
+// These 3 are bundle independent 
+//
+static NSString* home = nil;
+static NSString* preferencesPath = nil;
+static NSString* applicationSupportPath = nil;
+
+static NSString* bundleIdentifier = @"com.leapingbytes.AlmostVPNPRO";
+
+static NSBundle* prefPaneBundle = nil;
+static NSBundle* bundle = nil;
+static NSDictionary* bundleInfo = nil;
+static NSString* resourcePath = nil;
+
+static BOOL _prefPaneInstalledForAll = NO;
+
+void _LBSetBundleIdentifier( NSString* v ) {
+	bundleIdentifier = [ v copy ];
+}
+
++(NSString*) bundleIdentifier {
+	return bundleIdentifier;
+}
+
++(void) setBundleIdentifier: (NSString*) value {
+	bundleIdentifier = [ value copy ];
+	[ self initialize ];
+}
+
++ (void) locatePrefPaneBundle {
+	if( prefPaneBundle == nil ) {
+		prefPaneBundle = [ NSBundle bundleWithIdentifier: bundleIdentifier ];
+		if( prefPaneBundle == nil ) {
+			prefPaneBundle = [ NSBundle bundleWithPath: [ @"~/Library/PreferencePanes/AlmostVPNPRO.prefPane"  stringByExpandingTildeInPath ]];
+		}
+		if( prefPaneBundle == nil ) {
+			prefPaneBundle = [ NSBundle bundleWithPath: @"/Library/PreferencePanes/AlmostVPNPRO.prefPane" ];
+			_prefPaneInstalledForAll = YES;
+		}
+		if( prefPaneBundle != nil ) {
+			[ prefPaneBundle retain ];
+			prefPaneInstallPath		= [[ prefPaneBundle bundlePath ] retain ];	
+			prefPaneResourcePath	= [[ prefPaneBundle resourcePath ] retain ];	
+			executablePath			= [[ prefPaneBundle executablePath ] retain ];
+			macOSPath				= [[ executablePath stringByDeletingLastPathComponent ] retain ];
+		}
+		home					= [[ @"~" stringByExpandingTildeInPath ] retain ];
+		preferencesPath			= [[ @"~/Library/Preferences/com.leapingbytes.AlmostVPNPRO.plist" stringByExpandingTildeInPath ] retain ];
+		applicationSupportPath	= [[ @"~/Library/Application Support/AlmostVPNPRO" stringByExpandingTildeInPath ] retain ];	
+	}
+}
+
++(void)initialize {
+	[ self locatePrefPaneBundle ];
+	
+	bundle					= [[ NSBundle  bundleWithIdentifier: bundleIdentifier ] retain ];
+	bundleInfo				= [[ bundle infoDictionary ] retain ];
+	resourcePath			= [[ bundle resourcePath ] retain ];	
+}
+
++(BOOL) prefPaneInstalledForAll {
+	return _prefPaneInstalledForAll;
+}
+
++(NSString*)version {
+	NSString* result = [ bundleInfo objectForKey: @"CFBundleVersion" ];
+	return result;
+}
+
++(NSString*)shortVersion {
+	return [ bundleInfo objectForKey: @"CFBundleShortVersionString" ];
+}
+
++(NSString*)home {
+	return home;
+}
+
++(NSString*)preferencesPath {
+	return preferencesPath;
+}
+
++(NSString*)preferencesPath: (NSString*)applicationId {
+	return [[ NSString stringWithFormat: @"~/Library/Preferences/%@.plist", applicationId ] stringByExpandingTildeInPath ];
+}
+
++(NSString*)applicationSupportPath {
+	return applicationSupportPath;
+}
++(NSString*)applicationSupportPathForFile: (NSString*) file {
+	return [ NSString stringWithFormat: @"%@/%@", applicationSupportPath, file ];
+}
++(NSString*)launchdPlistPathForProfile: (NSString*) profile {
+	NSString* result = [ NSString stringWithFormat: @"%@/launchd.%@.plist", applicationSupportPath, profile ];	
+	return result;
+}
+
++(NSString*)pathForExecutable: (NSString*) exec {
+	NSString* result = [ NSString stringWithFormat: @"%@/%@", macOSPath, exec ];
+	return result;
+}
+
++(NSString*)resourcePath {
+	return resourcePath;
+}
+
++(NSString*)installedResourcePath {
+	return prefPaneResourcePath;
+}
+
++(NSString*)pathForResource: (NSString*) resource {
+	NSString* result = [ NSString stringWithFormat: @"%@/%@", resourcePath, resource ];
+	return result;
+}
+
++(NSString*)pathForInstalledResource: (NSString*) resource {
+	NSString* result = [ NSString stringWithFormat: @"%@/Contents/Resources/%@", prefPaneInstallPath, resource ];
+	return result;
+}
+
++(NSString*)userKeychainPath: (NSString*)keychainName {
+	return [ NSString stringWithFormat: @"%@/Library/Keychains/%@.keychain", home, keychainName ];
+}
+
+
++(NSBundle*)almostVPNBundle {
+	return bundle;
+}
+
++(NSImage*)imageNamed: (NSString*) imageName {
+	NSString* imagePath = [ bundle pathForImageResource: imageName ];
+	
+	return [[[ NSImage alloc ] initByReferencingFile: imagePath ] autorelease ];
+}
+
++(NSImage*)imageNamed: (NSString*) imageName ofSize: (NSSize) size {
+	NSString* imagePath = [ bundle pathForImageResource: imageName ];
+	NSImage* result = [[[ NSImage alloc ] initByReferencingFile: imagePath ] autorelease ];
+	[ result setScalesWhenResized: YES ];
+	[ result setSize: size ];
+	return result;
+}
+
++(NSSound*) soundNamed: (NSString*) soundName {
+	NSString* soundPath = [ bundle pathForResource: soundName ofType:@"mov"];
+	if( soundPath == nil ) {
+		return [ NSSound soundNamed: soundName ];
+	} else {
+		return [[[NSSound alloc] initWithContentsOfFile: soundPath byReference: YES ] autorelease ];
+	}
+}
+
++ (NSString*) describeOSStatus: (OSStatus) status {
+	NSError* error = [ NSError errorWithDomain: NSOSStatusErrorDomain code: status userInfo: nil ];
+	return [ error localizedDescription ];
+}
+
++ (NSString*) keychainPath {
+	SecKeychainRef loginKeychain = (SecKeychainRef)nil;
+	SecKeychainStatus status = 0;
+	OSStatus err = SecKeychainCopyDefault( &loginKeychain );
+	if( err == 0 && ( loginKeychain != nil )) {
+		err = SecKeychainGetStatus( loginKeychain, &status );
+	}
+	if( err || ( status == 0 )) {
+		NSRunAlertPanel( @"Internal Error", @"Fail to get 'default'\n%@", @"OK", nil, nil, [ self describeOSStatus: err ] );
+		if( loginKeychain != nil ) {
+			CFRelease( loginKeychain );
+		}
+		return nil;		
+	}
+	UInt32 ioPathLength = MAXPATHLEN;
+	char pathName[ MAXPATHLEN + 1];
+	
+	err = SecKeychainGetPath( loginKeychain,&ioPathLength,&(pathName[0]));
+	
+	NSString* result = [[ NSString alloc ] initWithCString: pathName length: ioPathLength ];
+
+	CFRelease( loginKeychain );
+
+	return result;
+}
+@end

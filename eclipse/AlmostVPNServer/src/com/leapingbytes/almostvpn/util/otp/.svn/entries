@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="148"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/AlmostVPNServer/src/com/leapingbytes/almostvpn/util/otp"
+   last-author="atchijov"
+   committed-date="2006-10-19T19:24:37.790000Z"
+   kind="dir"
+   name=""
+   committed-rev="148"/>
+<entry
+   checksum="974e41a6f30148cdc7fde1cc538485ad"
+   last-author="atchijov"
+   text-time="2006-10-15T19:55:14.000000Z"
+   committed-date="2006-10-19T19:24:37.790000Z"
+   name="MD.java"
+   kind="file"
+   committed-rev="148"/>
+<entry
+   checksum="129bde4b3c25d66d195f1d524c1f6f89"
+   last-author="atchijov"
+   text-time="2006-10-16T00:53:44.000000Z"
+   committed-date="2006-10-19T19:24:37.790000Z"
+   kind="file"
+   name="OTP.java"
+   committed-rev="148"/>
+</wc-entries>

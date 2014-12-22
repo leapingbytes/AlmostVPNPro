@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Sources/ChickenPassword.target"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="133"
+   name="chickenpassword.m"
+   text-time="2006-09-26T02:27:11.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="d6439e4058f9c4acbad5b81039458831"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="vncauth.m"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d1b5917b83ddb7fd6c003424123d8a68"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="d3des.h"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a850bd5dac9ee1d9c0eb25b4c3f6dfce"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="133"
+   name="chickenpassword.h"
+   text-time="2006-09-26T02:27:47.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="39802679ea503e3cd143d78cf573f532"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="d3des.m"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8ccc82a602b13a5dafcd84a88921dff4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="vncauth.h"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b4364dbf0ad8643f11f5c74db9b46250"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+</wc-entries>

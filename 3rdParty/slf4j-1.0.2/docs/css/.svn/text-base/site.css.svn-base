@@ -1,0 +1,174 @@
+body {
+   font-family: "Times New Roman", Times, serif; 
+   padding: 0px;
+   margin: 0px;
+   width: 58em;
+}
+
+H1, H2, H3 {
+ color: #101099;
+}
+
+A:link, A:visited {
+  text-decoration: none;
+  color: #006699;
+}
+
+A:link:hover {
+  text-decoration: underline;
+}
+
+div#banner {
+  margin-left:  1ex;
+}
+
+div#banner table, div#footer table {
+  width: 100%;
+}
+
+div#leftcol {
+  position: absolute;
+  width: 12.5em;
+  left: 1ex;
+  margin-top: 1ex;
+  padding-left: 1ex;
+}
+
+div.centercol, div#footer {
+  border-top: 1px solid #000;
+  margin-left: 15em;
+  padding-left: 0em;
+  margin-right: 1em;
+}
+
+div#footer {
+  vertical-align: top;
+}
+
+.pub {
+  background-color: #ffc;
+  border: 1px solid #fda;
+  padding-left: 1ex;
+  padding-right: 1ex;
+  padding-top: 1ex;
+  padding-bottom: 1ex;
+}
+
+/* ---------------------- MENU ------------------------ */
+
+table#menu td {
+  padding-left: 1ex;
+  white-space: nowrap;
+  padding-right: 1ex;
+}
+
+
+td.header {
+  border:1px solid #AAAAAA;
+  background: #CCCCCC; 
+}
+
+td.item:hover {
+  background: #DDD; 
+}
+
+
+td.item {
+  background: #EEEEEE;
+  border-top:   0px solid #AAAAAA;
+  border-right: 1px solid #AAAAAA;
+  border-bottom:1px solid #AAAAAA;
+  border-left:  1px solid #AAAAAA;
+}
+
+/* ------------------------------------------------------- */
+
+a img {
+  border: 0 none;
+}
+
+.source, .cmd {
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  background:#eee;
+  font-family: Courier, "MS Courier New", Prestige, Everson Monocourrier, monospace;
+  padding-bottom: 0.5ex;
+  padding-top: 0.5ex;
+  padding-left: 1ex;
+  white-space: pre;
+  width: 55em;
+}
+
+table.ls {
+  background: #FFFFFF;
+}
+table.ls td {
+  background: #f4f4f4; 
+  vertical-align: top;
+  padding-bottom: 1ex;
+}
+
+table.ls th {
+  background: #E4E4E4;
+}
+
+.index-faqSection {
+   font-size: larger;
+   padding-left: 0em;
+   font-weight: bolder;
+}
+.index-question {
+   padding-left: 1em;
+}
+
+.faqSection {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+table.index-question td.question {
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.question {
+  font-weight: bolder;
+}
+
+/* this class is used for screen output placed in <pre></pre> tags */
+.screen_output {
+  padding-left:  1ex;
+  padding-right: 1ex;
+  border-top:   1px solid #AAAAAA;
+  border-right: 1px solid #AAAAAA;
+  border-bottom:1px solid #AAAAAA;
+  border-left:  1px solid #AAAAAA;
+}
+
+
+.big {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.small {
+  font-size: smaller;
+}
+
+.red {
+  color: #AA0000;
+}
+
+.msg_title {
+  padding-left:  1ex;
+  padding-right: 1ex;
+  font-family: Courier, "MS Courier New", Prestige, Everson Monocourrier, monospace;
+  border:   1px solid #AAAAAA;
+  background: #DDDDFF;
+
+}
+
+.msg_meaning {
+  padding-left:  1em;
+  padding-right: 1em;
+}

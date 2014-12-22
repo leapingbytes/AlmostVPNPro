@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-2.4.1/java/external/build/docs/javadoc/org/xml/sax/ext"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="LexicalHandler.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="37face7c3fce2d248b83436397041220"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="94d4ffe460b2c8b8091e22f447654e08"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DeclHandler.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e08ac21998d721f2dc5ada9f30148708"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="417dbec4db8e7277b21a4ae772c485f7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-tree.html"
+   text-time="2006-09-01T03:01:25.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="53dda49d0471ea562107b3641c70fead"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:25.000000Z"/>
+</wc-entries>

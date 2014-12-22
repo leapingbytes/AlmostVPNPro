@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'AlmostVPNPRO_model' target in the 'AlmostVPNPRO_model' project.
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

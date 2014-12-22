@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/jetty/src/main/java/org/mortbay/jetty/servlet"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="HashSessionIdManager.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7b69fc434c605f4d7e723f8ab754e6d2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletMapping.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d5410ae46b490bb53f374beedc2308b4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FilterMapping.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="39103dd9db9efc7e6f07f972eb2c0024"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AbstractSessionManager.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1ea23389c6fe225e2161adf091d5b0a1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Invoker.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="06b07e210ede3ca4d0bb1eb4f52cb571"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Holder.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e3565fc369c2268c857b5d4cb26e6bad"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SessionHandler.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a8f436cbf19d850b6ee70c24c30644aa"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletHolder.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6e194415c9ddbcbab0a5611b103e1cca"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ServletHandler.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="896903d9d35e7d9ad15cdc17fb26cf71"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HashSessionManager.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="818494dc58d23e4c3eb693b90e06e4f5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FilterHolder.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="36b912225d5492714d7a4c01e132327e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Context.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3f8980a302343c0eef471d130cf605ae"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Dispatcher.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="75b4efc4806d1ea874c5580f314fedc7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="DefaultServlet.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3f40a7f94f5d6957637f0f36aed07945"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+<entry
+   committed-rev="106"
+   name="PathMap.java"
+   text-time="2006-09-01T03:01:06.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0bdce75f0374dafeff66537b6ed0dfa4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:06.000000Z"/>
+</wc-entries>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/modules/management/src/main/resources/org/mortbay/jetty/handler/management"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="StatisticsHandler-mbean.properties"
+   text-time="2006-09-01T03:01:09.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1ff67c9fb02d36f0b94232f4b75b0f9c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:09.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HandlerCollection-mbean.properties"
+   text-time="2006-09-01T03:01:09.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ead3bec831af532684d537df2096ba06"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:09.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HandlerWrapper-mbean.properties"
+   text-time="2006-09-01T03:01:09.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="eb96b21200e14e2470121b2ef084cfcd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:09.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HandlerContainer-mbean.properties"
+   text-time="2006-09-01T03:01:09.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4ebc76c70ad986002147a6803c3c2892"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:09.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ContextHandler-mbean.properties"
+   text-time="2006-09-01T03:01:09.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2566037af7ed98574cfcfa9e2260a357"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:09.000000Z"/>
+</wc-entries>

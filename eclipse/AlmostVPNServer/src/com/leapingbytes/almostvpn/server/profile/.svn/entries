@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/AlmostVPNServer/src/com/leapingbytes/almostvpn/server/profile"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   revision="110"/>
+<entry
+   committed-rev="106"
+   name="ProfileException.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8105ea52c6efe753620080280ffbc7ba"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="157"
+   name="Profile.java"
+   text-time="2006-11-17T20:46:40.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="8feef4e81961a46521610830b1878fc0"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+<entry
+   name="configurator"
+   kind="dir"/>
+<entry
+   name="item"
+   kind="dir"/>
+</wc-entries>

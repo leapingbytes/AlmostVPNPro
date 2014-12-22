@@ -1,0 +1,4 @@
+CFBundleName = "AlmostVPNPRO.cleanup";
+CFBundleShortVersionString = "1.0";
+CFBundleGetInfoString = "AlmostVPNPRO.cleanup version 1.0 Copyright 2006 Laping Bytes, LLC";
+NSHumanReadableCopyright = "Copyright 2006 Laping Bytes, LLC.";

@@ -1,0 +1,460 @@
+set +o histexpand
+
+declare IFCONFIG="/sbin/ifconfig"
+declare UMOUNT="/sbin/umount"
+declare OSASCRIPT="/usr/bin/osascript"
+
+case "$( uname -r )" in
+	8.*)
+		declare OS_VERSION="tiger"
+	;;
+	9.*)
+		declare OS_VERSION="leopard"
+	;;
+	*)
+		declare OS_VERSION="ERROR"
+	;;
+esac 
+
+function isTiger() {
+	[ "$OS_VERSION" = "tiger" ]
+}
+function isLeopard() {
+	[ "$OS_VERSION" = "leopard" ]
+}
+
+# ------------------------------------------------------------------------------------
+# create/delete Alias
+# ------------------------------------------------------------------------------------
+function getPid() {
+	 ps -axww -O user | grep $1 | grep $2 | grep -v grep | cut -c 1-5 | head -1
+}
+
+function testForAnyPid() {
+	local pidToTest=$1
+	if [ $( ps -o pid -p $pidToTest | wc -l ) != 1 ]
+	then
+		echo $pidToTest
+	else
+		echo 0
+	fi
+}
+
+function waitForAnyPid() {
+	local pidToWait=$1
+	if [ "$pidToWait" = "" ]
+	then
+		echo 0
+		return
+	fi
+	local waitTimeout=${2:-5}
+	
+	for (( i=0 ; i < $waitTimeout ; i++ )) 
+	do
+		if [ $( testForAnyPid $pidToWait ) != 0 ]
+		then
+			sleep 1
+		else
+			echo $i
+			return
+		fi
+	done
+	echo $i
+}
+
+function waitForAnyProcess() {
+	local processPid=$( getPid $1 $2 )
+	waitForAnyPid $processPid $3 >/dev/null 2>&1
+}
+
+function killNicely() {
+	local pidToKill=$1
+	local graceTimeout=${2:-5}
+	kill $pidToKill >/dev/null 2>&1
+	( sleep $graceTimeout ; kill -9 $pidToKill >/dev/null 2>&1 )&
+	local delayedKillPid=$!
+	waitForAnyPid $pidToKill $(( $graceTimeout + 1 )) >/dev/null 2>&1
+	kill $delayedKillPid >/dev/null 2>&1
+}
+
+# ------------------------------------------------------------------------------------
+# create/delete Alias
+# ------------------------------------------------------------------------------------
+function hotInterface() {
+#	netstat -rn | grep default | cut -c 65-
+	local result=$( netstat -rn | grep default | sed -E "1,1s/[ ]+/ /g" | cut -d\  -f 6 )
+	if [ $result = "ppp0" ]
+	then
+		result="lo0"
+	fi
+	echo $result
+}
+
+function createAlias() {
+	$IFCONFIG $( hotInterface ) $1 alias netmask 255.255.255.255
+}
+
+function deleteAlias() {
+#	echo "deleteAlias : $1" >>/tmp/deleteAlias.log
+
+	if [ "$1" != "" ]
+	then	
+		$IFCONFIG $( hotInterface ) $1 -alias
+	fi
+}
+
+# ------------------------------------------------------------------------------------
+# Add/Delete/Delete ALL machines
+# ------------------------------------------------------------------------------------
+function restartLookupd() {
+	if isTiger	
+	then
+		local lookupdPID=$(cat /var/run/lookupd.pid) 
+		if [ "$lookupdPID" = "" ]
+		then
+			# lookupd is NOT running 
+			/usr/sbin/lookupd >/dev/null 2>&1
+		elif [ "$( ps -axp $lookupdPID | wc -l )" == "2" ] 
+		then
+			# lookupd is running and lookupd.pid file is OK
+			kill -HUP $(cat /var/run/lookupd.pid) >/dev/null 2>&1
+		else
+			# stale lookupd.pid file
+			lookupPID=$( ps -ax -o pid,command | grep lookupd | grep -v grep | cut -c 1-5 )
+			if [ "$( ps -axp $lookupdPID | wc -l )" = "2" ] 
+			then 
+				# lookupd is running but with different pid
+				echo $lookupPID >/var/run/lookupd.pid			
+				kill -HUP $(cat /var/run/lookupd.pid) >/dev/null 2>&1
+			else
+				# lookupd is not running but with different pid
+				/usr/sbin/lookupd >/dev/null 2>&1
+			fi
+		fi
+	fi
+}
+
+function fixLookupOrder() {
+	if isTiger
+	then
+		local LOOKUP_ORDER="FF NI Cache DNS DS"
+		if [ "$( grep CreatedByAlmostVPN /etc/lookupd/hosts )" != "" ] # already exists
+		then
+			if  [ "$( grep "$LOOKUP_ORDER" /etc/lookupd/hosts )" != "" ] # already correct
+			then
+				return 0
+			fi
+		fi
+		
+		if [ -d /etc/lookupd ]
+		then
+			if [ -f /etc/lookupd/hosts ]
+			then
+				mv /etc/lookupd/hosts /etc/lookupd/hosts.original.before.almostvpn
+			fi
+		else
+			mkdir /etc/lookupd
+		fi
+		echo "LookupOrder $LOOKUP_ORDER" >/etc/lookupd/hosts
+		echo "# CreatedByAlmostVPN" >>/etc/lookupd/hosts
+
+		restartLookupd	
+	fi
+}
+
+function restoreLookupOrder() {
+	if isTiger
+	then
+		if [ "$( grep CreatedByAlmostVPN /etc/lookupd/hosts )" != "" ] # already restored
+		then
+			return 0;
+		fi
+		
+		if [ -f /etc/lookupd/hosts ]
+		then
+			rm -rf /etc/lookupd/hosts
+			if [ -f /etc/lookupd/hosts.original.before.almostvpn ]
+			then
+				mv /etc/lookupd/hosts.original.before.almostvpn /etc/lookupd/hosts
+			fi
+			restartLookupd	
+		fi
+	fi
+}
+
+function addMachineTiger() {
+	local name=$1
+	local address=$2
+	local isAlias=${3:-NO}
+	
+	case $address in
+		resolve:*)
+			local resolveName=$( echo "$address" | cut -d\:  -f 2 )
+			local resolveDefault=$( echo "$address" | cut -d\:  -f 3 )			
+			
+			local address=$( host $resolveName | grep address | head -1 | cut -d\  -f 4 )
+			if [ "$address" = "" ]
+			then
+				address=$resolveDefault
+			fi
+		;;
+	esac
+	
+	if [ "$isAlias" = "YES" ]
+	then
+		createAlias $address
+	fi
+	
+	/usr/bin/nicl . create /machines/$name ip_address $address
+	/usr/bin/nicl . create /machines/$name serves ../network
+	/usr/bin/nicl . create /machines/$name creator AlmostVPN
+	/usr/bin/nicl . create /machines/$name is_alias $isAlias
+
+	/usr/bin/nicl . create /machines/$name.local. ip_address $address
+	/usr/bin/nicl . create /machines/$name.local. serves ../network
+	/usr/bin/nicl . create /machines/$name.local. creator AlmostVPN
+#	/usr/bin/nicl . create /machines/$name.local. is_alias $isAlias
+}
+
+function deleteMachineTiger() {
+	local name=$1
+	local creator=$( /usr/bin/nicl . read /machines/$name | grep "creator:" | cut -d\  -f 2 )
+	
+	if [ "$creator" = "AlmostVPN" ]
+	then
+		local address=$( /usr/bin/nicl . read /machines/$name | grep "ip_address:" | cut -d\  -f 2 )
+		local isAlias=$( /usr/bin/nicl . read /machines/$name | grep "is_alias:" | cut -d\  -f 2 )
+		/usr/bin/nicl . delete /machines/$name
+		/usr/bin/nicl . delete /machines/$name.local.
+		if [ "$isAlias" = "YES" ]
+		then
+			deleteAlias $address
+		fi
+	fi
+}
+
+function deleteAllMachinesTiger() {
+	local allMachineNames=$( /usr/bin/nicl . search /machines 1 1 creator AlmostVPN | grep name | cut -d\  -f 2 )
+	for name in $allMachineNames
+	do
+		deleteMachine $name
+	done
+}
+
+function addMachine() {
+	local name=$1
+	local address=$2
+	local isAlias=${3:-NO}
+	
+	deleteMachine $name
+
+	if [ "$isAlias" = "YES" ]
+	then
+		createAlias $address
+		echo "$address $name # AVPN YES" >>/etc/hosts
+	else
+		echo "$address $name # AVPN " >>/etc/hosts
+	fi
+	
+}
+
+function deleteMachine() {
+	local name=$1
+	local record=$( grep "$name # AVPN" /etc/hosts )
+
+	if [ "$record" != "" ]
+	then
+		echo $record | while read address name dummyHash dummyAVPN isAlias
+		do
+			if [ "$isAlias" = "YES" ]
+			then
+				deleteAlias $address
+			fi			
+		done
+		local tmpHosts=$( mktemp -t avpn.hosts.XXXXXXXX )
+		grep -v "$name # AVPN" /etc/hosts >$tmpHosts
+		mv $tmpHosts /etc/hosts
+		chmod +r /etc/hosts
+	fi
+}
+
+function deleteAllMachines() {
+	for name in $( grep "# AVPN" /etc/hosts | cut -d\  -f 2 )
+	do
+		deleteMachin $name
+	done
+}
+# ------------------------------------------------------------------------------------
+# Mount SMB/AFP/...
+# ------------------------------------------------------------------------------------
+function umountDrive() {
+	$UMOUNT $1 &
+	local umountPid="$!"
+	if [ "$( waitForAnyPid $umountPid 15 )" = "15" ]
+	then
+		killNicely $umountPid
+	fi
+}
+
+function mountAFP() {
+	local address=$1
+	local port=$2
+	local user=$3
+	local path=$4
+
+	ls -1d /Volumes/* >/tmp/mountedVolumes.before
+
+	waitForAnyProcess afp_mount afp_mount 10 
+	
+	for (( index = 0; $index < 3 ; index=$index+1 )) 
+	do
+			
+		# open "afp://$user:$PW@$address:$port/$path"
+		echo "mount volume \"afp://$user@$address:$port/$path\" with password \"$PW\"" | $OSASCRIPT >/dev/null 2>&1
+		
+		waitForAnyProcess afp_mount afp_mount 30 
+		sleep 1
+	
+		ls -1d /Volumes/* >/tmp/mountedVolumes.after
+		local DRIVE=`diff -n /tmp/mountedVolumes.before  /tmp/mountedVolumes.after | tail -1`	
+		if [ "$DRIVE" != "" ]
+		then
+			rm -rf /tmp/mountedVolumes.before /tmp/mountedVolumes.after >/dev/null 2>&1
+			/usr/bin/open "$DRIVE"
+			echo "$DRIVE"
+			exit 0
+		fi
+		sleep 1
+	done
+	rm -rf /tmp/mountedVolumes.before /tmp/mountedVolumes.after >/dev/null 2>&1
+	exit 1	
+}
+
+function mountSMB() {
+	local address=$1
+	local port=$2
+	local user=$3
+	local path=$4
+
+	ls -1d /Volumes/* >/tmp/mountedVolumes.before
+
+	waitForAnyProcess mount_smbfs mount_smbfs 10 
+	
+	for (( index = 0; $index < 3 ; index=$index+1 )) 
+	do
+			
+		echo "mount volume \"smb://$user@$address/$path\" with password \"$PW\"" | $OSASCRIPT >/dev/null 2>&1
+		
+		waitForAnyProcess mount_smbfs mount_smbfs 30 
+		sleep 1
+	
+		ls -1d /Volumes/* >/tmp/mountedVolumes.after
+		local DRIVE=`diff -n /tmp/mountedVolumes.before  /tmp/mountedVolumes.after | tail -1`	
+		if [ "$DRIVE" != "" ]
+		then
+			rm -rf /tmp/mountedVolumes.before /tmp/mountedVolumes.after >/dev/null 2>&1
+			echo $DRIVE
+			/usr/bin/open "$DRIVE"
+			exit 0
+		fi
+		sleep 1
+	done
+	rm -rf /tmp/mountedVolumes.before /tmp/mountedVolumes.after >/dev/null 2>&1
+	exit 1	
+}
+
+function mountHTTP() {
+	local address=$1
+	local port=$2
+	local user=$3
+	local path=$4
+
+	ls -1d /Volumes/* >/tmp/mountedVolumes.before
+
+	waitForAnyProcess mount_webdav mount_webdav 10 
+	
+	for (( index = 0; $index < 3 ; index=$index+1 )) 
+	do
+			
+		echo "mount volume \"http://$user@$address:$port/$path\" with password \"$PW\"" | $OSASCRIPT >/dev/null 2>&1
+		
+		waitForAnyProcess mount_webdav mount_webdav 30 
+		sleep 1
+	
+		ls -1d /Volumes/* >/tmp/mountedVolumes.after
+		local DRIVE=`diff -n /tmp/mountedVolumes.before  /tmp/mountedVolumes.after | tail -1`	
+		if [ "$DRIVE" != "" ]
+		then
+			rm -rf /tmp/mountedVolumes.before /tmp/mountedVolumes.after >/dev/null 2>&1
+			echo $DRIVE
+			exit 0
+		fi
+		sleep 1
+	done
+	rm -rf /tmp/mountedVolumes.before /tmp/mountedVolumes.after >/dev/null 2>&1
+	exit 1	
+}
+
+# ------------------------------------------------------------------------------------
+# Printer/Fax
+# ------------------------------------------------------------------------------------
+
+function addPrinter() {
+	/usr/sbin/lpadmin -x "$1"
+	for (( r = 0; r < 5; r++ ))
+	do
+		/usr/sbin/lpadmin -p "$1" -v "$3" -D "$2" -E && return 0
+		sleep 1
+	done
+}
+
+function removePrinter() {
+	/usr/sbin/lpadmin -x "$1"
+}
+
+# ------------------------------------------------------------------------------------
+# IPFW
+# ------------------------------------------------------------------------------------
+# ipfw add 00099 fwd 127.0.0.1,5800 tcp from me to 127.0.0.1 dst-port 5900
+AVPN_RULE_SET=13
+AVPN_RULE_BASE="013"
+function nextRuleNumber() {
+	local nextCount=10
+	local nextNumber="${AVPN_RULE_BASE}${nextCount}"
+	for n in $( /sbin/ipfw list | cut -f 1 -d\  )
+	do
+		if [ $n != $nextNumber ]
+		then
+			echo $nextNumber
+			return 0
+		fi
+		nextCount=$(( $nextCount + 1 ))
+		nextNumber="${AVPN_RULE_BASE}${nextCount}"
+	done
+	echo $nextNumber
+	return 0
+}
+
+function addIPFWRule() {
+	local fromAddr=$1
+	local fromPort=$2
+	local toAddr=$3
+	local toPort=$4
+	
+	local rule="fwd $toAddr,$toPort ip from me to $fromAddr dst-port $fromPort"
+	
+	local ruleNumber=$( nextRuleNumber )
+	
+	/sbin/ipfw add $ruleNumber set $AVPN_RULE_SET $rule >/dev/null 2>&1
+	
+	echo $ruleNumber
+}
+
+function deleteIPFWRule() {
+	local ruleNumber=$1
+	/sbin/ipfw delete $ruleNumber
+}
+
+function deleteAllIPFWRules() {
+	/sbin/ipfw -q delete set $AVPN_RULE_SET
+}

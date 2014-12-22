@@ -1,0 +1,86 @@
+package com.leapingbytes.almostvpn.server.profile.item.impl;
+
+import com.leapingbytes.almostvpn.server.profile.Profile;
+import com.leapingbytes.almostvpn.server.profile.ProfileException;
+import com.leapingbytes.almostvpn.server.profile.item.BaseProfileItem;
+import com.leapingbytes.almostvpn.util.ResourceAllocator;
+
+public class AliasHostName extends BaseProfileItem {
+	
+	String			_name;
+	String  		_address;
+	boolean			_createAlias;
+	
+	boolean			_addressLocked = false;
+	boolean 		_addressAllocated = false;
+	
+	Script			_script;
+
+	public AliasHostName( String name, String address, boolean createAlias ) throws ProfileException {
+		_name = name;
+		_address = address;
+		_createAlias = createAlias;
+		
+		Profile.globalProfile().addItem( 
+				new Script( "fixLookupOrder", "restoreLookupOrder && deleteAllMachines", true )
+		);
+//		IProfileItem item = Profile.threadCurrentProfile().addItem( 
+//			new Script( "fixLookupOrder", "restoreLookupOrder && deleteAllMachines", true )
+//		);
+//		PrefixMarker.addPrefixItem( item );
+	}
+	
+	public String _title() {
+		return name() + "/" + address();
+	}
+	
+	public String name() {
+		return _name;
+	}
+	
+	public String address() {
+		if( ! _addressLocked ) {
+			if( _address == null ) {
+				_address = ResourceAllocator.allocateAddress();
+				_addressAllocated = true;
+			} else {
+				ResourceAllocator.lockAddress( _address );
+			}
+			_addressLocked = true;
+		}
+		return _address;
+	}
+
+	public void start() throws ProfileException {
+		if( isStartable()) {
+			startDone( "Creating Alias Host Name " + title());
+			_script = new Script(
+				"addMachine " + name() + " " + address() + " " + ( _createAlias ? "YES" : "NO" ),
+				"deleteMachine " + name() 
+			);
+			_script.start();
+		}
+	}
+
+	public void stop() throws ProfileException {
+		if( isStoppable()) {
+			_script.stop();
+			stopDone( "Alias Host Name deleted " + title());
+		}
+		if( _addressLocked ) {
+			ResourceAllocator.releaseAddress( _address );
+		}
+		if( _addressLocked && _addressAllocated ) {
+			_address = null;
+		}
+		_addressLocked = _addressAllocated = false;
+	}
+
+	public void dismiss() throws ProfileException {
+		super.dismiss();
+		if( _addressLocked ) {
+			ResourceAllocator.releaseAddress( _address );
+			_addressLocked = false;
+		}
+	}	
+}

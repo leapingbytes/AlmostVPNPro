@@ -1,0 +1,5 @@
+/System/Library/Frameworks/JavaVM.framework/Versions/1.5/Home/bin/java \
+	-agentpath:/Applications/NetBeans.app/Contents/Resources/NetBeans/profiler1/lib/deployed/jdk15/mac/libprofilerinterface.jnilib=/Applications/NetBeans.app/Contents/Resources/NetBeans/profiler1/lib,5140 \
+	-cp ./AlmostVPN.jar \
+	com.leapingbytes.almostvpn.server.ToolServer \
+	~/Library/Preferences/com.leapingbytes.AlmostVPNPRO.plist

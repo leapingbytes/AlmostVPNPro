@@ -1,0 +1,94 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeArchitecture = ppc;
+		activeBuildConfigurationName = Release;
+		activeTarget = 8DC2EF4F0486A6940098B216 /* LBTools4Leo */;
+		addToTargets = (
+			8DC2EF4F0486A6940098B216 /* LBTools4Leo */,
+		);
+		codeSenseManager = 50E440810D5CD6D400B4EDF8 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					727,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 224188110;
+			PBXWorkspaceStateSaveDate = 224188110;
+		};
+		perUserProjectItems = {
+			50E441AA0D5CDF6200B4EDF8 /* PBXBookmark */ = 50E441AA0D5CDF6200B4EDF8 /* PBXBookmark */;
+			50E441AB0D5CDF6200B4EDF8 /* PBXTextBookmark */ = 50E441AB0D5CDF6200B4EDF8 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 50E440800D5CD6D400B4EDF8 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	50E440800D5CD6D400B4EDF8 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	50E440810D5CD6D400B4EDF8 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	50E440DF0D5CD72100B4EDF8 /* MoreUNIX.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1989, 8220}}";
+			sepNavSelRange = "{4092, 0}";
+			sepNavVisRange = "{3670, 846}";
+		};
+	};
+	50E440ED0D5CD72100B4EDF8 /* AuthorizationHelper.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1058, 7770}}";
+			sepNavSelRange = "{8569, 48}";
+			sepNavVisRange = "{7979, 1429}";
+		};
+	};
+	50E440EE0D5CD72100B4EDF8 /* execWithPriv.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {905, 599}}";
+			sepNavSelRange = "{0, 26}";
+			sepNavVisRange = "{0, 1159}";
+		};
+	};
+	50E441AA0D5CDF6200B4EDF8 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 50E440DF0D5CD72100B4EDF8 /* MoreUNIX.m */;
+	};
+	50E441AB0D5CDF6200B4EDF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 50E440DF0D5CD72100B4EDF8 /* MoreUNIX.m */;
+		name = "MoreUNIX.m: 81";
+		rLen = 0;
+		rLoc = 4092;
+		rType = 0;
+		vrLen = 846;
+		vrLoc = 3670;
+	};
+	8DC2EF4F0486A6940098B216 /* LBTools4Leo */ = {
+		activeExec = 0;
+	};
+}

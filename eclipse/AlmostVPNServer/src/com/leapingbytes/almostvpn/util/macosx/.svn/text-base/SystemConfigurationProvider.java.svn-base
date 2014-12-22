@@ -1,0 +1,66 @@
+package com.leapingbytes.almostvpn.util.macosx;
+
+import java.net.URL;
+
+import com.leapingbytes.almostvpn.util.ProxyConfigurationProvider;
+
+public class SystemConfigurationProvider extends ProxyConfigurationProvider {
+	public SystemConfigurationProvider() {
+		ClassLoader ctxClassLoader = Thread.currentThread().getContextClassLoader();
+        String mappedLibName = System.mapLibraryName( "AlmostVPNToolJNI.macosx" );
+        URL libraryURL = ctxClassLoader.getResource( mappedLibName );
+        String path = libraryURL.getFile();
+        Runtime.getRuntime().load( path );
+	}
+
+	public boolean proxyEnabled( String proxyName ) {
+		return "1".equals( getConfigurationObject( "State:/Network/Global/Proxies", proxyName + "Enable" ));
+	}
+	
+	public String proxyHost( String proxyName ) {
+		return getConfigurationObject( "State:/Network/Global/Proxies", proxyName + "Proxy" );		
+	}
+	public int proxyPort( String proxyName ) {
+		String port = getConfigurationObject( "State:/Network/Global/Proxies", proxyName + "Port" );
+		return port == null ? 0 : Integer.parseInt( port );		
+	}
+
+	public boolean proxyAutoConfigEnabled() {
+		return "1".equals( getConfigurationObject( "State:/Network/Global/Proxies", "ProxyAutoConfigEnable" ));
+	}
+	public String proxyAutoConfigURL() {
+		return getConfigurationObject( "State:/Network/Global/Proxies", "ProxyAutoConfigURLString" );
+	}
+	
+	public boolean proxyAutoDiscoveryEnabled() {
+		return "1".equals( getConfigurationObject( "State:/Network/Global/Proxies", "ProxyAutoDiscoveryEnable" ));
+	}
+	
+	public String findProxyAutoConfigURL() {
+		String result = super.findProxyAutoConfigURL();
+		if( result == null ) {
+			result = getDHCPOption( 252 );
+			
+			result = result == null ? result : this.testWpadURL( result );
+		}
+		
+		return result;
+	}
+	
+	private native String getConfigurationObject( String domain, String object );
+	
+	public native void setProxyEnabled( String proxyName, boolean onOff );
+	public native void setProxyHost( String proxyName, String hostName );
+	public native void setProxyPort( String proxyName, int port );
+	
+	private native String getDHCPOption( int option );
+	
+	public static void main( String[] args ) {
+		SystemConfigurationProvider p = new SystemConfigurationProvider();
+		System.out.println( "SOCKSEnable SOCKSProxy:SOCKSPort = " + p.proxyEnabled( "SOCKS" ) + " " + p.proxyHost( "SOCKS" ) + ":" + p.proxyPort( "SOCKS"));
+		System.out.println( "HTTPEnable HTTPProxy:HTTPPort = " + p.proxyEnabled( "HTTP" ) + " " + p.proxyHost( "HTTP" ) + ":" + p.proxyPort( "HTTP"));
+		System.out.println( "HTTPEnable HTTPProxy:HTTPSPort = " + p.proxyEnabled( "HTTPS" ) + " " + p.proxyHost( "HTTPS" ) + ":" + p.proxyPort( "HTTPS"));
+		System.out.println( "ProxyAutoConfigURLString = " + p.proxyAutoConfigEnabled() + " " + p.proxyAutoConfigURL());
+		System.out.println( "ProxyAutoDiscoveryEnable = " + p.findProxyAutoConfigURL());		
+	}
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/slf4j-1.0.2/docs/api/org/slf4j/spi/class-use"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="MarkerFactoryBinder.html"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="502868b3fd2fc0f3dfe2f809e60b55c1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LoggerFactoryBinder.html"
+   text-time="2006-09-01T03:01:51.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ba23f5e0eabefd844ebb3365e80006d3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:51.000000Z"/>
+</wc-entries>

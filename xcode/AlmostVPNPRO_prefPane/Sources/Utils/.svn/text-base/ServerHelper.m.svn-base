@@ -1,0 +1,568 @@
+//
+//  ServerHelper.m
+//  AlmostVPNPRO_prefPane
+//
+//  Created by andrei tchijov on 3/14/06.
+//  Copyright 2006 Leaping Bytes, LLC. All rights reserved.
+//
+#import <Foundation/NSException.h>
+#import "ServerHelper.h"
+
+#import "AlmostVPNModel.h"
+#import "LBToolbox/LBToolbox.h"
+
+#import "PathLocator.h"
+#import "ServerMonitor.h"
+
+#import "/Users/atchijov/Work/LeapingBytes/AlmostVPNPRO/xcode/AlmostVPNServer.starter/almostvpn_jar_md5.h"
+
+@interface ServerHelper(Private)
++ (NSArray*) sendCommandWithParams: (NSMutableDictionary*) params;
++ (NSArray*) sendCommandWithParams: (NSMutableDictionary*) params needToStartServer: (BOOL) startServer;
++ (NSString*) getResponseToCommandWithParams:(NSMutableDictionary*) params needToStartServer: (BOOL) startServer;
+@end
+
+static BOOL				_serverIsRunning = NO;
+static NSString* 		_avpnServerPath = NULL;
+
+
+@implementation ServerHelper
++ (void) initialize {
+	[[NSURLCache sharedURLCache] removeAllCachedResponses];
+	[[NSURLCache sharedURLCache] setDiskCapacity:0];
+}
+
++ (NSString*) avpnServerPath {
+	[ ServerHelper setupServer ];
+	return _avpnServerPath;
+}
+
++ (void) sendSynchroEvent: (NSString*) event {
+	[ self sendSynchroEvent: event startServer: NO ];
+}
+
++ (void) sendSynchroEvent: (NSString*) event startServer: (BOOL) yesNo {
+	[ self sendCommandWithParams:
+		[ NSMutableDictionary dictionaryWithObjectsAndKeys: 
+			@"event", @"action",
+			event, @"event",
+			[ NSNumber numberWithBool: yesNo ], @"start-server",
+			nil
+		]
+	];
+}
+
++ (void) sendEvent: (NSString*) event {
+	[ self sendEvent: event startServer: NO ];
+}
+
++ (void) sendEvent: (NSString*) event startServer: (BOOL) yesNo {
+	[ NSThread 
+		detachNewThreadSelector: @selector(sendCommandWithParams:) 
+		toTarget: self 
+		withObject: 
+			[ NSMutableDictionary dictionaryWithObjectsAndKeys: 
+				@"event", @"action",
+				event, @"event",
+				[ NSNumber numberWithBool: yesNo ], @"start-server",
+				nil
+			]
+	];
+}
+
++ (void) startProfile: (NSString*) profileName {
+	[ NSThread 
+		detachNewThreadSelector: @selector(sendCommandWithParams:) 
+		toTarget: self 
+		withObject: 
+			[ NSMutableDictionary dictionaryWithObjectsAndKeys: 
+				@"start", @"action",
+				profileName, @"profile",
+				nil
+			]
+	];
+}
+
++ (void) stopProfile: (NSString*) profileName {
+	[ NSThread 
+		detachNewThreadSelector: @selector(sendCommandWithParams:) 
+		toTarget: self 
+		withObject: 
+			[ NSMutableDictionary dictionaryWithObjectsAndKeys: 
+				@"stop", @"action",
+				profileName, @"profile",
+				nil
+			]
+	];
+}
+
++ (void) pauseProfile: (NSString*) profileName {
+	[ NSThread 
+		detachNewThreadSelector: @selector(sendCommandWithParams:) 
+		toTarget: self 
+		withObject: 
+			[ NSMutableDictionary dictionaryWithObjectsAndKeys: 
+				@"pause", @"action",
+				profileName, @"profile",
+				nil
+			]
+	];
+}
+
++ (void) resumeProfile: (NSString*) profileName {
+	[ NSThread 
+		detachNewThreadSelector: @selector(sendCommandWithParams:) 
+		toTarget: self 
+		withObject: 
+			[ NSMutableDictionary dictionaryWithObjectsAndKeys: 
+				@"resume", @"action",
+				profileName, @"profile",
+				nil
+			]
+	];
+}
+
++ (NSArray*) status {
+	return [ self sendCommandWithParams: 
+		[ NSMutableDictionary dictionaryWithObjectsAndKeys: 
+			@"status", @"action",
+			@"txt", @"report-format",
+			nil
+		]
+	];
+}
+
++ (void) stopServer {
+	[ self sendCommandWithParams: 
+		[ NSMutableDictionary dictionaryWithObjectsAndKeys: 
+			@"exit", @"action",
+			nil
+		]
+	];
+}
+
++ (BOOL) serverIsRunning {
+	return _serverIsRunning;
+}
+
++ (void) saveSecret: (NSString*) secret withKey: (NSString*) key {
+	if( secret == nil ) {
+		return;
+	}
+	[ ServerHelper getResponseToCommandWithParams: 
+		[ NSMutableDictionary dictionaryWithObjectsAndKeys: 
+			@"save-secret", @"action",
+			secret, @"value",
+			key, @"key",
+			nil
+		]
+		needToStartServer: YES 
+	];	
+}
+
++ (BOOL) checkSecretWithKey: (NSString*) key {
+	NSString* result = [ ServerHelper getResponseToCommandWithParams: 
+		[ NSMutableDictionary dictionaryWithObjectsAndKeys: 
+			@"check-secret", @"action",
+			key, @"key",
+			nil
+		]
+		needToStartServer: YES 
+	];	
+	
+	return [ result rangeOfString: @"YES" ].location == 0;
+}
+
++ (void) forgetSecretWithKey: (NSString*) key {
+	[ ServerHelper getResponseToCommandWithParams: 
+		[ NSMutableDictionary dictionaryWithObjectsAndKeys: 
+			@"forget-secret", @"action",
+			key, @"key",
+			nil
+		]
+		needToStartServer: YES 
+	];	
+}
+
++ (NSString*) saveRegistrationKey: (NSString*) registration forUser: (NSString*) name withEMail: (NSString*) email {
+	NSString* result = [ ServerHelper getResponseToCommandWithParams: 
+		[ NSMutableDictionary dictionaryWithObjectsAndKeys: 
+			@"save-registration", @"action",
+			registration, @"registration",
+			name, @"name",
+			email, @"email",
+			nil
+		]
+		needToStartServer: YES 
+	];	
+	
+	return result;
+}
+
++ (NSString*) verifyRegistrationForUser: (NSString*) name withEMail: (NSString*) email {
+	NSString* result = [ ServerHelper getResponseToCommandWithParams: 
+		[ NSMutableDictionary dictionaryWithObjectsAndKeys: 
+			@"verify-registration", @"action",
+			name, @"name",
+			email, @"email",
+			nil
+		]
+		needToStartServer: YES 
+	];	
+	
+	return result;
+}
+
++ (NSString*) forgetRegistration {
+	NSString* result = [ ServerHelper getResponseToCommandWithParams: 
+		[ NSMutableDictionary dictionaryWithObjectsAndKeys: 
+			@"forget-registration", @"action",
+			nil
+		]
+		needToStartServer: YES 
+	];	
+	
+	return result;
+}
+
++ (NSString*) testLocation: (NSString*) uuid  {
+	NSString* result = [ ServerHelper getResponseToCommandWithParams: 
+		[ NSMutableDictionary dictionaryWithObjectsAndKeys: 
+			@"test-location", @"action",
+			uuid, @"uuid",
+			nil
+		]
+		needToStartServer: YES 
+	];	
+	
+	return result;
+}
+
+#pragma mark ServerHelper(Private)
++ (NSString*) guessAVPNServerPath {
+	NSString* guess = [[ PathLocator applicationSupportPathForFile: @"AlmostVPNServer" ] copy ];
+	if( [[ NSFileManager defaultManager ] fileExistsAtPath: guess ] ) {
+		return guess;
+	}
+	guess = [[ NSString stringWithFormat: @"/Library/Application Support/AlmostVPNPRO/AlmostVPNServer" ] copy ];
+	if( [[ NSFileManager defaultManager ] fileExistsAtPath: guess ] ) {
+		return guess;
+	}
+	return guess;
+}
+
++ (void) setupServer {
+//	@try {
+	BOOL needToReinstallService = NO;
+	
+	if( _avpnServerPath == nil ) {
+		_avpnServerPath = [ ServerHelper guessAVPNServerPath ];
+	}
+	if( _avpnServerPath != nil ) {
+		NSDictionary* toolFileAttributes = [
+			[ NSFileManager defaultManager ] 
+				fileAttributesAtPath: (NSString*)_avpnServerPath 
+						traverseLink: NO 
+		];
+		NSDictionary* prototypeFileAttributes = [
+			[ NSFileManager defaultManager ] 
+				fileAttributesAtPath: [ PathLocator pathForExecutable: @"AlmostVPNServer" ] 
+						traverseLink: NO 
+		];
+		
+		if( prototypeFileAttributes == nil ) {
+			NSRunCriticalAlertPanel( 
+				@"Fatal Problem", 
+				[ NSString stringWithFormat: @"You AlmostVPN Instalation is corrupted.\n"
+				 "Can not find AlmostVPNServer.\n"
+				 "  ( %@ )\n"
+				 "Please reinstall AlmostVPN", [ PathLocator pathForExecutable: @"AlmostVPNServer" ]  ], 
+				 @"OK", nil, nil 
+			);
+		
+			NSLog( @"ServerHelper.setupServer : FATAL ERROR : Can not locate AlmostVPNServer\n" );
+			exit(1);
+		}
+		
+		if( toolFileAttributes != nil ) {
+			if([[ toolFileAttributes fileModificationDate ] isEqual: [ prototypeFileAttributes fileModificationDate ]] ) {	
+				// if file is own by root
+				if ( [[ toolFileAttributes fileOwnerAccountID ] intValue ] == 0 ) {
+					// and has set-uid mod
+					if( [ toolFileAttributes filePosixPermissions ] == 04555 ) {
+						// we do not have to do anything
+						return;
+					}
+				}
+			}
+		}
+		
+		if( toolFileAttributes != nil ) { // There is OLD tool need to try to stop it.
+			[ self stopService: _avpnServerPath ];
+			[ self uninstallService: _avpnServerPath ];
+			needToReinstallService = YES;
+		}
+	}
+	
+	OSStatus 			err;
+	NSDictionary*		response = nil;
+	AuthorizationRef	auth;
+	
+	_avpnServerPath     = NULL;
+	response			= NULL;
+	auth				= NULL;
+
+	MoreUNIXIgnoreSIGPIPE();
+	
+    err = AuthorizationCreate(NULL, kAuthorizationEmptyEnvironment, kAuthorizationFlagDefaults, &auth);
+
+	NSBundle* pluginBundle = [ NSBundle bundleWithIdentifier: @"com.leapingbytes.AlmostVPNPRO" ];
+	
+	CFURLRef tool = nil;
+	// Try With ~/Library/Application Support first
+	if( ! [ PathLocator prefPaneInstalledForAll ] ) {
+		err = MoreSecCopyHelperToolURLAndCheckBundled(
+			(CFBundleRef)pluginBundle, 
+			CFSTR("AlmostVPNServer"), 
+			kUserDomain,
+			kApplicationSupportFolderType, 
+			CFSTR("AlmostVPNPRO"), 
+			CFSTR("AlmostVPNServer"), 
+			&tool
+		);	
+	} 
+	
+	if( [ PathLocator prefPaneInstalledForAll ]  || ( err != noErr )) {
+		if( err != noErr ) {
+			NSLog( @"[ ServerHelper +setupServer ] : err = %d\n", err );
+			NSRunCriticalAlertPanel( 
+				@"Problem", 
+				@"Can not install AlmostVPNServer in\n"
+				 "  ~/Library/Application Support/AlmostVPNPRO\n"
+				 "Will try to install in\n"
+				 "  /Library/Application Support/AlmostVPNPRO", 
+				 @"OK", nil, nil 
+			);
+		}
+		err = MoreSecCopyHelperToolURLAndCheckBundled(
+			(CFBundleRef)pluginBundle, 
+			CFSTR("AlmostVPNServer"), 
+			kLocalDomain,
+			kApplicationSupportFolderType, 
+			CFSTR("AlmostVPNPRO"), 
+			CFSTR("AlmostVPNServer"), 
+			&tool
+		);	
+	}
+	
+	if( err != noErr ) {
+		NSRunCriticalAlertPanel( 
+			@"Fatal Problem", 
+			@"Fail to install AlmostVPNServer.\n\n"
+			 "Please contact Leaping Bytes, LLC\n\n"
+			 "e-mail: support@leapingbytes.com\n"
+			 "   web: http://www.leapingbytes.com/almostvpn", 
+			 @"OK", nil, nil 
+		);
+		_avpnServerPath = nil;
+		return;
+	}
+	
+	_avpnServerPath = [[[[ (NSURL*)tool description ] substringFromIndex: [ @"file://127.0.0.1" length ]] 
+		stringByReplacingPercentEscapesUsingEncoding: NSUTF8StringEncoding ] copy ];
+	
+	NSLog( @"ServerHelper.setupServer : AlmostVPNServer = %@\n", _avpnServerPath );
+
+	NSDictionary* request = [ NSDictionary dictionaryWithObject: @"check-suid" forKey: @"action" ];
+	err = MoreSecExecuteRequestInHelperTool(tool, auth, (CFDictionaryRef)request, (CFDictionaryRef*)&response);
+
+	if( needToReinstallService ) {
+		[ self serviceCommand: @"--installService"  ];
+	}
+	if( err != 0 ) {
+		NSLog( @"ServerHelper.setupServer : Error %d\n", err );
+	} 
+//	} @catch( NSException* e ) {
+//		NSRunAlertPanel( @"Problems with AlmostVPNTool. Will Exit.", [ e description ], @"OK", nil, nil );				
+//		@throw e;
+//	}
+}
+
++ (void) startServer {
+	@synchronized ( self ) {
+		if( _serverIsRunning ) {
+			return;
+		}
+		[ self setupServer ];
+		
+		if( _avpnServerPath == NULL ) {
+			NSLog( @"ServerHelper.startServer : _avpnServerPath == NULL\n" );
+			return;
+		}
+		[ self startService ];
+//		NSTask* task = [[ NSTask alloc ] init ];
+//		[ task setCurrentDirectoryPath: [ PathLocator resourcePath ]];
+//
+//		NSArray* arguments;
+//		
+//		[ task setLaunchPath: [ ServerHelper avpnServerPath ]]; 
+//		arguments = [ NSArray arrayWithObjects: 
+//			@"--startJVM",
+//			[ PathLocator preferencesPath ],
+//			nil
+//		];
+//		[ task setArguments: arguments ];
+//		[ task launch ];	
+	}
+}
++ (NSArray*) sendCommandWithParams: (NSMutableDictionary*) params {
+	return [ self sendCommandWithParams: params needToStartServer: NO ];
+}
+
+static int _actionCount = 0;
++ (NSString*) getResponseToCommandWithParams:(NSMutableDictionary*) params needToStartServer: (BOOL) startServer {
+	NSArray* allKeys = [ params allKeys ];
+	NSMutableString* query = [ NSMutableString string ];
+	
+	for( int i = 0; i < [ allKeys count ]; i ++ ) {
+		NSString* key = [ allKeys objectAtIndex: i ];
+		NSString* value = [ params objectForKey: key ];
+		if( i != 0 ) {
+			[ query appendString: @"&" ];
+		}
+		[ query appendFormat: @"%@=%@", key, [ value stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding  ]];
+	}
+	
+	NSString* fullURL = [ NSString stringWithFormat: @"http://127.0.0.1:1313/almostvpn/control/do%d?%@", _actionCount++, query ];
+	NSURL* serverURL = [[ NSURL URLWithString: fullURL ] retain ];	
+	
+	NSError* error;
+	NSString* string = [ NSString stringWithContentsOfURL: serverURL ];
+	if(( [ string length ] == 0 ) && startServer ) {
+		[ self startServer ];
+		for( int i = 0; i < 5 && [ string length ] == 0; i++ ) {
+			string = [ NSString stringWithContentsOfURL: serverURL encoding: NSUTF8StringEncoding error: &error ];
+			if( [ string length ] == 0 ) {
+				[[ NSRunLoop currentRunLoop ] runUntilDate: [ NSDate dateWithTimeIntervalSinceNow: 1.0 ]];
+				[ serverURL release ];
+				serverURL = [[ NSURL URLWithString: 
+					[ NSString stringWithFormat: @"http://127.0.0.1:1313/almostvpn/control/do%d?%@", _actionCount++, query ] 
+				] retain ];
+			}
+		}
+		[ serverURL release ];
+		
+	} 
+	
+	if( [ string length ] == 0 ) {
+		[ self setServerIsRunning: NO ];
+	} else {
+		[ self setServerIsRunning: YES ];
+	}
+	return string;
+}
+
++ (NSArray*) sendCommandWithParams: (NSMutableDictionary*) params needToStartServer: (BOOL) startServer {
+	NSAutoreleasePool* poll = [[ NSAutoreleasePool alloc ] init ];
+
+	startServer = startServer || [[ params objectForKey: @"start-server" ] boolValue ];
+	[ params removeObjectForKey: @"start-server" ];
+	NSString* string = [ ServerHelper getResponseToCommandWithParams: params needToStartServer: startServer ];	
+	NSMutableArray* result = [ NSMutableArray array ];
+	if( [ string length ] != 0 ) {
+		NSArray* lines =  [ string componentsSeparatedByString: @"\n" ];
+		NSArray* keys = [[ lines objectAtIndex: 0 ] componentsSeparatedByString: @"|" ];
+
+		for( int i = 1; i < [ lines count ]; i++ ) {
+			NSArray* values = [[ lines objectAtIndex: i ] componentsSeparatedByString: @"|" ];
+			NSMutableDictionary* dictionary = [ NSMutableDictionary dictionary ];
+			for( int j = 0; j < [ values count ]; j++ ) {
+				[ dictionary setObject: [ values objectAtIndex: j ] forKey: [ keys objectAtIndex: j ]];
+			}
+			[ result addObject: dictionary ];
+		}
+	}
+	[ poll release ];
+
+	return result;
+}
+
++ (void) setServerIsRunning: (BOOL) v  {
+	_serverIsRunning = v;
+	if( v ) {
+		[ ServerMonitor monitor: @"127.0.0.1" ];
+	}
+	[[ NSNotificationCenter defaultCenter ] postNotificationName: @"ServerStateEvent" object: [ NSNumber numberWithBool: v ]];		
+}
+
+#pragma mark Service Control
++ (void) serviceCommand: (NSString*) action {
+	NSTask* task = [[ NSTask alloc ] init ];
+	[ task setLaunchPath: [ ServerHelper avpnServerPath ]];
+	[ task setCurrentDirectoryPath: [ PathLocator installedResourcePath ]];
+	NSArray* args = [ NSArray arrayWithObjects: 
+			action,
+			NSUserName(),
+			[ PathLocator resourcePath ],
+			[ PathLocator applicationSupportPath ],
+			[ PathLocator preferencesPath ],			
+			nil
+	];
+	[ task setArguments: args ];
+	[ task launch ];
+	[ task waitUntilExit ];
+}
+
++ (void) startService {
+	[ self serviceCommand: @"--startService" ];
+}
+
++ (void) stopService {
+	[ self serviceCommand: @"--stopService" ];
+}
++ (void) stopService: (NSString*) avpnServerPath {
+	NSTask* task = [[ NSTask alloc ] init ];
+	[ task setLaunchPath: avpnServerPath ];
+	[ task setCurrentDirectoryPath: [ PathLocator installedResourcePath ]];
+	[ task setArguments: [ NSArray arrayWithObjects: 
+			@"--stopService",
+			NSUserName(),
+			[ PathLocator resourcePath ],
+			[ PathLocator applicationSupportPath ],
+			[ PathLocator preferencesPath ],			
+			nil
+	]];
+	[ task launch ];
+	[ task waitUntilExit ];
+}
+
++ (void) restartService {
+	[ self serviceCommand: @"--restartService"  ];
+}
+
++ (void) installService {
+	[ self setupServer ];
+	[ self serviceCommand: @"--installService"  ];
+}
+
++ (void) uninstallService {
+	[ self serviceCommand: @"--uninstallService"  ];
+}
++ (void) uninstallService: (NSString*) avpnServerPath {
+	NSTask* task = [[ NSTask alloc ] init ];
+	[ task setLaunchPath: avpnServerPath ];
+	[ task setCurrentDirectoryPath: [ PathLocator installedResourcePath ]];
+	[ task setArguments: [ NSArray arrayWithObjects: 
+			@"--stopService",
+			NSUserName(),
+			[ PathLocator resourcePath ],
+			[ PathLocator applicationSupportPath ],
+			[ PathLocator preferencesPath ],			
+			nil
+	]];
+	[ task launch ];
+	[ task waitUntilExit ];
+}
+
+
+@end

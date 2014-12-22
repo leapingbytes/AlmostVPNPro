@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="133"
+   name=""
+   committed-date="2006-10-13T14:13:15.955217Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Sources/AlmostVPN.widget/images"
+   last-author="atchijov"
+   kind="dir"
+   revision="133"/>
+<entry
+   committed-rev="133"
+   name="status-yellow.png"
+   text-time="2006-10-11T17:44:25.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="1b33eadec5f2de78aadbf3b8575d8e5b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:50.000000Z"/>
+<entry
+   committed-rev="133"
+   name="pause.png"
+   text-time="2006-10-11T17:40:36.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="14b6564bda98f25ee4ae98581db218f1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:49.000000Z"/>
+<entry
+   committed-rev="133"
+   name="start.png"
+   text-time="2006-10-11T17:40:18.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="b31e67910e10c62708642fe4158f7b99"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:50.000000Z"/>
+<entry
+   committed-rev="133"
+   name="green.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="3a579a42a79ae24507de8c1bfcb8677d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:49.000000Z"/>
+<entry
+   committed-rev="133"
+   name="status-green.png"
+   text-time="2006-10-11T17:43:47.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="9d2bb383a4ef92d6fbaba1f87f4e99a5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:50.000000Z"/>
+<entry
+   committed-rev="133"
+   name="faceplate.png"
+   text-time="2006-10-11T17:39:44.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="8c0e737d7c2c67c13589fed66dd2df2e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:49.000000Z"/>
+<entry
+   committed-rev="133"
+   name="restart.png"
+   text-time="2006-10-11T17:40:04.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="348ec4e3e489932bd4264564faac0eca"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:49.000000Z"/>
+<entry
+   committed-rev="133"
+   name="stop.png"
+   text-time="2006-10-11T17:40:25.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="fc094c56dc555b2cb4815d7c9360b57e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:50.000000Z"/>
+<entry
+   committed-rev="133"
+   name="grey.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="ad66ae25af5268eaa99bc886b1acc4f4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:49.000000Z"/>
+<entry
+   committed-rev="133"
+   name="blank.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="4ba5ef636ba224b65de0f1be848a4275"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:49.000000Z"/>
+<entry
+   committed-rev="133"
+   name="status-grey.png"
+   text-time="2006-10-11T17:45:35.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="42451868196448ba3e8fcaab905d5165"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:50.000000Z"/>
+<entry
+   committed-rev="133"
+   name="red.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="34f78ce8d9a518be69bb51f9a3fb030c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:49.000000Z"/>
+<entry
+   committed-rev="133"
+   name="status-red.png"
+   text-time="2006-10-11T17:41:39.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="25e18ecdc779552a986efd7bd13e4fd6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:50.000000Z"/>
+<entry
+   committed-rev="133"
+   name="yellow.png"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="85b7cb923c132274ee0f47b9534f131c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:50.000000Z"/>
+</wc-entries>

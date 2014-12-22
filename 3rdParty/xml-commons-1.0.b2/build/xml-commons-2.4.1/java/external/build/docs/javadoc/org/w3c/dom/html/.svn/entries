@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-2.4.1/java/external/build/docs/javadoc/org/w3c/dom/html"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="HTMLLabelElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="73bbbc067fa958f92c81d9eb05671be8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="43c242aa41e5d7e1fc2b6ac5530eee5a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLOptGroupElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bee6a324cfa008708bdc6884edaf41ce"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLTitleElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="8ad8b0e37ca24aebc506c261cb296302"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLImageElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b67a198e630704e08089d2fa98be983c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLTableColElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6a0e168241735c5285c9f22024ab2909"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLPreElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="23a72b170edd59c4cc4ca0f8af8fc81e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLTableCellElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d10c513eb477a559003bd79d8c0fa945"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-tree.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7d50dcf79a10f83b8e772fe7db16aa24"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLLinkElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ed8a4278c204f4a92f2a7c773ee2c022"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLBodyElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="97ab2db9864267b28498a267122a0302"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLQuoteElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b1ff54840a0a3e3d75d2a6d56b79a9da"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLInputElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7c0abdc0540f48648c89f64b9c5c585e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLFieldSetElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="aa4b6aff7ad0b24cc19d00dea7b67b48"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLParamElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="54ea2fdc884438c69ac76b025993c312"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLHeadElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7624fcb7215687fa94a2a5fe0a48c4bb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLBRElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="9821e5a0747f463b994a4afb3c094bd6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLFormElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7e1d3b8fb938ce28a77f21a2cfd64129"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLIsIndexElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a8cc0408aa9bd2860c333ca37905aed3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLScriptElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e619bcea5b7d60f0c8a3640145b10369"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLDocument.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="08c939c9f6ac46d2658a72b9308db6f0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLDirectoryElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b8b3bfd261bde5a46df3344ba1a64760"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLLIElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="de9dc9e474098e028eb55f2ce68c0f9e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLTableCaptionElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ff1f47b372e19f32fd447948f1e659ce"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLObjectElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d6a85e958d3450c2e59d13327d6d10b3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLFontElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="669515d57c643881be3977adb062b7fc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLHRElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a5a6294e31f030a20cd6c74af64fae05"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLBaseElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="67fc16b5328de32f6046d66b86303f57"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLButtonElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0ef342c3e5f720d108fe49f36b041b9a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLTableSectionElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d15cde1fa70661c388623553921fdf8a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLMapElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3743089fbd4729a6afc32f5310f0ef1a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLTextAreaElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ca179370aa4ef7658be323b532402130"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLDListElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2b1d1e14fd07f4dd09667b084207b281"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLModElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="396db058e6a93b34bf9e08d5b2b339c6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLSelectElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2a258fd19ca788d91177c350f2cd1f69"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLTableRowElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0dc639f14edbbdb7b8af6abe6b8cbc5b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLCollection.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d92ad3b8a1da1ef360cf0cfbd8d1ceb6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLDivElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3f3ce84695a42e4865aa881adc5ab4de"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7bf209123c02ebf31082c54568420416"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLAppletElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bf399e6f880043d1c4f0f0b1acd708b0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLMetaElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="82bd0c1e59b2e1049d2f8f38a4710f9b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLTableElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="97d96f2c32fb7da67db1808b4eecf06f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2e33e4e211f152a00767b212b34060b5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLFrameElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="79e02904a4dc39c1fb3c076e1d5949ad"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLOListElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7a35755c015630f1237278b91bb6fd1a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLLegendElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="482c7e7c42e1fbd173ce68228b822121"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLHeadingElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b4913a4e44d6a101d4b2468b574ea2c3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLStyleElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e0affc247420f3d1a781a9c9d21edc6c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLUListElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5d2ffad96a758f78f9d9860c3c623e0a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLBaseFontElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="44e9710c3c7e0f90c84572e353d19c21"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLIFrameElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="75d510086c7b82c9d303d7a26c95e36e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLHtmlElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f7a24f54b409670a4f9e773cdb596c43"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLMenuElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4c1929db4a6a158e8ef079b9d623846c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLParagraphElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="be91782c5e663d5a83ef11642c75d58d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLFrameSetElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a1239a1cc5facff2c5f7ba79c9270fd5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLAreaElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ad3c910c3412812311b5601c2da8c1c5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLOptionElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e8c0ac517dd9c448ca5a6bbceaf4534a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+<entry
+   committed-rev="106"
+   name="HTMLAnchorElement.html"
+   text-time="2006-09-01T03:01:26.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="3386595536361eb34d20a72a15e04da9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:26.000000Z"/>
+</wc-entries>

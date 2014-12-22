@@ -1,0 +1,158 @@
+//
+//  AlmostVPNObject.h
+//  AlmostVPNPRO_model
+//
+//  Created by andrei tchijov on 11/4/05.
+//  Copyright 2005 Leaping Bytes, LLC. All rights reserved.
+//
+
+#import <Cocoa/Cocoa.h>
+
+#define _ALMOSTVPN_SET_VALUE_FOR_KEY_NOTIFICATION_ @"AlmostVPN.setValueForKey"
+
+#define _UUID_KEY_			@"uuid"
+#define _NAME_KEY_			@"name"
+
+@protocol AlmostVPNObjectDelegate;
+@protocol AlmostVPNSecureStorageProvider;
+
+@interface AlmostVPNObject : NSMutableDictionary {
+	NSMutableDictionary*		_embeddedDictionary;
+	
+	int							_observerCount;
+	
+	BOOL						_delegationInProgress;
+}
++ (AlmostVPNObject*) newObjectOfClass: (Class) aClass withUUID: (NSString*) uuid;
++ (void) reInitialize;
+
++ (id<AlmostVPNObjectDelegate>) delegate;
++ (void) setDelegate: (id<AlmostVPNObjectDelegate>) v;
+
++ (AlmostVPNObject*) findObjectWithUUID: (NSString*) uuid;
++ (AlmostVPNObject*) findObjectOfClass: (Class) aClass withProperty: (NSString*) name equalTo: (id) value;
++ (AlmostVPNObject*) findObjectKindOfClass: (Class) aClass withProperty: (NSString*) name equalTo: (id) value;
++ (NSArray*) objectsKindOfClass: (Class) aClass;
++ (NSArray*) objectsMemberOfClass: (Class) aClass;
+
++ (id) objectWithDictionary: (NSDictionary*) aDictionary;
++ (id) objectWithObject: (AlmostVPNObject*) anObject;
+
++ (NSString*) kind;
++ (NSString*) classNameForKind: (NSString*) kind;
+
++ (id<AlmostVPNSecureStorageProvider>) secureStorageProvider;
++ (void) setSecureStorageProvider: (id<AlmostVPNSecureStorageProvider>) provider;
+
+- (void) initKeys: (NSString*[])keys fromDictionary: (NSDictionary*) aDictionary;
+- (id) initWithDictionary: (NSDictionary*) aDictionary;
+
+- (void) bootstrap;
+
+- (NSDictionary*) asDictionary;
+
+- (BOOL) booleanValueForKey: (NSString*) key;
+- (void) setBooleanValue: (BOOL) value forKey: key;
+
+- (id) booleanObjectForKey: (NSString*) key;
+- (void) setBooleanObject: (id) value forKey: key;
+
+- (int) intValueForKey: (NSString*) key;
+- (void) setIntValue: (int) value forKey: (NSString*) key;
+
+- (id) intObjectForKey: (NSString*) key;
+- (void) setIntObject: (id) value forKey: (NSString*) key;
+
+- (NSString*) stringValueForKey: (NSString*) key;
+- (void) setStringValue: (NSString*) value forKey: (NSString*) key;
+
+- (id) objectValueForKey: (NSString*) key;
+- (id) setObjectValue: (id) value forKey: (NSString*) key;
+
+- (NSString*) uuid;
+
+- (NSString*) name;
+- (void) setName: (NSString*) value;
+- (BOOL) hasDefaultName;
+- (NSString*) fullName;
+
+- (NSString*) kind;
+
+- (BOOL) isContainer;
+- (BOOL) isResource;
+- (BOOL) isReference;
+
+- (id) copyWithZone: (NSZone*) zone;
+
+- (int) count;
+- (id) objectForKey: (id) key;
+- (NSEnumerator*) keyEnumerator;
+
+- (void) setObject: (id) anObject forKey: (id) aKey;
+- (void) removeObjectForKey: (id) aKey;
+- (void) removeAllObjects;
+
+//- (void) removeObserverAndKeyPath;
+
++ (id) performOnDelegate: (SEL) selector withObject: (id) arg1;
++ (id) performOnDelegate: (SEL) selector withObject: (id) arg1 withObject: (id) arg2;
++ (id) performOnDelegate: (SEL) selector withObject: (id) arg1 withObject: (id) arg2 withObject: (id) arg3;
+- (id) performOnDelegate: (SEL) selector withObject: (id) arg1;
+- (id) performOnDelegate: (SEL) selector withObject: (id) arg1 withObject: (id) arg2;
+- (id) performOnDelegate: (SEL) selector withObject: (id) arg1 withObject: (id) arg2 withObject: (id) arg3;
+@end
+
+@interface AlmostVPNObject (Debugging)
++(void) dumpObjects;
+@end
+
+#define OBJECT_WAS_CREATED					@selector( objectWasCreated: )
+#define OBJECT_WAS_INIT_WITH_DICTIONARY		@selector( objectWasInitWithDictionary: )
+#define OBJECT_WILL_BE_DELETED				@selector( objectWillBeDeleted: )
+#define OBJECT_NAME_CHANGED					@selector( objectNameChangedFrom:to: )
+#define CHILD_WAS_ADDED						@selector( childObject:wasAddedToContainer: )
+#define CHILD_WILL_BE_REMOVED				@selector( childObject:willBeRemovedFrom: )
+
+#define PROPERTY_OF_OBJECT					@selector( property:ofObject: )
+#define SET_VALUE_FOR_PROPERTY_OF_OBJECT	@selector( setValue:forProperty:ofObject: )
+
+extern	id	IGNORE_DELEGATE;
+
+@protocol AlmostVPNObjectDelegate 
+- (void) objectWasCreated: (AlmostVPNObject*) o;
+- (void) objectWasInitWithDictionary: (AlmostVPNObject*) o;
+- (void) objectWillBeDeleted: (AlmostVPNObject*) o;
+
+- (void) objectNameChangedFrom: (NSString*) oldName to: (NSString*) newName;
+
+- (void) childObject: (AlmostVPNObject*) child wasAddedToContainer: (AlmostVPNObject*) parent;
+- (void) childObject: (AlmostVPNObject*) child willBeRemovedFrom: (AlmostVPNObject*) parent;
+
+- (BOOL) isObjectExists: (AlmostVPNObject*) o;
+- (BOOL) isObjectValid: (AlmostVPNObject*) o;
+
+- (id) property: (NSString*) ofObject: (AlmostVPNObject*) o;
+- (id) setValue: (id) aValue forProperty: (NSString*) ofObject: (AlmostVPNObject*) o;
+
+// To make compiler happy
+- (BOOL) respondsToSelector: (SEL) selector;
+- (id) performSelector: (SEL) selector withObject: (id) arg1;
+- (id) performSelector: (SEL) selector withObject: (id) arg1 withObject: (id) arg2;
+- (id) performSelector: (SEL) selector withObject: (id) arg1 withObject: (id) arg2 withObject: (id) arg3;
+@end
+
+
+
+@protocol AlmostVPNSecureStorageProvider
+- (void) saveSecureObject:(id) anObject withKey:(id) aKey ofObject:(AlmostVPNObject*) anObject;
+- (id) retriveSecureObjectWithKey: (id) aKey ofObject:(AlmostVPNObject*) onObject;
+@end
+
+@interface AlmostVPNObject (SecureStorage)
++ (id<AlmostVPNSecureStorageProvider>) secureStorageProvider;
++ (void) setSecureStorageProvider: (id<AlmostVPNSecureStorageProvider>) provider;
++ (BOOL) isKeySecure: (id) key;
+
+- (BOOL) isKeySecure: (id) key;
+@end
+

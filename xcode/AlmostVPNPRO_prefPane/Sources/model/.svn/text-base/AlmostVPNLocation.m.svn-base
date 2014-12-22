@@ -1,0 +1,325 @@
+//
+//  AlmostVPNLocation.m
+//  AlmostVPNPRO_model
+//
+//  Created by andrei tchijov on 11/4/05.
+//  Copyright 2005 Leaping Bytes, LLC. All rights reserved.
+//
+
+#import "AlmostVPNLocation.h"
+#import "AlmostVPNLocalhost.h"
+#import "AlmostVPNConfiguration.h"
+
+#define _IDENTITY_KEY_	@"identity"
+#define _ACCOUNT_KEY_	@"account"
+
+#define _PORT_KEY_		@"port"
+#define _TIMEOUT_KEY_	@"timeout"
+#define _PROXY_KEY_		@"proxy"
+
+#define _KEEP_ALIVE_INTERVAL_KEY_ @"keep-alive"
+
+#define _STATUS_KEY_		@"status"
+#define _STATUS_ICON_KEY_	@"status-icon"
+#define _STATUS_MSG_KEY_	@"status-message"
+
+#define _SSHD_REPLY_KEY_		@"sshd-reply"
+
+#define _RUN_DYNAMIC_PROXY_		@"run-dynamic-proxy"
+#define _DYNAMIC_PROXY_PORT_	@"dynamic-proxy-port"
+#define _SHARE_DYNAMIC_PROXY_	@"share-dynamic-proxy"
+
+@implementation AlmostVPNLocation
++ (void) initialize {
+	[self 
+		setKeys:[NSArray arrayWithObjects:@"status", nil ]	
+		triggerChangeNotificationsForDependentKey:@"statusIcon"
+	];
+	[self 
+		setKeys:[NSArray arrayWithObjects:@"status", nil ]	
+		triggerChangeNotificationsForDependentKey:@"statusMessage"
+	];
+}
+
+- (id) initWithDictionary: (NSDictionary*) aDictionary {
+	[ super initWithDictionary: aDictionary ];
+	
+	[ self setObject: [ aDictionary objectForKey: _IDENTITY_KEY_ ] forKey: _IDENTITY_KEY_ ];	
+	[ self setObject: [ AlmostVPNObject objectWithDictionary: [ aDictionary objectForKey: _ACCOUNT_KEY_ ]] forKey: _ACCOUNT_KEY_ ];
+	
+	[[ self account ] setOwner: self ];
+
+	[ self setObject: [ aDictionary objectForKey: _PORT_KEY_ ] forKey: _PORT_KEY_ ];	
+	[ self setObject: [ aDictionary objectForKey: _TIMEOUT_KEY_ ] forKey: _TIMEOUT_KEY_ ];	
+	[ self setObject: [ aDictionary objectForKey: _PROXY_KEY_ ] forKey: _PROXY_KEY_ ];	
+
+	[ self setObject: [ aDictionary objectForKey: _STATUS_KEY_ ] forKey: _STATUS_KEY_ ];	
+	[ self setObject: [ aDictionary objectForKey: _STATUS_ICON_KEY_ ] forKey: _STATUS_ICON_KEY_ ];	
+	[ self setObject: [ aDictionary objectForKey: _STATUS_MSG_KEY_ ] forKey: _STATUS_MSG_KEY_ ];	
+	[ self setObject: [ aDictionary objectForKey: _SSHD_REPLY_KEY_ ] forKey: _SSHD_REPLY_KEY_ ];	
+	
+	[ self setObject: [ aDictionary objectForKey: _PORT_KEY_ ] forKey: _PORT_KEY_ ];	
+	[ self setObject: [ aDictionary objectForKey: _TIMEOUT_KEY_ ] forKey: _TIMEOUT_KEY_ ];	
+	[ self setObject: [ aDictionary objectForKey: _PROXY_KEY_ ] forKey: _PROXY_KEY_ ];	
+
+	[ self setObject: [ aDictionary objectForKey: _RUN_DYNAMIC_PROXY_ ] forKey: _RUN_DYNAMIC_PROXY_ ];	
+	[ self setObject: [ aDictionary objectForKey: _DYNAMIC_PROXY_PORT_ ] forKey: _DYNAMIC_PROXY_PORT_ ];	
+	[ self setObject: [ aDictionary objectForKey: _SHARE_DYNAMIC_PROXY_ ] forKey: _SHARE_DYNAMIC_PROXY_ ];	
+
+	[ AlmostVPNLocation performOnDelegate: OBJECT_WAS_INIT_WITH_DICTIONARY withObject: self ];	
+	return self;
+}
+
+- (void) bootstrap {
+	[ super bootstrap ];
+	
+	[ self setStatus: NOT_TESTED ];
+	
+	AlmostVPNAccount* account = [[ AlmostVPNAccount alloc ] init ];
+	[ self setAccount: account ];
+	[ account setUserName: NSUserName() ];
+	[ account release ];
+	
+	[ self setIdentity: [[ AlmostVPNLocalhost sharedInstance ] defaultIdentity ]];
+	[ self setProxy: @"No Proxy" ];
+	
+	[ self setKeepAlive: [ NSNumber numberWithBool: YES ]];
+}
+
+- (BOOL) direct {
+	return [[ self parent ] isEqual: [ AlmostVPNConfiguration sharedInstance ]];
+}
+
+- (NSString*) icon {
+	return @"Location";
+}
+
+- (AlmostVPNIdentity*) identity {
+	NSString* identityUUID = [ self stringValueForKey: _IDENTITY_KEY_ ];
+	if( identityUUID == nil ) {
+		AlmostVPNIdentity* defaultIdenity = [[ AlmostVPNLocalhost sharedInstance ] defaultIdentity ];
+		if( defaultIdenity != nil ) {
+			[ self setIdentity: defaultIdenity ];
+			identityUUID = [ defaultIdenity uuid ];
+		}
+	}
+	return identityUUID == nil ? nil : (AlmostVPNIdentity*)[ AlmostVPNObject findObjectWithUUID: identityUUID ];
+}
+
+- (void) setIdentity: (AlmostVPNIdentity*) anIdentity {
+	[ self setStringValue: [ anIdentity uuid ] forKey: _IDENTITY_KEY_ ];
+}
+
+- (AlmostVPNAccount*) account {
+	return [ self objectForKey: _ACCOUNT_KEY_ ];
+}
+
+- (void) setAccount: (AlmostVPNAccount*) anAccount {
+	[ anAccount setOwner: self ];
+	[ self setObject: anAccount forKey: _ACCOUNT_KEY_ ];
+}
+
+- (int) countHosts {
+	return [[ self hosts ] count ];
+}
+
+- (NSArray*) hosts {
+	return [ self childrenMemberOfClass: [ AlmostVPNHost class ]];
+}
+
+- (int) countLocations {
+	return [[ self locations ] count ];
+}
+
+- (NSArray*) locations{
+	return [ self childrenMemberOfClass: [ AlmostVPNLocation class ]];
+}
+
+- (BOOL) canHaveChild: (NSString*) childKind {
+	return	[ super canHaveChild: childKind ] ||
+			[ @"File" isEqual: childKind ]  || 
+			[ @"Host" isEqual: childKind ] || 
+			[ @"Location" isEqual: childKind ]
+	;
+}
+
+// Bindings
+- (NSString*) identityName {
+	AlmostVPNIdentity* identity = [ self identity ];
+	return [ identity name ];
+}
+
+- (void) setIdentityName: (NSString*) name {
+	AlmostVPNIdentity* identity = [[ AlmostVPNLocalhost sharedInstance ] identityWithName: name ];
+	if( name != nil ) {
+		[ self setIdentity: identity ];
+	}
+}
+
+- (NSString*) port {
+	NSString* result = [ self stringValueForKey: _PORT_KEY_ ];
+	if( result == nil ) {
+		[ self setPort: result = @"22" ];
+	} 
+	return result;
+}
+- (void) setPort: (NSString*) v {
+	[ self setStringValue: v forKey: _PORT_KEY_ ];
+}
+
+- (NSString*) timeout {
+	NSString* result = [ self objectForKey: _TIMEOUT_KEY_ ];
+	if( result == nil ) {
+		[ self setTimeout: result = @"60" ];
+	} 
+	return result;
+}
+- (void) setTimeout: (NSString*) v {
+	[ self setObject: v forKey: _TIMEOUT_KEY_ ];
+}
+
+- (NSString*) proxy {
+	NSString* result = [ self stringValueForKey: _PROXY_KEY_ ];
+	if( result == nil ) {
+		[ self setProxy: result = @"No Proxy" ];
+	} 
+	return result;
+}
+- (void) setProxy: (NSString*) v {
+	[ self setStringValue: v forKey: _PROXY_KEY_ ];
+}
+
+- (id) status {
+	return [ self stringValueForKey: _STATUS_KEY_ ];
+}
+- (void) setStatus: (id) v {
+	[ self setStringValue: v forKey: _STATUS_KEY_ ];
+	[ self removeObjectForKey: _STATUS_ICON_KEY_ ];
+	[ self removeObjectForKey: _STATUS_MSG_KEY_ ];
+}
+
+- (id) statusIcon {
+	NSString* icon = [ self stringValueForKey: _STATUS_ICON_KEY_ ];
+	if( icon == nil ) {
+		if( [ NOT_TESTED isEqual: [ self status ]] ) {
+			icon = @"grey";
+		} else if( [ GOOD isEqual: [ self status ]] ) {
+			icon = @"green";
+		} else if( [ BAD isEqual: [ self status ]] ) {
+			icon = @"red";
+		} else if( [ TERMINAL isEqual: [ self status ]] ) {
+			icon = @"terminal";
+		} else {
+			icon = @"yellow";
+		}
+		[ self setStringValue: icon forKey: _STATUS_ICON_KEY_ ];
+	}
+	return icon;
+}
+- (void) setStatusIcon: (id) v {
+	[ self setStringValue: v forKey: _STATUS_ICON_KEY_ ];
+}
+
+- (id) statusMessage {
+	NSString* msg = [ self stringValueForKey: _STATUS_MSG_KEY_ ];
+	if( msg == nil ) {
+		if( [ NOT_TESTED isEqual: [ self status ]] ) {
+			msg = @"account have not been tested yet";
+		} else if( [ GOOD isEqual: [ self status ]] ) {
+			msg = @"account is good";
+		} else {
+			msg = @"account failed";
+		}
+		[ self setStringValue: msg forKey: _STATUS_MSG_KEY_ ];
+	}
+	return msg;
+}
+
+- (void) setStatusMessage: (id) v {
+	[ self setStringValue: v forKey: _STATUS_MSG_KEY_ ];
+}
+
+- (id) sshdReply {
+	return [ self stringValueForKey: _SSHD_REPLY_KEY_ ];
+}
+- (void) setSshdReply: (id) v {
+	[ self setStringValue: v forKey: _SSHD_REPLY_KEY_ ];
+}
+
+- (void) setStatus: (id) status withMessage: (id) message {
+	[ self setStatus: status ];
+	[ self setStatusMessage: message ];
+}
+
+- (BOOL) goodToGo {
+	NSString* name = [ self name ];
+	NSString* userName = [[ self account ] userName ];
+	BOOL usePassword = [[[ self account ] usePassword ] boolValue ];
+	NSString* password = [[ self account ] password ];
+	BOOL result = 
+		([ name length ] > 0 ) && (![ @"location" isEqual: name ]) &&	
+		([ userName length ] > 0 ) &&
+		(
+			( usePassword && ([ password length ] > 0 )) || ( ! usePassword )
+		);
+		
+	return result;
+}
+
+- (id) keepAliveInterval {
+	return [ self stringValueForKey: _KEEP_ALIVE_INTERVAL_KEY_ ];
+}
+
+- (void) setKeepAliveInterval: (id) v {
+	[ self setStringValue: v forKey: _KEEP_ALIVE_INTERVAL_KEY_ ];
+}
+
+- (id) keepAlive {
+	NSString* keepAliveInterval = [ self keepAliveInterval ];
+	if( keepAliveInterval == nil ) {
+		[ self setKeepAliveInterval: keepAliveInterval = @"30" ];
+	}
+	return [ NSNumber numberWithBool: [ keepAliveInterval intValue ] > 0 ];
+}
+
+- (void) setKeepAlive: (id) v {
+	if( [ v boolValue ]) {
+		NSString* keepAliveInterval = [ self keepAliveInterval ];
+		if( [ keepAliveInterval intValue ] == 0 ) {
+			[ self setKeepAliveInterval: @"5" ];
+		}
+	} else {
+		[ self removeObjectForKey: _KEEP_ALIVE_INTERVAL_KEY_ ];
+	}
+}
+
+- (id) runDynamicProxy {
+	return [ self booleanObjectForKey: _RUN_DYNAMIC_PROXY_ ];
+}
+
+- (void) setRunDynamicProxy: (id) v {
+	[ self setBooleanObject: v forKey: _RUN_DYNAMIC_PROXY_ ];
+}
+
+- (id) shareDynamicProxy {
+	return [ self booleanObjectForKey: _SHARE_DYNAMIC_PROXY_ ];
+}
+
+- (void) setShareDynamicProxy: (id) v {
+	[ self setBooleanObject: v forKey: _SHARE_DYNAMIC_PROXY_ ];
+}
+
+- (id) dynamicProxyPort {
+	NSString* result = [ self stringValueForKey: _DYNAMIC_PROXY_PORT_ ];
+	if( result == nil ) {
+		result = @"1080";
+		[ self setDynamicProxyPort: result ];
+	}
+	return result;
+}
+
+- (void) setDynamicProxyPort: (id) v {
+	[ self setStringValue: v forKey: _DYNAMIC_PROXY_PORT_ ];
+}
+
+@end

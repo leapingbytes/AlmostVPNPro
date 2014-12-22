@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Sources/MenuBar.target/Icons"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="153"
+   name="MenuBarGray.png"
+   text-time="2006-11-07T14:55:04.000000Z"
+   committed-date="2006-11-14T16:26:23.459018Z"
+   checksum="d92a54367323d5dc08db3341faa77860"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"
+   revision="153"/>
+<entry
+   committed-rev="153"
+   name="MenuBarRed.png"
+   text-time="2006-11-07T14:55:36.000000Z"
+   committed-date="2006-11-14T16:26:23.459018Z"
+   checksum="adecf56e6a8b5043e0f638b92d6596da"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"
+   revision="153"/>
+<entry
+   committed-rev="153"
+   name="MenuBarYellow.png"
+   text-time="2006-11-07T14:55:28.000000Z"
+   committed-date="2006-11-14T16:26:23.459018Z"
+   checksum="403501903c023024594fe1cf7ec2ed10"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"
+   revision="153"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPROMenuBar.icns"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f1c9554fda4a3ce6ca12fc7d5453b5f1"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AlmostVPNPROMenuBar_icon.png"
+   text-time="2006-09-01T03:19:28.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="362b02a74d3d8d6e956d44a7cd0d9c70"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"/>
+<entry
+   committed-rev="153"
+   name="MenuBarEmpty.png"
+   text-time="2006-11-07T14:55:20.000000Z"
+   committed-date="2006-11-14T16:26:23.459018Z"
+   checksum="ca71f4b5ab79dfdb6296614658d3665f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:50.000000Z"
+   revision="153"/>
+<entry
+   committed-rev="153"
+   name="MenuBarGreen.png"
+   text-time="2006-11-07T14:55:44.000000Z"
+   committed-date="2006-11-14T16:26:23.459018Z"
+   checksum="d89503e6d5b7d367053cd3c9424d3707"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:28.000000Z"
+   revision="153"/>
+</wc-entries>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/AlmostVPNServer/src/com/leapingbytes/almostvpn/util/GUI"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   revision="110"/>
+<entry
+   committed-rev="106"
+   name="PasswordDialog.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c9c248083192f6721a5184ee34fc3f12"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="106"
+   name="PasswordHelper.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="665235a1270a6315592c4ceac5980a41"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="157"
+   name="YesNoDialog.java"
+   text-time="2006-10-30T16:23:13.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="e1010b694af77948af70aff7f5c5659e"
+   last-author="atchijov"
+   kind="file"
+   revision="157"/>
+<entry
+   committed-rev="106"
+   name="YesNoHelper.java"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="603a45181372e97722962622dcc07dbd"
+   last-author="atchijov"
+   kind="file"/>
+</wc-entries>

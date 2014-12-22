@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="157"
+   name=""
+   committed-date="2006-11-21T02:27:07.939332Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/AlmostVPNServer/src/com/leapingbytes/almostvpn/util/ssh"
+   last-author="atchijov"
+   kind="dir"
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   revision="157"/>
+<entry
+   committed-rev="157"
+   name="GanimedSSHSSession.java"
+   text-time="2006-11-17T20:49:06.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="b9fdc556cdc715e8b15d62c72044c267"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="157"
+   name="SSHSessionFactory.java"
+   text-time="2006-11-06T03:35:53.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="8bd496816b4c24a33233e742af301a59"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="157"
+   name="ISSHSession.java"
+   text-time="2006-11-05T17:54:38.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="dd820c070cf1fce929dac4b88b2bc559"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="157"
+   name="JschSession.java"
+   text-time="2006-10-31T22:03:46.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="20fa01ceaee5e0043a8b2978a7c757ee"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="157"
+   name="SSHSessionBase.java"
+   text-time="2006-11-20T18:01:34.000000Z"
+   committed-date="2006-11-21T02:27:07.939332Z"
+   checksum="72e1a8e8ed6cc55bc6a09b781ed9158e"
+   last-author="atchijov"
+   kind="file"/>
+</wc-entries>

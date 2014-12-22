@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jetty-6.0.0rc2/lib/management"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="mx4j-tools-3.0.1.jar"
+   text-time="2006-09-01T03:01:05.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5f345ad6d9caf2d074df1c7dba35c6c6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:05.000000Z"/>
+<entry
+   committed-rev="106"
+   name="jetty-management-6.0.0rc2.jar"
+   text-time="2006-09-01T03:01:05.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f71dccd5272a51c07ef504bd14d32c36"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:05.000000Z"/>
+<entry
+   committed-rev="106"
+   name="mx4j-3.0.1.jar"
+   text-time="2006-09-01T03:01:05.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="7a8675e26ee20f997ad4f54091e9b7a5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:05.000000Z"/>
+</wc-entries>

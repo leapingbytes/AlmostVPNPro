@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/jsch-0.1.29/tools/bin"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="runant.pl"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1b6bc6f28d1c535e765dfee8da2a4fe2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ant"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="85d9115b67fdb52681e01e2cb6fab329"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="lcp.bat"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="83604b0de778f0737556d2c6b54d474d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="ant.bat"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="77f17f5c6545ff278c09f7a7047e55c0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="antRun"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4ca93c5e3533765c0291545dffc67d4e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="antRun.bat"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0dfd81467520c71dbe84597c03fdb255"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+<entry
+   committed-rev="106"
+   name="runant.py"
+   text-time="2006-09-01T03:01:47.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="16cee9c4d0055eff01366bb9e6bf42fb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:47.000000Z"/>
+</wc-entries>

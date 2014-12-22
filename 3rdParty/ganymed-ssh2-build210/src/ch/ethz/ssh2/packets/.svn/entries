@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   schedule="add"
+   revision="0"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/ganymed-ssh2-build210/src/ch/ethz/ssh2/packets"
+   name=""
+   kind="dir"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="PacketChannelOpenConfirmation.java"/>
+<entry
+   schedule="add"
+   name="PacketChannelOpenFailure.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="PacketChannelWindowAdjust.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="PacketDisconnect.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="PacketGlobalCancelForwardRequest.java"/>
+<entry
+   schedule="add"
+   name="PacketGlobalForwardRequest.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="PacketIgnore.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="PacketKexDHInit.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="PacketKexDHReply.java"/>
+<entry
+   schedule="add"
+   name="PacketKexDhGexGroup.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="PacketKexDhGexInit.java"/>
+<entry
+   schedule="add"
+   name="PacketKexDhGexReply.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="PacketKexDhGexRequest.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="PacketKexDhGexRequestOld.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="PacketKexInit.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="PacketNewKeys.java"/>
+<entry
+   schedule="add"
+   name="PacketOpenDirectTCPIPChannel.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="PacketOpenSessionChannel.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="PacketServiceAccept.java"/>
+<entry
+   schedule="add"
+   name="PacketServiceRequest.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="PacketSessionExecCommand.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="PacketSessionPtyRequest.java"/>
+<entry
+   schedule="add"
+   name="PacketSessionStartShell.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="PacketSessionSubsystemRequest.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="PacketSessionX11Request.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="PacketUserauthBanner.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="PacketUserauthFailure.java"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="PacketUserauthInfoRequest.java"/>
+<entry
+   schedule="add"
+   name="PacketUserauthInfoResponse.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="PacketUserauthRequestInteractive.java"/>
+<entry
+   schedule="add"
+   name="PacketUserauthRequestNone.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="PacketUserauthRequestPassword.java"/>
+<entry
+   schedule="add"
+   name="PacketUserauthRequestPublicKey.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   kind="file"
+   name="Packets.java"/>
+<entry
+   schedule="add"
+   name="TypesReader.java"
+   kind="file"/>
+<entry
+   schedule="add"
+   name="TypesWriter.java"
+   kind="file"/>
+</wc-entries>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-2.4.1/java/external/src/org/w3c/dom/ranges"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="DocumentRange.java"
+   text-time="2006-09-01T03:01:30.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="63f2524c496ddcb487893e44cd05e1e5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:30.000000Z"/>
+<entry
+   committed-rev="106"
+   name="RangeException.java"
+   text-time="2006-09-01T03:01:30.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f877b5c9707aabfd34db261083c5dd4c"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:30.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Range.java"
+   text-time="2006-09-01T03:01:30.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ce5e0546e7095a9d0b9955afabeec7e8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:30.000000Z"/>
+</wc-entries>

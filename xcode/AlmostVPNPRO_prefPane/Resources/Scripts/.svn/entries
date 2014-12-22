@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Resources/Scripts"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="111"/>
+<entry
+   committed-rev="133"
+   name="install.sh"
+   text-time="2006-10-12T01:23:18.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="4496e8e6cb8f9f60424bb99150277e27"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"
+   revision="133"/>
+<entry
+   committed-rev="106"
+   name="serverHelper.sh"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ca4eca59bffe1fc3f60ceddb3f5940c6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="cleanup.sh"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ee5f720dd63ca6f9610394aff6ab4610"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="154"
+   name="startTerminal.sh"
+   text-time="2006-11-07T15:31:50.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="12c601c6e1f0eba0bae931e0859f4408"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"
+   revision="154"/>
+<entry
+   committed-rev="106"
+   name="uninstall.sh"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="40be63423155b3a3516a4f99e251e7d2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="154"
+   name="doRemoteControl.sh"
+   text-time="2006-10-26T02:44:21.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="c7d6b2637d15ed59e58808fd078b475f"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"
+   revision="154"/>
+<entry
+   committed-rev="106"
+   name="startConsole.sh"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="199da164ea27a78b456b6c6cfa6286ec"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="154"
+   name="utils.sh"
+   text-time="2006-10-26T02:43:59.000000Z"
+   committed-date="2006-11-21T02:25:00.209533Z"
+   checksum="e142322d2a6f183adf42fba95eded0bf"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"
+   revision="154"/>
+<entry
+   committed-rev="106"
+   name="askPassword.sh"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="75ce8299a8125c7ee429a04bde2eeb21"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+<entry
+   committed-rev="106"
+   name="startRC.sh"
+   text-time="2006-09-01T03:19:29.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="61cc00864be2d797abdd357b498b7eaa"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:19:29.000000Z"/>
+</wc-entries>

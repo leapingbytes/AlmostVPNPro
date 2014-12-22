@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowNetworkAccess</key>
+	<true/>
+	<key>AllowSystem</key>
+	<true/>
+	<key>CFBundleDisplayName</key>
+	<string>AlmostVPN</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.leapingbytes.AlmostVPNPRO.widget</string>
+	<key>CFBundleName</key>
+	<string>AlmostVPN</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>CloseBoxInsetX</key>
+	<integer>10</integer>
+	<key>CloseBoxInsetY</key>
+	<integer>14</integer>
+	<key>Height</key>
+	<integer>100</integer>
+	<key>MainHTML</key>
+	<string>AlmostVPN.html</string>
+	<key>Width</key>
+	<integer>310</integer>
+</dict>
+</plist>

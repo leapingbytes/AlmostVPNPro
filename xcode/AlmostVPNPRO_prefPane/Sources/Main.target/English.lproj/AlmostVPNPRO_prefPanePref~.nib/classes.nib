@@ -1,0 +1,107 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                activate = id; 
+                buyAtKagi = id; 
+                buyAtPayPal = id; 
+                buyNow = id; 
+                deactivate = id; 
+            }; 
+            CLASS = ActivationManager; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"_forPayIndicator" = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                addDeleteKnownServer = id; 
+                addDeleteKnownService = id; 
+                addFromQuickConfig = id; 
+                cancelAddObject = id; 
+                commitAddObject = id; 
+                controlLogView = id; 
+                controlUtilizationChart = id; 
+                deleteSelectedObject = id; 
+                duplicateOrDeleteObject = id; 
+                duplicateSelectedObject = id; 
+                endSheet = id; 
+                manageKnownServers = id; 
+                manageKnownServices = id; 
+                openActivation = id; 
+                restartService = id; 
+                selectPlistForImport = id; 
+                showQuickConfig = id; 
+                startService = id; 
+                startStopProfile = id; 
+                stopService = id; 
+                testLocation = id; 
+                toggleLocationOptions = id; 
+            }; 
+            CLASS = AlmostVPNConfigurationController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_activationManager" = ActivationManager; 
+                "_allOfNewObjectClassController" = id; 
+                "_avpnCommandLineView" = WebView; 
+                "_chartView" = id; 
+                "_forPayIndicator" = id; 
+                "_startStopButton" = NSSegmentedControl; 
+                addObjectMenu = NSMenu; 
+                addResourceMenu = NSMenu; 
+                configurationController = id; 
+                locationAccountBox = id; 
+                locationOptionsDisclouserButton = id; 
+                locationResourcesAndHosts = id; 
+                objectEditors = NSTabView; 
+                objectsTree = LBNSOutlineView; 
+                profileResourcesTable = NSTableView; 
+                profilesController = id; 
+                profilesTable = NSTableView; 
+                topTabView = NSTabView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = ImageAndTextCell; LANGUAGE = ObjC; SUPERCLASS = NSTextFieldCell; }, 
+        {
+            ACTIONS = {rearangeObjects = id; segmentedAction = id; }; 
+            CLASS = LBArrayController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSArrayController; 
+        }, 
+        {CLASS = LBNSOutlineView; LANGUAGE = ObjC; SUPERCLASS = NSOutlineView; }, 
+        {CLASS = LBNSPanel; LANGUAGE = ObjC; SUPERCLASS = NSPanel; }, 
+        {
+            ACTIONS = {takeSelectedTabViewItemFromSenderTitle = id; }; 
+            CLASS = LBNSTabView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSTabView; 
+        }, 
+        {CLASS = LBNSTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {
+            CLASS = LBTransparentOutlineView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSOutlineView; 
+        }, 
+        {CLASS = LBTransparentTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {
+            CLASS = NSPreferencePane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_firstKeyView" = id; 
+                "_initialKeyView" = id; 
+                "_lastKeyView" = id; 
+                "_window" = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = NSSegmentedControl; LANGUAGE = ObjC; SUPERCLASS = NSControl; }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/commons-logging-1.0.4/docs/xref/org/apache/commons/logging/impl"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="Jdk13LumberjackLogger.html"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6f96285641fb4a9f539c67425c3ff387"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Jdk14Logger.html"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d95826216410554bf846538e4aab3b81"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="NoOpLog.html"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c6f1c133f85a253428da2310e7c083f3"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Log4JCategoryLog.html"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ce003d0d617d1c9a76994d31c2bd5e28"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Log4JLogger.html"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2f543bd8587d37bfa7f699babe842482"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="AvalonLogger.html"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a3ae44168d36397b734be5959a6b29d0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-frame.html"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="df709aed622bdecc5fdab131260bfd0d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package-summary.html"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6014c80aed2c94d08ee3b61fce2c6401"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Log4jFactory.html"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b76a9d759e852e08ecde7bbd4b20a9cb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LogKitLogger.html"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="4740581f9b0bfb727eb6a3715bd275e7"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LogFactoryImpl.html"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="33ceb73468839f561f3db54688cd3c30"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SimpleLog.html"
+   text-time="2006-09-01T03:01:49.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="fb682d0e7009d1190d470a2d6fe3b472"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:49.000000Z"/>
+</wc-entries>

@@ -1,0 +1,511 @@
+package com.leapingbytes.almostvpn.server.profile;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.Iterator;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import com.leapingbytes.almostvpn.model.AVPNConfiguration;
+import com.leapingbytes.almostvpn.model.Model;
+import com.leapingbytes.almostvpn.server.ToolServer;
+import com.leapingbytes.almostvpn.server.profile.configurator.impl.ConfiguratorRepository;
+import com.leapingbytes.almostvpn.server.profile.configurator.spi.IProfileConfigurator;
+import com.leapingbytes.almostvpn.server.profile.item.impl.Marker;
+import com.leapingbytes.almostvpn.server.profile.item.impl.PostfixMarker;
+import com.leapingbytes.almostvpn.server.profile.item.impl.PrefixMarker;
+import com.leapingbytes.almostvpn.server.profile.item.impl.SSHSession;
+import com.leapingbytes.almostvpn.server.profile.item.spi.IProfileItem;
+import com.leapingbytes.almostvpn.util.ResourceAllocator;
+import com.leapingbytes.almostvpn.util.ssh.ISSHSession;
+import com.leapingbytes.jcocoa.NSDictionary;
+import com.leapingbytes.jcocoa.NSMutableArray;
+import com.leapingbytes.jcocoa.NSMutableDictionary;
+
+public class Profile implements ISSHSession.IStateListener {
+	public interface StateListener {
+		void event( NSDictionary status );
+	};
+	
+	private static final Log 		log = LogFactory.getLog( Profile.class );
+
+	public static final String		PROFILE_IDLE	 	= "idle";
+	public static final String		PROFILE_PAUSED	 	= "paused";
+	public static final String		PROFILE_STARTING 	= "starting";
+	public static final String		PROFILE_RUNNING 	= "running";
+	public static final String		PROFILE_STOPING 	= "stopping";
+	public static final String		PROFILE_FAIL 		= "fail";
+	
+	public static final Profile		NO_SUCH_PROFILE 		= new Profile();
+	public static final Profile 	PROFILE_IS_NOT_RUNNING = new Profile();
+	
+	public static final SimpleDateFormat DATE_FORMAT	= new SimpleDateFormat("dd/MM/yyyy HH:mm:ss.S");
+	
+	static ThreadLocal				_currentProfile 	= new ThreadLocal();
+	static NSMutableDictionary 		_profilesByName 	= new NSMutableDictionary();
+	static ArrayList				_stateListeners		= new ArrayList();
+
+	private NSDictionary			_profileConfiguration;
+	
+	String							_name;
+	String							_uuid;
+	
+	boolean							_itemsDirty = true;
+	NSMutableArray					_items;
+	NSMutableDictionary				_sessions;
+	
+	private String					_reason 				= null;
+	
+	boolean							_was_running;
+	private String					_state	 				= PROFILE_IDLE;
+	private String					_stateComment 			= "";
+	
+	private String					_oldState				= PROFILE_IDLE;
+	private String					_oldStateComment		= "";
+	
+	private int						_generation				= 0;
+	
+	private ArrayList				_env 				 	= null;
+	
+	private static final Profile	_dummy = new Profile();
+	private static final Profile	_global = new Profile( "--GLOBALS--" );
+	
+	public static Profile globalProfile() {
+		return _global;
+	}
+	
+	static public Profile getProfile( String name ) {
+		return getProfile( name, true );
+	}
+	
+	
+	static public Profile getProfile( String name, boolean createNew ) {
+		Profile result = (Profile) _profilesByName.get( name );
+		if( result == null && createNew ) {
+			result = new Profile( name );
+			_profilesByName.setObjectForKey( result, name );
+		}
+		
+		return result;
+	}
+	
+	static public Profile threadCurrentProfile() {
+		Profile result = (Profile) _currentProfile.get();
+		result = result == null ? _dummy : result;
+		return result;
+	}
+	
+	static public Profile[] profilesWithState( String state ) {
+		ArrayList result = new ArrayList();
+		Iterator names = _profilesByName.keyIterator();
+		while( names.hasNext() ) {
+			String name = (String) names.next();
+			Profile profile = (Profile) _profilesByName.objectForKey( name );
+			if( profile._state.equals( state )) {
+				result.add( profile );
+			}
+		}
+
+		return (Profile[]) result.toArray( new Profile[ result.size()]);
+	}
+	
+	private Profile() {		
+		// dummy constructor for marker objects (NO_SUCH_PROFILE|PROFILE_IS_NOT_RUNNING)
+	}
+	
+	Profile( String name ) {
+		_name = name;
+		_profileConfiguration = profileConfiguration();
+		_items = new NSMutableArray(); 
+		_sessions = new NSMutableDictionary();
+	}
+			
+	private NSDictionary profileConfiguration() {
+		NSDictionary result = AVPNConfiguration.profileWithName( _name );
+		_uuid = _profileConfiguration == null ? "null" : (String) _profileConfiguration.objectForKey( "uuid" );		
+		return result;
+	}
+	
+	public int generation() {
+		return _generation;		
+	}
+	
+	public boolean wasRunning() {
+		return _was_running;
+	}
+	
+	public void setWasRunning( boolean v ) {
+		_was_running = v;
+	}
+	
+	public boolean isRunning() {
+		return _state == PROFILE_RUNNING;
+	}	
+	
+	public boolean isIdle() {
+		return _state == PROFILE_IDLE;
+	}	
+	
+	public boolean isPaused() {
+		return _state == PROFILE_PAUSED;
+	}	
+	
+	public IProfileItem addItem( IProfileItem newItem ) throws ProfileException {
+		for( int i = 0; i < _items.count(); i++ ) {
+			if( newItem.equals( _items.objectAtIndex( i ))) {
+				newItem.dismiss();
+				return (IProfileItem) _items.objectAtIndex( i );
+			}
+		}
+		_items.add( newItem );
+		_itemsDirty = true;
+		
+		return newItem;
+	}
+	
+	public void addSession( Model target, SSHSession session ) {
+		_sessions.setObjectForKey( session, target.uuid());
+	}
+	
+	public SSHSession findSession( Model target ) {
+		return (SSHSession) _sessions.objectForKey( target.uuid());
+	}
+	
+	public IProfileItem configure( NSDictionary definition ) throws ProfileException {
+		IProfileConfigurator configurator = ConfiguratorRepository.findConfigurator( definition );
+		if( configurator == null ) {
+			throw new ProfileException( "setup : Can not find configurator for : " + definition );
+		}
+		return configurator.configure( definition );		
+	}
+	
+	int _configuration_generation = 0;
+	
+	public void setup() throws ProfileException {		
+		if( _configuration_generation != ToolServer.configurationGeneration()) {
+			_configuration_generation = ToolServer.configurationGeneration();
+			
+			NSDictionary newConfiguration = profileConfiguration();
+			if( newConfiguration != null ) {
+				_profileConfiguration = newConfiguration;
+			}
+			
+			_sessions.clear();
+			
+			_items.clear();
+			_items.add( PrefixMarker.marker());
+			_items.add( PostfixMarker.marker());
+			
+			_currentProfile.set( this );
+			if( _profileConfiguration != null ) {
+				NSDictionary[] children = Model.allChildren( _profileConfiguration );
+				for( int i = 0; i < children.length; i++ ) {
+					configure( children[ i ] );
+				}
+			}
+			_currentProfile.set( null );
+		}
+		if( _env == null ) {
+			_env = new ArrayList();
+		} else {
+			_env.clear();
+		}
+	}
+	
+	public String reason() {
+		return _reason;
+	}
+	
+	public void start( String reason ) throws ProfileException {
+		if( ! isIdle()) {
+			return;
+		}
+		_generation++;
+		_was_running = false;
+		_reason = reason;
+
+		setState( PROFILE_STARTING, reason );
+
+		try {
+			setup();
+		} catch( ProfileException e ) {
+			setState( PROFILE_FAIL, e.getLocalizedMessage() );
+			throw e;
+		}		
+		
+		_global._startItems();		
+		_startItems();
+
+		setState( PROFILE_RUNNING, "Running since " + DATE_FORMAT.format( new Date()));
+		
+		ResourceAllocator.printReport( System.err );
+		
+		if( _profileConfiguration.booleanForKey( Model.AVPNFireAndForgetProperty, false )) {
+			stop( "Fire and forget" );
+		}
+	}
+
+	public void stop( String reason ) throws ProfileException {
+		stop( reason, false );
+	}
+	public void stop( String reason, boolean doPause ) throws ProfileException {
+		_reason = reason;
+		if( isIdle()) {
+			return;
+		}
+		setState( PROFILE_STOPING, reason );
+
+		_stopItems();		
+		
+		_global._stopItems();
+		
+		ResourceAllocator.printReport( System.err );		
+		
+		if( doPause ) {
+			setWasRunning( true );
+		}
+		setState( PROFILE_IDLE, ( doPause ? "Paused" : "Idle" ) + "  since " + DATE_FORMAT.format( new Date() ));		
+	}
+
+	private void _startItems() throws ProfileException {
+		try {
+			boolean done = false;
+			_currentProfile.set( this );		
+outerLoop:
+			while( ! done ) {
+				IProfileItem[] items = sortedItems();			
+				done = true;
+				for( int i = 0; i < items.length; i++ ) {
+					IProfileItem item = items[ i ];
+					if( item instanceof Marker ) {
+						continue;
+					}
+					switch( item.state()) {
+						case IProfileItem.INIT :
+						case IProfileItem.STOPPED :
+						case IProfileItem.RUNNING :
+							item.start();
+							break;
+						default :
+							throw new ProfileException( item + " is in unknown state (" + item.state() + ")" );
+					}
+					
+					if( _itemsDirty ) {
+						log.warn( "_startItems : items got dirty in-flight!!!!");
+						done = false;
+						continue outerLoop;
+					}
+				}
+			}
+		} catch( ProfileException e ) {
+			setState( PROFILE_FAIL, e.getLocalizedMessage() );
+			throw e;
+		} catch( Throwable t ) {
+			setState( PROFILE_FAIL, t.getLocalizedMessage() );
+			throw new ProfileException("fail to start", t );
+		} finally {
+			_currentProfile.set( null );
+		}		
+	}
+	
+
+	private void _stopItems() throws ProfileException {
+		_currentProfile.set( this );	
+		try {
+			IProfileItem[] items = sortedItems();
+			for( int i = items.length - 1; i >= 0 ; i-- ) {
+				IProfileItem item = items[ i ];
+				if( item instanceof Marker ) {
+					continue;
+				}
+				switch( item.state()) {
+					case IProfileItem.INIT :
+					case IProfileItem.RUNNING :
+					case IProfileItem.STOPPED :
+						item.stop();
+						break;
+					default :
+						throw new ProfileException( item + " is in unknown state (" + item.state() + ")" );
+				}
+			}
+		} catch( ProfileException e ) {
+			setState( PROFILE_FAIL, e.toString() );
+			throw e;
+		} catch( Throwable t ) {
+			setState( PROFILE_FAIL, t.getLocalizedMessage() );
+			throw new ProfileException("fail to start", t );
+		} finally {
+			_currentProfile.set( null );
+		}
+	}
+	
+	public static void stopAllProfiles() {
+		Iterator names = _profilesByName.keyIterator();
+		while( names.hasNext() ) {
+			String name = (String) names.next();
+			Profile  profile = (Profile) _profilesByName.objectForKey( name );
+			try {
+				profile.stop("Stop ALL");
+			} catch (ProfileException e) {
+				// DO NOTHING.
+			}
+		}
+	}
+	
+	public NSDictionary status() {
+		NSMutableDictionary result = new NSMutableDictionary();
+		if( this == _dummy ) {
+			result.setObjectForKey( "dummy", "name" );
+			result.setObjectForKey( "n/a", "uuid" );
+			result.setObjectForKey( _state, "state" );
+			result.setObjectForKey( _stateComment, "state-comment" );
+			result.setObjectForKey( _oldState, "old-state" );
+			result.setObjectForKey( _oldStateComment, "old-state-comment" );
+		} else {
+			result.setObjectForKey( _name, "name" );
+			result.setObjectForKey( _uuid, "uuid" );
+			if( _state.equals( PROFILE_IDLE ) && _was_running ) {
+				result.setObjectForKey( PROFILE_PAUSED, "state" );
+			} else {
+				result.setObjectForKey( _state, "state" );
+			}
+			result.setObjectForKey( _stateComment, "state-comment" );
+			result.setObjectForKey( _oldState, "old-state" );
+			result.setObjectForKey( _oldStateComment, "old-state-comment" );
+		}
+		return result;
+	}	
+	
+	public static NSDictionary reportStatus() {
+		Iterator names = _profilesByName.keyIterator();
+		NSMutableDictionary result = new NSMutableDictionary();
+		NSMutableArray profiles = new NSMutableArray();
+		result.setObjectForKey( profiles, "profiles" );
+		while( names.hasNext() ) {
+			String name = (String) names.next();
+			Profile profile = (Profile) _profilesByName.objectForKey( name );
+			profiles.addObject( profile.status());
+		}
+		return result;
+	}
+	
+	public void setState( String state, String comment ) {
+		_oldState = _state;
+		_oldStateComment = _stateComment;
+		
+		_state = state == null ? _state : state;
+		_stateComment = comment == null ? _stateComment : comment;
+		
+		synchronized( _stateListeners ) {
+			Iterator i = _stateListeners.iterator();
+			stateListenersIterator.set( i );
+			while( i.hasNext() ) {
+				((StateListener)i.next()).event( this.status());
+			}
+			stateListenersIterator.set( null );
+		}
+	}
+	
+	public static void addListener( StateListener listener ) {
+		synchronized( _stateListeners ) {
+			if( ! _stateListeners.contains( listener )) {
+				_stateListeners.add( listener );
+			}
+		}
+	}
+	
+	static ThreadLocal stateListenersIterator = new ThreadLocal();
+	
+	public static void removeListener( StateListener listener ) {
+		synchronized( _stateListeners ) {
+			Iterator i = (Iterator) stateListenersIterator.get();
+			if( i == null ) {
+				_stateListeners.remove( listener );
+			} else {
+				i.remove();
+			}
+		}
+	}
+	
+	private String makeEnvNameSave( String v ) {
+		String result = v.replaceAll( "@", "_AT_" );
+		result = result.replaceAll( "[:/.]+", "_" );
+		return result;
+	}
+	public void addToEnv( String v ) {
+		_env.add( v );
+	}
+	
+	public void addToEnv( String name, String v ) {
+		_env.add( makeEnvNameSave( name ) + "=\"" + v + "\"" );
+	}
+
+	public void addToEnv( IProfileItem item, String prop, String value ) {
+		addToEnv( makeEnvNameSave("_LAST_" + prop ) + "=\"" + value + "\"");
+		addToEnv( makeEnvNameSave(item.toString() + "_" + prop ) + "=\"" + value + "\"");
+	}
+	
+	public String[] getEnv() {		
+		return _env == null ? new String[0] : (String[]) _env.toArray( new String[ _env.size() ]);
+	}
+		
+	private IProfileItem[] sortedItems() {
+		IProfileItem[]	anArray = new IProfileItem[ _items.count() ];
+		anArray = (IProfileItem[]) _items.toArray( anArray );
+		
+		if( _itemsDirty ) {
+			Arrays.sort( anArray, new Comparator() {
+				public int compare(Object o1, Object o2) {
+					IProfileItem pi1 = (IProfileItem) o1;
+					IProfileItem pi2 = (IProfileItem) o2;
+					
+					if( pi1.dependsOn( pi2 )) {
+						return 1;
+					}
+					if( pi2.dependsOn( pi1 )) {
+						return -1;
+					}
+					
+					if(( pi1 == PrefixMarker.marker()) || (pi2 == PostfixMarker.marker())) {
+						return -1;
+					}
+					if(( pi2 == PrefixMarker.marker()) || (pi1 == PostfixMarker.marker())) {
+						return 1;
+					}
+					
+					return 0;
+				}
+				
+			});
+			_items.clear();
+			for( int i = 0; i < anArray.length; i++ ) {
+				_items.add( anArray[ i ] );
+			}
+			_itemsDirty = false;
+		}
+		return anArray;
+	}
+
+
+	public void event(ISSHSession session, String comment, Throwable t) {
+		try {
+			this.stop( comment );
+		} catch (ProfileException e) {
+			log.warn( "event : Fail to stop profile", e );
+		}
+		if( this._profileConfiguration == null ) {
+			log.error( "event : _profileConfiguration is null. " + this );
+		}else if( this._profileConfiguration.booleanForKey( "restart-on-error", false )) {
+			try {
+				this.start( "restart on error" );
+			} catch (ProfileException e) {
+				log.error( "event : Fail to re-start profile", e );
+			}
+		}
+	}	
+}
+

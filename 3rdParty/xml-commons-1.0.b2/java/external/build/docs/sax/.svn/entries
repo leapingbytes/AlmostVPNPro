@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/java/external/build/docs/sax"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="sax-style.css"
+   text-time="2006-09-01T03:01:39.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a88e2a7293c28efed2286bc7fc815fe4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:39.000000Z"/>
+<entry
+   committed-rev="106"
+   name="features.html"
+   text-time="2006-09-01T03:01:39.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b09513d2315fd7af2b60d08bde753786"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:39.000000Z"/>
+<entry
+   committed-rev="106"
+   name="namespaces.html"
+   text-time="2006-09-01T03:01:39.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="55d6e5b99b42ee921d468d4e969cbe04"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:39.000000Z"/>
+<entry
+   committed-rev="106"
+   name="quick-start.html"
+   text-time="2006-09-01T03:01:39.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="952f91fbad14873406e98a082fb04f5a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:39.000000Z"/>
+<entry
+   committed-rev="106"
+   name="changes.html"
+   text-time="2006-09-01T03:01:39.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d1d69fc3534ad9c8ec386f81f81983d6"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:39.000000Z"/>
+<entry
+   committed-rev="106"
+   name="filters.html"
+   text-time="2006-09-01T03:01:39.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c70e2793f930e0e80c8a6d3c0d92c488"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:39.000000Z"/>
+<entry
+   committed-rev="106"
+   name="sax.html"
+   text-time="2006-09-01T03:01:39.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="669c248d1cdae402b21215c71c2c7395"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:39.000000Z"/>
+</wc-entries>

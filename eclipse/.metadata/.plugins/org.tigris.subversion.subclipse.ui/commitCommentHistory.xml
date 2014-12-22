@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommitComments>	<CommitComment>Ticket #310</CommitComment>
+	<CommitComment>Ticket #307</CommitComment>
+	<CommitComment>formatted</CommitComment>
+	<CommitComment>Ticket #302</CommitComment>
+	<CommitComment>Ticket #306</CommitComment>
+	<CommitComment>check install now handled by PrefPan
+</CommitComment>
+	<CommitComment>session state listener support implemented</CommitComment>
+	<CommitComment>isStartable()/isStoppable() used to determine possibility of start/stop</CommitComment>
+	<CommitComment>1) possible infinite loop fixed
+2) re-use of profile items enabled</CommitComment>
+	<CommitComment>include organization + better loggin using commons</CommitComment>
+</CommitComments>

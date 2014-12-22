@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>87</string>
+	<key>AMApplicationVersion</key>
+	<string>1.0.4</string>
+	<key>AMDocumentVersion</key>
+	<string>1</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0</string>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run Workflow.action</string>
+				<key>ActionIconName</key>
+				<string>Automator</string>
+				<key>ActionName</key>
+				<string>Run Workflow</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>documentPath</key>
+					<string>/Users/atchijov/Work/xcode.workspace/AlmostVPNPRO/AlmostVPNPRO_prefPane/scripting/ListProfiles.workflow</string>
+				</dict>
+				<key>Application</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.ExecuteWorkflow</string>
+				<key>CFBundleVersion</key>
+				<string>1.0</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>Utility</string>
+				</array>
+				<key>Class Name</key>
+				<string>ExecuteWorkflow</string>
+				<key>InputUUID</key>
+				<string>94452219-490E-44ED-9352-C5A17D055CFC</string>
+				<key>Keywords</key>
+				<array/>
+				<key>OutputUUID</key>
+				<string>80BF2C18-BCE9-4951-BF03-CCEC924F7565</string>
+				<key>StartAction</key>
+				<false/>
+				<key>UUID</key>
+				<string>130A50ED-B267-43E3-91E4-A52F862EB6C2</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>documentPath</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run Workflow.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>collapsed</key>
+			<false/>
+			<key>isOutletsVisible</key>
+			<false/>
+			<key>isViewVisible</key>
+			<true/>
+			<key>location</key>
+			<string>740.000000:326.333344</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0</string>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionIconName</key>
+				<string>AppleScript</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}
+	set reportText to ""
+	repeat with i from 1 to count items of input
+		set anItem to item i of input
+		set reportText to reportText &amp; return &amp; "profile " &amp; (get profileName of anItem) &amp; " is " &amp; (get status of anItem) &amp; "."
+	end repeat
+	return reportText
+end run</string>
+				</dict>
+				<key>Application</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>Utility</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>29343582-E27D-419A-B240-EA8242D3FD7F</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>5C7AFE4A-E30C-43E0-9E42-3EBC2F4E880A</string>
+				<key>StartAction</key>
+				<false/>
+				<key>UUID</key>
+				<string>CB2BF988-0AB3-466F-8B6F-879731F84DE6</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>collapsed</key>
+			<false/>
+			<key>isOutletsVisible</key>
+			<false/>
+			<key>isViewVisible</key>
+			<true/>
+			<key>location</key>
+			<string>730.000000:466.333344</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.text-object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0</string>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.text-object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Speak Text.action</string>
+				<key>ActionIconName</key>
+				<string>TextEdit</string>
+				<key>ActionName</key>
+				<string>Speak Text</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>chosenVoice</key>
+					<string>Bad News</string>
+				</dict>
+				<key>Application</key>
+				<array>
+					<string>System</string>
+					<string>TextEdit</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.SpeakText</string>
+				<key>CFBundleVersion</key>
+				<string>1.0</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>Alerts</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMAppleScriptAction</string>
+				<key>InputUUID</key>
+				<string>F1754A2C-A6CF-4AAE-B06A-8CA0CBFE4E1D</string>
+				<key>Keywords</key>
+				<array>
+					<string>Say</string>
+					<string>Text</string>
+					<string>Speech</string>
+					<string>Speak</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>FFAEF8E7-0208-4075-8C87-9F39B1261B0C</string>
+				<key>StartAction</key>
+				<false/>
+				<key>UUID</key>
+				<string>1A62AD44-BEC8-4120-9ACB-B225C124C00F</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>System</string>
+					<string>TextEdit</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>chosenVoice</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Speak Text.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>collapsed</key>
+			<false/>
+			<key>isOutletsVisible</key>
+			<false/>
+			<key>isViewVisible</key>
+			<true/>
+			<key>location</key>
+			<string>460.000000:233.000000</string>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>39832902-7B7D-4347-9BF8-7DE7AC6EA3AF</key>
+		<dict>
+			<key>from</key>
+			<string>CB2BF988-0AB3-466F-8B6F-879731F84DE6 - 5C7AFE4A-E30C-43E0-9E42-3EBC2F4E880A</string>
+			<key>to</key>
+			<string>1A62AD44-BEC8-4120-9ACB-B225C124C00F - F1754A2C-A6CF-4AAE-B06A-8CA0CBFE4E1D</string>
+		</dict>
+		<key>BE08B422-FB42-4B10-8E85-035B5F68ED0E</key>
+		<dict>
+			<key>from</key>
+			<string>130A50ED-B267-43E3-91E4-A52F862EB6C2 - 80BF2C18-BCE9-4951-BF03-CCEC924F7565</string>
+			<key>to</key>
+			<string>CB2BF988-0AB3-466F-8B6F-879731F84DE6 - 29343582-E27D-419A-B240-EA8242D3FD7F</string>
+		</dict>
+	</dict>
+	<key>state</key>
+	<dict>
+		<key>actionsSplitView</key>
+		<real>175</real>
+		<key>layoutFrame</key>
+		<string>{{0, 0}, {872, 874}}</string>
+		<key>layoutScrollPosition</key>
+		<string>{{0, 0}, {872, 874}}</string>
+		<key>mainSplitView</key>
+		<real>374</real>
+		<key>minorSplitView</key>
+		<real>675</real>
+		<key>windowFrame</key>
+		<string>{{4, 0}, {1276, 1002}}</string>
+	</dict>
+</dict>
+</plist>

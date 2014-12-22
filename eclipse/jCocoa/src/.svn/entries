@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   revision="109"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/jCocoa/src"
+   last-author="atchijov"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   committed-date="2006-09-01T03:10:39.178429Z"
+   kind="dir"
+   name=""
+   committed-rev="108"/>
+<entry
+   kind="dir"
+   name="com"/>
+</wc-entries>

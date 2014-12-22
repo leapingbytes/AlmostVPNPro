@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/rhino1_6R3"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="apiClasses.properties"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1444a69e819b9443696b0f0ecd624736"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   name="toolsrc"
+   kind="dir"/>
+<entry
+   name="src"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="js.jar"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d9192f1aec31d7eeda415cfe9080effd"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:44.000000Z"/>
+<entry
+   name="deprecatedsrc"
+   kind="dir"/>
+<entry
+   name="docs"
+   kind="dir"/>
+<entry
+   name="xmlimplsrc"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="build-date"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f7a75d78f28bb04fa8b2b012d6a5a4c0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   committed-rev="106"
+   name="build.properties"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2c192b872b08cdd6dc9800ce11b8a656"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+<entry
+   name="examples"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="build.xml"
+   text-time="2006-09-01T03:01:46.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="43998537fcbc147c08321c97e92502bb"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:46.000000Z"/>
+</wc-entries>

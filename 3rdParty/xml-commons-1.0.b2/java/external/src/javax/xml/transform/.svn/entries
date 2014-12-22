@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/java/external/src/javax/xml/transform"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   committed-rev="106"
+   name="ErrorListener.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="b0b29a1bd0b963a792d667f9bde3687a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   committed-rev="106"
+   name="FactoryFinder.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="647912bfe77addf41eb442e6e5591206"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   name="dom"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Source.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="0f09ed53135a37fd7ac67d1a32dfec7d"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Transformer.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="17eb5bf4eb23b0b181a7cb3a8f0f998b"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TransformerConfigurationException.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6706784fcc6f66ddae5a8d1f4b023599"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   name="stream"
+   kind="dir"/>
+<entry
+   name="sax"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="Result.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f4c8fefcb8d5bf05e59d5c05d0aa5ad0"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   committed-rev="106"
+   name="package.html"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ca901160857f0e19edfa966dbd982658"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TransformerException.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="57203c5414e40ac596a1619811451dfc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   committed-rev="106"
+   name="URIResolver.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a14e72c23ed8953135e447893938bb43"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   committed-rev="106"
+   name="SourceLocator.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="2908cbc964902fae0ceeb849b2e43dbc"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   committed-rev="106"
+   name="overview.html"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="c8396432a699f60a5b4be4e875f9717e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TransformerFactory.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="d91c9f3908df0f65806a12a08d38cf96"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   committed-rev="106"
+   name="TransformerFactoryConfigurationError.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a1d3573bcdc7ab02c519936a0a3de926"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   committed-rev="106"
+   name="OutputKeys.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="449eadfc312877a69aa6d7f8950a43d8"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+<entry
+   committed-rev="106"
+   name="Templates.java"
+   text-time="2006-09-01T03:01:43.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="f8048cb77d60780bacec5807c2bf1aa2"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:43.000000Z"/>
+</wc-entries>

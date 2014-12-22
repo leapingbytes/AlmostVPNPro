@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="106"
+   name=""
+   committed-date="2006-09-01T02:52:48.795870Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/3rdParty/xml-commons-1.0.b2/build/xml-commons-1.0.b2/java/external"
+   last-author="atchijov"
+   kind="dir"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   revision="106"/>
+<entry
+   name="build"
+   kind="dir"/>
+<entry
+   name="xdocs"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="ChangeLog-sax"
+   text-time="2006-09-01T03:01:21.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="25d66778ba22f9ff56b0f1fcea1ad461"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:18.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LICENSE.dom-documentation.txt"
+   text-time="2006-09-01T03:01:21.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="ae5f860d59200c065905cc2f5e84b542"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:19.000000Z"/>
+<entry
+   committed-rev="106"
+   name="README.sax.txt"
+   text-time="2006-09-01T03:01:21.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="6a48a1e9e5eb1d7a49558a7f0ace7b71"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:19.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LICENSE.dom-software.txt"
+   text-time="2006-09-01T03:01:21.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="5aa663299dfd4f4fa494145a0e2f16e5"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:19.000000Z"/>
+<entry
+   committed-rev="106"
+   name="README-sax"
+   text-time="2006-09-01T03:01:21.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="e6c93236634dbec78d843251bf319323"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:19.000000Z"/>
+<entry
+   name="src"
+   kind="dir"/>
+<entry
+   committed-rev="106"
+   name="BUGS-sax"
+   text-time="2006-09-01T03:01:21.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="1eff56898170bd5a9a48f63329e9872e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:21.000000Z"/>
+<entry
+   committed-rev="106"
+   name="README.dom.txt"
+   text-time="2006-09-01T03:01:21.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="bfcf80789179a9c0a27d6891464ab4d9"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:21.000000Z"/>
+<entry
+   committed-rev="106"
+   name="LICENSE.sax.txt"
+   text-time="2006-09-01T03:01:21.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a5c40688ddbc2d048d1753046f846fd4"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:21.000000Z"/>
+<entry
+   committed-rev="106"
+   name="build.xml"
+   text-time="2006-09-01T03:01:21.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   checksum="a41b13a17eb2a50e4db6b3f2df6b391a"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-09-01T03:01:21.000000Z"/>
+</wc-entries>

@@ -1,0 +1,14 @@
+{
+    IBClasses = (
+        {
+            CLASS = AlmostVPNMenuBar; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {theIcon = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = AlmostVPNProMenuBar; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = AlmostVPNProMenuBarApp; LANGUAGE = ObjC; SUPERCLASS = NSApplication; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

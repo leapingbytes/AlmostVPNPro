@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string>AlmostVPNPRO</string>
+	<key>Description</key>
+	<string>AlmostVPN/PRO Scripting Suite</string>
+	
+	<key>Classes</key>
+	<dict>
+		<key>NSApplication</key>
+		<dict>
+			<key>Name</key>
+			<string>application</string>
+			<key>PluralName</key>
+			<string>applications</string>
+			<key>Description</key>
+			<string>Top Applicaiton</string>
+			<key>Attributes</key>
+			<dict>
+				<key>oneAttribute</key>
+				<dict>
+					<key>Name</key>
+					<string>oneAttribute</string>
+					<key>Description</key>
+					<string>one attribute</string>
+				</dict>
+			</dict>
+			
+		</dict>
+<!--		
+		<key>AlmostVPNProfile</key>
+		<dict>
+			<key>Attributes</key>
+			<dict>
+				<key>name</key>
+				<dict>
+					<key>Description</key>
+					<string>Profile Name</string>
+					<key>Name</key>
+					<string>name</string>
+				</dict>
+				<key>status</key>
+				<dict>
+					<key>Description</key>
+					<string>Profle Status</string>
+					<key>Name</key>
+					<string>status</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>AlmostVPN/PRO Profiles</string>
+			<key>Name</key>
+			<string>almostvpn profile</string>
+			<key>PluralName</key>
+			<string>almostvpn profiles</string>
+		</dict>
+-->
+	</dict>
+<!--
+	<key>Commands</key>
+	<dict>
+		<key>start</key>
+		<dict>
+			<key>Description</key>
+			<string>Start Profle</string>
+			<key>Name</key>
+			<string>start</string>
+		</dict>
+		<key>stop</key>
+		<dict>
+			<key>Description</key>
+			<string>Stop Profile</string>
+			<key>Name</key>
+			<string>stop</string>
+		</dict>
+	</dict>
+-->
+</dict>
+</plist>

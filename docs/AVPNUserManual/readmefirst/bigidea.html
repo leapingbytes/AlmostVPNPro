@@ -1,0 +1,354 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <title>AlmostVPN 1.0 / The Big Idea</title>
+
+
+  <meta name="GENERATOR" content="NeoOffice 2.0 Aqua Beta 3 (Unix)">
+
+  <meta name="AUTHOR" content="Andrei Tchijov">
+
+  <meta name="CREATED" content="20060917;23072200">
+
+  <meta name="CHANGEDBY" content="Andrei Tchijov">
+
+  <meta name="CHANGED" content="20060921;13262800">
+
+
+  <link rel="stylesheet" href="../css/main.css" type="text/css">
+
+</head>
+
+
+<body style="direction: ltr; padding-left: 20px; padding-right: 10px;" lang="en-US">
+
+<h1></h1>
+
+<h1><a class="mozTocH2" name="mozTocId555856"></a>World
+according to AlmostVPN</h1>
+
+<p>World of AlmostVPN consist of <b>SSH Servers</b>,
+which provide
+access to <b>Remote Resources</b><span style="">
+and </span><b>Profiles</b><span style="">
+which
+represent collection of the </span><b>Remote Resources</b><span style="">
+which user want to be able access at the same time. While
+configuring AlmostVPN you will do one of two things:</span></p>
+
+<ul>
+
+  <li>
+    <p style="">defining remote resources,</p>
+
+  </li>
+
+  <li>
+    <p style="">combining these resources into profiles.</p>
+
+  </li>
+
+</ul>
+
+<h2><a class="mozTocH3" name="mozTocId725518"></a>SSH
+Servers and Remote Resources</h2>
+
+<p>Think about SSH Server as a portal which provides access to
+set of
+resources. These resources could be network services ( like IMAP,
+SMTP or POP ), remote drives ( AFP, SMB or WebDAV), remote printers
+or something else. These resources could be located on the SSH
+Server itself or they could be located on some other host(s)
+accessible via SSH Server. In some cases, one SSH Server could
+provide access to another SSH Server, which in turn could act as a
+portal to different set of resources.<br>
+
+</p>
+
+<table style="text-align: left; background-color: rgb(200, 200, 200); width: 100%;" cellpadding="10" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td style="vertical-align: top; text-align: center;"><img style="width: 334px; height: 257px;" alt="" src="images/Picture0.png"><br>
+
+      </td>
+
+      <td style="width: 300px; text-align: center; vertical-align: middle;"><img style="width: 231px; height: 160px;" src="images/Picture1.png" alt=""></td>
+
+    </tr>
+
+    <tr>
+
+      <td colspan="2" rowspan="1">Example:<br>
+
+      <div style="margin-left: 40px;">This picture
+demonstrates SSH
+Server (<b>schnitzel</b>)
+which runs <b>IMAPS</b> and <b>SMTP</b>
+servers, has <b>Fax Modem</b>
+and <b>AFP </b>shared drive and provide access to another
+host
+(<b>yasha</b>) which runs <b>HTTP</b>
+server.</div>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<h2><a class="mozTocH3" name="mozTocId138804"></a>Profiles</h2>
+
+<p>Usually, you will want to connect to SSH Server in order to
+gain
+access to some resources. Depending on nature of what you want to do
+at particular moment, you may want to get access to different set of
+resources. In some cases you may want to access particulars service
+(like SMTP in order to send mail), in other case you may wont to
+access ALL services associated with particular remote host. In
+AlmostVPN world, collection of resources you want to make
+available at the same time is called &ndash; Profile.<br>
+
+<br>
+
+</p>
+
+<table style="text-align: left; background-color: rgb(200, 200, 200); width: 100%; height: 193px;" border="0" cellpadding="10" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td style="padding: 50px; text-align: left; vertical-align: top;">Example:<br>
+
+      <div style="margin-left: 40px;">This picture
+demonstrates two
+profiles: <b>myEmail</b>
+and <b>sharedStuff</b>. <b>myEmail</b>
+profile, when running,
+provides access to <b>IMAPS</b> and <b>SMTP</b>
+servers on <b>schnitzel</b>. <b>sharedStuff</b>,
+provides access to <b>Fax Modem</b> and <b>AFP
+share.</b></div>
+
+      </td>
+
+      <td style="vertical-align: top; text-align: right; width: 300px;"><img style="border: 0px solid ; width: 231px; height: 143px;" alt="" src="images/Picture2.png" name="graphics1" align="left" hspace="50"></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<h2><a class="mozTocH3" name="mozTocId349835"></a>Basic
+operations</h2>
+
+Configuring AlmostVPN consist of few simple operations:<br>
+
+<ul>
+
+  <li>adding "objects" (SSH Servers, Profiles, Resources, ... ),</li>
+
+  <li>configuring "objects",</li>
+
+  <li>deleting "objects",</li>
+
+  <li>adding "objects" to profiles.</li>
+
+</ul>
+
+<h3><a class="mozTocH4" name="mozTocId32612"></a>1)
+Adding "objects"</h3>
+
+<table style="text-align: left; background-color: rgb(200, 200, 200); width: 100%; height: 193px;" border="0" cellpadding="10" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td style="text-align: center; width: 33%;"><img style="width: 231px; height: 214px;" alt="" src="images/Picture3.png"></td>
+
+      <td style="text-align: center; width: 33%;"><img alt="" src="images/Picture4.png"></td>
+
+      <td style="text-align: center; width: 33%;"><img alt="" src="images/Picture5.png"></td>
+
+    </tr>
+
+    <tr>
+
+      <td style="vertical-align: top;">right-click(control-click)
+on parent object in the object hierarchy tree. than select kind of
+object you want to add<br>
+
+      </td>
+
+      <td style="vertical-align: top;">click on "+" button
+at the left
+bottom corner of the pane. than select kind of object you want to add.
+object will be added to the object currently selected in the tree.<br>
+
+      </td>
+
+      <td style="vertical-align: top;"><span style="font-weight: bold;">NOTE: </span>you will see
+different set of resources depending on kind of parent object.<br>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<h3><a class="mozTocH4" name="mozTocId768141"></a>2)
+Configuring "objects"</h3>
+
+<br>
+
+<table style="text-align: left; background-color: rgb(200, 200, 200); width: 100%; height: 193px;" border="0" cellpadding="10" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td style="text-align: center; width: 33%;"><img style="width: 360px; height: 228px;" alt="" src="images/Picture9.png"></td>
+
+    </tr>
+
+    <tr>
+
+      <td style="vertical-align: top;">as soon as you
+added an object, you will have a chance to specify all neccesary
+properties in object kind specific dialog.<br>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td style="text-align: center;"><img style="width: 572px; height: 306px;" alt="" src="images/Picture10.png"></td>
+
+    </tr>
+
+    <tr>
+
+      <td>you can change all
+the
+properties at any time, by selecting the object you wont to modify in
+the object hierarchy . once you have selected an object, its properties
+will be displayed in the left half of the pane. </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<br>
+
+<h3><a class="mozTocH4" name="mozTocId682303"></a>3)
+Deleting "objects"</h3>
+
+<table style="text-align: left; background-color: rgb(200, 200, 200); width: 100%; height: 193px;" border="0" cellpadding="10" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td style="text-align: center; width: 33%;"><img style="width: 231px; height: 214px;" alt="" src="images/Picture6.png"></td>
+
+      <td style="text-align: center; width: 33%;"><img style="width: 233px; height: 214px;" alt="" src="images/Picture7.png"></td>
+
+      <td style="text-align: center; width: 33%;"><img style="width: 233px; height: 214px;" alt="" src="images/Picture8.png"></td>
+
+    </tr>
+
+    <tr>
+
+      <td style="vertical-align: top;">right-click(control-click)
+on the object you want to delete and select "Move to Trash"<br>
+
+      </td>
+
+      <td style="vertical-align: top;">select object you
+want to delete and click "-" button at the left bottom corner of the
+pane.<br>
+
+      </td>
+
+      <td style="vertical-align: top;"><span style="font-weight: bold;">NOTE: </span>Once
+you deleted object, it gets moved to "Trash".&nbsp; You can "undo"
+delete, by dragging deleted object from the "Trash" and dropping it on
+the parent object.&nbsp; <br>
+
+      <span style="font-weight: bold;">NOTE:</span>
+There is no way to
+delete objects from the "Trash". "Trash" gets emptied automatically
+every time you stop AlmostVPN Preference Pane.<br>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<h3><a class="mozTocH4" name="mozTocId366358"></a>4)
+Adding resources to profile</h3>
+
+There are two ways to add resources to the profile:<br>
+
+<ul>
+
+  <li>drag and drop,</li>
+
+  <li>pop-up menu.</li>
+
+</ul>
+
+Quickest way to add resources to the profile is by dragging the
+resource and dropping it on the profile.&nbsp; Drag and drop works
+very
+well on small to medium size configurations.&nbsp; Alternative way
+of
+adding resources to profile is by using pop-up menu. You may want to
+use the menu if your configuration consist of big number of
+object.&nbsp; Right-Click(Control-Click) on the profile will pop up
+menu which will allow you to select the kind of resource you will want
+to add to the profile.&nbsp; Once you made your selection, dialog
+with
+list of all known resources of selected kind will appear. You can
+select desired resource from the list.<br>
+
+<br>
+
+<div style="margin-left: 40px;"><span style="font-weight: bold;">NOTE:</span>
+In many cases, it is possible(and sometimes necessary) to&nbsp;
+provide
+extra configuration&nbsp; to the&nbsp; resource&nbsp;
+which&nbsp; have
+been added to profile (For example, once you have added "service" to
+profile, it will become tunnel definition, so you may want to specify
+source port for this tunnel.).&nbsp; <br>
+
+</div>
+
+<br>
+
+<h2>Putting all this things toogether</h2>
+
+Number of ScreenMovies available on <a href="http://www.leapingbytes.com/almostvpn/wiki/AlmostVPN1.0.x_Movies">AlmostVPN
+Web Sites</a>.
+These movies demonstrate how to perform some basic configuration tasks
+(creating simple tunnel, configuring secure e-mail access, ... ). I
+highly recommend to watch at least first&nbsp;of these
+movies.&nbsp;
+&nbsp;
+<br>
+
+</body>
+</html>

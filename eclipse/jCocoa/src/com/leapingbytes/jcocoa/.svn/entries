@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="svn+ssh://svn/AlmostVPNRepository"
+   revision="109"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/eclipse/jCocoa/src/com/leapingbytes/jcocoa"
+   last-author="atchijov"
+   uuid="21e43aea-a6ff-0310-94ce-d73ad1b26e2e"
+   committed-date="2006-09-01T03:10:39.178429Z"
+   name=""
+   kind="dir"
+   committed-rev="108"/>
+<entry
+   checksum="129579450305cc7ff45ec6606c017f3b"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name="NSArray.java"
+   kind="file"
+   committed-rev="106"/>
+<entry
+   checksum="0239814426727c7179c650796126f409"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name="NSDictionary.java"
+   kind="file"
+   committed-rev="106"/>
+<entry
+   checksum="a65d3c1ed487302de83a1491e9562dbf"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name="NSMutableArray.java"
+   kind="file"
+   committed-rev="106"/>
+<entry
+   checksum="f6ef5c2c473df37931157ad410dc2920"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name="NSMutableDictionary.java"
+   kind="file"
+   committed-rev="106"/>
+<entry
+   checksum="6225a95c6929160faa01e5478cad2375"
+   last-author="atchijov"
+   text-time="2006-09-01T03:09:44.000000Z"
+   committed-date="2006-09-01T03:10:39.178000Z"
+   name="PListSupport.java"
+   kind="file"
+   committed-rev="108"/>
+<entry
+   checksum="dfa36f34ad45642e12996d33750fc22d"
+   last-author="atchijov"
+   text-time="2006-09-01T02:52:48.000000Z"
+   committed-date="2006-09-01T02:52:48.795870Z"
+   name="PListSupportTest.java"
+   kind="file"
+   committed-rev="106"/>
+</wc-entries>

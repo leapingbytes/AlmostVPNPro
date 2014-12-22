@@ -1,0 +1,43 @@
+//
+//  PathLocator.h
+//  AlmostVPN
+//
+//  Created by andrei tchijov on 9/2/05.
+//  Copyright 2005 Leaping Bytes, LLC. All rights reserved.
+//
+
+#import <Cocoa/Cocoa.h>
+
+#import "AVPN.h" 
+
+#define PathLocator avpnClass( PathLocator )
+
+@interface PathLocator : NSObject {
+}
++(NSString*) bundleIdentifier;
++(void) setBundleIdentifier: (NSString*) value ;
+
++(BOOL) prefPaneInstalledForAll;
+
++(NSString*)home;
++(NSString*)version;
++(NSString*)preferencesPath;
++(NSString*)preferencesPath: (NSString*) applicationId;
++(NSString*)applicationSupportPath;
++(NSString*)applicationSupportPathForFile: (NSString*) file;
++(NSString*)launchdPlistPathForProfile: (NSString*) profile;
++(NSString*)resourcePath;
++(NSString*)installedResourcePath;
++(NSString*)pathForResource: (NSString*) resource;
++(NSString*)pathForInstalledResource: (NSString*) resource;
++(NSString*)userKeychainPath: (NSString*)keychainName;
+
++(NSString*) pathForExecutable: ( NSString* )v;
+
++(NSBundle*)almostVPNBundle;
++(NSImage*)imageNamed: (NSString*) imageName;
++(NSImage*)imageNamed: (NSString*) imageName ofSize: (NSSize) size;
++(NSSound*) soundNamed: (NSString*) soundName;
+
++(NSString*) keychainPath;
+@end

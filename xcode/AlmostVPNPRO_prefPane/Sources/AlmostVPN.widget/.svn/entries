@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="133"
+   name=""
+   committed-date="2006-10-13T14:13:15.955217Z"
+   url="svn+ssh://svn/AlmostVPNRepository/trunk/AlmostVPNPRO/xcode/AlmostVPNPRO_prefPane/Sources/AlmostVPN.widget"
+   last-author="atchijov"
+   kind="dir"
+   revision="133"/>
+<entry
+   committed-rev="133"
+   name="version.plist"
+   text-time="2005-05-14T17:20:56.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="bcd39214a9cd4c41577cf03b7d040671"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   name="images"
+   kind="dir"/>
+<entry
+   committed-rev="133"
+   name="Info.plist"
+   text-time="2006-10-12T00:39:33.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="1bf9ee04d1e4275c7ba6799c725ab4c0"
+   last-author="atchijov"
+   kind="file"/>
+<entry
+   committed-rev="152"
+   name="AlmostVPN.html"
+   text-time="2006-11-14T16:06:36.000000Z"
+   committed-date="2006-11-14T16:25:50.925007Z"
+   checksum="76311a5cb7bfd9a4f508af340c5783db"
+   last-author="atchijov"
+   kind="file"
+   revision="152"/>
+<entry
+   committed-rev="133"
+   name="Default.png"
+   text-time="2006-10-11T17:39:44.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="8c0e737d7c2c67c13589fed66dd2df2e"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:49.000000Z"/>
+<entry
+   name="css"
+   kind="dir"/>
+<entry
+   committed-rev="133"
+   name="Icon.png"
+   text-time="2006-10-11T18:20:36.000000Z"
+   committed-date="2006-10-13T14:13:15.955217Z"
+   checksum="75aac0d180a752eea36dbf0b14ed7d17"
+   last-author="atchijov"
+   kind="file"
+   prop-time="2006-10-13T14:12:49.000000Z"/>
+<entry
+   name="js"
+   kind="dir"/>
+</wc-entries>
